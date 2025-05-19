@@ -28,3 +28,4 @@ if (p_finduid(uid) = true) {
     p_teleport(movecoord(coord, 0, 0, calc(0 - max($distance, 1))));
 } else {
     @please_finish;
+}
