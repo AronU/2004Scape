@@ -16,6 +16,9 @@
 return (getbit_range(%itexam_progress, 0, 3));
 
 [proc,itexam_set_progress](int $progress);
+if ($progress < %itexam_progress) {
+    return;
+}
 %itexam_progress = setbit_range_toint(%itexam_progress, $progress, 0, 3);
 
 [proc,itexam_errand_progress](int $errand)(int)
