@@ -32,12 +32,14 @@ stat_advance(fishing, 20);
 ~chatplayer("<p,confused>Err, why am I searching an empty tray?");
 
 [opheld2,tray_mud]
+// https://youtu.be/gqY4Azhtghg?si=oN8Fr2wrXkqMH0-0&t=374
 mes("You search the contents of the tray...");
-inv_del(inv, tray_mud, 1);
-inv_add(inv, tray_empty, 1);
+p_delay(1);
 @search_panning_tray;
 
 [label,search_panning_tray]
+inv_del(inv, tray_mud, 1);
+inv_add(inv, tray_empty, 1);
 def_int $rand = random(40);
 
 if ($rand < 3) {

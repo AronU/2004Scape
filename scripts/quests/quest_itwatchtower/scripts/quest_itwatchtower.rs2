@@ -494,7 +494,6 @@ inv_add(inv, powering_crystal4, 1);
 
 [opheld1,shaman_robe]
 mes("You search the robe.");
-p_delay(2);
 if(inv_total(inv, powering_crystal3) > 0 | %itwatchtower_progress >= ^itwatchtower_complete | getbit_range(%itwatchtower_bits, ^itwatchtower_shaman_kills_lower, ^itwatchtower_shaman_kills_upper) < 6) {
     mes("You find nothing.");
     return;

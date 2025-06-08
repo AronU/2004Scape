@@ -616,7 +616,8 @@ if(coordx(loc_coord) < coordx(coord)) {
 }
 
 [opheld1,ibandoll]
-// https://youtu.be/nWnu0s4z_jE?si=4lQzD8XapY37z_RO&t=567
+// https://youtu.be/nWnu0s4z_jE?si=4lQzD8XapY37z_RO&t=567p, https://youtu.be/tG_sKbvM-3w?si=J9fHe6llbbnOoW7z&t=1313 stopaction
+p_stopaction;
 mes("You carefully search the doll...");
 p_delay(1);
 if(testbit(%upass_map_mechanisms, ^upass_blood_on_doll) = ^true) mes("Blood has been smeared onto the doll.");

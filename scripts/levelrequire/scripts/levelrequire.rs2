@@ -139,8 +139,9 @@ return(true);
 [label,levelrequire_iban_staff](int $slot)
 // https://oldschool.runescape.wiki/w/Update:Various_tweaks_to_the_game
 // > Fixed a bug which meant the Iban-staff could be wielded at level 49, despite stating a requirement of 50.
+// https://youtu.be/FKFdDdH5rlE?si=rTj214wpX9RKHiMy&t=188
 if (stat(magic) < 50) {
-    mes("You are not a high enough level to use this item.");
+    mes("You are not a high enough level to use this item,");
     mes("You need to have a Magic level of 50.");
     return;
 }
