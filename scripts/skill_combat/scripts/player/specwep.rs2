@@ -1,0 +1,92 @@
+[queue,sa_setenergy](int $energy)
+%sa_energy = min(max($energy, 0), ^sa_max_energy);
+~upsert_sa_regen_timer;
+
+[proc,upsert_sa_regen_timer]
+// If we're below max sa_energy, start the regen timer
+if (%sa_energy < ^sa_max_energy) {
+    if (gettimer(sa_regen) = -1) {
+        settimer(sa_regen, ^sa_regen_interval);
+    }
+} else {
+    if (gettimer(sa_regen) > 0) {
+        cleartimer(sa_regen);
+    }
+}
+
+[proc,sa_subenergy](int $amount)
+queue(sa_setenergy, 0, calc(%sa_energy - $amount));
+
+[proc,sa_healenergy](int $amount)
+queue(sa_setenergy, 0, calc(%sa_energy + $amount));
+
+[timer,sa_regen]
+~sa_healenergy(100);
+
+[label,toggle_sa]
+if (%sa_enabled = ^false) {
+    %sa_enabled = ^true;
+} else {
+    %sa_enabled = ^false;
+}
+
+[if_button,combat_blunt:specbar]
+// todo: queue if cannot access? or should sa_enabled be unprotected?
+if (p_finduid(uid) = true) {
+    @toggle_sa;
+}
+
+[if_button,combat_axe:specbar]
+if (p_finduid(uid) = true) {
+    @toggle_sa;
+}
+
+[if_button,combat_crossbow:specbar]
+if (p_finduid(uid) = true) {
+    @toggle_sa;
+}
+
+[if_button,combat_bow:specbar]
+if (p_finduid(uid) = true) {
+    @toggle_sa;
+}
+
+[if_button,combat_stabsword:specbar]
+if (p_finduid(uid) = true) {
+    @toggle_sa;
+}
+
+[if_button,combat_hacksword:specbar]
+if (p_finduid(uid) = true) {
+    @toggle_sa;
+}
+
+[if_button,combat_spiked:specbar]
+if (p_finduid(uid) = true) {
+    @toggle_sa;
+}
+
+[if_button,combat_thrown:specbar]
+if (p_finduid(uid) = true) {
+    @toggle_sa;
+}
+
+[if_button,combat_spear:specbar]
+if (p_finduid(uid) = true) {
+    @toggle_sa;
+}
+
+[if_button,combat_heavysword:specbar]
+if (p_finduid(uid) = true) {
+    @toggle_sa;
+}
+
+[if_button,combat_pickaxe:specbar]
+if (p_finduid(uid) = true) {
+    @toggle_sa;
+}
+
+[if_button,combat_unarmed:specbar]
+if (p_finduid(uid) = true) {
+    @toggle_sa;
+}

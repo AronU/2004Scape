@@ -228,3 +228,4 @@ param=stabattack_anim,human_blunt_spike
 param=defend_anim,human_blunt_block
 param=crush_sound,mace_crush
 param=stab_sound,mace_stab
+param=specwep,^true

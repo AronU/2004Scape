@@ -193,3 +193,4 @@ param=defend_anim,human_unarmedblock
 param=rangeattack_sound,throwingaxe
 param=proj_launch,rune_taxe_launch
 param=proj_travel,rune_taxe_travel
+param=specwep,^true

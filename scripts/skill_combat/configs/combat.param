@@ -165,3 +165,8 @@ default=null
 [npc_ammo]
 type=namedobj
 default=null
+
+// todo: real name
+[specwep]
+type=int
+default=0

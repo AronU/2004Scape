@@ -247,6 +247,7 @@ param=slash_sound,stabsword_slash
 param=weapon_poisoned,dragon_dagger_p
 param=weapon_poisoned_message,You poison the dagger.
 // osrs defend anim seq_378
+param=specwep,^true
 
 [black_dagger]
 model=model_2672_obj
@@ -542,6 +543,7 @@ param=stab_sound,stabsword_stab
 param=slash_sound,stabsword_slash
 // osrs defend anim seq_378
 param=poison_severity,20
+param=specwep,^true
 
 [black_dagger_p]
 members=yes

@@ -111,28 +111,35 @@ if ($obj = null | (map_members = ^false & oc_members($obj) = true)) {
 }
 switch_category (oc_category($obj)) {
     // melee
-    case weapon_2h_sword : ~weapon_category_tab_attack(combat_heavysword:preview, combat_heavysword:name, combat_heavysword, $obj);
-    case weapon_axe : ~weapon_category_tab_attack(combat_axe:preview, combat_axe:name, combat_axe, $obj);
-    case weapon_blunt, flowers : ~weapon_category_tab_attack(combat_blunt:preview, combat_blunt:name, combat_blunt, $obj);
-    case weapon_pickaxe : ~weapon_category_tab_attack(combat_pickaxe:preview, combat_pickaxe:name, combat_pickaxe, $obj);
-    case weapon_scythe : ~weapon_category_tab_attack(combat_scythe:preview, combat_scythe:name, combat_scythe, $obj);
-    case weapon_slash : ~weapon_category_tab_attack(combat_hacksword:preview, combat_hacksword:name, combat_hacksword, $obj);
-    case weapon_spear : ~weapon_category_tab_attack(combat_spear:preview, combat_spear:name, combat_spear, $obj);
-    case weapon_spiked : ~weapon_category_tab_attack(combat_spiked:preview, combat_spiked:name, combat_spiked, $obj);
-    case weapon_stab : ~weapon_category_tab_attack(combat_stabsword:preview, combat_stabsword:name, combat_stabsword, $obj);
+    case weapon_2h_sword : ~weapon_category_tab_attack(combat_heavysword:preview, combat_heavysword:name, combat_heavysword, $obj, combat_heavysword:specbar_layer);
+    case weapon_axe : ~weapon_category_tab_attack(combat_axe:preview, combat_axe:name, combat_axe, $obj, combat_axe:specbar_layer);
+    case weapon_blunt, flowers : ~weapon_category_tab_attack(combat_blunt:preview, combat_blunt:name, combat_blunt, $obj, combat_blunt:specbar_layer);
+    case weapon_pickaxe : ~weapon_category_tab_attack(combat_pickaxe:preview, combat_pickaxe:name, combat_pickaxe, $obj, combat_pickaxe:specbar_layer);
+    case weapon_scythe : ~weapon_category_tab_attack(combat_scythe:preview, combat_scythe:name, combat_scythe, $obj, null);
+    case weapon_slash : ~weapon_category_tab_attack(combat_hacksword:preview, combat_hacksword:name, combat_hacksword, $obj, combat_hacksword:specbar_layer);
+    case weapon_spear : ~weapon_category_tab_attack(combat_spear:preview, combat_spear:name, combat_spear, $obj, combat_spear:specbar_layer);
+    case weapon_spiked : ~weapon_category_tab_attack(combat_spiked:preview, combat_spiked:name, combat_spiked, $obj, combat_spiked:specbar_layer);
+    case weapon_stab : ~weapon_category_tab_attack(combat_stabsword:preview, combat_stabsword:name, combat_stabsword, $obj, combat_stabsword:specbar_layer);
     // ranged
-    case weapon_bow : ~weapon_category_tab_attack(combat_bow:preview, combat_bow:name, combat_bow, $obj);
-    case weapon_crossbow : ~weapon_category_tab_attack(combat_crossbow:preview, combat_crossbow:name, combat_crossbow, $obj);
-    case weapon_thrown, weapon_javelin : ~weapon_category_tab_attack(combat_thrown:preview, combat_thrown:name, combat_thrown, $obj);
+    case weapon_bow : ~weapon_category_tab_attack(combat_bow:preview, combat_bow:name, combat_bow, $obj, combat_bow:specbar_layer);
+    case weapon_crossbow : ~weapon_category_tab_attack(combat_crossbow:preview, combat_crossbow:name, combat_crossbow, $obj, combat_crossbow:specbar_layer);
+    case weapon_thrown, weapon_javelin : ~weapon_category_tab_attack(combat_thrown:preview, combat_thrown:name, combat_thrown, $obj, combat_thrown:specbar_layer);
     // magic
-    case weapon_staff : ~weapon_category_tab_attack(combat_staff_2:preview, combat_staff_2:name, combat_staff_2, $obj);
+    case weapon_staff : ~weapon_category_tab_attack(combat_staff_2:preview, combat_staff_2:name, combat_staff_2, $obj, null);
     // unarmed everything else
     case default : ~weapon_category_tab_attack_unarmed($obj);
 }
 
-[proc,weapon_category_tab_attack](component $component1, component $component2, interface $interface, obj $obj)
+[proc,weapon_category_tab_attack](component $component1, component $component2, interface $interface, obj $obj, component $specbar_layer)
 if_setobject($component1, $obj, 200);
 if_settext($component2, "<oc_name($obj)>");
+if ($specbar_layer ! null) {
+    if (oc_param($obj, specwep) = ^true) {
+        if_sethide($specbar_layer, false);
+    } else {
+        if_sethide($specbar_layer, true);
+    }
+}
 if_settab($interface, 0);
 
 // sends the unarmed interface tab
@@ -141,6 +148,11 @@ if_settab($interface, 0);
 if ($obj = null | (map_members = ^false & oc_members($obj) = true)) {
     if_settext(combat_unarmed:name, "unarmed");
 } else {
+    if (oc_param($obj, specwep) = ^true) {
+        if_sethide(combat_unarmed:specbar_layer, false);
+    } else {
+        if_sethide(combat_unarmed:specbar_layer, true);
+    }
     if_settext(combat_unarmed:name, "<oc_name($obj)>"); // gnomeball uses this
 }
 if_settab(combat_unarmed, 0);
@@ -166,28 +178,35 @@ if ($obj = null | (map_members = ^false & oc_members($obj) = true)) {
 }
 switch_category (oc_category($obj)) {
     // melee
-    case weapon_2h_sword : ~.weapon_category_tab_attack(combat_heavysword:preview, combat_heavysword:name, combat_heavysword, $obj);
-    case weapon_axe : ~.weapon_category_tab_attack(combat_axe:preview, combat_axe:name, combat_axe, $obj);
-    case weapon_blunt, flowers : ~.weapon_category_tab_attack(combat_blunt:preview, combat_blunt:name, combat_blunt, $obj);
-    case weapon_pickaxe : ~.weapon_category_tab_attack(combat_pickaxe:preview, combat_pickaxe:name, combat_pickaxe, $obj);
-    case weapon_scythe : ~.weapon_category_tab_attack(combat_scythe:preview, combat_scythe:name, combat_scythe, $obj);
-    case weapon_slash : ~.weapon_category_tab_attack(combat_hacksword:preview, combat_hacksword:name, combat_hacksword, $obj);
-    case weapon_spear : ~.weapon_category_tab_attack(combat_spear:preview, combat_spear:name, combat_spear, $obj);
-    case weapon_spiked : ~.weapon_category_tab_attack(combat_spiked:preview, combat_spiked:name, combat_spiked, $obj);
-    case weapon_stab : ~.weapon_category_tab_attack(combat_stabsword:preview, combat_stabsword:name, combat_stabsword, $obj);
+    case weapon_2h_sword : ~.weapon_category_tab_attack(combat_heavysword:preview, combat_heavysword:name, combat_heavysword, $obj, combat_heavysword:specbar_layer);
+    case weapon_axe : ~.weapon_category_tab_attack(combat_axe:preview, combat_axe:name, combat_axe, $obj, combat_axe:specbar_layer);
+    case weapon_blunt, flowers : ~.weapon_category_tab_attack(combat_blunt:preview, combat_blunt:name, combat_blunt, $obj, combat_blunt:specbar_layer);
+    case weapon_pickaxe : ~.weapon_category_tab_attack(combat_pickaxe:preview, combat_pickaxe:name, combat_pickaxe, $obj, combat_pickaxe:specbar_layer);
+    case weapon_scythe : ~.weapon_category_tab_attack(combat_scythe:preview, combat_scythe:name, combat_scythe, $obj, null);
+    case weapon_slash : ~.weapon_category_tab_attack(combat_hacksword:preview, combat_hacksword:name, combat_hacksword, $obj, combat_hacksword:specbar_layer);
+    case weapon_spear : ~.weapon_category_tab_attack(combat_spear:preview, combat_spear:name, combat_spear, $obj, combat_spear:specbar_layer);
+    case weapon_spiked : ~.weapon_category_tab_attack(combat_spiked:preview, combat_spiked:name, combat_spiked, $obj, combat_spiked:specbar_layer);
+    case weapon_stab : ~.weapon_category_tab_attack(combat_stabsword:preview, combat_stabsword:name, combat_stabsword, $obj, combat_stabsword:specbar_layer);
     // ranged
-    case weapon_bow : ~.weapon_category_tab_attack(combat_bow:preview, combat_bow:name, combat_bow, $obj);
-    case weapon_crossbow : ~.weapon_category_tab_attack(combat_crossbow:preview, combat_crossbow:name, combat_crossbow, $obj);
-    case weapon_thrown, weapon_javelin : ~.weapon_category_tab_attack(combat_thrown:preview, combat_thrown:name, combat_thrown, $obj);
+    case weapon_bow : ~.weapon_category_tab_attack(combat_bow:preview, combat_bow:name, combat_bow, $obj, combat_bow:specbar_layer);
+    case weapon_crossbow : ~.weapon_category_tab_attack(combat_crossbow:preview, combat_crossbow:name, combat_crossbow, $obj, combat_crossbow:specbar_layer);
+    case weapon_thrown, weapon_javelin : ~.weapon_category_tab_attack(combat_thrown:preview, combat_thrown:name, combat_thrown, $obj, combat_thrown:specbar_layer);
     // magic
-    case weapon_staff : ~.weapon_category_tab_attack(combat_staff_2:preview, combat_staff_2:name, combat_staff_2, $obj);
+    case weapon_staff : ~.weapon_category_tab_attack(combat_staff_2:preview, combat_staff_2:name, combat_staff_2, $obj, null);
     // unarmed everything else
     case default : ~.weapon_category_tab_attack_unarmed($obj);
 }
 
-[proc,.weapon_category_tab_attack](component $component1, component $component2, interface $interface, obj $obj)
+[proc,.weapon_category_tab_attack](component $component1, component $component2, interface $interface, obj $obj, component $specbar_layer)
 .if_setobject($component1, $obj, 200);
 .if_settext($component2, "<oc_name($obj)>");
+if ($specbar_layer ! null) {
+    if (oc_param($obj, specwep) = ^true) {
+        .if_sethide($specbar_layer, false);
+    } else {
+        .if_sethide($specbar_layer, true);
+    }
+}
 .if_settab($interface, 0);
 
 // sends the unarmed interface tab
@@ -196,6 +215,11 @@ switch_category (oc_category($obj)) {
 if ($obj = null) {
     .if_settext(combat_unarmed:name, "unarmed");
 } else {
+    if (oc_param($obj, specwep) = ^true) {
+        .if_sethide(combat_unarmed:specbar_layer, false);
+    } else {
+        .if_sethide(combat_unarmed:specbar_layer, true);
+    }
     .if_settext(combat_unarmed:name, "<oc_name($obj)>"); // gnomeball uses this
 }
 .if_settab(combat_unarmed, 0);
