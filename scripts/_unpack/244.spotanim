@@ -3,9 +3,9 @@ model=model_166
 hasalpha=true
 anim=seq_1053
 
-[spotanim_245]
+[stunned_thieving]
 model=model_3070_spotanim
-anim=seq_1054
+anim=stunned_thieving
 ambient=40
 contrast=40
 

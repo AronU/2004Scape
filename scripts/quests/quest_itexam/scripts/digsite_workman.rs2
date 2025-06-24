@@ -70,15 +70,15 @@ if(stat_random(thieving, 100, 240) = false) {
     mes("You fail to pick the workman's pocket.");
     npc_setmode(playerface);
     p_delay(0);
-    spotanim_pl(stunned, 124, 0);
+    spotanim_pl(stunned_thieving, 124, 0);
     sound_synth(stunned, 0, 0);
     anim(%com_defendanim, 0);
     ~damage_self(1);
     npc_setmode(null);
 
     mes("You've been stunned!");    
-    %action_delay = calc(map_clock + 13);
-    %stunned = calc(map_clock + 13);
+    %action_delay = calc(map_clock + 8);
+    %stunned = calc(map_clock + 8);
     walktrigger(stunned);
 } else {
     anim(human_pickpocket, 0);
