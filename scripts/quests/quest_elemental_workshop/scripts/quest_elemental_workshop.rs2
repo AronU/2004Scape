@@ -194,7 +194,8 @@ p_delay(1);
 
 [oplocu,elemental_workshop_furnace]
 def_obj $last_useitem = last_useitem;
-p_delay(0);
+p_teleport(0_42_154_36_19);
+p_delay(1);
 if($last_useitem = elemental_workshop_lava_bowl_full) {
     mes("You empty the lava into the furnace.");
     inv_del(inv, elemental_workshop_lava_bowl_full, 1);
