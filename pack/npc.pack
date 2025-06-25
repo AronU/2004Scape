@@ -1017,8 +1017,8 @@
 1016=chompybird_dead
 1017=npc_1017
 1018=npc_1018
-1019=npc_1019
-1020=npc_1020
-1021=npc_1021
-1022=npc_1022
-1023=npc_1023
+1019=elemental_fire
+1020=elemental_earth
+1021=elemental_air
+1022=elemental_water
+1023=earth_elemental_rock_version

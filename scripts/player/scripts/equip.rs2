@@ -46,6 +46,16 @@ if (p_finduid(uid) = true) {
     }
 
     ~update_all($previous);
+    
+    if($obj = elemental_shield) {
+        spotanim_pl(elemental_shield_equip, 92, 0);
+        sound_synth(shield_appear, 0, 0);
+        p_delay(0);
+    } else if($obj = ibanstaff) {
+        // https://youtu.be/n_ip_vEDbCA?si=0uESoOC98Fvl7HqS&t=2333
+        mes("You equip the staff of Iban.");
+    }
+
 }
 
 [proc,unequip](int $slot)
@@ -63,6 +73,9 @@ if (p_finduid(uid) = true) {
     if ($overflow >= $count) {
         mes("You don't have enough free space to do that.");
         return;
+    }
+    if($obj = elemental_shield) {
+        sound_synth(shield_appear, 0, 0);
     }
     inv_moveitem(worn, inv, $obj, sub($count, $overflow));
     ~update_all($obj);

@@ -8,6 +8,7 @@ switch_obj (last_useitem)
     case caveorb1, caveorb2, caveorb3, caveorb4 :
         if(loc_type = furnace_upass) @destroy_orboflight(last_useitem);
         ~displaymessage(^dm_default);
+    case elemental_workshop_ore : mes("This furnace is not hot enough to smelt elemental ore.");
     case default :
         if (oc_category(last_useitem) = category_91) {
             @smelt_ore(last_useitem);

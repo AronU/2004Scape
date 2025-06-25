@@ -693,7 +693,7 @@ shadowed=yes
 text=Dragon Slayer
 colour=0xFF0000
 
-[com_77]
+[elemental_workshop]
 layer=com_0
 type=text
 x=10

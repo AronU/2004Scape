@@ -1,4 +1,4 @@
-[seq_1027]
+[elemental_fire_ready]
 replayoff=7
 frame1=anim_5618
 frame2=anim_5625
@@ -8,7 +8,7 @@ frame5=anim_5597
 frame6=anim_5606
 frame7=anim_5612
 
-[seq_1028]
+[elemental_fire_walk]
 replayoff=7
 frame1=anim_5626
 frame2=anim_5632
@@ -18,7 +18,7 @@ frame5=anim_5607
 frame6=anim_5613
 frame7=anim_5619
 
-[seq_1029]
+[elemental_fire_attack]
 frame1=anim_5603
 frame2=anim_5609
 frame3=anim_5616
@@ -30,7 +30,7 @@ frame8=anim_5604
 frame9=anim_5610
 frame10=anim_5622
 
-[seq_1030]
+[elemental_fire_defend]
 frame1=anim_5623
 frame2=anim_5629
 frame3=anim_5636
@@ -42,7 +42,7 @@ frame8=anim_5624
 frame9=anim_5630
 frame10=anim_5634
 
-[seq_1031]
+[elemental_fire_death]
 priority=10
 frame1=anim_5614
 frame2=anim_5620
@@ -53,7 +53,7 @@ frame6=anim_5600
 frame7=anim_5608
 frame8=anim_5615
 
-[seq_1032]
+[elemental_fire_summon]
 frame1=anim_7816
 frame2=anim_7819
 frame3=anim_7822
@@ -65,14 +65,14 @@ frame8=anim_7817
 frame9=anim_7820
 frame10=anim_7814
 
-[seq_1033]
+[elemental_earth_ready]
 frame1=anim_5324
 frame2=anim_5329
 frame3=anim_5335
 frame4=anim_5340
 frame5=anim_5309
 
-[seq_1034]
+[elemental_earth_walk]
 frame1=anim_5330
 frame2=anim_5336
 frame3=anim_5341
@@ -82,7 +82,7 @@ frame6=anim_5319
 frame7=anim_5325
 frame8=anim_5331
 
-[seq_1035]
+[elemental_earth_attack]
 stretches=true
 frame1=anim_5312
 frame2=anim_5317
@@ -93,7 +93,7 @@ frame6=anim_5338
 frame7=anim_5307
 frame8=anim_5313
 
-[seq_1036]
+[elemental_earth_defend]
 frame1=anim_5328
 frame2=anim_5334
 frame3=anim_5339
@@ -102,7 +102,7 @@ frame5=anim_5314
 frame6=anim_5318
 frame7=anim_5323
 
-[seq_1037]
+[elemental_earth_death]
 stretches=true
 frame1=anim_5320
 frame2=anim_5326
@@ -113,7 +113,7 @@ frame6=anim_5311
 frame7=anim_5316
 frame8=anim_5321
 
-[seq_1038]
+[elemental_earth_summon]
 stretches=true
 frame1=anim_7807
 frame2=anim_7809
@@ -124,7 +124,7 @@ frame6=anim_7813
 frame7=anim_7806
 frame8=anim_7808
 
-[seq_1039]
+[elemental_air_ready]
 frame1=anim_4953
 frame2=anim_4959
 frame3=anim_5301
@@ -132,7 +132,7 @@ frame4=anim_5305
 frame5=anim_4941
 frame6=anim_4946
 
-[seq_1040]
+[elemental_air_attack]
 frame1=anim_4943
 frame2=anim_4948
 frame3=anim_4952
@@ -144,7 +144,7 @@ frame8=anim_4944
 frame9=anim_4949
 frame10=anim_4957
 
-[seq_1041]
+[elemental_air_death]
 frame1=anim_4950
 frame2=anim_4954
 frame3=anim_4960
@@ -155,14 +155,14 @@ frame7=anim_4947
 frame8=anim_4951
 frame9=anim_4955
 
-[seq_1042]
+[elemental_air_defend]
 frame1=anim_4958
 frame2=anim_5300
 frame3=anim_5304
 frame4=anim_4940
 frame5=anim_4945
 
-[seq_1043]
+[elemental_air_summon]
 frame1=anim_7793
 frame2=anim_7796
 frame3=anim_7799
@@ -178,7 +178,7 @@ frame12=anim_7800
 frame13=anim_7802
 frame14=anim_7804
 
-[seq_1044]
+[elemental_water_attack]
 frame1=anim_5348
 frame2=anim_5512
 frame3=anim_5527
@@ -191,14 +191,14 @@ frame9=anim_5515
 frame10=anim_5545
 frame11=anim_5562
 
-[seq_1045]
+[elemental_water_ready]
 frame1=anim_5536
 frame2=anim_5551
 frame3=anim_5568
 frame4=anim_5583
 frame5=anim_5345
 
-[seq_1046]
+[elemental_water_defend]
 frame1=anim_5549
 frame2=anim_5566
 frame3=anim_5581
@@ -207,14 +207,14 @@ frame5=anim_5507
 frame6=anim_5517
 frame7=anim_5532
 
-[seq_1047]
+[elemental_water_walk]
 frame1=anim_5552
 frame2=anim_5570
 frame3=anim_5584
 frame4=anim_5346
 frame5=anim_5508
 
-[seq_1048]
+[elemental_water_death]
 frame1=anim_5523
 frame2=anim_5537
 frame3=anim_5554
@@ -228,7 +228,7 @@ frame10=anim_5530
 frame11=anim_5543
 frame12=anim_5560
 
-[seq_1049]
+[elemental_bellow_pump]
 frame1=anim_5646
 frame2=anim_5651
 frame3=anim_5656
@@ -244,7 +244,7 @@ frame12=anim_5658
 frame13=anim_5662
 frame14=anim_5665
 
-[seq_1050]
+[elemental_bellow_pump_reverse]
 frame1=anim_5639
 frame2=anim_5643
 frame3=anim_5648
@@ -260,7 +260,7 @@ frame12=anim_5650
 frame13=anim_5655
 frame14=anim_5659
 
-[seq_1051]
+[elemental_wheel_spin]
 frame1=anim_7785
 frame2=anim_7788
 frame3=anim_7791
@@ -275,7 +275,7 @@ frame11=anim_7790
 frame12=anim_5672
 frame13=anim_6949
 
-[seq_1052]
+[elemental_pipe_end]
 frame1=anim_5670
 frame2=anim_5671
 frame3=anim_5667
@@ -297,7 +297,7 @@ frame18=anim_5667
 frame19=anim_5668
 frame20=anim_5669
 
-[seq_1053]
+[elemental_shield_appear]
 frame1=anim_4936
 frame2=anim_4930
 frame3=anim_4931

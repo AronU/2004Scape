@@ -136,6 +136,15 @@ if (%zanaris_progress < ^zanaris_complete) {
 }
 return(true);
 
+[label,elemental_shield_equip](int $slot)
+if (testbit(%elemental_workshop_bits, ^elemental_workshop_complete) = ^false) {
+    mes("You need to complete the Elemental Workshop quest"); // osrs, guessed the linebreak, confirm for 2004
+    mes("before you can equip the shield.");
+    return;
+}
+~equip($slot);
+
+
 [label,levelrequire_iban_staff](int $slot)
 // https://oldschool.runescape.wiki/w/Update:Various_tweaks_to_the_game
 // > Fixed a bug which meant the Iban-staff could be wielded at level 49, despite stating a requirement of 50.
@@ -150,6 +159,4 @@ if (stat(attack) < 50) {
     mes("You need to have an Attack level of 50.");
     return;
 }
-// https://youtu.be/n_ip_vEDbCA?si=0uESoOC98Fvl7HqS&t=2333
-mes("You equip the staff of Iban.");
 ~equip($slot);

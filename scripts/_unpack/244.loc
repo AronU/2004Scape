@@ -7,7 +7,7 @@ forcedecor=true
 sharelight=true
 model=model_154
 
-[loc_3389]
+[elemental_workshop_bookcase]
 length=2
 op1=Search
 forceapproach=east
@@ -15,33 +15,37 @@ model=model_loc_380_8
 name=Bookcase
 desc=A good source of books!
 
-[loc_3390]
+[elemental_workshop_oddwall_r]
 active=yes
 op1=Push
 model=model_loc_3209
 name=Odd looking wall
 desc=A strange crack cuts into the wall.
+category=double_door_open_and_close_right
+param=next_loc_stage,elemental_workshop_oddwall_r_open
 
-[loc_3391]
+[elemental_workshop_oddwall_l]
 active=yes
 op1=Push
 model=model_loc_3211
 name=Odd looking wall
 desc=A strange crack cuts into the wall.
+category=double_door_open_and_close_left
+param=next_loc_stage,elemental_workshop_oddwall_l_open
 
-[loc_3392]
+[elemental_workshop_oddwall_r_open]
 active=yes
 model=model_loc_3209
 name=Odd looking wall
 desc=A strange crack cuts into the wall.
 
-[loc_3393]
+[elemental_workshop_oddwall_l_open]
 active=yes
 model=model_loc_3211
 name=Odd looking wall
 desc=A strange crack cuts into the wall.
 
-[loc_3394]
+[elemental_workshop_box_1]
 op1=Search
 recol1s=6309
 recol1d=4228
@@ -49,7 +53,7 @@ model=model_loc_0_8
 name=Crate
 desc=A wooden crate for storage.
 
-[loc_3395]
+[elemental_workshop_box_2]
 op1=Search
 recol1s=6309
 recol1d=4228
@@ -57,19 +61,19 @@ model=model_loc_355_8
 name=Crate
 desc=A wooden crate for storage.
 
-[loc_3396]
+[elemental_workshop_box_3]
 op1=Search
 model=model_loc_359_8
 name=Boxes
 desc=A pile of boxes for storage.
 
-[loc_3397]
+[elemental_workshop_box_4]
 op1=Search
 model=model_loc_359_8
 name=Boxes
 desc=A pile of boxes for storage.
 
-[loc_3398]
+[elemental_workshop_box_5]
 op1=Search
 recol1s=6309
 recol1d=4228
@@ -77,13 +81,13 @@ model=model_loc_355_8
 name=Crate
 desc=A wooden crate for storage.
 
-[loc_3399]
+[elemental_workshop_box_6]
 op1=Search
 model=model_loc_359_8
 name=Crate
 desc=A wooden crate for storage.
 
-[loc_3400]
+[elemental_workshop_box_7]
 op1=Search
 recol1s=6309
 recol1d=4228
@@ -91,7 +95,7 @@ model=model_loc_355_8
 name=Crate
 desc=A wooden crate for storage.
 
-[loc_3401]
+[elemental_workshop_box_8]
 op1=Search
 recol1s=6309
 recol1d=4228
@@ -99,7 +103,7 @@ model=model_loc_0_8
 name=Crate
 desc=A wooden crate for storage.
 
-[loc_3402]
+[elemental_workshop_workbench]
 width=3
 recol1s=15855
 recol1d=5250
@@ -107,7 +111,7 @@ model=model_loc_3402_8
 name=Workbench
 desc=Used for fashioning metal items.
 
-[loc_3403]
+[elemental_workshop_rock]
 op1=Mine
 recol1s=15854
 recol1d=12580
@@ -117,7 +121,7 @@ model=model_3184
 name=Pile of Rock
 desc=A pile of Elemental rock.
 
-[loc_3404]
+[elemental_workshop_valve_1]
 op1=Turn
 recol1s=9545
 recol1d=5250
@@ -125,7 +129,7 @@ model=model_loc_2844_8
 name=Water Valve
 desc=A valve to start and stop the flow of water.
 
-[loc_3405]
+[elemental_workshop_valve_2]
 op1=Turn
 recol1s=9545
 recol1d=5250
@@ -133,7 +137,7 @@ model=model_loc_2844_8
 name=Water Valve
 desc=A valve to start and stop the flow of water.
 
-[loc_3406]
+[elemental_workshop_water_lever]
 op1=Pull
 model=model_loc_670_8
 name=Lever
@@ -158,13 +162,13 @@ model=model_loc_3408_8
 name=Water wheel
 desc=It spins
 
-[loc_3409]
+[elemental_workshop_air_lever]
 op1=Pull
 model=model_loc_670_8
 name=Lever
 desc=This lever can be operated.
 
-[loc_3410]
+[elemental_workshop_bellows_l]
 width=2
 length=5
 op1=Fix
@@ -176,7 +180,7 @@ model=model_loc_3410_8
 name=Bellows
 desc=Big bellows
 
-[loc_3411]
+[elemental_workshop_bellows_r]
 width=2
 length=5
 op1=Fix
@@ -198,7 +202,7 @@ recol2s=15855
 recol2d=5250
 model=model_loc_3412_8
 
-[loc_3413]
+[elemental_workshop_furnace]
 width=3
 length=3
 recol1s=5285
@@ -213,7 +217,7 @@ model=model_loc_165_8
 name=Furnace
 desc=A furnace with an air blast pipe.
 
-[loc_3414]
+[elemental_workshop_trough]
 length=5
 recol1s=17833
 recol1d=10467
@@ -223,7 +227,7 @@ model=model_345
 name=Lava trough
 desc=A small trough full of lava
 
-[loc_3415]
+[elemental_workshop_spiralstairstop]
 op1=Climb-down
 forceapproach=east
 mapscene=7
@@ -233,7 +237,7 @@ model=model_loc_1741_8
 name=Staircase
 desc=I can climb down these stairs.
 
-[loc_3416]
+[elemental_workshop_spiralstairs]
 width=2
 length=2
 op1=Climb-up
@@ -242,7 +246,7 @@ model=model_loc_1738_8
 name=Staircase
 desc=I can climb up these stairs.
 
-[loc_3417]
+[elemental_workshop_lever_pulled]
 model=model_loc_669_8
 name=Lever
 desc=This lever can be operated.

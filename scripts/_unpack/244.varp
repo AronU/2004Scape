@@ -7,7 +7,8 @@
 [varp_298]
 transmit=yes
 
-[varp_299]
+[elemental_workshop_bits]
+scope=perm
 
 [sa_energy]
 scope=perm
