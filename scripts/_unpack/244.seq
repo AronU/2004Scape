@@ -52,6 +52,7 @@ frame5=anim_5586
 frame6=anim_5600
 frame7=anim_5608
 frame8=anim_5615
+delay8=20000
 
 [elemental_fire_summon]
 frame1=anim_7816
@@ -112,6 +113,7 @@ frame5=anim_5306
 frame6=anim_5311
 frame7=anim_5316
 frame8=anim_5321
+delay8=20000
 
 [elemental_earth_summon]
 stretches=true
@@ -153,6 +155,7 @@ frame5=anim_4938
 frame6=anim_4942
 frame7=anim_4947
 frame8=anim_4951
+delay8=20000
 frame9=anim_4955
 
 [elemental_air_defend]
@@ -592,8 +595,8 @@ frame9=anim_4924
 
 [seq_1068]
 priority=6
-stretches=true
-righthand=hide
+stretches=yes
+lefthand=hide
 frame1=anim_4267
 frame2=anim_4566
 frame3=anim_4585
