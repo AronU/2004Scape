@@ -1,8 +1,8 @@
-[if_button,music:com_203]
+[if_button,music:com_180]
 %music_mode = 1;
 @music_playbyregion(coord);
 
-[if_button,music:com_204]
+[if_button,music:com_181]
 %music_mode = 0;
 
 // ----

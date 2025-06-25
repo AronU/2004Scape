@@ -48,7 +48,7 @@ if($vial_count > 0) {
 }
 ~mesbox("However, you don't have the right components to cast this spell.");
 
-[if_button,book4:com_3]
+[if_button,book4:com_2]
 @book_flip_page(^book_direction_backward, 0, 4, book_of_binding_page);
 
 [label,enchant_vials](int $count)

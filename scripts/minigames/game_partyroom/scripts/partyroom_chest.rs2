@@ -61,7 +61,7 @@ if($total = 0 | inv_itemspace(partyroom_tempinv, $obj, $total, inv_size(partyroo
 }
 inv_moveitem(inv, partyroom_tempinv, $obj, $total);
 
-[if_button,party_drop_chest:com_94]
+[if_button,party_drop_chest:com_89]
 def_int $i = 0;
 def_boolean $moveditem = false;
 if(inv_freespace(partyroom_tempinv) = inv_size(partyroom_tempinv)) {

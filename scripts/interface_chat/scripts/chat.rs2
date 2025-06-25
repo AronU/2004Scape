@@ -2,8 +2,8 @@
 if_settext(multi2:com_0, "Select an Option");
 if_settext(multi2:com_1, $string1);
 if_settext(multi2:com_2, $string2);
-if_sethide(multi2:com_3, false);
-if_sethide(multi2:com_6, true);
+if_sethide(multi2:com_5, false);
+if_sethide(multi2:com_8, true);
 
 if_openchat(multi2);
 if_setresumebuttons(multi2:com_1, multi2:com_2, null, null, null);
@@ -19,8 +19,8 @@ switch_component (last_com) {
 if_settext(multi2:com_0, $headertext);
 if_settext(multi2:com_1, $string1);
 if_settext(multi2:com_2, $string2);
-if_sethide(multi2:com_3, true);
-if_sethide(multi2:com_6, false);
+if_sethide(multi2:com_5, true);
+if_sethide(multi2:com_8, false);
 
 if_openchat(multi2);
 if_setresumebuttons(multi2:com_1, multi2:com_2, null, null, null);
@@ -36,8 +36,8 @@ if_settext(multi3:com_0, "Select an Option");
 if_settext(multi3:com_1, $string1);
 if_settext(multi3:com_2, $string2);
 if_settext(multi3:com_3, $string3);
-if_sethide(multi3:com_4, false);
-if_sethide(multi3:com_7, true);
+if_sethide(multi3:com_6, false);
+if_sethide(multi3:com_9, true);
 
 if_openchat(multi3);
 if_setresumebuttons(multi3:com_1, multi3:com_2, multi3:com_3, null, null);
@@ -55,8 +55,8 @@ if_settext(multi3:com_0, $headertext);
 if_settext(multi3:com_1, $string1);
 if_settext(multi3:com_2, $string2);
 if_settext(multi3:com_3, $string3);
-if_sethide(multi3:com_4, true);
-if_sethide(multi3:com_7, false);
+if_sethide(multi3:com_6, true);
+if_sethide(multi3:com_9, false);
 
 if_openchat(multi3);
 if_setresumebuttons(multi3:com_1, multi3:com_2, multi3:com_3, null, null);
@@ -74,7 +74,7 @@ if_settext(multi4:com_1, $string1);
 if_settext(multi4:com_2, $string2);
 if_settext(multi4:com_3, $string3);
 if_settext(multi4:com_4, $string4);
-if_sethide(multi4:com_5, false);
+if_sethide(multi4:com_7, false);
 if_sethide(multi4:com_8, true);
 
 if_openchat(multi4);
@@ -94,7 +94,7 @@ if_settext(multi4:com_1, $string1);
 if_settext(multi4:com_2, $string2);
 if_settext(multi4:com_3, $string3);
 if_settext(multi4:com_4, $string4);
-if_sethide(multi4:com_5, true);
+if_sethide(multi4:com_7, true);
 if_sethide(multi4:com_8, false);
 
 if_openchat(multi4);
@@ -115,7 +115,7 @@ if_settext(multi5:com_2, $string2);
 if_settext(multi5:com_3, $string3);
 if_settext(multi5:com_4, $string4);
 if_settext(multi5:com_5, $string5);
-if_sethide(multi5:com_6, false);
+if_sethide(multi5:com_8, false);
 if_sethide(multi5:com_9, true);
 
 if_openchat(multi5);
@@ -137,7 +137,7 @@ if_settext(multi5:com_2, $string2);
 if_settext(multi5:com_3, $string3);
 if_settext(multi5:com_4, $string4);
 if_settext(multi5:com_5, $string5);
-if_sethide(multi5:com_6, true);
+if_sethide(multi5:com_8, true);
 if_sethide(multi5:com_9, false);
 
 if_openchat(multi5);

@@ -200,5 +200,5 @@ if(p_finduid(uid) = false){
 }
 inv_clear(trail_puzzleinv);
 ~init_trail_puzzle;
-inv_transmit(trail_puzzleinv, trail_puzzle:com_4);
+inv_transmit(trail_puzzleinv, trail_puzzle:com_3);
 if_openmain(trail_puzzle);
