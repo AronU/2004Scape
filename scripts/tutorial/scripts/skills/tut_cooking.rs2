@@ -4,6 +4,10 @@ if (oc_param(last_useitem, is_water_source) = ^true) {
 }
 ~displaymessage(^dm_default);
 
+[oploc1,newbierange]
+// https://youtu.be/Quwc_TfPW8Q?si=6Q-JP8JicD-KyFF9&t=143
+~mesbox("To cook something you need to use the item you would like to cook on the cooking range. Do this by clicking the item in your inventory and then clicking on the range.");
+
 [oplocu,newbierange]
 if (last_useitem = bread_dough) {
     anim(human_potterywheel, 0);

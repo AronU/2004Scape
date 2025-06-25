@@ -41,6 +41,9 @@ if(%runemysteries_progress = ^runemysteries_not_started) {
     }
 }
 
+[opnpc3,head_wizard]
+@teleport_to_essence_mine(^essence_mine_to_sedridor);
+
 [opnpcu,head_wizard]
 // no air talisman interaction i'm assuming since osrs dialogue is streamlined here (it starts from beginning in osrs)
 if(last_useitem = research_notes & %runemysteries_progress = ^runemysteries_received_notes) @head_wizard_notes;

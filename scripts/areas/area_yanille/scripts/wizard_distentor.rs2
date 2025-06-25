@@ -11,3 +11,6 @@ if(%runemysteries_progress = ^runemysteries_complete) {
 }
 ~chatplayer("<p,neutral>Nothing thanks, I'm just looking around.");
 ~chatnpc("<p,neutral>That's fine with me.");
+
+[opnpc3,guild_wizard]
+@teleport_to_essence_mine(^essence_mine_to_disentor);

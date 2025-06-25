@@ -10,6 +10,15 @@ if (last_useitem = copper_ore | last_useitem = tin_ore) {
     ~displaymessage(^dm_default);
 }
 
+[oploc1,newbiefurnace]
+// has arrivedelay on osrs, but prob didnt exist originally since no seq
+if (%tutorial_progress < ^newbie_mining_instructor_before_smelt_bronze_bar) {
+    ~mesbox("This is a furnace for smelting metal.|You'll learn how to use it soon.");
+    return;
+}
+// https://youtu.be/Quwc_TfPW8Q?si=4EbytLyuAdOxaxhv&t=269
+~mesbox("This is a furnace for smelting metal. To use it simply click on the ore you wish to smelt then click on the furnace you would like to use.");
+
 [label,tut_smelting]
 
 if (inv_total(inv, tin_ore) < 1) {

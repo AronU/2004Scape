@@ -10,3 +10,6 @@ if(%runemysteries_progress = ^runemysteries_complete) {
 }
 ~chatplayer("<p,neutral>Nothing for now, thanks!");
 ~chatnpc("<p,neutral>Ok. Just remember that a friend of a wizard is a friend of mine!");
+
+[opnpc3,gnome_brimstail]
+@teleport_to_essence_mine(^essence_mine_to_brimstail);
