@@ -1,8 +1,8 @@
-[loc_3387]
+[shipfloor]
 forcedecor=yes
 model=model_loc_3387
 
-[loc_3388]
+[shiprope_withfloor]
 forcedecor=yes
 sharelight=yes
 model=model_loc_3388
@@ -143,7 +143,7 @@ model=model_loc_670
 name=Lever
 desc=This lever can be operated.
 
-[loc_3407]
+[elemental_wheel]
 length=3
 recol1s=17833
 recol1d=10467
@@ -153,7 +153,7 @@ model=model_loc_3407
 name=Water wheel
 desc=It spins
 
-[loc_3408]
+[elemental_wheel_base]
 recol1s=17833
 recol1d=10467
 recol2s=15855
@@ -193,7 +193,7 @@ model=model_loc_3410
 name=Bellows
 desc=Big bellows
 
-[loc_3412]
+[elemental_piping_centered]
 width=2
 active=no
 recol1s=17833
@@ -251,7 +251,7 @@ model=model_loc_669
 name=Lever
 desc=This lever can be operated.
 
-[loc_3418]
+[elemental_wallsupport]
 ambient=20
 active=no
 recol1s=5248
@@ -260,7 +260,7 @@ recol2s=4228
 recol2d=5250
 model=model_loc_1872
 
-[loc_3419]
+[elemental_piping]
 ambient=20
 active=no
 recol1s=17833
@@ -269,7 +269,7 @@ recol2s=15855
 recol2d=5250
 model=model_loc_3412
 
-[loc_3420]
+[elemental_piping_corner]
 ambient=20
 active=no
 recol1s=17833
@@ -278,7 +278,7 @@ recol2s=15855
 recol2d=5250
 model=model_350
 
-[loc_3421]
+[elemental_floorpipe_float]
 ambient=20
 active=no
 recol1s=17833
@@ -287,7 +287,7 @@ recol2s=15855
 recol2d=5250
 model=model_338
 
-[loc_3422]
+[elemental_boiler]
 active=no
 length=2
 recol1s=17833
@@ -296,7 +296,7 @@ recol2s=15855
 recol2d=5250
 model=model_loc_3422
 
-[loc_3423]
+[elemental_boiler_left]
 active=no
 length=2
 mirror=yes
@@ -306,28 +306,28 @@ recol2s=15855
 recol2d=5250
 model=model_loc_3422
 
-[loc_3424]
+[elemental_wallpipes1]
 active=no
 ambient=20
 recol1s=15855
 recol1d=5250
 model=model_loc_3424
 
-[loc_3425]
+[elemental_wallpipes2]
 active=no
 ambient=20
 recol1s=15855
 recol1d=5250
 model=model_loc_3425
 
-[loc_3426]
+[elemental_wallpipes3]
 active=no
 ambient=20
 recol1s=15855
 recol1d=5250
 model=model_loc_3426
 
-[loc_3427]
+[elemental_wallpipes1_left]
 active=no
 mirror=yes
 ambient=20
@@ -335,7 +335,7 @@ recol1s=15855
 recol1d=5250
 model=model_loc_3424
 
-[loc_3428]
+[elemental_border]
 sharelight=yes
 recol1s=15855
 recol1d=5250

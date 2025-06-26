@@ -368,7 +368,7 @@ frame54=anim_6255
 frame55=anim_6258
 frame56=anim_6261
 
-[seq_1055]
+[sp_attackglow]
 frame1=anim_7853
 frame2=anim_7855
 frame3=anim_7857
@@ -381,7 +381,7 @@ frame9=anim_7856
 frame10=anim_7859
 frame11=anim_7861
 
-[seq_1056]
+[rampage]
 priority=6
 stretches=true
 frame1=anim_4688
@@ -396,7 +396,7 @@ frame9=anim_4762
 frame10=anim_4657
 frame11=anim_4682
 
-[seq_1057]
+[sanctuary]
 priority=6
 stretches=true
 frame1=anim_4573
@@ -411,7 +411,7 @@ frame9=anim_4597
 frame10=anim_4757
 frame11=anim_4263
 
-[seq_1058]
+[cleave]
 priority=6
 stretches=true
 frame1=anim_4673
@@ -425,7 +425,7 @@ frame8=anim_4676
 frame9=anim_4749
 frame10=anim_4600
 
-[seq_1059]
+[sp_attack_cleave_spotanim]
 frame1=anim_7915
 frame2=anim_7917
 frame3=anim_7909
@@ -437,7 +437,7 @@ frame8=anim_7916
 frame9=anim_7918
 frame10=anim_7913
 
-[seq_1060]
+[shatter]
 priority=6
 stretches=true
 frame1=anim_4589
@@ -460,7 +460,7 @@ frame17=anim_4577
 frame18=anim_4599
 frame19=anim_4654
 
-[seq_1061]
+[sp_attack_shatter_spotanim]
 frame1=anim_7897
 frame2=anim_7901
 frame3=anim_7905
@@ -481,7 +481,7 @@ frame17=anim_7896
 frame18=anim_7900
 frame19=anim_7904
 
-[seq_1062]
+[puncture]
 priority=6
 stretches=true
 frame1=anim_4670
@@ -503,7 +503,7 @@ frame16=anim_4271
 frame17=anim_4570
 frame18=anim_4591
 
-[seq_1063]
+[sp_attack_puncture_spotanim]
 frame1=anim_7883
 frame2=anim_7886
 frame3=anim_7889
@@ -523,7 +523,7 @@ frame16=anim_7874
 frame17=anim_7877
 frame18=anim_7880
 
-[seq_1064]
+[shove]
 priority=6
 stretches=true
 frame1=anim_4656
@@ -536,7 +536,7 @@ frame7=anim_4602
 frame8=anim_4659
 frame9=anim_4683
 
-[seq_1065]
+[sp_attack_shove_spotanim]
 frame1=anim_7867
 frame2=anim_7869
 frame3=anim_7871
@@ -547,7 +547,7 @@ frame7=anim_7866
 frame8=anim_7868
 frame9=anim_7870
 
-[seq_1066]
+[stunned_shove]
 frame1=anim_6259
 frame2=anim_6262
 frame3=anim_6248
@@ -593,7 +593,7 @@ frame7=anim_4929
 frame8=anim_4922
 frame9=anim_4924
 
-[seq_1068]
+[chainhit]
 priority=6
 stretches=yes
 lefthand=hide
@@ -606,7 +606,7 @@ frame6=anim_4742
 frame7=anim_4763
 frame8=anim_4269
 
-[seq_1069]
+[sp_attack_chainhit_launch_spotanim]
 frame1=anim_7833
 frame2=anim_7835
 frame3=anim_7836
@@ -616,7 +616,7 @@ frame6=anim_7831
 frame7=anim_7832
 frame8=anim_7834
 
-[seq_1070]
+[sp_attack_chainhit_travel_spotanim]
 frame1=anim_7848
 frame2=anim_7850
 frame3=anim_7843
@@ -632,7 +632,7 @@ frame8=anim_7849
 
 [seq_1073]
 
-[seq_1074]
+[snapshot]
 priority=6
 stretches=true
 frame1=anim_4260
@@ -656,7 +656,7 @@ frame18=anim_4611
 frame19=anim_4669
 frame20=anim_4764
 
-[seq_1075]
+[sp_attack_snapshot_spotanim]
 frame1=anim_7842
 frame2=anim_7837
 frame3=anim_7838
