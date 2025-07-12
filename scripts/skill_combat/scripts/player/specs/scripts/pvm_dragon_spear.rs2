@@ -14,7 +14,7 @@ if (npc_param(defend_sound) ! null) {
 }
 def_coord $end_coord = ~dragon_spear_push(~coord_direction(coord, npc_coord), npc_coord);
 if (nc_size(npc_type) = 1) { // only 1x1 npcs can be pushed
-    if ($end_coord ! null & lineofwalk(npc_coord, $end_coord) = true) {
+    if ($end_coord ! null) {
         npc_tele($end_coord);
     }
 }
@@ -45,5 +45,8 @@ switch_int ($dir) {
             $end_coord = movecoord($target_coord, 0, 0, -1);
         }
 }
-return ($end_coord);
+if (lineofwalk($target_coord, $end_coord) = true) {
+    return ($end_coord);
+}
+return ($target_coord);
 

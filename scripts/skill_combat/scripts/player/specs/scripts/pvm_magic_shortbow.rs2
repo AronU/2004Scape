@@ -26,7 +26,6 @@ def_int $duration = ~npc_projectile(coord, npc_uid, sp_attack_glow_arrow_travel,
 ~ranged_dropammo_npc($ammo, divide($duration, 30));
 
 ~pvm_magic_shortbow_spec_hit($ammo, $duration);
-p_delay(0);
 ~pvm_magic_shortbow_spec_hit($ammo, sub($duration, 30));
 
 [proc,pvm_magic_shortbow_spec_hit](obj $ammo, int $delay)
