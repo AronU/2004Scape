@@ -39,13 +39,13 @@ if (~player_npc_hit_roll(%damagetype) = true) {
     }
     if (inv_total(worn, holy_water) > 0) {
         if(npc_param(demonbane_vulnerable) = true) {
-            %com_maxhit = scale(160, 100, %com_maxhit);
+            $maxhit = scale(160, 100, %com_maxhit);
             if(npc_type = nezikchened) {
-                %com_maxhit = add(%com_maxhit, 5);
+                $maxhit = add($maxhit, 5);
             }
             if (npc_stat(defence) >= npc_basestat(defence)) npc_statsub(defence, 0, 5);
         } else {
-             %com_maxhit = 0;
+            $maxhit = 0;
         }
     }
     $damage = randominc(min($maxhit, npc_param(max_dealt)));
