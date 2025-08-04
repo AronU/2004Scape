@@ -115,3 +115,24 @@ recol2s=6342
 recol2d=11458
 category=door_opened
 param=next_loc_stage,loc_1536
+
+[loc_1539]
+name=Door
+desc=Solid bars of iron.
+model=model_loc_37
+op1=Open
+active=yes
+blockrange=no
+category=door_closed
+param=next_loc_stage,loc_1540
+param=open_sound,grate_open
+
+[loc_1540]
+name=Door
+desc=Solid bars of iron.
+model=model_loc_37
+op1=Close
+active=yes
+category=door_opened
+param=next_loc_stage,loc_1539
+param=close_sound,grate_close

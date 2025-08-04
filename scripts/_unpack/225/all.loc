@@ -8495,21 +8495,6 @@ op1=Close
 blockwalk=no
 blockrange=no
 
-[loc_1539]
-name=Door
-desc=Solid bars of iron.
-model=model_loc_37
-op1=Open
-active=yes
-blockrange=no
-
-[loc_1540]
-name=Door
-desc=Solid bars of iron.
-model=model_loc_37
-op1=Close
-active=yes
-
 [loc_1547]
 model=model_loc_1547
 blockrange=no
