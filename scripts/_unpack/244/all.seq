@@ -1,5 +1,5 @@
 [elemental_fire_ready]
-replayoff=7
+loops=7
 frame1=anim_5618
 frame2=anim_5625
 frame3=anim_5631
@@ -9,7 +9,7 @@ frame6=anim_5606
 frame7=anim_5612
 
 [elemental_fire_walk]
-replayoff=7
+loops=7
 frame1=anim_5626
 frame2=anim_5632
 frame3=anim_5638
@@ -596,7 +596,7 @@ frame9=anim_4924
 [chainhit]
 priority=6
 stretches=yes
-lefthand=hide
+replaceheldright=hide
 frame1=anim_4267
 frame2=anim_4566
 frame3=anim_4585

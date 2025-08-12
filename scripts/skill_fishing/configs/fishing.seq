@@ -1,12 +1,12 @@
 [human_harpoon]
-righthand=harpoon
-lefthand=harpoon
+replaceheldleft=harpoon
+replaceheldright=harpoon
 stretches=yes
-replayoff=20
-replaycount=4
+loops=20
+maxloops=4
 preanim_move=delayanim
 postanim_move=abortanim
-restart_mode=reset_loop
+duplicatebehavior=reset_loop
 frame1=anim_534
 frame2=anim_831
 frame3=anim_1114
@@ -29,14 +29,14 @@ frame19=anim_1114
 frame20=anim_831
 
 [human_lobster]
-righthand=hide
-lefthand=lobster_pot
+replaceheldleft=hide
+replaceheldright=lobster_pot
 stretches=yes
-replayoff=11
-replaycount=3
+loops=11
+maxloops=3
 preanim_move=delayanim
 postanim_move=abortanim
-restart_mode=reset_loop
+duplicatebehavior=reset_loop
 frame1=anim_1594
 frame2=anim_1887
 frame3=anim_2185
@@ -50,14 +50,14 @@ frame10=anim_1887
 frame11=anim_1594
 
 [human_largenet]
-righthand=big_net
-lefthand=big_net
+replaceheldleft=big_net
+replaceheldright=big_net
 stretches=yes
-replayoff=11
-replaycount=3
+loops=11
+maxloops=3
 preanim_move=delayanim
 postanim_move=abortanim
-restart_mode=reset_loop
+duplicatebehavior=reset_loop
 frame1=anim_1594
 frame2=anim_1887
 frame3=anim_2185
@@ -71,14 +71,14 @@ frame10=anim_1887
 frame11=anim_1594
 
 [human_smallnet]
-righthand=net
-lefthand=net
+replaceheldleft=net
+replaceheldright=net
 stretches=yes
-replayoff=11
-replaycount=3
+loops=11
+maxloops=3
 preanim_move=delayanim
 postanim_move=abortanim
-restart_mode=reset_loop
+duplicatebehavior=reset_loop
 frame1=anim_1594
 frame2=anim_1887
 frame3=anim_2185
@@ -92,14 +92,14 @@ frame10=anim_1887
 frame11=anim_1594
 
 [human_fishing_casting]
-lefthand=fishing_rod
-righthand=fishing_rod
+replaceheldright=fishing_rod
+replaceheldleft=fishing_rod
 stretches=yes
-replayoff=2
-replaycount=8
+loops=2
+maxloops=8
 preanim_move=delayanim
 postanim_move=abortanim
-restart_mode=reset_loop
+duplicatebehavior=reset_loop
 frame1=anim_1786
 frame2=anim_2085
 frame3=anim_2384
@@ -121,13 +121,13 @@ frame18=anim_1517
 frame19=anim_1812
 
 [human_fish_onspot]
-lefthand=fishing_rod
-righthand=fishing_rod
+replaceheldright=fishing_rod
+replaceheldleft=fishing_rod
 stretches=yes
-replayoff=2
-replaycount=8
+loops=2
+maxloops=8
 preanim_move=delayanim
 postanim_move=abortanim
-restart_mode=reset_loop
+duplicatebehavior=reset_loop
 frame1=anim_1517
 frame2=anim_1812
