@@ -33,8 +33,9 @@ while (npc_findnext = true) {
                 mes("The guards salute you as you walk past.");
             }
             else {
+                // https://youtu.be/5MwrA2Ci39Q?si=WygkpCCpQzjFKaJJ&t=78
                 mes("A guard nods at you as you walk past.");
-                npc_say("I hope the quest is going well <text_gender("Sir", "Madam")>!");
+                npc_say("Hope the quest is going well <text_gender("Sir", "Madam")>!");
             }
             ~open_and_close_double_door2(~check_axis(coord, loc_coord, loc_angle), $side, grate_open);
             return;
