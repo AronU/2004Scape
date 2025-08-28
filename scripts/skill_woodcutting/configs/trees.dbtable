@@ -1,6 +1,6 @@
 [woodcutting_trees]
 column=levelrequired,int
-column=tree,loc,INDEXED,REQUIRED
+column=tree,loc,LIST,INDEXED,REQUIRED
 column=productexp,int
 column=product,namedobj
 column=respawnrate,int
