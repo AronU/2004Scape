@@ -16,17 +16,21 @@ if(inzone(0_42_52_34_45, 0_42_52_45_56, npc_coord) = true) {
     @radimus_postquest;
     return;
 }
-if (%legends_progress = ^legends_not_started) {
+if (%legends_progress >= ^legends_returned_to_radimus & %legends_progress < ^legends_complete) {
+    ~chatnpc("<p,neutral>Hello again! Do go through to the main Legends Guild Hall I'll meet you in there and we can discuss your reward!");
+    return;
+}
+if (%legends_progress = ^legends_got_gilded_totem & inv_total(inv, thtotempolegift) > 0 & inv_total(inv, thkaramjamapcomp) > 0) {
+    @radimus_erkle_hand_in_totem;
+} else if(%legends_progress >= ^legends_started & %legends_progress < ^legends_returned_to_radimus) {
+    ~chatnpc("<p,neutral>Hello there, how is the quest going?");
+    @radimus_erkle_midquest;
+} else if (%legends_progress = ^legends_not_started) {
     ~chatnpc("<p,happy>Good day to you <text_gender("Sir", "m'Lady")>! No doubt you are keen to become a member of the Legends Guild?");
     @multi3("Yes actually, what's involved?", radimus_erkle_yes,
         "Maybe some other time.", radimus_erkle_decline,
         "Who are you?", radimus_erkle_who);
-} else if (inv_total(inv, thtotempolegift) > 0 & inv_total(inv, thkaramjamapcomp) > 0 
-        & %legends_progress = ^legends_got_gilded_totem) {
-        @radimus_erkle_hand_in_totem;
-} else if (%legends_progress >= ^legends_returned_to_radimus & %legends_progress < ^legends_complete) {
-    ~chatnpc("<p,neutral>Hello again! Do go through to the main Legends Guild Hall I'll meet you in there and we can discuss your reward!");
-}
+} 
 @radimus_postquest;
 
 [opnpcu,radimus_erkle]
