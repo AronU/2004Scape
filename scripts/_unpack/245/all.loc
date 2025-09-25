@@ -119,12 +119,14 @@ name=Gate
 desc=A sturdy metal gate.
 model=model_loc_37
 op1=Open
+param=next_loc_stage,inacpip_underground_door
 
 [pip_underground_door2]
 name=Gate
 desc=A sturdy metal gate.
 model=model_loc_37
 op1=Open
+param=next_loc_stage,inacpip_underground_door
 
 [inacpip_underground_door]
 model=model_loc_37
@@ -250,6 +252,8 @@ desc=A hastily constructed yet sturdy prison door.
 model=model_loc_37
 op1=Open
 op2=Talk-through
+category=door_open_and_close
+param=next_loc_stage,inactive_pipprisondoor
 
 [inactive_pipprisondoor]
 model=model_loc_37
@@ -399,6 +403,8 @@ recol2s=8353
 recol2d=5250
 op1=Open
 op2=Knock-at
+category=double_door_open_and_close_left
+param=next_loc_stage,inactivetempledoorl
 
 [priestperiltempledoorr]
 name=Large door
@@ -411,6 +417,8 @@ recol2d=5250
 mirror=yes
 op1=Open
 op2=Knock-at
+category=double_door_open_and_close_right
+param=next_loc_stage,inactivetempledoorr
 
 [inactivetempledoorl]
 model=loc_3489
@@ -439,6 +447,7 @@ length=2
 active=yes
 op1=Study
 op2=Take-from
+category=priestperil_monument
 
 [priestperil_grave_base2]
 name=Monument
@@ -450,6 +459,7 @@ length=2
 active=yes
 op1=Study
 op2=Take-from
+category=priestperil_monument
 
 [priestperil_grave_base3]
 name=Monument
@@ -461,6 +471,7 @@ length=2
 active=yes
 op1=Study
 op2=Take-from
+category=priestperil_monument
 
 [priestperil_grave_base4]
 name=Monument
@@ -472,6 +483,7 @@ length=2
 active=yes
 op1=Study
 op2=Take-from
+category=priestperil_monument
 
 [priestperil_grave_base5]
 name=Monument
@@ -484,6 +496,7 @@ length=2
 active=yes
 op1=Study
 op2=Take-from
+category=priestperil_monument
 
 [priestperil_grave_base6]
 name=Monument
@@ -496,6 +509,7 @@ length=2
 active=yes
 op1=Study
 op2=Take-from
+category=priestperil_monument
 
 [priestperil_grave_base7]
 name=Monument
@@ -508,6 +522,7 @@ length=2
 active=yes
 op1=Study
 op2=Take-from
+category=priestperil_monument
 
 [smallchurchorgan]
 name=Church organ

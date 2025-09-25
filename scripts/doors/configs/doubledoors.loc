@@ -144,7 +144,7 @@ model=model_loc_52
 op1=Close
 active=yes
 category=door_left_opened
-param=next_loc_stage,portcullis_2r
+param=next_loc_stage,loc_1557
 param=close_sound,grate_close
 
 [loc_1561]
@@ -158,7 +158,7 @@ category=door_right_opened
 param=next_loc_stage,fencegate_l
 param=close_sound,grate_close
 
-[portcullis_2r]
+[loc_1557]
 name=Gate
 desc=A wrought iron gate.
 model=model_loc_52

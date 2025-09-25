@@ -215,6 +215,9 @@ if (%legends_progress = ^legends_complete) {
 if (testbit(%elemental_workshop_bits, ^elemental_workshop_complete) = ^true) {
     $questpoints = add($questpoints, ^elemental_workshop_questpoints); 
 }
+if (%priestperil = ^priestperil_complete) {
+    $questpoints = add($questpoints, ^priestperil_questpoints); 
+}
 return ($questpoints);
 
 [proc,update_questlist]

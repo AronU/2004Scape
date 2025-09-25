@@ -629,6 +629,15 @@ attack=20
 defence=20
 strength=20
 hitpoints=45
+param=damagetype,^stab_style
+// todo: real anims
+// param=attack_anim,
+// param=defend_anim,
+// param=death_anim,
+param=death_drop,null
+// todo: real sounds
+// param=attack_sound,
+// param=defend_sound,
 
 [priestperiltrappedmonk]
 name=Drezel
@@ -649,6 +658,8 @@ walkanim=human_walk_f,human_walk_b,human_walk_l,human_walk_r
 readyanim=human_ready
 op1=Talk-to
 head1=model_63_idk_head
+// todo: real wander range
+wanderrange=5
 
 [priestperiltrappedmonk2]
 name=Drezel

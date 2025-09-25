@@ -41,6 +41,7 @@
 ^junglepotion_complete = 12
 ^biohazard_complete = 16
 ^desertrescue_complete = 30
+^priestperil_complete = 60
 
 ^blackarmgang_questpoints = 1
 ^blackknight_questpoints = 3
@@ -94,3 +95,4 @@
 ^itwatchtower_questpoints = 4
 ^legends_questpoints = 4
 ^elemental_workshop_questpoints = 1
+^priestperil_questpoints = 1
