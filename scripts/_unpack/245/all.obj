@@ -1,4 +1,4 @@
-[obj_2894]
+[wolfenboots_grey]
 name=Boots
 desc=Very stylish!
 recol1s=7298
@@ -14,9 +14,10 @@ cost=500
 2dyan=160
 2dxan=152
 members=yes
-tradeable=yes
+wearpos=feet
+weight=12oz
 
-[obj_2896]
+[wolfenrobetop_grey]
 name=Robe top
 desc=Some fine werewolf clothing.
 recol1s=14724
@@ -32,9 +33,11 @@ cost=500
 2dzoom=1370
 2dxan=536
 members=yes
-tradeable=yes
+wearpos=torso
+wearpos2=arms
+weight=2lb
 
-[obj_2898]
+[wolfenrobebottom_grey]
 name=Robe bottoms
 desc=Made by werewolves for werewolves.
 recol1s=2340
@@ -48,9 +51,10 @@ cost=500
 2dzoom=1940
 2dxan=572
 members=yes
-tradeable=yes
+wearpos=legs
+weight=2lb
 
-[obj_2900]
+[wolfenhat_grey]
 name=Hat
 desc=A silly pointed hat.
 recol1s=239
@@ -68,9 +72,10 @@ iop2=Wear
 2dyan=156
 2dxan=152
 members=yes
-tradeable=yes
+wearpos=hat
+weight=1lb
 
-[obj_2902]
+[wolfengloves_grey]
 name=Gloves
 desc=These will keep my hands warm!
 recol1s=9473
@@ -88,9 +93,10 @@ womanwear=model_356_obj_wear,0
 2dyan=828
 2dxan=420
 members=yes
-tradeable=yes
+wearpos=hands
+weight=1lb
 
-[obj_2904]
+[wolfenboots_crimson]
 name=Boots
 desc=Very stylish!
 recol1s=7298
@@ -106,9 +112,10 @@ cost=500
 2dyan=160
 2dxan=152
 members=yes
-tradeable=yes
+wearpos=feet
+weight=12oz
 
-[obj_2906]
+[wolfenrobetop_crimson]
 name=Robe top
 desc=Some fine werewolf clothing.
 recol1s=14724
@@ -124,9 +131,11 @@ cost=500
 2dzoom=1370
 2dxan=536
 members=yes
-tradeable=yes
+wearpos=torso
+wearpos2=arms
+weight=2lb
 
-[obj_2908]
+[wolfenrobebottom_crimson]
 name=Robe bottoms
 desc=Made by werewolves for werewolves.
 recol1s=2340
@@ -140,9 +149,10 @@ cost=500
 2dzoom=1940
 2dxan=572
 members=yes
-tradeable=yes
+wearpos=legs
+weight=2lb
 
-[obj_2910]
+[wolfenhat_crimson]
 name=Hat
 desc=A silly pointed hat.
 recol1s=239
@@ -160,9 +170,10 @@ iop2=Wear
 2dyan=156
 2dxan=152
 members=yes
-tradeable=yes
+wearpos=hat
+weight=1lb
 
-[obj_2912]
+[wolfengloves_crimson]
 name=Gloves
 desc=These will keep my hands warm!
 recol1s=9473
@@ -180,9 +191,10 @@ womanwear=model_356_obj_wear,0
 2dyan=828
 2dxan=420
 members=yes
-tradeable=yes
+wearpos=hands
+weight=1lb
 
-[obj_2914]
+[wolfenboots_tangerine]
 name=Boots
 desc=Very stylish!
 recol1s=7298
@@ -198,9 +210,10 @@ cost=500
 2dyan=160
 2dxan=152
 members=yes
-tradeable=yes
+wearpos=feet
+weight=12oz
 
-[obj_2916]
+[wolfenrobetop_tangerine]
 name=Robe top
 desc=Some fine werewolf clothing.
 recol1s=14724
@@ -216,9 +229,11 @@ cost=500
 2dzoom=1370
 2dxan=536
 members=yes
-tradeable=yes
+wearpos=torso
+wearpos2=arms
+weight=2lb
 
-[obj_2918]
+[wolfenrobebottom_tangerine]
 name=Robe bottoms
 desc=Made by werewolves for werewolves.
 recol1s=2340
@@ -232,9 +247,10 @@ cost=500
 2dzoom=1940
 2dxan=572
 members=yes
-tradeable=yes
+wearpos=legs
+weight=2lb
 
-[obj_2920]
+[wolfenhat_tangerine]
 name=Hat
 desc=A silly pointed hat.
 recol1s=239
@@ -252,9 +268,10 @@ iop2=Wear
 2dyan=156
 2dxan=152
 members=yes
-tradeable=yes
+wearpos=hat
+weight=1lb
 
-[obj_2922]
+[wolfengloves_tangerine]
 name=Gloves
 desc=These will keep my hands warm!
 recol1s=9473
@@ -272,9 +289,10 @@ womanwear=model_356_obj_wear,0
 2dyan=828
 2dxan=420
 members=yes
-tradeable=yes
+wearpos=hands
+weight=1lb
 
-[obj_2924]
+[wolfenboots_ocean]
 name=Boots
 desc=Very stylish!
 recol1s=7298
@@ -290,9 +308,10 @@ cost=500
 2dyan=160
 2dxan=152
 members=yes
-tradeable=yes
+wearpos=feet
+weight=12oz
 
-[obj_2926]
+[wolfenrobetop_ocean]
 name=Robe top
 desc=Some fine werewolf clothing.
 recol1s=14724
@@ -308,9 +327,11 @@ cost=500
 2dzoom=1370
 2dxan=536
 members=yes
-tradeable=yes
+wearpos=torso
+wearpos2=arms
+weight=2lb
 
-[obj_2928]
+[wolfenrobebottom_ocean]
 name=Robe bottoms
 desc=Made by werewolves for werewolves.
 recol1s=2340
@@ -324,9 +345,10 @@ cost=500
 2dzoom=1940
 2dxan=572
 members=yes
-tradeable=yes
+wearpos=legs
+weight=2lb
 
-[obj_2930]
+[wolfenhat_ocean]
 name=Hat
 desc=A silly pointed hat.
 recol1s=239
@@ -344,9 +366,10 @@ iop2=Wear
 2dyan=156
 2dxan=152
 members=yes
-tradeable=yes
+wearpos=hat
+weight=1lb
 
-[obj_2932]
+[wolfengloves_ocean]
 name=Gloves
 desc=These will keep my hands warm!
 recol1s=9473
@@ -364,9 +387,10 @@ womanwear=model_356_obj_wear,0
 2dyan=828
 2dxan=420
 members=yes
-tradeable=yes
+wearpos=hands
+weight=1lb
 
-[obj_2934]
+[wolfenboots_purple]
 name=Boots
 desc=Very stylish!
 recol1s=7298
@@ -382,9 +406,10 @@ cost=500
 2dyan=160
 2dxan=152
 members=yes
-tradeable=yes
+wearpos=feet
+weight=12oz
 
-[obj_2936]
+[wolfenrobetop_purple]
 name=Robe top
 desc=Some fine werewolf clothing.
 recol1s=14724
@@ -400,9 +425,11 @@ cost=500
 2dzoom=1370
 2dxan=536
 members=yes
-tradeable=yes
+wearpos=torso
+wearpos2=arms
+weight=2lb
 
-[obj_2938]
+[wolfenrobebottom_purple]
 name=Robe bottoms
 desc=Made by werewolves for werewolves.
 recol1s=2340
@@ -416,9 +443,10 @@ cost=500
 2dzoom=1940
 2dxan=572
 members=yes
-tradeable=yes
+wearpos=legs
+weight=2lb
 
-[obj_2940]
+[wolfenhat_purple]
 name=Hat
 desc=A silly pointed hat.
 recol1s=239
@@ -436,9 +464,10 @@ iop2=Wear
 2dyan=156
 2dxan=152
 members=yes
-tradeable=yes
+wearpos=hat
+weight=1lb
 
-[obj_2942]
+[wolfengloves_purple]
 name=Gloves
 desc=These will keep my hands warm!
 recol1s=9473
@@ -456,9 +485,10 @@ womanwear=model_356_obj_wear,0
 2dyan=828
 2dxan=420
 members=yes
-tradeable=yes
+wearpos=hands
+weight=1lb
 
-[obj_2944]
+[pipkey_gold]
 name=Golden key
 desc=A replica key made of solid gold.
 recol1s=31393
@@ -471,8 +501,9 @@ model=model_2372_obj
 2dzoom=700
 2dyan=20
 2dxan=328
+weight=10g
 
-[obj_2945]
+[pipkey_iron]
 name=Iron key
 desc=A key made of solid Iron.
 recol1s=31393
@@ -485,8 +516,9 @@ model=model_2372_obj
 2dzoom=700
 2dyan=20
 2dxan=328
+weight=10g
 
-[obj_2946]
+[piptinderbox_gold]
 name=Golden tinderbox
 desc=A replica tinderbox made of solid gold.
 recol1s=32767
@@ -501,8 +533,9 @@ members=yes
 2dzoom=660
 2dyan=1968
 2dxan=196
+weight=35g
 
-[obj_2947]
+[pipcandle_gold]
 name=Golden candle
 desc=A replica candle made of solid gold.
 recol1s=32767
@@ -514,8 +547,9 @@ members=yes
 2dzoom=570
 2dyan=1864
 2dxan=168
+weight=1oz
 
-[obj_2948]
+[pippot_gold]
 name=Golden pot
 desc=A replica pot made of solid gold.
 recol1s=16643
@@ -536,8 +570,9 @@ members=yes
 2dzoom=990
 2dyan=8
 2dxan=112
+weight=1lb
 
-[obj_2949]
+[piphammer_gold]
 name=Golden hammer
 desc=A replica hammer made of solid gold.
 recol1s=839
@@ -554,8 +589,9 @@ members=yes
 2dzoom=900
 2dyan=2012
 2dxan=356
+weight=2lb
 
-[obj_2950]
+[pipfeather_gold]
 name=Golden feather
 desc=A replica feather made of solid gold.
 recol1s=32767
@@ -568,8 +604,9 @@ members=yes
 2dzoom=700
 2dyan=692
 2dxan=428
+weight=2g
 
-[obj_2951]
+[pipneedle_gold]
 name=Golden needle
 desc=A replica needle made of solid gold.
 recol1s=19026
@@ -582,8 +619,9 @@ members=yes
 2dzoom=850
 2dyan=868
 2dxan=368
+weight=1g
 
-[obj_2952]
+[dagger_wolfbane]
 name=Wolfbane
 desc=A silver dagger that can prevent werewolves changing form.
 members=yes
@@ -598,8 +636,10 @@ members=yes
 iop2=Wield
 manwear=obj_2952_manwear,0
 womanwear=obj_2952_manwear,6
+wearpos=righthand
+weight=1lb
 
-[obj_2953]
+[bucket_murkywater]
 name=Bucket of water
 members=yes
 desc=It's a bucket of murky water.
@@ -609,8 +649,9 @@ model=model_2504_obj
 2dzoom=1020
 2dyan=1688
 2dxan=204
+weight=3kg
 
-[obj_2954]
+[bucket_blessedwater]
 name=Bucket of water
 desc=It's a bucket of blessed water.
 members=yes
@@ -620,8 +661,9 @@ model=model_2504_obj
 2dzoom=1020
 2dyan=1688
 2dxan=204
+weight=1lb
 
-[obj_2955]
+[moonlight_mead]
 name=Moonlight mead
 desc=A foul smelling brew.
 recol1s=25025
@@ -637,9 +679,9 @@ model=model_2491_obj
 2dzoom=660
 2dyan=1904
 2dxan=140
-tradeable=yes
+weight=550g
 
-[obj_2957]
+[druid_pouch_empty]
 name=Druid pouch
 desc=An empty druid pouch.
 recol1s=9376
@@ -655,8 +697,9 @@ model=model_2678_obj
 2dxan=116
 members=yes
 iop1=Fill
+weight=10g
 
-[obj_2958]
+[druid_pouch]
 name=Druid pouch
 desc=A druid pouch.
 recol1s=9376
@@ -673,8 +716,9 @@ model=model_2678_obj
 members=yes
 stackable=yes
 iop1=Fill
+weight=100g
 
-[obj_2959]
+[rotten_food]
 name=Rotten food
 desc=Erhhh! It stinks.
 cost=1
@@ -684,9 +728,9 @@ model=obj_2959
 2dzoom=740
 2dxan=236
 members=yes
-tradeable=yes
+weight=1lb
 
-[obj_2961]
+[silver_sickle]
 name=Silver sickle
 desc=It's a silver sickle.
 cost=175
@@ -700,9 +744,9 @@ iop2=Wield
 manwear=obj_2961_manwear,0
 womanwear=obj_2961_manwear,6
 members=yes
-tradeable=yes
+weight=56oz
 
-[obj_2963]
+[silver_sickle_blessed]
 name=Silver sickle(b)
 desc=It's a blessed silver sickle.
 recol1s=8456
@@ -721,8 +765,9 @@ iop3=Cast Bloom
 manwear=obj_2961_manwear,0
 womanwear=obj_2961_manwear,6
 members=yes
+weight=56oz
 
-[obj_2964]
+[bowl_empty_filliman]
 name=Washing bowl
 desc=Used for washing your face, amongst other things.
 recol1s=16705
@@ -735,9 +780,9 @@ model=model_2807_obj
 2dyan=1856
 2dxan=204
 members=yes
-tradeable=yes
+weight=1lb
 
-[obj_2966]
+[mirror]
 name=Mirror
 desc=A small mirror, probably used for grooming.
 model=obj_2966
@@ -745,8 +790,9 @@ model=obj_2966
 2dzoom=1090
 2dxan=344
 members=yes
+weight=8oz
 
-[obj_2967]
+[filliman_journal]
 name=Journal
 desc=This must be Filliman Tarlocks personal journal.
 recol1s=13472
@@ -761,8 +807,9 @@ model=model_2633_obj
 2dyan=120
 2dxan=276
 iop1=Read
+weight=18oz
 
-[obj_2968]
+[bloom_spell]
 name=Druidic spell
 desc=A druidic spell given to you freely by the spirit of Filliman Tarlock.
 recol1s=0
@@ -785,8 +832,9 @@ womanwear=model_532_obj_wear,6
 2dyan=112
 2dxan=248
 iop1=Cast
+weight=20g
 
-[obj_2969]
+[used_bloom_spell]
 name=A used spell
 desc=A used druidic spell given to you freely by the spirit of Filliman Tarlock.
 recol1s=0
@@ -808,8 +856,9 @@ womanwear=model_532_obj_wear,6
 2dzoom=940
 2dyan=112
 2dxan=248
+weight=20g
 
-[obj_2970]
+[mortmyremushroom]
 name=Mort myre fungi
 desc=A mushroom from the swamps of Mort Myre.
 model=obj_2970
@@ -818,9 +867,9 @@ model=obj_2970
 2dyan=60
 2dxan=232
 members=yes
-tradeable=yes
+weight=10g
 
-[obj_2972]
+[mortmyrebuddingstem]
 name=Mort myre stem
 desc=A cutting from a budding branch.
 model=obj_2972
@@ -829,9 +878,9 @@ model=obj_2972
 2dyan=680
 2dxan=504
 members=yes
-tradeable=yes
+weight=10g
 
-[obj_2974]
+[mortmyrepear]
 name=Mort myre pear
 desc=A pear picked from a dying bush in Mort Myre.
 model=obj_2974
@@ -839,9 +888,9 @@ model=obj_2974
 2dyan=1740
 2dxan=52
 members=yes
-tradeable=yes
+weight=4oz
 
-[obj_2976]
+[sickle_mould]
 name=Sickle mould
 desc=Used to make sickles
 cost=10
@@ -850,4 +899,4 @@ model=obj_2976
 2dyan=1100
 2dxan=284
 members=yes
-tradeable=yes
+weight=1lb

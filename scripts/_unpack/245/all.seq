@@ -289,7 +289,7 @@ frame10=anim_8122
 
 [seq_1100]
 priority=6
-replaceheldright=obj_2963
+replaceheldright=silver_sickle_blessed
 frame1=anim_7997
 frame2=anim_8000
 frame3=anim_8002
