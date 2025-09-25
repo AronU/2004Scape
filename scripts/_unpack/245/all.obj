@@ -501,6 +501,7 @@ model=model_2372_obj
 2dzoom=700
 2dyan=20
 2dxan=328
+tradeable=no
 weight=10g
 
 [pipkey_iron]
@@ -516,6 +517,7 @@ model=model_2372_obj
 2dzoom=700
 2dyan=20
 2dxan=328
+tradeable=no
 weight=10g
 
 [piptinderbox_gold]
@@ -533,6 +535,7 @@ members=yes
 2dzoom=660
 2dyan=1968
 2dxan=196
+tradeable=no
 weight=35g
 
 [pipcandle_gold]
@@ -547,6 +550,7 @@ members=yes
 2dzoom=570
 2dyan=1864
 2dxan=168
+tradeable=no
 weight=1oz
 
 [pippot_gold]
@@ -570,6 +574,7 @@ members=yes
 2dzoom=990
 2dyan=8
 2dxan=112
+tradeable=no
 weight=1lb
 
 [piphammer_gold]
@@ -589,6 +594,7 @@ members=yes
 2dzoom=900
 2dyan=2012
 2dxan=356
+tradeable=no
 weight=2lb
 
 [pipfeather_gold]
@@ -604,6 +610,7 @@ members=yes
 2dzoom=700
 2dyan=692
 2dxan=428
+tradeable=no
 weight=2g
 
 [pipneedle_gold]
@@ -619,6 +626,7 @@ members=yes
 2dzoom=850
 2dyan=868
 2dxan=368
+tradeable=no
 weight=1g
 
 [dagger_wolfbane]
@@ -636,6 +644,7 @@ members=yes
 iop2=Wield
 manwear=obj_2952_manwear,0
 womanwear=obj_2952_manwear,6
+tradeable=no
 wearpos=righthand
 weight=1lb
 
@@ -649,6 +658,7 @@ model=model_2504_obj
 2dzoom=1020
 2dyan=1688
 2dxan=204
+tradeable=no
 weight=3kg
 
 [bucket_blessedwater]
@@ -661,6 +671,7 @@ model=model_2504_obj
 2dzoom=1020
 2dyan=1688
 2dxan=204
+tradeable=no
 weight=1lb
 
 [moonlight_mead]
@@ -697,6 +708,7 @@ model=model_2678_obj
 2dxan=116
 members=yes
 iop1=Fill
+tradeable=no
 weight=10g
 
 [druid_pouch]
@@ -716,6 +728,7 @@ model=model_2678_obj
 members=yes
 stackable=yes
 iop1=Fill
+tradeable=no
 weight=100g
 
 [rotten_food]
@@ -790,6 +803,7 @@ model=obj_2966
 2dzoom=1090
 2dxan=344
 members=yes
+tradeable=no
 weight=8oz
 
 [filliman_journal]
@@ -807,6 +821,7 @@ model=model_2633_obj
 2dyan=120
 2dxan=276
 iop1=Read
+tradeable=no
 weight=18oz
 
 [bloom_spell]
@@ -832,6 +847,7 @@ womanwear=model_532_obj_wear,6
 2dyan=112
 2dxan=248
 iop1=Cast
+tradeable=no
 weight=20g
 
 [used_bloom_spell]
@@ -856,6 +872,7 @@ womanwear=model_532_obj_wear,6
 2dzoom=940
 2dyan=112
 2dxan=248
+tradeable=no
 weight=20g
 
 [mortmyremushroom]
