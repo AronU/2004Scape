@@ -695,6 +695,7 @@ iop2=Wield
 manwear=obj_2952_manwear,0
 womanwear=obj_2952_manwear,6
 tradeable=no
+category=weapon_stab
 wearpos=righthand
 weight=1lb
 param=stabattack,11
@@ -704,6 +705,11 @@ param=magicattack,1
 param=magicdefence,1
 param=strengthbonus,10
 param=prayerbonus,5
+param=stabattack_anim,human_sword_stab
+param=slashattack_anim,human_sword_slash
+param=defend_anim,human_sword_def
+param=stab_sound,stabsword_stab
+param=slash_sound,stabsword_slash
 
 [bucket_murkywater]
 name=Bucket of water
@@ -814,6 +820,7 @@ iop2=Wield
 manwear=obj_2961_manwear,0
 womanwear=obj_2961_manwear,6
 members=yes
+category=weapon_slash
 wearpos=righthand
 weight=56oz
 param=slashdefence,1
@@ -821,6 +828,12 @@ param=crushdefence,1
 param=magicdefence,1
 param=rangedefence,1
 param=strengthbonus,1
+param=attackrate,5
+param=slashattack_anim,human_sword_slash
+param=stabattack_anim,human_sword_stab
+param=defend_anim,human_sword_def
+param=slash_sound,hacksword_slash
+param=stab_sound,hacksword_stab
 
 [silver_sickle_blessed]
 name=Silver sickle(b)
@@ -841,6 +854,7 @@ iop3=Cast Bloom
 manwear=obj_2961_manwear,0
 womanwear=obj_2961_manwear,6
 members=yes
+category=weapon_slash
 wearpos=righthand
 weight=56oz
 param=slashdefence,1
@@ -849,6 +863,12 @@ param=magicdefence,1
 param=rangedefence,1
 param=strengthbonus,1
 param=prayerbonus,5
+param=attackrate,5
+param=slashattack_anim,human_sword_slash
+param=stabattack_anim,human_sword_stab
+param=defend_anim,human_sword_def
+param=slash_sound,hacksword_slash
+param=stab_sound,hacksword_stab
 
 [bowl_empty_filliman]
 name=Washing bowl
