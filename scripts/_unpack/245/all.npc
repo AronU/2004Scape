@@ -1,4 +1,5 @@
-[npc_1024]
+// [sic] canafis
+[canafis_man1]
 name=Man
 model1=model_217_idk
 model2=model_246_idk
@@ -21,8 +22,13 @@ op1=Talk-to
 vislevel=26
 head1=model_55_idk_head
 head2=npc_1024_head
+attack=10
+defence=10
+strength=10
+hitpoints=60
+param=death_drop,wolf_bones
 
-[npc_1025]
+[canafis_man2]
 name=Man
 model1=model_217_idk
 model2=model_246_idk
@@ -45,8 +51,13 @@ op1=Talk-to
 vislevel=26
 head1=model_55_idk_head
 head2=npc_1024_head
+attack=10
+defence=10
+strength=10
+hitpoints=60
+param=death_drop,wolf_bones
 
-[npc_1026]
+[canafis_man3]
 name=Man
 model1=model_235_idk
 model2=model_248_idk
@@ -71,8 +82,13 @@ op1=Talk-to
 vislevel=26
 head1=model_67_idk_head
 head2=npc_1024_head
+attack=10
+defence=10
+strength=10
+hitpoints=60
+param=death_drop,wolf_bones
 
-[npc_1027]
+[canafis_woman1]
 name=Woman
 model1=model_390_idk
 model2=model_456_idk
@@ -96,8 +112,13 @@ op1=Talk-to
 vislevel=26
 head1=model_113_idk_head
 head2=npc_1027_head
+attack=10
+defence=10
+strength=10
+hitpoints=60
+param=death_drop,wolf_bones
 
-[npc_1028]
+[canafis_woman2]
 name=Woman
 model1=model_378_idk
 model2=model_471_idk
@@ -121,8 +142,13 @@ op1=Talk-to
 vislevel=26
 head1=model_103_idk_head
 head2=npc_1027_head
+attack=10
+defence=10
+strength=10
+hitpoints=60
+param=death_drop,wolf_bones
 
-[npc_1029]
+[canafis_woman3]
 name=Woman
 model1=model_393_idk
 model2=model_456_idk
@@ -152,8 +178,13 @@ vislevel=26
 head1=model_115_idk_head
 head2=model_131_npc_head
 head3=npc_1027_head
+attack=10
+defence=10
+strength=10
+hitpoints=60
+param=death_drop,wolf_bones
 
-[npc_1030]
+[canafis_werewolf_man1]
 name=Wolfman
 model1=npc_1030
 recol1s=2340
@@ -169,8 +200,13 @@ readyanim=seq_1083
 desc=Eek! A werewolf!
 op2=Attack
 vislevel=73
+attack=70
+defence=70
+strength=70
+hitpoints=100
+param=death_drop,wolf_bones
 
-[npc_1031]
+[canafis_werewolf_man2]
 name=Wolfman
 model1=npc_1030
 recol1s=2340
@@ -186,8 +222,13 @@ readyanim=seq_1083
 desc=Eek! A werewolf!
 op2=Attack
 vislevel=73
+attack=70
+defence=70
+strength=70
+hitpoints=100
+param=death_drop,wolf_bones
 
-[npc_1032]
+[canafis_werewolf_man3]
 name=Wolfman
 model1=npc_1030
 recol1s=2340
@@ -203,8 +244,13 @@ readyanim=seq_1083
 desc=Eek! A werewolf!
 op2=Attack
 vislevel=73
+attack=70
+defence=70
+strength=70
+hitpoints=100
+param=death_drop,wolf_bones
 
-[npc_1033]
+[canafis_werewolf_woman1]
 name=Wolfwoman
 model1=npc_1030
 recol1s=2340
@@ -222,8 +268,13 @@ readyanim=seq_1083
 desc=Eek! A werewolf!
 op2=Attack
 vislevel=73
+attack=70
+defence=70
+strength=70
+hitpoints=100
+param=death_drop,wolf_bones
 
-[npc_1034]
+[canafis_werewolf_woman2]
 name=Wolfwoman
 model1=npc_1030
 recol1s=2340
@@ -241,8 +292,13 @@ readyanim=seq_1083
 desc=Eek! A werewolf!
 op2=Attack
 vislevel=73
+attack=70
+defence=70
+strength=70
+hitpoints=100
+param=death_drop,wolf_bones
 
-[npc_1035]
+[canafis_werewolf_woman3]
 name=Wolfwoman
 model1=npc_1030
 recol1s=14724
@@ -262,8 +318,13 @@ readyanim=seq_1083
 desc=Eek! A werewolf!
 op2=Attack
 vislevel=73
+attack=70
+defence=70
+strength=70
+hitpoints=100
+param=death_drop,wolf_bones
 
-[npc_1036]
+[werewolfbanker]
 name=Banker
 model1=model_215_idk
 model2=model_246_idk
@@ -289,7 +350,8 @@ op1=Talk-to
 head1=model_53_idk_head
 head2=npc_1024_head
 
-[npc_1037]
+// todo
+[canafis_man4]
 name=Man
 model1=model_215_idk
 model2=model_246_idk
@@ -314,7 +376,7 @@ op1=Talk-to
 head1=model_53_idk_head
 head2=npc_1024_head
 
-[npc_1038]
+[werewolfshopkeeper1]
 name=Rufus
 model1=model_217_idk
 model2=model_267_idk
@@ -339,7 +401,7 @@ head1=model_55_idk_head
 head2=model_81_idk_head
 head3=npc_1024_head
 
-[npc_1039]
+[werewolfshopkeeper2]
 name=Barker
 model1=model_214_idk
 model2=model_274_idk
@@ -364,7 +426,7 @@ head1=model_52_idk_head
 head2=model_79_idk_head
 head3=npc_1024_head
 
-[npc_1040]
+[werewolfshopkeeper3]
 name=Fidelio
 model1=model_215_idk
 model2=model_254_idk
@@ -382,7 +444,7 @@ op3=Trade
 head1=model_53_idk_head
 head2=npc_1024_head
 
-[npc_1041]
+[werewolftanner]
 name=Sbott
 model1=model_230_idk
 model2=model_275_idk
@@ -407,7 +469,7 @@ head1=model_63_idk_head
 head2=model_84_idk_head
 head3=npc_1024_head
 
-[npc_1042]
+[werewolfinnkeeper]
 name=Roavar
 model1=model_230_idk
 model2=model_254_idk
@@ -431,7 +493,8 @@ op3=Trade
 head1=model_63_idk_head
 head2=npc_1024_head
 
-[npc_1043]
+// [sic] might've been renamed internally after it became "will o"
+[willothewisp]
 name=Willow the wisp
 model1=npc_1043
 desc=Mysterious swamp lights...
@@ -445,7 +508,7 @@ minimap=no
 ambient=70
 contrast=70
 
-[npc_1044]
+[priestperilevilmonk1]
 name=Monk of Zamorak
 model1=model_230_idk
 model2=model_246_idk
@@ -464,8 +527,13 @@ readyanim=human_ready
 desc=An evil human cleric.
 op2=Attack
 vislevel=22
+attack=18
+defence=22
+strength=18
+hitpoints=20
+magic=25
 
-[npc_1045]
+[priestperilevilmonk2]
 name=Monk of Zamorak
 model1=model_230_idk
 model2=model_181_idk
@@ -485,8 +553,13 @@ readyanim=human_ready
 desc=An evil human cleric.
 op2=Attack
 vislevel=17
+attack=8
+defence=12
+strength=8
+hitpoints=10
+magic=25
 
-[npc_1046]
+[priestperilevilmonk3]
 name=Monk of Zamorak
 model1=model_208_npc
 model2=model_246_idk
@@ -505,8 +578,13 @@ walkanim=human_walk_f,human_walk_b,human_walk_l,human_walk_r
 readyanim=human_ready
 desc=An evil human cleric.
 op2=Attack
+attack=25
+defence=25
+strength=25
+hitpoints=25
+magic=40
 
-[npc_1047]
+[priestperilguarddog]
 name=Temple guardian
 model1=model_2934
 recol1s=15648
@@ -521,8 +599,12 @@ walkanim=seq_16
 readyanim=seq_17
 desc=Looks like a big ugly dog.
 op2=Attack
+attack=20
+defence=20
+strength=20
+hitpoints=45
 
-[npc_1048]
+[priestperiltrappedmonk]
 name=Drezel
 model1=model_230_idk
 model2=model_181_idk
@@ -542,7 +624,7 @@ readyanim=human_ready
 op1=Talk-to
 head1=model_63_idk_head
 
-[npc_1049]
+[priestperiltrappedmonk2]
 name=Drezel
 model1=model_230_idk
 model2=model_181_idk
@@ -562,7 +644,7 @@ readyanim=human_ready
 op1=Talk-to
 head1=model_63_idk_head
 
-[npc_1050]
+[filliman_tarlock_spirit]
 name=Filliman Tarlock
 model1=model_210_idk
 model2=model_292_idk
@@ -591,7 +673,7 @@ alwaysontop=yes
 head1=model_49_idk_head
 head2=model_82_idk_head
 
-[npc_1051]
+[filliman_tarlock_ns]
 name=Nature Spirit
 model1=model_210_idk
 model2=model_292_idk
@@ -623,7 +705,7 @@ alwaysontop=yes
 head1=model_49_idk_head
 head2=model_82_idk_head
 
-[npc_1052]
+[ghast_invis]
 name=Ghast
 model1=spot_spotanim_265
 vislevel=hide
@@ -633,8 +715,12 @@ size=2
 walkanim=seq_1091
 readyanim=seq_1092
 minimap=no
+attack=22
+strength=22
+hitpoints=45
+defence=17
 
-[npc_1053]
+[ghast_vis]
 name=Ghast
 model1=spot_spotanim_265
 desc=Arrghhh... A Ghast.
@@ -644,8 +730,12 @@ walkanim=seq_1085
 readyanim=seq_1086
 op2=Attack
 vislevel=30
+attack=22
+strength=22
+hitpoints=45
+defence=18
 
-[npc_1054]
+[mort_myre_gate_guard]
 name=Ulizius
 model1=model_232_npc
 model2=model_181_idk
