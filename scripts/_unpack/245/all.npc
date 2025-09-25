@@ -349,6 +349,10 @@ readyanim=human_ready
 op1=Talk-to
 head1=model_53_idk_head
 head2=npc_1024_head
+wanderrange=0
+maxrange=2
+moverestrict=nomove
+category=bank_teller
 
 [werewolfroadblocker]
 name=Man
@@ -399,6 +403,14 @@ op3=Trade
 head1=model_55_idk_head
 head2=model_81_idk_head
 head3=npc_1024_head
+category=shop_keeper
+param=owned_shop,werewolfstore1
+param=shop_sell_multiplier,1300
+param=shop_buy_multiplier,700
+param=shop_delta,30
+// todo: confirm title
+param=shop_title,Rufus' Meat Emporium
+moverestrict=indoors
 
 [werewolfshopkeeper2]
 name=Barker
@@ -424,6 +436,14 @@ op3=Trade
 head1=model_52_idk_head
 head2=model_79_idk_head
 head3=npc_1024_head
+category=shop_keeper
+param=owned_shop,werewolfstore2
+param=shop_sell_multiplier,1300
+param=shop_buy_multiplier,400
+param=shop_delta,30
+// todo: confirm title
+param=shop_title,Barkers' Haberdashery
+moverestrict=indoors
 
 [werewolfshopkeeper3]
 name=Fidelio
@@ -442,6 +462,14 @@ op1=Talk-to
 op3=Trade
 head1=model_53_idk_head
 head2=npc_1024_head
+category=shop_keeper
+param=owned_shop,werewolfgeneralstore
+param=shop_sell_multiplier,2000
+param=shop_buy_multiplier,100
+param=shop_delta,30
+// todo: confirm title
+param=shop_title,Canifis General Store
+moverestrict=indoors
 
 [werewolftanner]
 name=Sbott
