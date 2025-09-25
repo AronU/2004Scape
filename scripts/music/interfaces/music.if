@@ -2828,7 +2828,7 @@ text=Twilight
 colour=0xFF0000
 activecolour=0x00FF00
 
-[com_209]
+[mausoleum]
 layer=com_0
 type=text
 x=10
@@ -2844,7 +2844,7 @@ text=Mausoleum
 colour=0xFF0000
 activecolour=0x00FF00
 
-[com_210]
+[morytania]
 layer=com_0
 type=text
 x=10
@@ -2860,7 +2860,7 @@ text=Morytania
 colour=0xFF0000
 activecolour=0x00FF00
 
-[com_211]
+[village]
 layer=com_0
 type=text
 x=10
@@ -2876,7 +2876,7 @@ text=Village
 colour=0xFF0000
 activecolour=0x00FF00
 
-[com_212]
+[grotto]
 layer=com_0
 type=text
 x=10
@@ -2892,7 +2892,7 @@ text=Grotto
 colour=0xFF0000
 activecolour=0x00FF00
 
-[com_213]
+[natural]
 layer=com_0
 type=text
 x=10
@@ -2908,7 +2908,7 @@ text=Natural
 colour=0xFF0000
 activecolour=0x00FF00
 
-[com_214]
+[waterlogged]
 layer=com_0
 type=text
 x=10
@@ -2924,7 +2924,7 @@ text=Waterlogged
 colour=0xFF0000
 activecolour=0x00FF00
 
-[com_215]
+[stagnant]
 layer=com_0
 type=text
 x=10
@@ -2940,7 +2940,7 @@ text=Stagnant
 colour=0xFF0000
 activecolour=0x00FF00
 
-[com_216]
+[dead_quiet]
 layer=com_0
 type=text
 x=10

@@ -182,3 +182,11 @@
 [if_button,music:understanding] ~music_playbybutton(music:understanding);
 [if_button,music:stratosphere] ~music_playbybutton(music:stratosphere);
 [if_button,music:twilight] ~music_playbybutton(music:twilight);
+[if_button,music:mausoleum] ~music_playbybutton(music:mausoleum);
+[if_button,music:morytania] ~music_playbybutton(music:morytania);
+[if_button,music:village] ~music_playbybutton(music:village);
+[if_button,music:grotto] ~music_playbybutton(music:grotto);
+[if_button,music:natural] ~music_playbybutton(music:natural);
+[if_button,music:waterlogged] ~music_playbybutton(music:waterlogged);
+[if_button,music:stagnant] ~music_playbybutton(music:stagnant);
+[if_button,music:dead_quiet] ~music_playbybutton(music:dead_quiet);

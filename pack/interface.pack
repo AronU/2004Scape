@@ -8114,9 +8114,9 @@
 8113=priestperil_gravemonument:com_96
 8114=priestperil_gravemonument:com_97
 8115=questlist:priestperil
-8116=music:com_209
-8117=music:com_210
-8118=music:com_211
+8116=music:mausoleum
+8117=music:morytania
+8118=music:village
 8119=inter_154
 8120=inter_154:com_0
 8121=inter_154:com_1
@@ -8136,8 +8136,8 @@
 8135=null:null
 8136=null:null
 8137=questlist:com_80
-8138=music:com_212
-8139=music:com_213
-8140=music:com_214
-8141=music:com_215
-8142=music:com_216
+8138=music:grotto
+8139=music:natural
+8140=music:waterlogged
+8141=music:stagnant
+8142=music:dead_quiet
