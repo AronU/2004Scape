@@ -16,6 +16,8 @@ cost=500
 members=yes
 wearpos=feet
 weight=12oz
+param=slashdefence,1
+param=crushdefence,1
 
 [wolfenrobetop_grey]
 name=Robe top
@@ -36,6 +38,8 @@ members=yes
 wearpos=torso
 wearpos2=arms
 weight=2lb
+param=slashdefence,2
+param=crushdefence,2
 
 [wolfenrobebottom_grey]
 name=Robe bottoms
@@ -53,6 +57,8 @@ cost=500
 members=yes
 wearpos=legs
 weight=2lb
+param=slashdefence,2
+param=crushdefence,2
 
 [wolfenhat_grey]
 name=Hat
@@ -74,6 +80,8 @@ iop2=Wear
 members=yes
 wearpos=hat
 weight=1lb
+param=magicattack,3
+param=magicdefence,3
 
 [wolfengloves_grey]
 name=Gloves
@@ -95,6 +103,8 @@ womanwear=model_356_obj_wear,0
 members=yes
 wearpos=hands
 weight=1lb
+param=slashdefence,1
+param=crushdefence,2
 
 [wolfenboots_crimson]
 name=Boots
@@ -114,6 +124,8 @@ cost=500
 members=yes
 wearpos=feet
 weight=12oz
+param=slashdefence,1
+param=crushdefence,1
 
 [wolfenrobetop_crimson]
 name=Robe top
@@ -134,6 +146,8 @@ members=yes
 wearpos=torso
 wearpos2=arms
 weight=2lb
+param=slashdefence,2
+param=crushdefence,2
 
 [wolfenrobebottom_crimson]
 name=Robe bottoms
@@ -151,6 +165,8 @@ cost=500
 members=yes
 wearpos=legs
 weight=2lb
+param=slashdefence,2
+param=crushdefence,2
 
 [wolfenhat_crimson]
 name=Hat
@@ -172,6 +188,8 @@ iop2=Wear
 members=yes
 wearpos=hat
 weight=1lb
+param=magicattack,3
+param=magicdefence,3
 
 [wolfengloves_crimson]
 name=Gloves
@@ -193,6 +211,8 @@ womanwear=model_356_obj_wear,0
 members=yes
 wearpos=hands
 weight=1lb
+param=slashdefence,1
+param=crushdefence,2
 
 [wolfenboots_tangerine]
 name=Boots
@@ -212,6 +232,8 @@ cost=500
 members=yes
 wearpos=feet
 weight=12oz
+param=slashdefence,1
+param=crushdefence,1
 
 [wolfenrobetop_tangerine]
 name=Robe top
@@ -232,6 +254,8 @@ members=yes
 wearpos=torso
 wearpos2=arms
 weight=2lb
+param=slashdefence,2
+param=crushdefence,2
 
 [wolfenrobebottom_tangerine]
 name=Robe bottoms
@@ -249,6 +273,8 @@ cost=500
 members=yes
 wearpos=legs
 weight=2lb
+param=slashdefence,2
+param=crushdefence,2
 
 [wolfenhat_tangerine]
 name=Hat
@@ -270,6 +296,8 @@ iop2=Wear
 members=yes
 wearpos=hat
 weight=1lb
+param=magicattack,3
+param=magicdefence,3
 
 [wolfengloves_tangerine]
 name=Gloves
@@ -291,6 +319,8 @@ womanwear=model_356_obj_wear,0
 members=yes
 wearpos=hands
 weight=1lb
+param=slashdefence,1
+param=crushdefence,2
 
 [wolfenboots_ocean]
 name=Boots
@@ -310,6 +340,8 @@ cost=500
 members=yes
 wearpos=feet
 weight=12oz
+param=slashdefence,1
+param=crushdefence,1
 
 [wolfenrobetop_ocean]
 name=Robe top
@@ -330,6 +362,8 @@ members=yes
 wearpos=torso
 wearpos2=arms
 weight=2lb
+param=slashdefence,2
+param=crushdefence,2
 
 [wolfenrobebottom_ocean]
 name=Robe bottoms
@@ -347,6 +381,8 @@ cost=500
 members=yes
 wearpos=legs
 weight=2lb
+param=slashdefence,2
+param=crushdefence,2
 
 [wolfenhat_ocean]
 name=Hat
@@ -368,6 +404,8 @@ iop2=Wear
 members=yes
 wearpos=hat
 weight=1lb
+param=magicattack,3
+param=magicdefence,3
 
 [wolfengloves_ocean]
 name=Gloves
@@ -389,6 +427,8 @@ womanwear=model_356_obj_wear,0
 members=yes
 wearpos=hands
 weight=1lb
+param=slashdefence,1
+param=crushdefence,2
 
 [wolfenboots_purple]
 name=Boots
@@ -408,6 +448,8 @@ cost=500
 members=yes
 wearpos=feet
 weight=12oz
+param=slashdefence,1
+param=crushdefence,1
 
 [wolfenrobetop_purple]
 name=Robe top
@@ -428,6 +470,8 @@ members=yes
 wearpos=torso
 wearpos2=arms
 weight=2lb
+param=slashdefence,2
+param=crushdefence,2
 
 [wolfenrobebottom_purple]
 name=Robe bottoms
@@ -445,6 +489,8 @@ cost=500
 members=yes
 wearpos=legs
 weight=2lb
+param=slashdefence,2
+param=crushdefence,2
 
 [wolfenhat_purple]
 name=Hat
@@ -466,6 +512,8 @@ iop2=Wear
 members=yes
 wearpos=hat
 weight=1lb
+param=magicattack,3
+param=magicdefence,3
 
 [wolfengloves_purple]
 name=Gloves
@@ -487,6 +535,8 @@ womanwear=model_356_obj_wear,0
 members=yes
 wearpos=hands
 weight=1lb
+param=slashdefence,1
+param=crushdefence,2
 
 [pipkey_gold]
 name=Golden key
@@ -647,6 +697,13 @@ womanwear=obj_2952_manwear,6
 tradeable=no
 wearpos=righthand
 weight=1lb
+param=stabattack,11
+param=slashattack,5
+param=crushattack,-4
+param=magicattack,1
+param=magicdefence,1
+param=strengthbonus,10
+param=prayerbonus,5
 
 [bucket_murkywater]
 name=Bucket of water
@@ -757,7 +814,13 @@ iop2=Wield
 manwear=obj_2961_manwear,0
 womanwear=obj_2961_manwear,6
 members=yes
+wearpos=righthand
 weight=56oz
+param=slashdefence,1
+param=crushdefence,1
+param=magicdefence,1
+param=rangedefence,1
+param=strengthbonus,1
 
 [silver_sickle_blessed]
 name=Silver sickle(b)
@@ -778,7 +841,14 @@ iop3=Cast Bloom
 manwear=obj_2961_manwear,0
 womanwear=obj_2961_manwear,6
 members=yes
+wearpos=righthand
 weight=56oz
+param=slashdefence,1
+param=crushdefence,1
+param=magicdefence,1
+param=rangedefence,1
+param=strengthbonus,1
+param=prayerbonus,5
 
 [bowl_empty_filliman]
 name=Washing bowl
