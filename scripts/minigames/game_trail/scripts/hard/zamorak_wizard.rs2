@@ -90,4 +90,4 @@ if ($random < 4) {
 }
 
 [queue,queue_defeat_trail_hard] 
-%trail_clue = setbit(%trail_clue, 4);
+%trail_status = setbit(%trail_status, 4);

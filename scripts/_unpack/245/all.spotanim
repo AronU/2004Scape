@@ -1,34 +1,34 @@
 [mushroom_growing]
-model=spot_spotanim_260
+model=mushroom_growing
 anim=mushroom_growing
 hasalpha=yes
 
 [pears_growing]
-model=spot_spotanim_261
+model=pears_growing
 anim=pears_growing
 hasalpha=yes
 
 [leaves_growing]
-model=spot_spotanim_262
+model=leaves_growing
 anim=leaves_growing
 hasalpha=yes
 
 [druidicspirit_bloom_spotanim]
-model=spot_spotanim_263
+model=druidicspirit_bloom
 anim=druidicspirit_bloom_spotanim
 hasalpha=yes
 ambient=30
 contrast=30
 
 [druidicspirit_bloom_player_spotanim]
-model=spot_spotanim_264
+model=druidicspirit_bloom_player
 anim=druidicspirit_bloom_player_spotanim
 hasalpha=yes
 ambient=30
 contrast=30
 
 [ghast_spotdeath]
-model=spot_spotanim_265
+model=ghast
 anim=ghast_spotdeath
 hasalpha=yes
 recol1s=15784

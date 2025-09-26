@@ -75,7 +75,7 @@ ambient=40
 contrast=40
 
 [druidicspirit_druidsshield]
-model=spot_spotanim_255
+model=druidicspirit_druidsshield
 anim=druidicspirit_druidsshield_spotanim
 hasalpha=yes
 
@@ -100,7 +100,7 @@ recol1s=15855
 recol1d=6476
 
 [druidicspirit_priest_bless]
-model=spot_spotanim_255
+model=druidicspirit_druidsshield
 anim=druidicspirit_druidsshield_spotanim
 hasalpha=yes
 recol1s=31649

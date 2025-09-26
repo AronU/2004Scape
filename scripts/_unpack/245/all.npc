@@ -714,7 +714,7 @@ head2=model_82_idk_head
 
 [ghast_invis]
 name=Ghast
-model1=spot_spotanim_265
+model1=ghast
 vislevel=hide
 desc=Arrghhh... A Ghast.
 hasalpha=yes
@@ -729,7 +729,7 @@ defence=17
 
 [ghast_vis]
 name=Ghast
-model1=spot_spotanim_265
+model1=ghast
 desc=Arrghhh... A Ghast.
 size=2
 hasalpha=yes
