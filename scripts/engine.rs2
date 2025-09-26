@@ -309,6 +309,8 @@
 [command,if_setnpchead](component $component, npc $npc)
 // info: Reposition a component
 [command,if_setposition](component $component, int $x, int $y);
+// info: Set the scrollbar position on a component
+[command,if_setscrollpos](component $component, int $y);
 // info: Give xp in a stat
 [command,stat_advance](stat $stat, int $exp)
 // info: Hurt a player
