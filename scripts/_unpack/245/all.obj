@@ -737,24 +737,6 @@ model=model_2504_obj
 tradeable=no
 weight=1lb
 
-[moonlight_mead]
-name=Moonlight mead
-desc=A foul smelling brew.
-recol1s=25025
-recol1d=11330
-recol2s=31367
-recol2d=14468
-cost=5
-iop1=Drink
-members=yes
-model=model_2491_obj
-2dxof=-3
-2dyof=2
-2dzoom=660
-2dyan=1904
-2dxan=140
-weight=550g
-
 [druid_pouch_empty]
 name=Druid pouch
 desc=An empty druid pouch.

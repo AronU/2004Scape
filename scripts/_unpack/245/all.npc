@@ -522,7 +522,6 @@ param=owned_shop,werewolfstore1
 param=shop_sell_multiplier,1300
 param=shop_buy_multiplier,700
 param=shop_delta,30
-// todo: confirm title
 param=shop_title,Rufus' Meat Emporium
 moverestrict=indoors
 wanderrange=5
@@ -556,8 +555,7 @@ param=owned_shop,werewolfstore2
 param=shop_sell_multiplier,1300
 param=shop_buy_multiplier,400
 param=shop_delta,30
-// todo: confirm title
-param=shop_title,Barkers' Haberdashery
+param=shop_title,Barkers' Habidashery
 moverestrict=indoors
 wanderrange=5
 
@@ -583,8 +581,7 @@ param=owned_shop,werewolfgeneralstore
 param=shop_sell_multiplier,2000
 param=shop_buy_multiplier,100
 param=shop_delta,30
-// todo: confirm title
-param=shop_title,Canifis General Store
+param=shop_title,General Store
 moverestrict=indoors
 wanderrange=5
 

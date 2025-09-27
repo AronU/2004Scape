@@ -17,7 +17,7 @@ switch_int(random(10)) {
 }
 
 [ai_queue2,_canafis_citizen]
-if(finduid(%npc_attacking_uid) = true & inv_total(worn, dagger_wolfbane) = 0) {
+if(finduid(%npc_aggressive_player) = true & inv_total(worn, dagger_wolfbane) = 0) {
     npc_anim(null, 0);
     npc_changetype(npc_param(next_npc_type), 500); // 500t osrs
     %npc_attacking_uid = uid;

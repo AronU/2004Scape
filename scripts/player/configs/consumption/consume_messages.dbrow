@@ -717,3 +717,10 @@ data=consume_message1,You eat the fruit.
 data=consume_message2,"It tastes great, some of your energy is restored!"
 // says these messages even at 100% run and 100% hp
 data=restore_message2,0
+
+[moonlight_mead_consume_messages]
+table=consume_messages_table
+data=consumable,moonlight_mead
+data=consume_message1,You drink the foul smelling brew.
+data=consume_message2,It tastes like something just died in your mouth.
+data=restore_message2,0
