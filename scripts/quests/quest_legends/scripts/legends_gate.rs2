@@ -6,6 +6,10 @@
 
 [label,open_legends_gate](int $side)
 def_boolean $entering = ~check_axis(coord, loc_coord, loc_angle);
+def_loc $loc_type = loc_type;
+def_locshape $loc_shape = loc_shape;
+def_int $loc_angle = loc_angle;
+def_coord $loc_coord = loc_coord;
 // findallzone doesn't reach far enough as the guards wander
 npc_findallany(coord, 14, 0);
 while (npc_findnext = true) {
@@ -13,7 +17,7 @@ while (npc_findnext = true) {
         if (%legendsquest = ^legends_not_started) {
             if ($entering = false) {
                 // Leave, then a guard speaks to you
-                ~open_and_close_double_door2(~check_axis(coord, loc_coord, loc_angle), $side, grate_open);
+                ~open_and_close_double_door3(~check_axis(coord, loc_coord, loc_angle), $loc_type, $loc_shape, $loc_angle, $loc_coord, $side, grate_open);
             }
             mes("A nearby guard approaches you...");
             %temp = add($side, 1);
@@ -37,7 +41,7 @@ while (npc_findnext = true) {
                 mes("A guard nods at you as you walk past.");
                 npc_say("Hope the quest is going well <text_gender("Sir", "Madam")>!");
             }
-            ~open_and_close_double_door2(~check_axis(coord, loc_coord, loc_angle), $side, grate_open);
+            ~open_and_close_double_door3(~check_axis(coord, loc_coord, loc_angle), $loc_type, $loc_shape, $loc_angle, $loc_coord, $side, grate_open);
             return;
         }
     }
