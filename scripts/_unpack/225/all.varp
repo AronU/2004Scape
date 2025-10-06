@@ -206,11 +206,6 @@ scope=perm
 
 [varp_199]
 
-[varp_202]
-
-[flour]
-scope=perm
-
 [smithbars]
 transmit=yes
 
