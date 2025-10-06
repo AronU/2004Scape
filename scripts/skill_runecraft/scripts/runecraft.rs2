@@ -74,6 +74,7 @@ if ($total_ess = 0) {
 
 anim(human_runecraft, 0);
 spotanim_pl(runecrafting, 96, 0);
+sound_synth(bind_runes, 0, 0);
 
 def_int $rune_count_per_ess = 1;
 if (db_getfieldcount($data, runecraft_table:multiplier) > 0) {
