@@ -82,7 +82,7 @@ members=yes
 param=slashdefence,1
 param=crushdefence,1
 
-[gnome_boots_turqoise]
+[gnome_boots_turquoise]
 name=Boots
 desc=They're soft and silky.
 model=model_2837_obj
