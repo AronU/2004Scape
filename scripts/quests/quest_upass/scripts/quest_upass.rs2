@@ -82,11 +82,11 @@ if(%biohazard < ^biohazard_complete) {
     ~mesbox("You must complete the Biohazard quest before you can enter."); // rs3
     return;
 }
-if(testbit(%upass_map_mechanisms, ^upass_started_bit) = ^false) {
+if(testbit(%ibanmulti, ^upass_started_bit) = ^false) {
     mes("You must talk to King Lathas before you can enter.");
     return;
 }
-if(testbit(%upass_map_mechanisms, ^upass_started_bit) = ^true & %upass = ^upass_not_started) {
+if(testbit(%ibanmulti, ^upass_started_bit) = ^true & %upass = ^upass_not_started) {
     if(npc_find(coord, caveguide1, 7, 0) = true) {
         @koftik_first_dialogue;
     }
@@ -111,7 +111,7 @@ if_sethide(book:com_4, true);
 mes("You throw the glowing orb into the furnace...");
 p_delay(2);
 inv_del(inv, $orb, 1);
-%upass_map_mechanisms = setbit(%upass_map_mechanisms, oc_param($orb, orb_bit));
+%ibanmulti = setbit(%ibanmulti, oc_param($orb, orb_bit));
 mes("Its light quickly dims and then dies.");
 p_delay(2);
 mes("You feel a cold shudder run down your spine.");
@@ -119,7 +119,7 @@ mes("You feel a cold shudder run down your spine.");
 [oploc1,cave_well]
 anim(human_reachforladder, 0);
 mes("You climb into the well...");
-if(getbit_range(%upass_map_mechanisms, ^upass_orb1_bit, ^upass_orb4_bit) = calc(pow(2,4) - 1)) {
+if(getbit_range(%ibanmulti, ^upass_orb1_bit, ^upass_orb4_bit) = calc(pow(2,4) - 1)) {
     p_delay(0);
     mes("You feel the grip of icy hands all around you...");
     p_delay(0);
@@ -198,11 +198,11 @@ p_delay(0);
 [oploc1,cavefood1]
 mes("You search the crate...");
 p_delay(2);
-if(testbit(%upass_map_mechanisms, ^upass_searched_area2_crate) = ^false) {
+if(testbit(%ibanmulti, ^upass_searched_area2_crate) = ^false) {
     mes("...inside you find some food.");
     inv_add(inv, salmon, 2);
     inv_add(inv, meat_pie, 2);
-    %upass_map_mechanisms = setbit(%upass_map_mechanisms, ^upass_searched_area2_crate);
+    %ibanmulti = setbit(%ibanmulti, ^upass_searched_area2_crate);
     return;
 }
 mes("...but you find nothing.");
@@ -335,9 +335,9 @@ p_delay(1);
 @upass_well_inscription;
 
 [proc,upass_unicorn_door_unlocked]()(boolean)
-if(testbit(%upass_map_mechanisms, ^upass_thrown_jerro_badge) = ^true & testbit(%upass_map_mechanisms, ^upass_thrown_carl_badge) = ^true 
-        & testbit(%upass_map_mechanisms, ^upass_thrown_harry_badge) = ^true 
-        & testbit(%upass_map_mechanisms, ^upass_thrown_unicorn_horn) = ^true) {
+if(testbit(%ibanmulti, ^upass_thrown_jerro_badge) = ^true & testbit(%ibanmulti, ^upass_thrown_carl_badge) = ^true 
+        & testbit(%ibanmulti, ^upass_thrown_harry_badge) = ^true 
+        & testbit(%ibanmulti, ^upass_thrown_unicorn_horn) = ^true) {
     return (true);
 }
 return (false);
@@ -349,25 +349,25 @@ switch_obj(last_useitem) {
         mes("You throw the unicorn horn into the flames...");
         p_delay(1);
         inv_del(inv, cave_unicorn_horn, 1);
-        %upass_map_mechanisms = setbit(%upass_map_mechanisms, ^upass_thrown_unicorn_horn);
+        %ibanmulti = setbit(%ibanmulti, ^upass_thrown_unicorn_horn);
         mes("You hear a howl in the distance.");
     case paladinbadge1 :
         mes("You throw the coat of arms into the flames...");
         p_delay(1);
         inv_del(inv, paladinbadge1, 1);
-        %upass_map_mechanisms = setbit(%upass_map_mechanisms, ^upass_thrown_jerro_badge);
+        %ibanmulti = setbit(%ibanmulti, ^upass_thrown_jerro_badge);
         mes("You hear a howl in the distance.");
     case paladinbadge2 :
         mes("You throw the coat of arms into the flames...");
         p_delay(1);
         inv_del(inv, paladinbadge2, 1);
-        %upass_map_mechanisms = setbit(%upass_map_mechanisms, ^upass_thrown_carl_badge);
+        %ibanmulti = setbit(%ibanmulti, ^upass_thrown_carl_badge);
         mes("You hear a howl in the distance.");
     case paladinbadge3 :
         mes("You throw the coat of arms into the flames...");
         p_delay(1);
         inv_del(inv, paladinbadge3, 1);
-        %upass_map_mechanisms = setbit(%upass_map_mechanisms, ^upass_thrown_harry_badge);
+        %ibanmulti = setbit(%ibanmulti, ^upass_thrown_harry_badge);
         mes("You hear a howl in the distance.");
     case ibanstaff :
         mes("You hold the staff above the well...");
@@ -404,7 +404,7 @@ if(coordz(loc_coord) < 6400) {
 [oploc1,cavewalltunnel_upass_down]
 if(loc_coord = 1_33_71_38_1) p_teleport(0_36_153_32_2);
 else p_teleport(0_36_154_1_59);
-if(testbit(%upass_map_mechanisms, ^upass_koftik_gone_insane) = ^false) {
+if(testbit(%ibanmulti, ^upass_koftik_gone_insane) = ^false) {
     p_delay(0);
     // todo: figure out how long this should be, only works this way on RS3
     npc_add(map_findsquare(coord, 1, 2, ^map_findsquare_lineofwalk), caveguide4, 200);
@@ -447,7 +447,7 @@ if(last_useitem = upassdwarfbrew) {
         sound_synth(tap_fill, 0, 0);
         inv_del(inv, upassdwarfbrew, 1);
         inv_add(inv, bucket_empty, 1);
-        %upass_map_mechanisms = setbit(%upass_map_mechanisms, ^upass_poured_brew);
+        %ibanmulti = setbit(%ibanmulti, ^upass_poured_brew);
     } else {
         mes("You consider pouring the brew over the grave..."); // rsc, osrs and rs3 both have this changed
         p_delay(2);
@@ -455,7 +455,7 @@ if(last_useitem = upassdwarfbrew) {
     }
 } else if(last_useitem = tinderbox) {
     mes("You try to set light to the tomb.");
-    if(testbit(%upass_map_mechanisms, ^upass_poured_brew) = ^false) {
+    if(testbit(%ibanmulti, ^upass_poured_brew) = ^false) {
         mes("But it will not light.");
         return;
     }
@@ -477,7 +477,7 @@ if(last_useitem = upassdwarfbrew) {
     p_delay(2);
     mes("You search through the remains.");
     // todo: should there even be a doll check? OSRS and rs3 both have this thing completely changed
-    if(inv_total(inv, ibans_ashes) = 0 & testbit(%upass_map_mechanisms, ^upass_ashes_on_doll) = ^false) {
+    if(inv_total(inv, ibans_ashes) = 0 & testbit(%ibanmulti, ^upass_ashes_on_doll) = ^false) {
         mes("You find the ashes of Iban's corpse.");
         inv_add(inv, ibans_ashes, 1);
         return;
@@ -502,7 +502,7 @@ mes("The man seems to be entranced.");
 p_delay(1);
 mes("You search through the bottom of the cage...");
 p_delay(1);
-if(inv_total(inv, ibansdove) = 0 & loc_type = upass_cage_dummy & testbit(%upass_map_mechanisms, ^upass_dove_on_doll) = ^false) {
+if(inv_total(inv, ibansdove) = 0 & loc_type = upass_cage_dummy & testbit(%ibanmulti, ^upass_dove_on_doll) = ^false) {
     mes("...and find Iban's dove.");
     inv_add(inv, ibansdove, 1);
 } else {
@@ -548,20 +548,20 @@ switch_obj (last_useitem) {
         mes("You crumble the dove's skeleton into dust...");
         p_delay(1);
         inv_del(inv, ibansdove, 1);
-        %upass_map_mechanisms = setbit(%upass_map_mechanisms, ^upass_dove_on_doll);
+        %ibanmulti = setbit(%ibanmulti, ^upass_dove_on_doll);
         mes("...and rub it into the doll.");
     case ibansshadow :
         p_delay(1);
         mes("You pour the strange liquid over the doll...");
         p_delay(1);
         inv_del(inv, ibansshadow, 1);
-        %upass_map_mechanisms = setbit(%upass_map_mechanisms, ^upass_shadow_on_doll);
+        %ibanmulti = setbit(%ibanmulti, ^upass_shadow_on_doll);
         mes("...It seeps into the cloth.");
     case ibans_ashes :
         // https://youtu.be/ZxF473zUZfQ?si=KGkFgkQCiAMmgCv3&t=2789
         p_delay(7); // 8t
         inv_del(inv, ibans_ashes, 1);
-        %upass_map_mechanisms = setbit(%upass_map_mechanisms, ^upass_ashes_on_doll);
+        %ibanmulti = setbit(%ibanmulti, ^upass_ashes_on_doll);
         mes("You rub the ashes into the doll.");
 }
 
@@ -587,7 +587,7 @@ if(coordx(loc_coord) < coordx(coord)) {
     loc_change(loc_param(next_loc_stage), 5);
     sound_synth(door_open, 0, 0);
     ~forcemove(movecoord(loc_coord, -1, 0, 0));
-    if(getbit_range(%upass_map_mechanisms, ^upass_blood_on_doll, ^upass_shadow_on_doll) = calc(pow(2,4) - 1) & inv_total(inv, ibandoll) > 0 
+    if(getbit_range(%ibanmulti, ^upass_blood_on_doll, ^upass_shadow_on_doll) = calc(pow(2,4) - 1) & inv_total(inv, ibandoll) > 0 
         & %upass < ^upass_defeated_iban) {
         if(%upass = ^upass_found_doll) %upass = ^upass_confronted_iban;
         if(npc_findexact(1_33_72_21_39, iban) = true) {
@@ -620,13 +620,13 @@ if(coordx(loc_coord) < coordx(coord)) {
 p_stopaction;
 mes("You carefully search the doll...");
 p_delay(1);
-if(testbit(%upass_map_mechanisms, ^upass_blood_on_doll) = ^true) mes("Blood has been smeared onto the doll.");
+if(testbit(%ibanmulti, ^upass_blood_on_doll) = ^true) mes("Blood has been smeared onto the doll.");
 p_delay(0);
-if(testbit(%upass_map_mechanisms, ^upass_dove_on_doll) = ^true) mes("Crushed bones have been spread onto the doll.");
+if(testbit(%ibanmulti, ^upass_dove_on_doll) = ^true) mes("Crushed bones have been spread onto the doll.");
 p_delay(0);
-if(testbit(%upass_map_mechanisms, ^upass_ashes_on_doll) = ^true) mes("Burnt ash has been smeared onto the doll.");
+if(testbit(%ibanmulti, ^upass_ashes_on_doll) = ^true) mes("Burnt ash has been smeared onto the doll.");
 p_delay(0);
-if(testbit(%upass_map_mechanisms, ^upass_shadow_on_doll) = ^true) mes("Dark liquid has been smeared onto the doll.");
+if(testbit(%ibanmulti, ^upass_shadow_on_doll) = ^true) mes("Dark liquid has been smeared onto the doll.");
 p_delay(0);
 mes("The doll is made from old wood and cloth.");
 
@@ -634,7 +634,7 @@ mes("The doll is made from old wood and cloth.");
 // no nothing interesting happens
 if(last_useitem = ibandoll) {
     // check if doll is complete, todo: how does this work if iban is currently dead
-    if(getbit_range(%upass_map_mechanisms, ^upass_blood_on_doll, ^upass_shadow_on_doll) = calc(pow(2,4) - 1)
+    if(getbit_range(%ibanmulti, ^upass_blood_on_doll, ^upass_shadow_on_doll) = calc(pow(2,4) - 1)
         & %upass <= ^upass_confronted_iban
         & npc_findexact(1_33_72_21_39, iban) = true) {
         mes("You throw the doll of Iban into the pit...");

@@ -1,6 +1,6 @@
 // outside underground pass
 [opnpc1,caveguide1]
-if(%upass = ^upass_not_started & testbit(%upass_map_mechanisms, ^upass_started_bit) = ^true) {
+if(%upass = ^upass_not_started & testbit(%ibanmulti, ^upass_started_bit) = ^true) {
     @koftik_first_dialogue;
 }
 switch_int(%upass) {
@@ -121,7 +121,7 @@ if(%upass >= ^upass_defeated_iban) {
     ~chatnpc("<p,neutral>I'm good... just keeping an eye out.");
     return;
 }
-if(testbit(%upass_map_mechanisms, ^upass_koftik_gone_insane) = ^true) {
+if(testbit(%ibanmulti, ^upass_koftik_gone_insane) = ^true) {
     // todo: check mesanim I closed dialogue on rs3, it's happy on OSRS but dialogue is a bit different
     ~chatnpc("<p,happy>Nice job killing those Paladins. You're much closer to his side now. Perhaps you could kill those dwarfs to the south...");
     return;
@@ -144,7 +144,7 @@ p_teleport(0_38_151_49_53);
 mes("...and back to the cave entrance.");
 
 [label,koftik_isthatyou]
-%upass_map_mechanisms = setbit(%upass_map_mechanisms, ^upass_koftik_gone_insane);
+%ibanmulti = setbit(%ibanmulti, ^upass_koftik_gone_insane);
 ~chatnpc("<p,shock>Traveller is that you?.. my friend on a mission!");
 ~chatplayer("<p,quiz>Koftik, you're still here, you should leave.");
 ~chatnpc("<p,quiz>Leave?...leave?..this is my home now. Home with my lord, he talks to me, he's my friend.");

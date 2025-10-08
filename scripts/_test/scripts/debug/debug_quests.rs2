@@ -76,7 +76,7 @@ if (p_finduid(uid) = true) {
 if(p_finduid(uid) = true) ~setupassgrilltrap;
 
 [debugproc,getmaze]
-if(p_finduid(uid) = true) mes("<tostring(getbit_range(%upass_map_mechanisms, 22, 31))>");
+if(p_finduid(uid) = true) mes("<tostring(getbit_range(%ibanmulti, 22, 31))>");
 
 //Hero's Quest
 [debugproc,gang]

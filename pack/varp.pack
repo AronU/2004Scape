@@ -17,7 +17,7 @@
 16=arhein_crate_coord
 17=arenaquest
 18=musicplay
-19=musicloop
+19=varp_19
 20=musicmulti_1
 21=musicmulti_2
 22=musicmulti_3
@@ -106,7 +106,7 @@
 105=wilderness
 106=newcomers_pos
 107=prieststart
-108=lastcastspell
+108=attackstyle_magic
 109=trawler
 110=trawler_catch
 111=treequest
@@ -160,7 +160,7 @@
 159=seaslugquest
 160=imp
 161=upass
-162=upass_map_mechanisms
+162=ibanmulti
 163=open_book
 164=book_page
 165=elenaquest

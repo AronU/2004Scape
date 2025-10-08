@@ -260,7 +260,7 @@ if (p_finduid(uid) = true) {
                 case 47 : %totemquest = 0;
                 case 48 :
                     %upass = 0;
-                    %upass_map_mechanisms = 0;
+                    %ibanmulti = 0;
                 case 49 : 
                     %itwatchtower = 0;
                     %itwatchtower_bits = 0;
@@ -461,7 +461,7 @@ return;
 %treequest = 0;
 %totemquest = 0;
 %upass = 0;
-%upass_map_mechanisms = 0;
+%ibanmulti = 0;
 %itwatchtower = 0;
 %itwatchtower_bits = 0;
 %waterfall_golrie_and_puzzle = 0;

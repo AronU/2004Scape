@@ -13,7 +13,7 @@ protect=no
 [lastcombat]
 protect=no
 
-[musicloop]
+[varp_19]
 
 [cog_cooled]
 
@@ -118,7 +118,7 @@ type=boolean
 transmit=yes
 
 // not perm: https://runescape.wiki/w/Update:Game_Improvements
-[lastcastspell]
+[attackstyle_magic]
 protect=no
 transmit=yes
 

@@ -5,7 +5,7 @@ p_stopaction;
 mes("The journal is old and covered in dust...");
 p_delay(2);
 mes("inside are several chapters...");
-%upass_map_mechanisms = setbit(%upass_map_mechanisms, ^upass_read_history); // I think this is just used for quest journal
+%ibanmulti = setbit(%ibanmulti, ^upass_read_history); // I think this is just used for quest journal
 @multi4_header("Introduction.", history_of_iban_introduction, "Iban.", history_of_iban, "The Resurrection.", history_of_iban_resurrection, "The Four Elements.", history_of_iban_elements, "Pick a chapter...");
 
 [label,history_of_iban_introduction]
