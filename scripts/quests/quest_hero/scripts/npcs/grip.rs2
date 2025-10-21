@@ -36,7 +36,7 @@ switch_int($option) {
     @grip_chat_options(^grip_stage_asked_treasure);
   case 2 :
     ~chatplayer("<p,quiz>So what do my duties involve?");
-    ~chatnpc("<p,neutral>You'll have various guard related duties on various shifts. I'll assign specific duties as the are required as and when they become necessary. Just so you know, if anything happens to me");
+    ~chatnpc("<p,neutral>You'll have various guard related duties on various shifts. I'll assign specific duties as they are required as and when they become necessary. Just so you know, if anything happens to me");
     ~chatnpc("<p,neutral>you'll need to take over as head guard here. You'll find important keys to the treasure room and Pete's quarters inside my jacket - although I doubt anything bad's going to happen to");
     ~chatnpc("<p,laugh>me anytime soon!");
     ~mesbox("Grip laughs to himself at the thought.");

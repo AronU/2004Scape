@@ -1,32 +1,14 @@
-[oploc1,_manor_entrance]
+[oploc1,haunteddoorl] @open_manor_entrance(^left);
+[oploc1,haunteddoorr] @open_manor_entrance(^right);
+
+[label,open_manor_entrance](int $side)
 if(coordz(coord) > coordz(loc_coord)) {
     mes("The doors won't open.");
     return;
 }
-p_teleport(loc_coord);
-~open_manor_gates;
-p_teleport(movecoord(coord, 0, 0, 1));
-p_delay(2);
-mes("The doors slam shut behind you!");
-
-[proc,open_manor_gates]
-loc_findallzone(coord);
-while(loc_findnext = true) {
-     if(loc_category = manor_entrance) {
-            def_coord $central_coord = loc_coord;
-            def_int $orig_angle = loc_angle;
-            // Temp note: dur updated
-            loc_del(4);
-            if(loc_type = haunteddoorl) {
-                // Temp note: dur updated
-                loc_add(movecoord($central_coord, 0, 0, 1), opencastledoubledoorl, 0, loc_shape, 4);
-                loc_add(movecoord($central_coord, 1, 0, 1), doubledoorhingel, 2, loc_shape, 4); 
-            }
-            // Temp note: dur updated
-            loc_add($central_coord, inviswall, $orig_angle, loc_shape, 4);
-     }
-}
-sound_synth(door_open, 0, 0);
+~open_and_close_double_door2(~check_axis(coord, loc_coord, loc_angle), $side, door_open);
+p_delay(0);
+mes("The doors slam shut behind you.");
 
 [oploc1,hauntedcompostheap]
 ~mesbox("I'm not looking through that with my hands!");

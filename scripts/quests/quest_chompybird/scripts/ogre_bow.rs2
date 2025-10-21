@@ -45,7 +45,7 @@ if ($kills < 95) {
     return("Yeoman");
 }
 if ($kills < 125) {
-    return("Ogre Markman");
+    return("Ogre Marksman");
 }
 if ($kills < 170) {
     return("Marksman");

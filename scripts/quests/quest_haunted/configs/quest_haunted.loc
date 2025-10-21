@@ -3,7 +3,8 @@ name=Large door
 desc=A large double door.
 model=model_loc_71
 op1=Open
-category=manor_entrance
+category=double_door_open_and_close_left
+param=next_loc_stage,opencastledoubledoorl
 
 [haunteddoorr]
 name=Large door
@@ -11,7 +12,8 @@ desc=A large double door.
 model=model_loc_71
 op1=Open
 mirror=yes
-category=manor_entrance
+category=double_door_open_and_close_right
+param=next_loc_stage,doubledoorhingel
 
 [hauntedcompostheap]
 name=Compost heap
