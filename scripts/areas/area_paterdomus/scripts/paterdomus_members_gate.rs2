@@ -10,4 +10,4 @@ if(map_members = ^false) {
     mes(^mes_members_gate);
     return;
 }
-~open_gate;
+~open_outer_gate;
