@@ -24,7 +24,7 @@ if(inv_total(worn, amulet_of_ghostspeak) = 0) {
 }
 switch_int(%druidspirit) {
     case ^druidspirit_entered_grotto : 
-        if(inzone(0_53_52_0_0, 0_54_54_63_63, coord) = true) {
+        if(inzone(0_53_52_0_0, 0_54_53_63_63, coord) = true) {
             @filliman_grotto;
         }
         ~chatnpc("<p,neutral>Well, hello there again, I was just enjoying the grotto. Many thanks for your help, I couldn't have become a Spirit of nature without you.");

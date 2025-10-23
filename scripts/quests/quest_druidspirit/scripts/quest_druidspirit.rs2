@@ -199,7 +199,7 @@ if(%druidspirit < ^druidspirit_blessed) {
     mes("You need to be blessed before you can cast this spell.");
     return;
 }
-if(inzone(0_53_52_0_0, 0_54_54_63_63, coord) = false) {
+if(inzone(0_53_52_0_0, 0_54_53_63_63, coord) = false) {
     mes("This spell has no effect outside of Mort Myre swamp.");
     return;
 }
