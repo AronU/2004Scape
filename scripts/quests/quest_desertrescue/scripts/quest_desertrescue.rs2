@@ -1,30 +1,30 @@
 [oploc2,miningcampgateclosedl] @search_desertcamp_gate;
 [oploc2,miningcampgateclosedr] @search_desertcamp_gate;
 
-[oploc1,miningcampgateclosedl] @open_desertcamp_gate(^left);
-[oploc1,miningcampgateclosedr] @open_desertcamp_gate(^right);
+[oploc1,miningcampgateclosedl] ~open_desertcamp_gate(^left);
+[oploc1,miningcampgateclosedr] ~open_desertcamp_gate(^right);
 
 [oplocu,miningcampgateclosedl] 
 if(last_useitem = metal_key) {
     // this is to replicate osrs behaviour where you get nothing interesting happens after opening gate to leave w/key
     // this could just be a rework bug
     def_boolean $entering = ~check_axis(coord, loc_coord, loc_angle);
-    if($entering = false) {
-        ~open_and_close_double_door2(~check_axis(coord, loc_coord, loc_angle), ^left, grate_open);
-    } else {
-        @open_desertcamp_gate(^left);
+    if($entering = true) {
+        ~open_desertcamp_gate(^left);
+        return;
     }
+    ~open_desertcamp_gate(^left);
 }
 ~displaymessage(^dm_default);
 
 [oplocu,miningcampgateclosedr]
 if(last_useitem = metal_key) {
     def_boolean $entering = ~check_axis(coord, loc_coord, loc_angle);
-    if($entering = false) {
-        ~open_and_close_double_door2(~check_axis(coord, loc_coord, loc_angle), ^right, grate_open);
-    } else {
-        @open_desertcamp_gate(^right);
+    if($entering = true) {
+        ~open_desertcamp_gate(^right);
+        return;
     }
+    ~open_desertcamp_gate(^right);
 }
 ~displaymessage(^dm_default);
 
@@ -65,7 +65,7 @@ if(($lhand ! null & oc_category($lhand) = armour_shield) | ($hands ! null & oc_c
 }
 return (false);
 
-[label,open_desertcamp_gate](int $side)
+[proc,open_desertcamp_gate](int $side)
 def_boolean $entering = ~check_axis(coord, loc_coord, loc_angle);
 def_loc $loc_type = loc_type;
 def_locshape $loc_shape = loc_shape;

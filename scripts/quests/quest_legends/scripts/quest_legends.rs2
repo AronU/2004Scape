@@ -944,6 +944,7 @@ if ($pickaxe = null) {
         mes("You decide not to take the pickaxe.");
         return;
     }
+    inv_add(inv, bronze_pickaxe, 1);
     ~objbox(bronze_pickaxe, "You carefully prise the pickaxe from the unfortunate dwarf's cold, dead hands.", 250, 0, 0);
     return;
 }

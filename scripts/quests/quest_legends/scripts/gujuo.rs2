@@ -77,7 +77,7 @@ else if (%legendsquest >= ^legends_accepted_rescue_ungadulu & %legendsquest < ^l
                 "If I went in search of the source, could you help me?", gujuo_searchsource,
                 "Ok thanks for your help.", gujuo_thanks);
     }
-} else if (%legendsquest >= ^legends_defeated_nezikchened_water & %legendsquest < ^legends_defeated_nezikchened_final) {
+} else if (%legendsquest >= ^legends_defeated_nezikchened_water & %legendsquest <= ^legends_defeated_nezikchened_final) {
     ~chatnpc("<p,happy>Hello Bwana, I'm very pleased to see you again. Things seem much happier now in the Kharazi Jungle. I suspect that it is down to your good doings!");
     if(inv_total(inv, thtotempole) > 0) {
         @multi4("I made the Totem pole, now what do I do with it?", gujuo_madetotem, "I found the source of the spring and I got the water.", gujuo_foundsource, "I killed the demon again.", gujuo_demon, "Ok thanks for your help.", gujuo_thanks);

@@ -1,7 +1,7 @@
 [opnpc1,_fisherman_platform]
 // RSC has 1 variant use one dialogue and 2 use another, RS2 has 4 variants, looks like RS2 probably uses random (but added new dialogues after rework)
 ~chatplayer("<p,happy>Hello there.");
-~mesbox("His eyes are fixated|starting at the sea..");
+~mesbox("His eyes are fixated|staring at the sea..");
 if_close;
 p_delay(2);
 if(random(2) = 0) { 
