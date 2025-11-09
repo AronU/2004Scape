@@ -1,0 +1,1842 @@
+[obj_2978]
+name=Chompy bird hat
+desc=A symbol of your chompy bird hunting prowess.
+model=obj_2978
+manwear=obj_2978_manwear,0
+womanwear=obj_2978_womanwear,0
+manhead=obj_2978_manhead
+womanhead=obj_2978_womanhead
+iop2=Wear
+2dxof=5
+2dyof=-10
+2dzoom=800
+2dyan=156
+2dxan=152
+members=yes
+
+[obj_2979]
+name=Chompy bird hat
+recol1s=26527
+recol1d=14273
+recol2s=19263
+recol2d=992
+recol3s=17119
+recol3d=640
+recol4s=26355
+recol4d=26355
+recol5s=15855
+recol5d=992
+desc=A symbol of your chompy bird hunting prowess.
+model=obj_2978
+manwear=obj_2978_manwear,0
+womanwear=obj_2978_womanwear,0
+manhead=obj_2978_manhead
+womanhead=obj_2978_womanhead
+iop2=Wear
+2dxof=5
+2dyof=-10
+2dzoom=800
+2dyan=156
+2dxan=152
+members=yes
+
+[obj_2980]
+name=Chompy bird hat
+recol1s=26527
+recol1d=30753
+recol2s=19263
+recol2d=19489
+recol3s=17119
+recol3d=10240
+recol4s=15855
+recol4d=19489
+desc=A symbol of your chompy bird hunting prowess.
+model=obj_2978
+manwear=obj_2978_manwear,0
+womanwear=obj_2978_womanwear,0
+manhead=obj_2978_manhead
+womanhead=obj_2978_womanhead
+iop2=Wear
+2dxof=5
+2dyof=-10
+2dzoom=800
+2dyan=156
+2dxan=152
+members=yes
+
+[obj_2981]
+name=Chompy bird hat
+recol1s=26527
+recol1d=15855
+recol2s=19263
+recol2d=2114
+recol3s=17119
+recol3d=0
+recol4s=15855
+recol4d=2114
+desc=A symbol of your chompy bird hunting prowess.
+model=obj_2978
+manwear=obj_2978_manwear,0
+womanwear=obj_2978_womanwear,0
+manhead=obj_2978_manhead
+womanhead=obj_2978_womanhead
+iop2=Wear
+2dxof=5
+2dyof=-10
+2dzoom=800
+2dyan=156
+2dxan=152
+members=yes
+
+[obj_2982]
+name=Chompy bird hat
+recol1s=26527
+recol1d=479
+recol2s=19263
+recol2d=479
+recol3s=17119
+recol3d=479
+recol4s=15855
+recol4d=479
+desc=A symbol of your chompy bird hunting prowess.
+model=obj_2978
+manwear=obj_2978_manwear,0
+womanwear=obj_2978_womanwear,0
+manhead=obj_2978_manhead
+womanhead=obj_2978_womanhead
+iop2=Wear
+2dxof=5
+2dyof=-10
+2dzoom=800
+2dyan=156
+2dxan=152
+members=yes
+
+[obj_2983]
+name=Chompy bird hat
+recol1s=26527
+recol1d=31649
+recol2s=19263
+recol2d=22145
+recol3s=17119
+recol3d=17921
+recol4s=15855
+recol4d=22145
+desc=A symbol of your chompy bird hunting prowess.
+model=obj_2978
+manwear=obj_2978_manwear,0
+womanwear=obj_2978_womanwear,0
+manhead=obj_2978_manhead
+womanhead=obj_2978_womanhead
+iop2=Wear
+2dxof=5
+2dyof=-10
+2dzoom=800
+2dyan=156
+2dxan=152
+members=yes
+
+[obj_2984]
+name=Chompy bird hat
+desc=A symbol of your chompy bird hunting prowess.
+model=obj_2984
+manwear=obj_2984_manwear,0
+womanwear=obj_2984_womanwear,0
+manhead=obj_2984_manhead
+womanhead=obj_2984_womanhead
+iop2=Wear
+2dxof=5
+2dyof=-10
+2dzoom=800
+2dyan=156
+2dxan=152
+members=yes
+
+[obj_2985]
+name=Chompy bird hat
+recol1s=26527
+recol1d=14273
+recol2s=19263
+recol2d=992
+recol3s=17119
+recol3d=640
+recol4s=26355
+recol4d=26355
+recol5s=15855
+recol5d=992
+desc=A symbol of your chompy bird hunting prowess.
+model=obj_2984
+manwear=obj_2984_manwear,0
+womanwear=obj_2984_womanwear,0
+manhead=obj_2984_manhead
+womanhead=obj_2984_womanhead
+iop2=Wear
+2dxof=5
+2dyof=-10
+2dzoom=800
+2dyan=156
+2dxan=152
+members=yes
+
+[obj_2986]
+name=Chompy bird hat
+recol1s=26527
+recol1d=30753
+recol2s=19263
+recol2d=19489
+recol3s=17119
+recol3d=10240
+recol4s=15855
+recol4d=19489
+desc=A symbol of your chompy bird hunting prowess.
+model=obj_2984
+manwear=obj_2984_manwear,0
+womanwear=obj_2984_womanwear,0
+manhead=obj_2984_manhead
+womanhead=obj_2984_womanhead
+iop2=Wear
+2dxof=5
+2dyof=-10
+2dzoom=800
+2dyan=156
+2dxan=152
+members=yes
+
+[obj_2987]
+name=Chompy bird hat
+recol1s=26527
+recol1d=15855
+recol2s=19263
+recol2d=2114
+recol3s=17119
+recol3d=0
+recol4s=15855
+recol4d=2114
+desc=A symbol of your chompy bird hunting prowess.
+model=obj_2984
+manwear=obj_2984_manwear,0
+womanwear=obj_2984_womanwear,0
+manhead=obj_2984_manhead
+womanhead=obj_2984_womanhead
+iop2=Wear
+2dxof=5
+2dyof=-10
+2dzoom=800
+2dyan=156
+2dxan=152
+members=yes
+
+[obj_2988]
+name=Chompy bird hat
+recol1s=26527
+recol1d=479
+recol2s=19263
+recol2d=479
+recol3s=17119
+recol3d=479
+recol4s=15855
+recol4d=479
+desc=A symbol of your chompy bird hunting prowess.
+model=obj_2984
+manwear=obj_2984_manwear,0
+womanwear=obj_2984_womanwear,0
+manhead=obj_2984_manhead
+womanhead=obj_2984_womanhead
+iop2=Wear
+2dxof=5
+2dyof=-10
+2dzoom=800
+2dyan=156
+2dxan=152
+members=yes
+
+[obj_2989]
+name=Chompy bird hat
+recol1s=26527
+recol1d=31649
+recol2s=19263
+recol2d=22145
+recol3s=17119
+recol3d=17921
+recol4s=15855
+recol4d=22145
+desc=A symbol of your chompy bird hunting prowess.
+model=obj_2984
+manwear=obj_2984_manwear,0
+womanwear=obj_2984_womanwear,0
+manhead=obj_2984_manhead
+womanhead=obj_2984_womanhead
+iop2=Wear
+2dxof=5
+2dyof=-10
+2dzoom=800
+2dyan=156
+2dxan=152
+members=yes
+
+[obj_2990]
+name=Chompy bird hat
+desc=A symbol of your chompy bird hunting prowess.
+model=obj_2990
+manwear=obj_2990_manwear,0
+womanwear=obj_2990_womanwear,0
+manhead=obj_2990_manhead
+womanhead=obj_2990_womanhead
+iop2=Wear
+2dxof=5
+2dyof=-10
+2dzoom=800
+2dyan=156
+2dxan=152
+members=yes
+
+[obj_2991]
+name=Chompy bird hat
+recol1s=26527
+recol1d=14273
+recol2s=19263
+recol2d=992
+recol3s=17119
+recol3d=640
+recol4s=26355
+recol4d=26355
+recol5s=15855
+recol5d=992
+desc=A symbol of your chompy bird hunting prowess.
+model=obj_2990
+manwear=obj_2990_manwear,0
+womanwear=obj_2990_womanwear,0
+manhead=obj_2990_manhead
+womanhead=obj_2990_womanhead
+iop2=Wear
+2dxof=5
+2dyof=-10
+2dzoom=800
+2dyan=156
+2dxan=152
+members=yes
+
+[obj_2992]
+name=Chompy bird hat
+recol1s=26527
+recol1d=30753
+recol2s=19263
+recol2d=19489
+recol3s=17119
+recol3d=10240
+recol4s=15855
+recol4d=19489
+desc=A symbol of your chompy bird hunting prowess.
+model=obj_2990
+manwear=obj_2990_manwear,0
+womanwear=obj_2990_womanwear,0
+manhead=obj_2990_manhead
+womanhead=obj_2990_womanhead
+iop2=Wear
+2dxof=5
+2dyof=-10
+2dzoom=800
+2dyan=156
+2dxan=152
+members=yes
+
+[obj_2993]
+name=Chompy bird hat
+recol1s=26527
+recol1d=15855
+recol2s=19263
+recol2d=2114
+recol3s=17119
+recol3d=0
+recol4s=15855
+recol4d=2114
+desc=A symbol of your chompy bird hunting prowess.
+model=obj_2990
+manwear=obj_2990_manwear,0
+womanwear=obj_2990_womanwear,0
+manhead=obj_2990_manhead
+womanhead=obj_2990_womanhead
+iop2=Wear
+2dxof=5
+2dyof=-10
+2dzoom=800
+2dyan=156
+2dxan=152
+members=yes
+
+[obj_2994]
+name=Chompy bird hat
+recol1s=26527
+recol1d=479
+recol2s=19263
+recol2d=479
+recol3s=17119
+recol3d=479
+recol4s=15855
+recol4d=479
+desc=A symbol of your chompy bird hunting prowess.
+model=obj_2990
+manwear=obj_2990_manwear,0
+womanwear=obj_2990_womanwear,0
+manhead=obj_2990_manhead
+womanhead=obj_2990_womanhead
+iop2=Wear
+2dxof=5
+2dyof=-10
+2dzoom=800
+2dyan=156
+2dxan=152
+members=yes
+
+[obj_2995]
+name=Chompy bird hat
+recol1s=26527
+recol1d=31649
+recol2s=19263
+recol2d=22145
+recol3s=17119
+recol3d=17921
+recol4s=15855
+recol4d=22145
+desc=A symbol of your chompy bird hunting prowess.
+model=obj_2990
+manwear=obj_2990_manwear,0
+womanwear=obj_2990_womanwear,0
+manhead=obj_2990_manhead
+womanhead=obj_2990_womanhead
+iop2=Wear
+2dxof=5
+2dyof=-10
+2dzoom=800
+2dyan=156
+2dxan=152
+members=yes
+
+[obj_2996]
+name=Agility arena ticket
+recol1s=19150
+recol1d=18888
+desc=I can exchange these for further experience or items.
+model=obj_2996
+cost=1
+2dzoom=1160
+2dyan=1888
+2dzan=8
+2dxan=308
+members=yes
+stackable=yes
+
+[obj_2997]
+name=Pirate's hook
+desc=You should see the shark...
+cost=89
+2dxof=-3
+2dzoom=810
+2dyan=2012
+2dxan=680
+members=yes
+model=obj_2997
+manwear=obj_2997_manwear,0
+womanwear=obj_2997_womanwear,0
+iop2=Wear
+
+[obj_2998]
+name=Toadflax
+recol1s=288
+recol1d=128
+recol2s=448
+recol2d=224
+cost=48
+members=yes
+desc=A useful herb.
+model=model_2364_obj
+2dxof=4
+2dzoom=700
+2dyan=1588
+2dxan=376
+
+[obj_2999]
+certlink=obj_2998
+certtemplate=template_for_cert
+
+[obj_3000]
+name=Snapdragon
+recol1s=288
+recol1d=7456
+recol2s=448
+recol2d=11712
+cost=59
+members=yes
+desc=A powerful herb.
+model=model_2364_obj
+2dxof=4
+2dzoom=700
+2dyan=1588
+2dxan=376
+
+[obj_3001]
+certlink=obj_3000
+certtemplate=template_for_cert
+
+[obj_3002]
+name=Unfinished potion
+recol1s=15855
+recol1d=12681
+desc=I need another ingredient to finish this Toadflax potion.
+cost=48
+model=model_2789_obj
+2dyof=-1
+2dzoom=550
+2dyan=1996
+2dxan=84
+members=yes
+
+[obj_3003]
+certlink=obj_3002
+certtemplate=template_for_cert
+
+[obj_3004]
+name=Unfinished potion
+recol1s=15855
+recol1d=21956
+desc=I need another ingredient to finish this Snapdragon potion.
+cost=59
+model=model_2789_obj
+2dyof=-1
+2dzoom=550
+2dyan=1996
+2dxan=84
+members=yes
+
+[obj_3005]
+certlink=obj_3004
+certtemplate=template_for_cert
+
+[obj_3006]
+name=Firework
+recol1s=15855
+recol1d=29389
+desc=A firework potion, this'll look pretty!
+cost=60
+model=model_2789_obj
+2dyof=-1
+2dzoom=550
+2dyan=1996
+2dxan=84
+members=yes
+op4=hidden
+op5=Light
+
+[obj_3007]
+certlink=obj_3006
+certtemplate=template_for_cert
+
+[obj_3008]
+name=Energy potion(4)
+recol1s=15855
+recol1d=20746
+desc=4 doses of energy potion.
+iop1=Drink
+cost=146
+model=model_2789_obj
+2dyof=-1
+2dzoom=550
+2dyan=1996
+2dxan=84
+members=yes
+
+[obj_3009]
+certlink=obj_3008
+certtemplate=template_for_cert
+
+[obj_3010]
+name=Energy potion(3)
+recol1s=15855
+recol1d=20746
+desc=3 doses of energy potion.
+iop1=Drink
+cost=110
+model=model_2697_obj
+2dyof=-1
+2dzoom=550
+2dyan=1996
+2dxan=84
+members=yes
+
+[obj_3011]
+certlink=obj_3010
+certtemplate=template_for_cert
+
+[obj_3012]
+name=Energy potion(2)
+recol1s=15855
+recol1d=20746
+desc=2 doses of energy potion.
+iop1=Drink
+cost=72
+model=model_2384_obj
+2dyof=-1
+2dzoom=550
+2dyan=1996
+2dxan=84
+members=yes
+
+[obj_3013]
+certlink=obj_3012
+certtemplate=template_for_cert
+
+[obj_3014]
+name=Energy potion(1)
+recol1s=15855
+recol1d=20746
+desc=1 dose of energy potion.
+iop1=Drink
+cost=36
+model=model_2621_obj
+2dyof=-1
+2dzoom=550
+2dyan=1996
+2dxan=84
+members=yes
+
+[obj_3015]
+certlink=obj_3014
+certtemplate=template_for_cert
+
+[obj_3016]
+name=Super energy(4)
+recol1s=15855
+recol1d=24850
+desc=4 doses of super energy potion.
+iop1=Drink
+cost=300
+model=model_2789_obj
+2dyof=-1
+2dzoom=550
+2dyan=1996
+2dxan=84
+members=yes
+
+[obj_3017]
+certlink=obj_3016
+certtemplate=template_for_cert
+
+[obj_3018]
+name=Super energy(3)
+recol1s=15855
+recol1d=24850
+desc=3 doses of super energy potion.
+iop1=Drink
+cost=230
+model=model_2697_obj
+2dyof=-1
+2dzoom=550
+2dyan=1996
+2dxan=84
+members=yes
+
+[obj_3019]
+certlink=obj_3018
+certtemplate=template_for_cert
+
+[obj_3020]
+name=Super energy(2)
+recol1s=15855
+recol1d=24850
+desc=2 doses of super energy potion.
+iop1=Drink
+cost=160
+model=model_2384_obj
+2dyof=-1
+2dzoom=550
+2dyan=1996
+2dxan=84
+members=yes
+
+[obj_3021]
+certlink=obj_3020
+certtemplate=template_for_cert
+
+[obj_3022]
+name=Super energy(1)
+recol1s=15855
+recol1d=24850
+desc=1 dose of super energy potion.
+iop1=Drink
+cost=90
+model=model_2621_obj
+2dyof=-1
+2dzoom=550
+2dyan=1996
+2dxan=84
+members=yes
+
+[obj_3023]
+certlink=obj_3022
+certtemplate=template_for_cert
+
+[obj_3024]
+name=Super restore(4)
+recol1s=15855
+recol1d=22699
+desc=4 doses of super restore potion.
+iop1=Drink
+cost=300
+model=model_2789_obj
+2dyof=-1
+2dzoom=550
+2dyan=1996
+2dxan=84
+members=yes
+
+[obj_3025]
+certlink=obj_3024
+certtemplate=template_for_cert
+
+[obj_3026]
+name=Super restore(3)
+recol1s=15855
+recol1d=22699
+desc=3 doses of super restore potion.
+iop1=Drink
+cost=240
+model=model_2697_obj
+2dyof=-1
+2dzoom=550
+2dyan=1996
+2dxan=84
+members=yes
+
+[obj_3027]
+certlink=obj_3026
+certtemplate=template_for_cert
+
+[obj_3028]
+name=Super restore(2)
+recol1s=15855
+recol1d=22699
+desc=2 doses of super restore potion.
+iop1=Drink
+cost=180
+model=model_2384_obj
+2dyof=-1
+2dzoom=550
+2dyan=1996
+2dxan=84
+members=yes
+
+[obj_3029]
+certlink=obj_3028
+certtemplate=template_for_cert
+
+[obj_3030]
+name=Super restore(1)
+recol1s=15855
+recol1d=22699
+desc=1 dose of super restore potion.
+iop1=Drink
+cost=120
+model=model_2621_obj
+2dyof=-1
+2dzoom=550
+2dyan=1996
+2dxan=84
+members=yes
+
+[obj_3031]
+certlink=obj_3030
+certtemplate=template_for_cert
+
+[obj_3032]
+name=Agility potion(4)
+recol1s=15855
+recol1d=12801
+desc=4 doses of agility potion.
+iop1=Drink
+cost=200
+model=model_2789_obj
+2dyof=-1
+2dzoom=550
+2dyan=1996
+2dxan=84
+members=yes
+
+[obj_3033]
+certlink=obj_3032
+certtemplate=template_for_cert
+
+[obj_3034]
+name=Agility potion(3)
+recol1s=15855
+recol1d=12801
+desc=3 doses of agility potion.
+iop1=Drink
+cost=150
+model=model_2697_obj
+2dyof=-1
+2dzoom=550
+2dyan=1996
+2dxan=84
+members=yes
+
+[obj_3035]
+certlink=obj_3034
+certtemplate=template_for_cert
+
+[obj_3036]
+name=Agility potion(2)
+recol1s=15855
+recol1d=12801
+desc=2 doses of agility potion.
+iop1=Drink
+cost=50
+model=model_2384_obj
+2dyof=-1
+2dzoom=550
+2dyan=1996
+2dxan=84
+members=yes
+
+[obj_3037]
+certlink=obj_3036
+certtemplate=template_for_cert
+
+[obj_3038]
+name=Agility potion(1)
+recol1s=15855
+recol1d=12801
+desc=1 dose of agility potion.
+iop1=Drink
+cost=50
+model=model_2621_obj
+2dyof=-1
+2dzoom=550
+2dyan=1996
+2dxan=84
+members=yes
+
+[obj_3039]
+certlink=obj_3038
+certtemplate=template_for_cert
+
+[obj_3040]
+name=Magic potion(4)
+recol1s=15855
+recol1d=6713
+desc=4 doses of magic potion.
+iop1=Drink
+cost=300
+model=model_2789_obj
+2dyof=-1
+2dzoom=550
+2dyan=1996
+2dxan=84
+members=yes
+
+[obj_3041]
+certlink=obj_3040
+certtemplate=template_for_cert
+
+[obj_3042]
+name=Magic potion(3)
+recol1s=15855
+recol1d=6713
+desc=3 doses of magic potion.
+iop1=Drink
+cost=250
+model=model_2697_obj
+2dyof=-1
+2dzoom=550
+2dyan=1996
+2dxan=84
+members=yes
+
+[obj_3043]
+certlink=obj_3042
+certtemplate=template_for_cert
+
+[obj_3044]
+name=Magic potion(2)
+recol1s=15855
+recol1d=6713
+desc=2 doses of magic potion.
+iop1=Drink
+cost=200
+model=model_2384_obj
+2dyof=-1
+2dzoom=550
+2dyan=1996
+2dxan=84
+members=yes
+
+[obj_3045]
+certlink=obj_3044
+certtemplate=template_for_cert
+
+[obj_3046]
+name=Magic potion(1)
+recol1s=15855
+recol1d=6713
+desc=1 dose of magic potion.
+iop1=Drink
+cost=150
+model=model_2621_obj
+2dyof=-1
+2dzoom=550
+2dyan=1996
+2dxan=84
+members=yes
+
+[obj_3047]
+certlink=obj_3046
+certtemplate=template_for_cert
+
+[obj_3048]
+certlink=obj_2997
+certtemplate=template_for_cert
+
+[obj_3049]
+name=Herb
+iop1=Identify
+members=yes
+desc=I need a closer look to identify this.
+model=model_2364_obj
+2dxof=4
+2dzoom=700
+2dyan=1588
+2dxan=376
+
+[obj_3050]
+certlink=obj_3049
+certtemplate=template_for_cert
+
+[obj_3051]
+name=Herb
+iop1=Identify
+members=yes
+desc=I need a closer look to identify this.
+model=model_2364_obj
+2dxof=4
+2dzoom=700
+2dyan=1588
+2dxan=376
+
+[obj_3052]
+certlink=obj_3051
+certtemplate=template_for_cert
+
+[obj_3053]
+name=Lava battlestaff
+desc=It's a slightly magical stick.
+cost=17000
+model=obj_3053
+2dxof=-5
+2dyof=2
+2dzoom=1490
+2dyan=1400
+2dxan=148
+iop2=Wield
+manwear=model_534_obj_wear,0
+manwear2=obj_3053_manwear2
+womanwear=model_534_obj_wear,6
+womanwear2=obj_3053_manwear2
+members=yes
+
+[obj_3054]
+name=Mystic lava staff
+desc=It's a slightly magical stick.
+cost=45000
+model=obj_3053
+2dxof=-5
+2dyof=2
+2dzoom=1490
+2dyan=1400
+2dxan=148
+iop2=Wield
+manwear=model_534_obj_wear,0
+manwear2=obj_3053_manwear2
+womanwear=model_534_obj_wear,6
+womanwear2=obj_3053_manwear2
+members=yes
+
+[obj_3055]
+certlink=obj_3053
+certtemplate=template_for_cert
+
+[obj_3056]
+certlink=obj_3054
+certtemplate=template_for_cert
+
+[obj_3057]
+name=Mime mask
+desc=A mime would wear this.
+model=obj_3057
+2dyof=-2
+2dzoom=480
+2dzan=2024
+2dxan=436
+iop2=Wear
+manwear=model_3598,0
+womanwear=obj_3057_womanwear,0
+manhead=model_3548
+womanhead=model_3548
+
+[obj_3058]
+name=Mime top
+recol1s=8384
+recol1d=23263
+recol2s=14724
+recol2d=2114
+desc=A mime would wear this.
+model=obj_3058
+2dyof=4
+2dzoom=1160
+2dxan=528
+iop2=Wear
+manwear=model_292_idk,0
+manwear2=model_163_idk
+manwear3=obj_3058_manwear3
+womanwear=model_456_idk,0
+womanwear2=model_348_idk
+womanwear3=obj_3058_womanwear3
+
+[obj_3059]
+name=Mime legs
+recol1s=2340
+recol1d=2114
+desc=A mime would wear these.
+model=model_2517
+manwear=model_254_idk,0
+womanwear=model_419_idk,0
+iop2=Wear
+2dxof=1
+2dyof=4
+2dzoom=1690
+2dyan=2044
+2dzan=32
+2dxan=620
+
+[obj_3060]
+name=Mime gloves
+recol1s=9473
+recol1d=23263
+desc=A mime would wear these.
+model=model_2649_obj
+iop2=Wear
+manwear=model_179_obj_wear,0
+womanwear=model_356_obj_wear,0
+2dxof=8
+2dyof=-8
+2dzoom=930
+2dyan=828
+2dxan=420
+
+[obj_3061]
+name=Mime boots
+recol1s=7298
+recol1d=2114
+desc=A mime would wear these.
+model=model_2837_obj
+manwear=model_185_obj_wear,0
+womanwear=model_361_obj_wear,0
+iop2=Wear
+2dxof=1
+2dyof=-6
+2dzoom=770
+2dyan=160
+2dxan=152
+
+[obj_3062]
+name=Strange box
+model=obj_3062
+2dxof=15
+2dyof=-126
+2dzoom=3840
+2dyan=1684
+2dxan=108
+iop1=Open
+desc=It seems to be humming...
+stackable=yes
+
+[obj_3063]
+name=Cube part
+recol1s=29596
+recol1d=16547
+model=obj_3063
+2dzoom=1500
+
+[obj_3064]
+certlink=obj_3063
+certtemplate=template_for_cert
+
+[obj_3065]
+name=Cube part
+recol1s=29596
+recol1d=5293
+model=obj_3063
+2dzoom=1500
+
+[obj_3066]
+certlink=obj_3065
+certtemplate=template_for_cert
+
+[obj_3067]
+name=Cube part
+recol1s=29596
+recol1d=17893
+model=obj_3063
+2dzoom=1500
+
+[obj_3068]
+certlink=obj_3067
+certtemplate=template_for_cert
+
+[obj_3069]
+name=Cube part
+recol1s=29596
+recol1d=16547
+model=obj_3069
+2dzoom=1500
+
+[obj_3070]
+certlink=obj_3069
+certtemplate=template_for_cert
+
+[obj_3071]
+name=Cube part
+recol1s=29596
+recol1d=5293
+model=obj_3069
+2dzoom=1500
+
+[obj_3072]
+certlink=obj_3071
+certtemplate=template_for_cert
+
+[obj_3073]
+name=Cube part
+recol1s=29596
+recol1d=17893
+model=obj_3069
+2dzoom=1500
+
+[obj_3074]
+certlink=obj_3073
+certtemplate=template_for_cert
+
+[obj_3075]
+name=Cube part
+recol1s=29596
+recol1d=16547
+model=obj_3075
+2dzoom=1500
+
+[obj_3076]
+certlink=obj_3075
+certtemplate=template_for_cert
+
+[obj_3077]
+name=Cube part
+recol1s=29596
+recol1d=5293
+model=obj_3075
+2dzoom=1500
+
+[obj_3078]
+certlink=obj_3077
+certtemplate=template_for_cert
+
+[obj_3079]
+name=Cube part
+recol1s=29596
+recol1d=17893
+model=obj_3075
+2dzoom=1500
+
+[obj_3080]
+certlink=obj_3079
+certtemplate=template_for_cert
+
+[obj_3081]
+name=Cube part
+recol1s=29596
+recol1d=16547
+model=obj_3081
+2dzoom=1500
+
+[obj_3082]
+certlink=obj_3081
+certtemplate=template_for_cert
+
+[obj_3083]
+name=Cube part
+recol1s=29596
+recol1d=5293
+model=obj_3081
+2dzoom=1500
+
+[obj_3084]
+certlink=obj_3083
+certtemplate=template_for_cert
+
+[obj_3085]
+name=Cube part
+recol1s=29596
+recol1d=17893
+model=obj_3081
+2dzoom=1500
+
+[obj_3086]
+certlink=obj_3085
+certtemplate=template_for_cert
+
+[obj_3087]
+name=Cube part
+recol1s=29596
+recol1d=16547
+model=obj_3087
+2dzoom=1500
+
+[obj_3088]
+certlink=obj_3087
+certtemplate=template_for_cert
+
+[obj_3089]
+name=Cube part
+recol1s=29596
+recol1d=5293
+model=obj_3087
+2dzoom=1500
+
+[obj_3090]
+certlink=obj_3089
+certtemplate=template_for_cert
+
+[obj_3091]
+name=Cube part
+recol1s=29596
+recol1d=17893
+model=obj_3087
+2dzoom=1500
+
+[obj_3092]
+certlink=obj_3091
+certtemplate=template_for_cert
+
+[obj_3093]
+name=Black dart
+recol1s=21140
+recol1d=0
+stackable=yes
+members=yes
+cost=18
+desc=A deadly throwing dart with a black tip.
+model=model_2379_obj
+2dxof=8
+2dyof=11
+2dzoom=720
+2dyan=336
+2dxan=396
+manwear=model_492_obj_wear,0
+womanwear=model_492_obj_wear,6
+iop2=Wield
+
+[obj_3094]
+name=Black dart(p)
+recol1s=21140
+recol1d=0
+recol2s=928
+recol2d=14881
+stackable=yes
+members=yes
+cost=18
+desc=A deadly poisoned dart with a black tip.
+model=model_2454_obj
+2dxof=8
+2dyof=11
+2dzoom=720
+2dyan=336
+2dxan=396
+manwear=model_500_obj_wear,0
+womanwear=model_500_obj_wear,6
+iop2=Wield
+
+[obj_3095]
+name=Bronze claws
+recol1s=6342
+recol1d=6240
+recol2s=8456
+recol2d=8354
+recol3s=10570
+recol3d=10468
+recol4s=12684
+recol4d=12582
+cost=15
+desc=A set of fighting claws.
+model=obj_3095
+2dxof=-7
+2dyof=-13
+2dzoom=630
+2dyan=1340
+2dxan=268
+iop2=Wear
+manwear=obj_3095_manwear,0
+womanwear=obj_3095_manwear,6
+members=yes
+
+[obj_3096]
+name=Iron claws
+cost=50
+desc=A set of fighting claws.
+model=obj_3095
+2dxof=-7
+2dyof=-13
+2dzoom=630
+2dyan=1340
+2dxan=268
+iop2=Wear
+manwear=obj_3095_manwear,0
+womanwear=obj_3095_manwear,6
+members=yes
+
+[obj_3097]
+name=Steel claws
+recol1s=6342
+recol1d=13741
+recol2s=8456
+recol2d=15855
+recol3s=10570
+recol3d=17969
+recol4s=12684
+recol4d=20083
+cost=175
+desc=A set of fighting claws.
+model=obj_3095
+2dxof=-7
+2dyof=-13
+2dzoom=630
+2dyan=1340
+2dxan=268
+iop2=Wear
+manwear=obj_3095_manwear,0
+womanwear=obj_3095_manwear,6
+members=yes
+
+[obj_3098]
+name=Black claws
+recol1s=6342
+recol1d=0
+recol2s=8456
+recol2d=0
+recol3s=10570
+recol3d=0
+recol4s=12684
+recol4d=0
+cost=360
+desc=A set of fighting claws.
+model=obj_3095
+2dxof=-7
+2dyof=-13
+2dzoom=630
+2dyan=1340
+2dxan=268
+iop2=Wear
+manwear=obj_3095_manwear,0
+womanwear=obj_3095_manwear,6
+members=yes
+
+[obj_3099]
+name=Mithril claws
+recol1s=6342
+recol1d=4232
+recol2s=8456
+recol2d=6346
+recol3s=10570
+recol3d=8460
+recol4s=12684
+recol4d=10574
+cost=475
+desc=A set of fighting claws.
+model=obj_3095
+2dxof=-7
+2dyof=-13
+2dzoom=630
+2dyan=1340
+2dxan=268
+iop2=Wear
+manwear=obj_3095_manwear,0
+womanwear=obj_3095_manwear,6
+members=yes
+
+[obj_3100]
+name=Adamant claws
+recol1s=6342
+recol1d=4324
+recol2s=8456
+recol2d=6438
+recol3s=10570
+recol3d=8552
+recol4s=12684
+recol4d=9673
+cost=1200
+desc=A set of fighting claws.
+model=obj_3095
+2dxof=-7
+2dyof=-13
+2dzoom=630
+2dyan=1340
+2dxan=268
+iop2=Wear
+manwear=obj_3095_manwear,0
+womanwear=obj_3095_manwear,6
+members=yes
+
+[obj_3101]
+name=Rune claws
+recol1s=6342
+recol1d=4362
+recol2s=8456
+recol2d=6476
+recol3s=10570
+recol3d=8590
+recol4s=12684
+recol4d=10704
+cost=12000
+desc=A set of fighting claws.
+model=obj_3095
+2dxof=-7
+2dyof=-13
+2dzoom=630
+2dyan=1340
+2dxan=268
+iop2=Wear
+manwear=obj_3095_manwear,0
+womanwear=obj_3095_manwear,6
+members=yes
+
+[obj_3102]
+name=Combination
+recol1s=28434
+recol1d=28400
+desc=The combination to Burthorpe Castle's equipment room.
+cost=1
+members=yes
+model=model_2429_obj
+2dyof=2
+2dzoom=760
+2dyan=28
+2dxan=552
+iop1=Read
+
+[obj_3103]
+name=Iou
+recol1s=28434
+recol1d=24139
+desc=The guard wrote the IOU on the back of some paper.
+cost=1
+members=yes
+model=model_2429_obj
+2dyof=2
+2dzoom=760
+2dyan=28
+2dxan=552
+iop1=Read
+
+[obj_3104]
+name=Secret way map
+recol1s=24174
+recol1d=17901
+recol2s=21003
+recol2d=15787
+recol3s=17832
+recol3d=14696
+desc=This map shows the secret way up to Death Plateau.
+cost=1
+members=yes
+model=model_2774_obj
+2dxof=-1
+2dyof=56
+2dzoom=990
+2dyan=1716
+2dxan=264
+
+[obj_3105]
+name=Climbing boots
+recol1s=7298
+recol1d=7399
+desc=Boots made for climbing.
+cost=12
+members=yes
+model=model_2837_obj
+2dxof=1
+2dyof=-6
+2dzoom=770
+2dyan=160
+2dxan=152
+iop2=Wear
+manwear=obj_3105_manwear,0
+womanwear=obj_3105_womanwear,0
+
+[obj_3106]
+certlink=obj_3105
+certtemplate=template_for_cert
+
+[obj_3107]
+name=Spiked boots
+recol1s=7298
+recol1d=7399
+desc=Climbing boots with spikes.
+cost=30
+members=yes
+model=obj_3107
+2dxof=1
+2dzoom=790
+2dyan=152
+2dxan=60
+iop2=Wear
+manwear=obj_3107_manwear,0
+womanwear=obj_3107_womanwear,0
+members=yes
+
+[obj_3108]
+certlink=obj_3107
+certtemplate=template_for_cert
+
+[obj_3109]
+name=Stone ball
+recol1s=3171
+recol1d=15426
+desc=Place on the stone mechanism in the right order to open the door.
+model=model_2413_obj
+2dxof=1
+2dzoom=1400
+2dyan=1852
+2dxan=156
+cost=1
+members=yes
+
+[obj_3110]
+name=Stone ball
+recol1s=3171
+recol1d=3181
+desc=Place on the stone mechanism in the right order to open the door.
+model=model_2413_obj
+2dxof=1
+2dzoom=1400
+2dyan=1852
+2dxan=156
+cost=1
+members=yes
+
+[obj_3111]
+name=Stone ball
+recol1s=3171
+recol1d=19938
+desc=Place on the stone mechanism in the right order to open the door.
+model=model_2413_obj
+2dxof=1
+2dzoom=1400
+2dyan=1852
+2dxan=156
+cost=1
+members=yes
+
+[obj_3112]
+name=Stone ball
+recol1s=3171
+recol1d=13388
+desc=Place on the stone mechanism in the right order to open the door.
+model=model_2413_obj
+2dxof=1
+2dzoom=1400
+2dyan=1852
+2dxan=156
+cost=1
+members=yes
+
+[obj_3113]
+name=Stone ball
+recol1s=3171
+recol1d=2402
+desc=Place on the stone mechanism in the right order to open the door.
+model=model_2413_obj
+2dxof=1
+2dzoom=1400
+2dyan=1852
+2dxan=156
+cost=1
+members=yes
+
+[obj_3114]
+name=Certificate
+recol1s=15648
+recol1d=10468
+recol2s=29594
+recol2d=24173
+recol3s=30753
+recol3d=23681
+desc=Entrance certificate to the Imperial Guard.
+cost=1
+members=yes
+model=model_2675_obj
+2dxof=1
+2dyof=7
+2dzoom=1040
+2dyan=120
+2dxan=380
+
+[obj_3115]
+certlink=obj_3095
+certtemplate=template_for_cert
+
+[obj_3116]
+certlink=obj_3096
+certtemplate=template_for_cert
+
+[obj_3117]
+certlink=obj_3097
+certtemplate=template_for_cert
+
+[obj_3118]
+certlink=obj_3098
+certtemplate=template_for_cert
+
+[obj_3119]
+certlink=obj_3099
+certtemplate=template_for_cert
+
+[obj_3120]
+certlink=obj_3100
+certtemplate=template_for_cert
+
+[obj_3121]
+certlink=obj_3101
+certtemplate=template_for_cert
+
+[obj_3122]
+name=Granite shield
+desc=A solid stone shield.
+cost=56000
+iop2=Wear
+model=obj_3122
+manwear=model_2929_npc,0
+womanwear=model_2929_npc,6
+2dyof=4
+2dzoom=1630
+2dyan=236
+2dxan=564
+members=yes
+
+[obj_3123]
+name=Shaikahan bones
+desc=Large glistening bones which glow with a pale yellow aura.
+members=yes
+model=model_2768_obj
+2dzoom=1830
+2dyan=648
+2dxan=216
+iop1=Bury
+
+[obj_3124]
+certlink=obj_3123
+certtemplate=template_for_cert
+
+[obj_3125]
+name=Jogre bones
+desc=Fairly big bones which smell distinctly of Jogre.
+members=yes
+model=model_222_obj
+2dzoom=1830
+2dyan=648
+2dxan=216
+iop1=Bury
+
+[obj_3126]
+certlink=obj_3125
+certtemplate=template_for_cert
+
+[obj_3127]
+name=Burnt jogre bones
+recol1s=32767
+recol1d=7399
+desc=These blackened Jogre bones have been somehow burnt.
+members=yes
+model=model_222_obj
+2dzoom=1830
+2dyan=648
+2dxan=216
+iop1=Bury
+
+[obj_3128]
+name=Pasty jogre bones
+recol1s=32767
+recol1d=7399
+recol2s=10566
+recol2d=10857
+desc=Burnt Jogre bones smothered with raw Karambwanji Paste.
+members=yes
+model=model_2928_npc
+2dxof=4
+2dyof=20
+2dzoom=2250
+2dyan=1980
+2dxan=320
+iop1=Bury
+
+[obj_3129]
+name=Pasty jogre bones
+recol1s=32767
+recol1d=7399
+recol2s=10566
+recol2d=20082
+desc=Burnt Jogre bones smothered with cooked Karambwanji paste.
+members=yes
+model=model_2928_npc
+2dxof=4
+2dyof=20
+2dzoom=2250
+2dyan=1980
+2dxan=320
+iop1=Bury
+
+[obj_3130]
+name=Marinated j' bones
+recol1s=32767
+recol1d=16175
+desc=Burnt Jogre bones marinated in a lovely Karambwanji sauce. Perfect.
+members=yes
+model=model_222_obj
+2dxof=8
+2dyof=9
+2dzoom=2410
+2dyan=132
+2dxan=396
+iop1=Bury
+
+[obj_3131]
+name=Pasty jogre bones
+recol1s=10566
+recol1d=10857
+desc=Jogre bones smothered with raw Karambwanji paste.
+members=yes
+model=model_2928_npc
+2dxof=8
+2dyof=9
+2dzoom=2410
+2dyan=132
+2dxan=396
+iop1=Bury
+
+[obj_3132]
+name=Pasty jogre bones
+recol1s=10566
+recol1d=20082
+desc=Jogre bones smothered with cooked Karambwanji paste.
+members=yes
+model=model_2928_npc
+2dxof=4
+2dyof=20
+2dzoom=2250
+2dyan=1980
+2dxan=320
+iop1=Bury
+
+[obj_3133]
+name=Marinated j' bones
+recol1s=32767
+recol1d=26617
+desc=Jogre Bones marinated in Karambwanji sauce. Not quite right.
+members=yes
+model=model_222_obj
+2dzoom=1830
+2dyan=648
+2dxan=216
+iop1=Bury
+
+[obj_3134]
+certlink=obj_3122
+certtemplate=template_for_cert
+
+[obj_3135]
+name=Prison key
+recol1s=14798
+recol1d=30513
+recol2s=12684
+recol2d=25262
+desc=The key to the troll prison.
+cost=1
+members=yes
+model=obj_3135
+2dxof=-8
+2dyof=-2
+2dzoom=860
+2dyan=20
+2dxan=460
+
+[obj_3136]
+name=Cell key 1
+recol1s=14798
+recol1d=18990
+recol2s=12684
+recol2d=14762
+desc=The key to Godric's cell in the troll prison.
+cost=1
+members=yes
+model=obj_3135
+2dxof=-9
+2dyof=-2
+2dzoom=860
+2dyan=20
+2dxan=460
+
+[obj_3137]
+name=Cell key 2
+recol1s=14798
+recol1d=16942
+recol2s=12684
+recol2d=11657
+desc=The key to Mad Eadgar's cell in the troll prison.
+cost=1
+members=yes
+model=obj_3135
+2dxof=-9
+2dyof=-2
+2dzoom=860
+2dyan=20
+2dxan=460
+
+[obj_3138]
+name=Potato cactus
+desc=How am I supposed to eat that?!
+model=obj_3138
+2dyof=20
+2dzoom=1240
+2dyan=300
+2dxan=348
+members=yes
+
+[obj_3139]
+certlink=obj_3138
+certtemplate=template_for_cert
+
+[obj_3140]
+name=Dragon chainbody
+recol1s=15855
+recol1d=15360
+desc=A series of connected metal rings.
+cost=250000
+model=obj_3140
+2dyof=2
+2dzoom=1100
+2dxan=568
+iop2=Wear
+manwear=obj_3140_manwear,0
+manwear2=model_156_npc
+womanwear=obj_3140_womanwear,0
+womanwear2=model_337_npc
+members=yes
+
+[obj_3141]
+certlink=obj_3140
+certtemplate=template_for_cert
+
