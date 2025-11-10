@@ -4,7 +4,7 @@ breakroutefinding=yes
 active=no
 mapscene=22
 
-[loc_3551]
+[agilityarena_ropebalance]
 name=Balancing rope
 desc=I can balance on this rope.
 model=loc_3551
@@ -14,7 +14,7 @@ forcedecor=yes
 active=yes
 op1=Walk-on
 
-[loc_3552]
+[agilityarena_ropebalance_middle]
 name=Balancing rope
 desc=I can balance on this rope.
 model=model_loc_269
@@ -23,7 +23,7 @@ sharelight=yes
 forcedecor=yes
 active=yes
 
-[loc_3553]
+[agilityarena_logbalance1]
 name=Log balance
 desc=I can balance on this log.
 model=model_loc_2291
@@ -35,7 +35,7 @@ forcedecor=yes
 active=yes
 op1=Walk-on
 
-[loc_3554]
+[agilityarena_logbalance1_middle]
 name=Log balance
 desc=I can balance on this log.
 model=model_loc_2291
@@ -46,7 +46,7 @@ sharelight=yes
 forcedecor=yes
 active=yes
 
-[loc_3555]
+[agilityarena_logbalance2]
 name=Log balance
 desc=I can balance on this log.
 model=model_loc_2292
@@ -58,7 +58,7 @@ forcedecor=yes
 active=yes
 op1=Walk-on
 
-[loc_3556]
+[agilityarena_logbalance2_middle]
 name=Log balance
 desc=I can balance on this log.
 model=model_loc_2292
@@ -69,7 +69,7 @@ sharelight=yes
 forcedecor=yes
 active=yes
 
-[loc_3557]
+[agilityarena_logbalance3]
 name=Log balance
 desc=I can balance on this log.
 model=model_loc_2293
@@ -81,7 +81,7 @@ forcedecor=yes
 active=yes
 op1=Walk-on
 
-[loc_3558]
+[agilityarena_logbalance3_middle]
 name=Log balance
 desc=I can balance on this log.
 model=model_loc_2293
@@ -92,10 +92,10 @@ sharelight=yes
 forcedecor=yes
 active=yes
 
-[loc_3559]
+[agilityarena_ledgebalance]
 name=Balancing ledge
 desc=Tread carefully!
-model=loc_3559
+model=agilityarena_ledgebalance
 recol1s=16774
 recol1d=16808
 blockwalk=no
@@ -104,10 +104,10 @@ forcedecor=yes
 active=yes
 op1=Walk-across
 
-[loc_3560]
+[agilityarena_ledgebalance_middle]
 name=Balancing ledge
 desc=Tread carefully!
-model=loc_3559
+model=agilityarena_ledgebalance
 recol1s=16774
 recol1d=16808
 blockwalk=no
@@ -115,10 +115,10 @@ sharelight=yes
 forcedecor=yes
 active=yes
 
-[loc_3561]
+[agilityarena_ledgebalance2]
 name=Balancing ledge
 desc=Tread carefully!
-model=loc_3559
+model=agilityarena_ledgebalance
 recol1s=16774
 recol1d=16808
 blockwalk=no
@@ -127,10 +127,10 @@ forcedecor=yes
 active=yes
 op1=Walk-across
 
-[loc_3562]
+[agilityarena_ledgebalance2_middle]
 name=Balancing ledge
 desc=Tread carefully!
-model=loc_3559
+model=agilityarena_ledgebalance
 recol1s=16774
 recol1d=16808
 blockwalk=no
@@ -138,7 +138,7 @@ sharelight=yes
 forcedecor=yes
 active=yes
 
-[loc_3563]
+[agilityarena_monkeybars_middle]
 name=Monkey bars
 desc=Now, I'm the king of the swingers, oh, the jungle VIP.
 model=model_loc_2319
@@ -149,7 +149,7 @@ sharelight=yes
 forcedecor=yes
 active=yes
 
-[loc_3564]
+[agilityarena_monkeybars_end]
 name=Monkey bars
 desc=Now, I'm the king of the swingers, oh, the jungle VIP.
 model=model_loc_2320
@@ -161,17 +161,17 @@ forcedecor=yes
 active=yes
 op1=Swing-across
 
-[loc_3565]
+[agilityarena_lowwall]
 name=Low wall
 desc=It looks like I can clamber over this.
-model=loc_3565
+model=agilityarena_lowwall
 retex1s=wall
 retex1d=elfbrick
 length=2
 op1=Climb-over
 blockrange=no
 
-[loc_3566]
+[agilityarena_ropeswing]
 name=Rope swing
 desc=Use this to swing over to the next platform.
 model=model_loc_2282
@@ -180,35 +180,35 @@ forcedecor=yes
 active=yes
 op1=Swing-on
 
-[loc_3567]
+[agilityarena_trap_timedblade2]
 name=Blade
 desc=I might want to avoid this nasty blade.
-model=loc_3567
-anim=seq_1103
+model=agilityarena_trap_timedblade2
+anim=agilityarena_timedblades_spin2
 forcedecor=yes
 length=2
 active=yes
 
-[loc_3568]
+[agilityarena_timedblade2_floor]
 name=Blade
 desc=I might want to avoid this nasty blade.
-model=loc_3568
+model=agilityarena_timedblade2_floor
 blockwalk=no
 forcedecor=yes
 active=yes
 
-[loc_3569]
+[agilityarena_timedblade2_floorl]
 name=Blade
 desc=I might want to avoid this nasty blade.
-model=loc_3569
+model=agilityarena_timedblade2_floorl
 blockwalk=no
 forcedecor=yes
 active=yes
 
-[loc_3570]
+[agilityarena_plank]
 name=Plank
 desc=Walk the plank! Ya land lubber!
-model=loc_3570
+model=agilityarena_plank
 recol1s=15855
 recol1d=16808
 blockwalk=no
@@ -216,10 +216,10 @@ forcedecor=yes
 active=yes
 op1=Walk-on
 
-[loc_3571]
+[agilityarena_plank2]
 name=Plank
 desc=Walk the plank! Ya land lubber!
-model=loc_3571
+model=agilityarena_plank2
 recol1s=15855
 recol1d=16808
 blockwalk=no
@@ -227,10 +227,10 @@ forcedecor=yes
 active=yes
 op1=Walk-on
 
-[loc_3572]
+[agilityarena_plank3]
 name=Plank
 desc=Walk the plank! Ya land lubber!
-model=loc_3572
+model=agilityarena_plank3
 recol1s=15855
 recol1d=16808
 blockwalk=no
@@ -238,40 +238,40 @@ forcedecor=yes
 active=yes
 op1=Walk-on
 
-[loc_3573]
+[agilityarena_plank_middle]
 name=Plank
 desc=Walk the plank! Ya land lubber!
-model=loc_3570
+model=agilityarena_plank
 recol1s=15855
 recol1d=16808
 blockwalk=no
 forcedecor=yes
 active=yes
 
-[loc_3574]
+[agilityarena_plank2_middle]
 name=Plank
 desc=Walk the plank! Ya land lubber!
-model=loc_3571
+model=agilityarena_plank2
 recol1s=15855
 recol1d=16808
 blockwalk=no
 forcedecor=yes
 active=yes
 
-[loc_3575]
+[agilityarena_plank3_middle]
 name=Plank
 desc=Walk the plank! Ya land lubber!
-model=loc_3572
+model=agilityarena_plank3
 recol1s=15855
 recol1d=16808
 blockwalk=no
 forcedecor=yes
 active=yes
 
-[loc_3576]
+[agilityarena_plank_broke1]
 name=Plank
 desc=Walk the plank! Ya land lubber!
-model=loc_3576
+model=agilityarena_plank_broke1
 recol1s=15855
 recol1d=16808
 blockwalk=no
@@ -284,15 +284,15 @@ desc=Walk the plank! Ya land lubber!
 model=loc_3577
 recol1s=15855
 recol1d=16808
-anim=seq_1104
+anim=screaming_banshee_walk
 blockwalk=no
 forcedecor=yes
 active=yes
 
-[loc_3578]
+[agilityarena_pillar_top]
 name=Pillar
 desc=It's a small step for a player, a giant leap for player kind.
-model=loc_3578
+model=agilityarena_pillar_top
 recol1s=16774
 recol1d=16808
 blockwalk=no
@@ -301,10 +301,10 @@ forcedecor=yes
 active=yes
 op1=Jump-on
 
-[loc_3579]
+[agilityarena_pillar_top_middle]
 name=Pillar
 desc=It's a small step for a player, a giant leap for player kind.
-model=loc_3578
+model=agilityarena_pillar_top
 recol1s=16774
 recol1d=16808
 blockwalk=no
@@ -312,10 +312,10 @@ sharelight=yes
 forcedecor=yes
 active=yes
 
-[loc_3580]
+[agilityarena_sawblades]
 name=Spinning blades
 desc=Makes sliced human.
-model=loc_3580
+model=agilityarena_sawblades
 recol1s=16774
 recol1d=16808
 blockrange=no
@@ -323,32 +323,32 @@ length=3
 forcedecor=yes
 active=yes
 
-[loc_3581]
+[agilityarena_poisondarts]
 name=Ticket Dispenser
 desc=Releases a ticket when the flashing arrow is above it.
-model=loc_3581
+model=agilityarena_poisondarts
 recol1s=16774
 recol1d=16808
-anim=seq_1108
+anim=agilityarena_dartfire
 active=yes
 blockrange=no
 forcedecor=yes
 op1=Tag
 
-[loc_3582]
+[agilityarena_floorspikes]
 name=Floor spikes
 desc=Makes human colanders.
-model=loc_3582
-anim=seq_1112
+model=agilityarena_floorspikes
+anim=agilityarena_floorspikes_normal
 blockwalk=no
 blockrange=no
 forcedecor=yes
 active=yes
 
-[loc_3583]
+[agilityarena_handholds]
 name=Hand holds
 desc=I can use these to climb across to the other side.
-model=loc_3583
+model=agilityarena_handholds
 recol1s=16774
 recol1d=16808
 blockwalk=no
@@ -357,10 +357,10 @@ forcedecor=yes
 active=yes
 op1=Climb-across
 
-[loc_3584]
+[agilityarena_handholds_middle]
 name=Hand holds
 desc=I can use these to climb across to the other side.
-model=loc_3583
+model=agilityarena_handholds
 recol1s=16774
 recol1d=16808
 blockwalk=no
@@ -368,10 +368,10 @@ blockrange=no
 forcedecor=yes
 active=yes
 
-[loc_3585]
+[agilityarena_pressurepad]
 name=Pressure pad
 desc=Looks suspiciously like a pressure pad to me.
-model=loc_3585
+model=agilityarena_pressurepad
 blockwalk=no
 blockrange=no
 forcedecor=yes
@@ -542,7 +542,7 @@ recol1s=16774
 recol1d=16808
 active=no
 
-[loc_3608]
+[agility_ticketpillar]
 name=Ticket Dispenser
 desc=Releases a ticket when the flashing arrow is above it.
 model=loc_3608
@@ -567,15 +567,15 @@ resizez=256
 width=2
 length=2
 
-[loc_3610]
+[agilityarena_climbingrope]
 name=Climbing rope
 desc=I can use this rope to climb back to the top.
-model=loc_3610
+model=agilityarena_climbingrope
 active=yes
 op1=Climb
 
-[loc_3611]
-model=loc_3611
+[agilityarena_pillar_sawblades]
+model=agilityarena_pillar_sawblades
 recol1s=16774
 recol1d=16808
 active=no
@@ -628,7 +628,7 @@ recol3d=16808
 hillskew=yes
 active=no
 
-[loc_3617]
+[agilityarena_ladderdown]
 name=Ladder
 desc=Leads down into the Agility Arena.
 model=model_loc_1759
@@ -637,7 +637,7 @@ op1=Climb-Down
 forceapproach=east
 active=yes
 
-[loc_3618]
+[agilityarena_ladderup]
 name=Ladder
 desc=Leads back to Brimhaven.
 model=model_loc_11

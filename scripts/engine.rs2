@@ -294,9 +294,10 @@
 [command,if_openmain](interface $interface)
 // info: Open a modal in the main viewport for the secondary player
 [command,.if_openmain](interface $interface)
-// later
-// [command,if_openoverlay](interface $interface)
-// [command,.if_openoverlay](interface $interface)
+// info: Open an overlay in the main viewport
+[command,if_openoverlay](interface $interface)
+// info: Open an overlay in the main viewport for the secondary player
+[command,.if_openoverlay](interface $interface)
 // info: Open a modal in the side tab
 [command,if_openside](interface $interface)
 // info: Set a component's model to the local player's chat head

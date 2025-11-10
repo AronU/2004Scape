@@ -1,8 +1,8 @@
-[spotanim_270]
-model=spot_spotanim_270
-anim=seq_1109
+[bullettime_dart]
+model=spot_bullettime_dart
+anim=agilityarena_dart_flight
 
-[spotanim_271]
+[agilityarena_roofcollapse]
 model=model_2321_spotanim
 anim=rockfall
 recol1s=15855

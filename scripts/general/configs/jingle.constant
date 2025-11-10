@@ -143,3 +143,6 @@
 
 ^treasure_hunt_win_jingle = treasure hunt win
 ^treasure_hunt_win_jingle_millis = 8730
+
+^agility_complete_jingle = agility complete
+^agility_complete_millis = 6066

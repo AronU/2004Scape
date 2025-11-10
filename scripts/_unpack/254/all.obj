@@ -412,12 +412,12 @@ iop2=Wear
 2dxan=152
 members=yes
 
-[obj_2996]
+[agilityarena_ticket]
 name=Agility arena ticket
 recol1s=19150
 recol1d=18888
 desc=I can exchange these for further experience or items.
-model=obj_2996
+model=agilityarena_ticket
 cost=1
 2dzoom=1160
 2dyan=1888
@@ -426,7 +426,7 @@ cost=1
 members=yes
 stackable=yes
 
-[obj_2997]
+[piratehook]
 name=Pirate's hook
 desc=You should see the shark...
 cost=89
@@ -440,7 +440,7 @@ manwear=obj_2997_manwear,0
 womanwear=obj_2997_womanwear,0
 iop2=Wear
 
-[obj_2998]
+[toadflax]
 name=Toadflax
 recol1s=288
 recol1d=128
@@ -455,11 +455,11 @@ model=model_2364_obj
 2dyan=1588
 2dxan=376
 
-[obj_2999]
-certlink=obj_2998
+[cert_toadflax]
+certlink=toadflax
 certtemplate=template_for_cert
 
-[obj_3000]
+[snapdragon]
 name=Snapdragon
 recol1s=288
 recol1d=7456
@@ -474,8 +474,8 @@ model=model_2364_obj
 2dyan=1588
 2dxan=376
 
-[obj_3001]
-certlink=obj_3000
+[cert_snapdragon]
+certlink=snapdragon
 certtemplate=template_for_cert
 
 [obj_3002]
@@ -892,7 +892,7 @@ certlink=obj_3046
 certtemplate=template_for_cert
 
 [obj_3048]
-certlink=obj_2997
+certlink=piratehook
 certtemplate=template_for_cert
 
 [obj_3049]
