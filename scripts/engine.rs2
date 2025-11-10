@@ -493,6 +493,8 @@
 [command,p_run](int $state)
 // info: Check player's membership status
 [command,playermember]()(int)
+// info: set an option for a player
+[command,set_player_op](string $text, int $index, int $primary)
 
 // Npc ops (2500-2999)
 // info: Get access to the npc if they are in the world
