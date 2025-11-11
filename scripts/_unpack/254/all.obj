@@ -1046,7 +1046,7 @@ iop2=Wear
 2dyan=160
 2dxan=152
 
-[obj_3062]
+[macro_cube]
 name=Strange box
 model=obj_3062
 2dxof=15
@@ -1058,169 +1058,169 @@ iop1=Open
 desc=It seems to be humming...
 stackable=yes
 
-[obj_3063]
+[macro_cube_redtriangle]
 name=Cube part
 recol1s=29596
 recol1d=16547
 model=obj_3063
 2dzoom=1500
 
-[obj_3064]
-certlink=obj_3063
+[cert_macro_cube_redtriangle]
+certlink=macro_cube_redtriangle
 certtemplate=template_for_cert
 
-[obj_3065]
+[macro_cube_bluetriangle]
 name=Cube part
 recol1s=29596
 recol1d=5293
 model=obj_3063
 2dzoom=1500
 
-[obj_3066]
-certlink=obj_3065
+[cert_macro_cube_bluetriangle]
+certlink=macro_cube_bluetriangle
 certtemplate=template_for_cert
 
-[obj_3067]
+[macro_cube_yellowtriangle]
 name=Cube part
 recol1s=29596
 recol1d=17893
 model=obj_3063
 2dzoom=1500
 
-[obj_3068]
-certlink=obj_3067
+[cert_macro_cube_yellowtriangle]
+certlink=macro_cube_yellowtriangle
 certtemplate=template_for_cert
 
-[obj_3069]
+[macro_cube_redsquare]
 name=Cube part
 recol1s=29596
 recol1d=16547
 model=obj_3069
 2dzoom=1500
 
-[obj_3070]
-certlink=obj_3069
+[cert_macro_cube_redsquare]
+certlink=macro_cube_redsquare
 certtemplate=template_for_cert
 
-[obj_3071]
+[macro_cube_bluesquare]
 name=Cube part
 recol1s=29596
 recol1d=5293
 model=obj_3069
 2dzoom=1500
 
-[obj_3072]
-certlink=obj_3071
+[cert_macro_cube_bluesquare]
+certlink=macro_cube_bluesquare
 certtemplate=template_for_cert
 
-[obj_3073]
+[macro_cube_yellowsquare]
 name=Cube part
 recol1s=29596
 recol1d=17893
 model=obj_3069
 2dzoom=1500
 
-[obj_3074]
-certlink=obj_3073
+[cert_macro_cube_yellowsquare]
+certlink=macro_cube_yellowsquare
 certtemplate=template_for_cert
 
-[obj_3075]
+[macro_cube_redcircle]
 name=Cube part
 recol1s=29596
 recol1d=16547
 model=obj_3075
 2dzoom=1500
 
-[obj_3076]
-certlink=obj_3075
+[cert_macro_cube_redcircle]
+certlink=macro_cube_redcircle
 certtemplate=template_for_cert
 
-[obj_3077]
+[macro_cube_bluecircle]
 name=Cube part
 recol1s=29596
 recol1d=5293
 model=obj_3075
 2dzoom=1500
 
-[obj_3078]
-certlink=obj_3077
+[cert_macro_cube_bluecircle]
+certlink=macro_cube_bluecircle
 certtemplate=template_for_cert
 
-[obj_3079]
+[macro_cube_yellowcircle]
 name=Cube part
 recol1s=29596
 recol1d=17893
 model=obj_3075
 2dzoom=1500
 
-[obj_3080]
-certlink=obj_3079
+[cert_macro_cube_yellowcircle]
+certlink=macro_cube_yellowcircle
 certtemplate=template_for_cert
 
-[obj_3081]
+[macro_cube_redstar]
 name=Cube part
 recol1s=29596
 recol1d=16547
 model=obj_3081
 2dzoom=1500
 
-[obj_3082]
-certlink=obj_3081
+[cert_macro_cube_redstar]
+certlink=macro_cube_redstar
 certtemplate=template_for_cert
 
-[obj_3083]
+[macro_cube_bluestar]
 name=Cube part
 recol1s=29596
 recol1d=5293
 model=obj_3081
 2dzoom=1500
 
-[obj_3084]
-certlink=obj_3083
+[cert_macro_cube_bluestar]
+certlink=macro_cube_bluestar
 certtemplate=template_for_cert
 
-[obj_3085]
+[macro_cube_yellowstar]
 name=Cube part
 recol1s=29596
 recol1d=17893
 model=obj_3081
 2dzoom=1500
 
-[obj_3086]
-certlink=obj_3085
+[cert_macro_cube_yellowstar]
+certlink=macro_cube_yellowstar
 certtemplate=template_for_cert
 
-[obj_3087]
+[macro_cube_redhalfmoon]
 name=Cube part
 recol1s=29596
 recol1d=16547
 model=obj_3087
 2dzoom=1500
 
-[obj_3088]
-certlink=obj_3087
+[cert_macro_cube_redhalfmoon]
+certlink=macro_cube_redhalfmoon
 certtemplate=template_for_cert
 
-[obj_3089]
+[macro_cube_bluehalfmoon]
 name=Cube part
 recol1s=29596
 recol1d=5293
 model=obj_3087
 2dzoom=1500
 
-[obj_3090]
-certlink=obj_3089
+[cert_macro_cube_bluehalfmoon]
+certlink=macro_cube_bluehalfmoon
 certtemplate=template_for_cert
 
-[obj_3091]
+[macro_cube_yellowhalfmoon]
 name=Cube part
 recol1s=29596
 recol1d=17893
 model=obj_3087
 2dzoom=1500
 
-[obj_3092]
-certlink=obj_3091
+[cert_macro_cube_yellowhalfmoon]
+certlink=macro_cube_yellowhalfmoon
 certtemplate=template_for_cert
 
 [obj_3093]
