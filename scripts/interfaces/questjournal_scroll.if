@@ -5,7 +5,7 @@ y=37
 width=387
 height=287
 
-[com_5]
+[scrollback]
 layer=com_0
 type=model
 x=163
@@ -16,7 +16,7 @@ model=model_3623
 zoom=643
 xan=510
 
-[com_1]
+[close]
 type=text
 x=424
 y=28
@@ -29,7 +29,7 @@ text=Close Window
 colour=0xC00000
 overcolour=0xFFFFFF
 
-[com_2]
+[scroll]
 type=layer
 x=48
 y=78
@@ -37,8 +37,8 @@ width=342
 height=215
 scroll=1000
 
-[com_4]
-layer=com_2
+[qj1]
+layer=scroll
 type=text
 x=8
 y=0
@@ -48,8 +48,8 @@ center=yes
 font=p12
 text=qj1
 
-[com_6]
-layer=com_2
+[qj2]
+layer=scroll
 type=text
 x=8
 y=20
@@ -59,8 +59,8 @@ center=yes
 font=p12
 text=qj2
 
-[com_7]
-layer=com_2
+[qj3]
+layer=scroll
 type=text
 x=8
 y=40
@@ -70,8 +70,8 @@ center=yes
 font=p12
 text=qj3
 
-[com_8]
-layer=com_2
+[qj4]
+layer=scroll
 type=text
 x=8
 y=60
@@ -81,8 +81,8 @@ center=yes
 font=p12
 text=qj4
 
-[com_9]
-layer=com_2
+[qj5]
+layer=scroll
 type=text
 x=8
 y=80
@@ -92,8 +92,8 @@ center=yes
 font=p12
 text=qj5
 
-[com_10]
-layer=com_2
+[qj6]
+layer=scroll
 type=text
 x=8
 y=100
@@ -103,8 +103,8 @@ center=yes
 font=p12
 text=qj6
 
-[com_11]
-layer=com_2
+[qj7]
+layer=scroll
 type=text
 x=8
 y=120
@@ -114,8 +114,8 @@ center=yes
 font=p12
 text=qj7
 
-[com_12]
-layer=com_2
+[qj8]
+layer=scroll
 type=text
 x=8
 y=140
@@ -125,8 +125,8 @@ center=yes
 font=p12
 text=qj8
 
-[com_13]
-layer=com_2
+[qj9]
+layer=scroll
 type=text
 x=8
 y=160
@@ -136,8 +136,8 @@ center=yes
 font=p12
 text=qj9
 
-[com_14]
-layer=com_2
+[qj10]
+layer=scroll
 type=text
 x=8
 y=180
@@ -147,8 +147,8 @@ center=yes
 font=p12
 text=qj10
 
-[com_15]
-layer=com_2
+[qj11]
+layer=scroll
 type=text
 x=8
 y=200
@@ -158,8 +158,8 @@ center=yes
 font=p12
 text=qj11
 
-[com_16]
-layer=com_2
+[qj12]
+layer=scroll
 type=text
 x=8
 y=220
@@ -169,8 +169,8 @@ center=yes
 font=p12
 text=qj12
 
-[com_17]
-layer=com_2
+[qj13]
+layer=scroll
 type=text
 x=8
 y=240
@@ -180,8 +180,8 @@ center=yes
 font=p12
 text=qj13
 
-[com_18]
-layer=com_2
+[qj14]
+layer=scroll
 type=text
 x=8
 y=260
@@ -191,8 +191,8 @@ center=yes
 font=p12
 text=qj14
 
-[com_19]
-layer=com_2
+[qj15]
+layer=scroll
 type=text
 x=8
 y=280
@@ -202,8 +202,8 @@ center=yes
 font=p12
 text=qj15
 
-[com_20]
-layer=com_2
+[qj16]
+layer=scroll
 type=text
 x=8
 y=300
@@ -213,8 +213,8 @@ center=yes
 font=p12
 text=qj16
 
-[com_21]
-layer=com_2
+[qj17]
+layer=scroll
 type=text
 x=8
 y=320
@@ -224,8 +224,8 @@ center=yes
 font=p12
 text=qj17
 
-[com_22]
-layer=com_2
+[qj18]
+layer=scroll
 type=text
 x=8
 y=340
@@ -235,8 +235,8 @@ center=yes
 font=p12
 text=qj18
 
-[com_23]
-layer=com_2
+[qj19]
+layer=scroll
 type=text
 x=8
 y=360
@@ -246,8 +246,8 @@ center=yes
 font=p12
 text=qj19
 
-[com_24]
-layer=com_2
+[qj20]
+layer=scroll
 type=text
 x=8
 y=380
@@ -257,8 +257,8 @@ center=yes
 font=p12
 text=qj20
 
-[com_25]
-layer=com_2
+[qj21]
+layer=scroll
 type=text
 x=8
 y=400
@@ -268,8 +268,8 @@ center=yes
 font=p12
 text=qj21
 
-[com_26]
-layer=com_2
+[qj22]
+layer=scroll
 type=text
 x=8
 y=420
@@ -279,8 +279,8 @@ center=yes
 font=p12
 text=qj22
 
-[com_27]
-layer=com_2
+[qj23]
+layer=scroll
 type=text
 x=8
 y=440
@@ -290,8 +290,8 @@ center=yes
 font=p12
 text=qj23
 
-[com_28]
-layer=com_2
+[qj24]
+layer=scroll
 type=text
 x=8
 y=460
@@ -301,8 +301,8 @@ center=yes
 font=p12
 text=qj24
 
-[com_29]
-layer=com_2
+[qj25]
+layer=scroll
 type=text
 x=8
 y=480
@@ -312,8 +312,8 @@ center=yes
 font=p12
 text=qj25
 
-[com_30]
-layer=com_2
+[qj26]
+layer=scroll
 type=text
 x=8
 y=500
@@ -323,8 +323,8 @@ center=yes
 font=p12
 text=qj26
 
-[com_31]
-layer=com_2
+[qj27]
+layer=scroll
 type=text
 x=8
 y=520
@@ -334,8 +334,8 @@ center=yes
 font=p12
 text=qj27
 
-[com_32]
-layer=com_2
+[qj28]
+layer=scroll
 type=text
 x=8
 y=540
@@ -345,8 +345,8 @@ center=yes
 font=p12
 text=qj28
 
-[com_33]
-layer=com_2
+[qj29]
+layer=scroll
 type=text
 x=8
 y=560
@@ -356,8 +356,8 @@ center=yes
 font=p12
 text=qj29
 
-[com_34]
-layer=com_2
+[qj30]
+layer=scroll
 type=text
 x=8
 y=580
@@ -367,8 +367,8 @@ center=yes
 font=p12
 text=qj30
 
-[com_35]
-layer=com_2
+[qj31]
+layer=scroll
 type=text
 x=8
 y=600
@@ -378,8 +378,8 @@ center=yes
 font=p12
 text=qj31
 
-[com_36]
-layer=com_2
+[qj32]
+layer=scroll
 type=text
 x=8
 y=620
@@ -389,8 +389,8 @@ center=yes
 font=p12
 text=qj32
 
-[com_37]
-layer=com_2
+[qj33]
+layer=scroll
 type=text
 x=8
 y=640
@@ -400,8 +400,8 @@ center=yes
 font=p12
 text=qj33
 
-[com_38]
-layer=com_2
+[qj34]
+layer=scroll
 type=text
 x=8
 y=660
@@ -411,8 +411,8 @@ center=yes
 font=p12
 text=qj34
 
-[com_39]
-layer=com_2
+[qj35]
+layer=scroll
 type=text
 x=8
 y=680
@@ -422,8 +422,8 @@ center=yes
 font=p12
 text=qj35
 
-[com_40]
-layer=com_2
+[qj36]
+layer=scroll
 type=text
 x=8
 y=700
@@ -433,8 +433,8 @@ center=yes
 font=p12
 text=qj36
 
-[com_41]
-layer=com_2
+[qj37]
+layer=scroll
 type=text
 x=8
 y=720
@@ -444,8 +444,8 @@ center=yes
 font=p12
 text=qj37
 
-[com_42]
-layer=com_2
+[qj38]
+layer=scroll
 type=text
 x=7
 y=740
@@ -455,8 +455,8 @@ center=yes
 font=p12
 text=qj38
 
-[com_43]
-layer=com_2
+[qj39]
+layer=scroll
 type=text
 x=8
 y=760
@@ -466,8 +466,8 @@ center=yes
 font=p12
 text=qj39
 
-[com_44]
-layer=com_2
+[qj40]
+layer=scroll
 type=text
 x=8
 y=780
@@ -477,8 +477,8 @@ center=yes
 font=p12
 text=qj40
 
-[com_45]
-layer=com_2
+[qj41]
+layer=scroll
 type=text
 x=8
 y=800
@@ -488,8 +488,8 @@ center=yes
 font=p12
 text=qj41
 
-[com_46]
-layer=com_2
+[qj42]
+layer=scroll
 type=text
 x=8
 y=820
@@ -499,8 +499,8 @@ center=yes
 font=p12
 text=qj42
 
-[com_47]
-layer=com_2
+[qj43]
+layer=scroll
 type=text
 x=8
 y=840
@@ -510,8 +510,8 @@ center=yes
 font=p12
 text=qj43
 
-[com_48]
-layer=com_2
+[qj44]
+layer=scroll
 type=text
 x=8
 y=860
@@ -521,8 +521,8 @@ center=yes
 font=p12
 text=qj44
 
-[com_49]
-layer=com_2
+[qj45]
+layer=scroll
 type=text
 x=8
 y=880
@@ -532,8 +532,8 @@ center=yes
 font=p12
 text=qj45
 
-[com_50]
-layer=com_2
+[qj46]
+layer=scroll
 type=text
 x=8
 y=900
@@ -543,8 +543,8 @@ center=yes
 font=p12
 text=qj46
 
-[com_51]
-layer=com_2
+[qj47]
+layer=scroll
 type=text
 x=8
 y=920
@@ -554,8 +554,8 @@ center=yes
 font=p12
 text=qj47
 
-[com_52]
-layer=com_2
+[qj48]
+layer=scroll
 type=text
 x=8
 y=940
@@ -565,8 +565,8 @@ center=yes
 font=p12
 text=qj48
 
-[com_53]
-layer=com_2
+[qj49]
+layer=scroll
 type=text
 x=8
 y=960
@@ -576,8 +576,8 @@ center=yes
 font=p12
 text=qj49
 
-[com_54]
-layer=com_2
+[qj50]
+layer=scroll
 type=text
 x=8
 y=980
@@ -587,7 +587,7 @@ center=yes
 font=p12
 text=qj50
 
-[com_3]
+[ifquestname]
 type=text
 x=53
 y=56
