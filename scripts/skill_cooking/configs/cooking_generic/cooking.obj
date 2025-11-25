@@ -404,6 +404,7 @@ name=Chocolate dust
 desc=It's ground up chocolate.
 param=gnome_topping,^true
 param=cocktail_message,You sprinkle the chocolate dust over the drink.
+param=brew_potion_struct,3dose1energy
 
 [pot_empty]
 name=Pot
