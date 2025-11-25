@@ -777,7 +777,7 @@ x=40
 y=200
 width=95
 height=14
-script1op1=inv_count,inventory:inv,obj_3053
+script1op1=inv_count,inventory:inv,lava_battlestaff
 script1=gt,0
 center=yes
 font=p12
@@ -797,7 +797,7 @@ shadowed=yes
 text=What would you like to enchant?
 colour=0xFFAA44
 
-[com_95]
+[air]
 type=model
 x=70
 y=80
@@ -810,7 +810,7 @@ xan=148
 yan=1400
 option=Enchant Air Battlestaff
 
-[com_96]
+[water]
 type=model
 x=180
 y=80
@@ -823,7 +823,7 @@ xan=148
 yan=1400
 option=Enchant Water Battlestaff
 
-[com_97]
+[earth]
 type=model
 x=290
 y=80
@@ -836,7 +836,7 @@ xan=148
 yan=1400
 option=Enchant Earth Battlestaff
 
-[com_98]
+[fire]
 type=model
 x=400
 y=80
@@ -849,7 +849,7 @@ xan=148
 yan=1400
 option=Enchant Fire Battlestaff
 
-[com_99]
+[lava]
 type=model
 x=70
 y=160

@@ -31,48 +31,6 @@ iop2=Wear
 certlink=piratehook
 certtemplate=template_for_cert
 
-[obj_3053]
-name=Lava battlestaff
-desc=It's a slightly magical stick.
-cost=17000
-model=obj_3053
-2dxof=-5
-2dyof=2
-2dzoom=1490
-2dyan=1400
-2dxan=148
-iop2=Wield
-manwear=model_534_obj_wear,0
-manwear2=obj_3053_manwear2
-womanwear=model_534_obj_wear,6
-womanwear2=obj_3053_manwear2
-members=yes
-
-[obj_3054]
-name=Mystic lava staff
-desc=It's a slightly magical stick.
-cost=45000
-model=obj_3053
-2dxof=-5
-2dyof=2
-2dzoom=1490
-2dyan=1400
-2dxan=148
-iop2=Wield
-manwear=model_534_obj_wear,0
-manwear2=obj_3053_manwear2
-womanwear=model_534_obj_wear,6
-womanwear2=obj_3053_manwear2
-members=yes
-
-[obj_3055]
-certlink=obj_3053
-certtemplate=template_for_cert
-
-[obj_3056]
-certlink=obj_3054
-certtemplate=template_for_cert
-
 [obj_3057]
 name=Mime mask
 desc=A mime would wear this.
