@@ -1410,7 +1410,7 @@ text=1bar
 colour=0xC00000
 activecolour=0x00C000
 
-[com_144]
+[claws_layer]
 type=layer
 x=116
 y=259
@@ -1418,7 +1418,7 @@ width=89
 height=46
 
 [com_141]
-layer=com_144
+layer=claws_layer
 type=text
 x=55
 y=10
@@ -1434,7 +1434,7 @@ colour=0xC00000
 activecolour=0x00C000
 
 [com_142]
-layer=com_144
+layer=claws_layer
 type=text
 x=0
 y=32
@@ -1447,8 +1447,8 @@ font=p12
 text=Claws
 activecolour=0xFFFFFF
 
-[com_143]
-layer=com_144
+[column_claws]
+layer=claws_layer
 type=inv
 x=24
 y=1

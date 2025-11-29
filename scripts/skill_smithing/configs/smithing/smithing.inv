@@ -213,11 +213,11 @@ stock3=rune_knife,5
 
 [smithing_bronze_claws]
 size=1
-stock0=obj_3095,1
+stock0=bronze_claws,1
 
 [smithing_iron_claws]
 size=1
-stock0=obj_3096,1
+stock0=iron_claws,1
 
 [smithing_steel_claws]
 size=1
@@ -225,12 +225,12 @@ stock0=steel_claws,1
 
 [smithing_mithril_claws]
 size=1
-stock0=obj_3099,1
+stock0=mithril_claws,1
 
 [smithing_adamant_claws]
 size=1
-stock0=obj_3100,1
+stock0=adamant_claws,1
 
 [smithing_rune_claws]
 size=1
-stock0=obj_3101,1
+stock0=rune_claws,1

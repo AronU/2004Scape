@@ -18,7 +18,7 @@ anim=dart_launch
 recol1s=21140
 recol1d=0
 
-[spotanim_274]
+[sp_attack_impale_spotanim]
 model=spot_spotanim_274
 anim=seq_924
 ambient=50

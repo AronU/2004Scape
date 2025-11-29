@@ -160,6 +160,7 @@
 [if_button,music:still_night] ~music_playbybutton(music:still_night);
 [if_button,music:stratosphere] ~music_playbybutton(music:stratosphere);
 [if_button,music:talking_forest] ~music_playbybutton(music:talking_forest);
+[if_button,music:time_out] ~music_playbybutton(music:time_out);
 [if_button,music:the_desert] ~music_playbybutton(music:the_desert);
 [if_button,music:the_shadow] ~music_playbybutton(music:the_shadow);
 [if_button,music:the_tower] ~music_playbybutton(music:the_tower);
