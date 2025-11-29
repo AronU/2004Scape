@@ -363,7 +363,7 @@ manwear=obj_3095_manwear,0
 womanwear=obj_3095_manwear,6
 members=yes
 
-[obj_3097]
+[steel_claws]
 name=Steel claws
 recol1s=6342
 recol1d=13741
@@ -478,177 +478,6 @@ manwear=obj_3095_manwear,0
 womanwear=obj_3095_manwear,6
 members=yes
 
-[obj_3102]
-name=Combination
-recol1s=28434
-recol1d=28400
-desc=The combination to Burthorpe Castle's equipment room.
-cost=1
-members=yes
-model=model_2429_obj
-2dyof=2
-2dzoom=760
-2dyan=28
-2dxan=552
-iop1=Read
-
-[obj_3103]
-name=Iou
-recol1s=28434
-recol1d=24139
-desc=The guard wrote the IOU on the back of some paper.
-cost=1
-members=yes
-model=model_2429_obj
-2dyof=2
-2dzoom=760
-2dyan=28
-2dxan=552
-iop1=Read
-
-[obj_3104]
-name=Secret way map
-recol1s=24174
-recol1d=17901
-recol2s=21003
-recol2d=15787
-recol3s=17832
-recol3d=14696
-desc=This map shows the secret way up to Death Plateau.
-cost=1
-members=yes
-model=model_2774_obj
-2dxof=-1
-2dyof=56
-2dzoom=990
-2dyan=1716
-2dxan=264
-
-[obj_3105]
-name=Climbing boots
-recol1s=7298
-recol1d=7399
-desc=Boots made for climbing.
-cost=12
-members=yes
-model=model_2837_obj
-2dxof=1
-2dyof=-6
-2dzoom=770
-2dyan=160
-2dxan=152
-iop2=Wear
-manwear=obj_3105_manwear,0
-womanwear=obj_3105_womanwear,0
-
-[obj_3106]
-certlink=obj_3105
-certtemplate=template_for_cert
-
-[obj_3107]
-name=Spiked boots
-recol1s=7298
-recol1d=7399
-desc=Climbing boots with spikes.
-cost=30
-members=yes
-model=obj_3107
-2dxof=1
-2dzoom=790
-2dyan=152
-2dxan=60
-iop2=Wear
-manwear=obj_3107_manwear,0
-womanwear=obj_3107_womanwear,0
-members=yes
-
-[obj_3108]
-certlink=obj_3107
-certtemplate=template_for_cert
-
-[obj_3109]
-name=Stone ball
-recol1s=3171
-recol1d=15426
-desc=Place on the stone mechanism in the right order to open the door.
-model=model_2413_obj
-2dxof=1
-2dzoom=1400
-2dyan=1852
-2dxan=156
-cost=1
-members=yes
-
-[obj_3110]
-name=Stone ball
-recol1s=3171
-recol1d=3181
-desc=Place on the stone mechanism in the right order to open the door.
-model=model_2413_obj
-2dxof=1
-2dzoom=1400
-2dyan=1852
-2dxan=156
-cost=1
-members=yes
-
-[obj_3111]
-name=Stone ball
-recol1s=3171
-recol1d=19938
-desc=Place on the stone mechanism in the right order to open the door.
-model=model_2413_obj
-2dxof=1
-2dzoom=1400
-2dyan=1852
-2dxan=156
-cost=1
-members=yes
-
-[obj_3112]
-name=Stone ball
-recol1s=3171
-recol1d=13388
-desc=Place on the stone mechanism in the right order to open the door.
-model=model_2413_obj
-2dxof=1
-2dzoom=1400
-2dyan=1852
-2dxan=156
-cost=1
-members=yes
-
-[obj_3113]
-name=Stone ball
-recol1s=3171
-recol1d=2402
-desc=Place on the stone mechanism in the right order to open the door.
-model=model_2413_obj
-2dxof=1
-2dzoom=1400
-2dyan=1852
-2dxan=156
-cost=1
-members=yes
-
-[obj_3114]
-name=Certificate
-recol1s=15648
-recol1d=10468
-recol2s=29594
-recol2d=24173
-recol3s=30753
-recol3d=23681
-desc=Entrance certificate to the Imperial Guard.
-cost=1
-members=yes
-model=model_2675_obj
-2dxof=1
-2dyof=7
-2dzoom=1040
-2dyan=120
-2dxan=380
-
 [obj_3115]
 certlink=obj_3095
 certtemplate=template_for_cert
@@ -658,7 +487,7 @@ certlink=obj_3096
 certtemplate=template_for_cert
 
 [obj_3117]
-certlink=obj_3097
+certlink=steel_claws
 certtemplate=template_for_cert
 
 [obj_3118]
@@ -677,7 +506,7 @@ certtemplate=template_for_cert
 certlink=obj_3101
 certtemplate=template_for_cert
 
-[obj_3122]
+[granite_shield]
 name=Granite shield
 desc=A solid stone shield.
 cost=56000
@@ -690,6 +519,16 @@ womanwear=model_2929_npc,6
 2dyan=236
 2dxan=564
 members=yes
+weight=15lb
+wearpos=lefthand
+category=armour_shield
+param=magicattack,-12
+param=rangeattack,-8
+param=stabdefence,40
+param=slashdefence,42
+param=crushdefence,38
+param=magicdefence,-2
+param=rangedefence,65
 
 [obj_3123]
 name=Shaikahan bones
@@ -817,8 +656,8 @@ model=model_222_obj
 2dxan=216
 iop1=Bury
 
-[obj_3134]
-certlink=obj_3122
+[cert_granite_shield]
+certlink=granite_shield
 certtemplate=template_for_cert
 
 [obj_3135]

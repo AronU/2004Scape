@@ -41,7 +41,7 @@ data=musicdata,music_Quest
 [musicregion_35_74]
 table=musicregion
 data=mapsquare,0_35_74_0_0
-data=name,Hermit
+data=musicdata,music_Hermit
 
 [musicregion_36_52]
 table=musicregion

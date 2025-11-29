@@ -24,14 +24,14 @@ anim=seq_924
 ambient=50
 contrast=50
 
-[spotanim_275]
+[troll_rock_launch]
 model=spot_spotanim_275
-anim=seq_1143
+anim=troll_rock_launch
 
-[spotanim_276]
+[troll_rock_travel]
 model=spot_spotanim_276
 
-[spotanim_277]
+[troll_zeds]
 model=spot_spotanim_277
 anim=seq_1160
 ambient=50

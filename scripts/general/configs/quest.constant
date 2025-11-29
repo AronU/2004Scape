@@ -43,6 +43,7 @@
 ^desertrescue_complete = 30
 ^priestperil_complete = 60
 ^druidspirit_complete = 110
+^death_complete = 80
 
 ^blackarmgang_questpoints = 1
 ^blackknight_questpoints = 3
@@ -98,3 +99,4 @@
 ^elemental_workshop_questpoints = 1
 ^priestperil_questpoints = 1
 ^druidspirit_questpoints = 2
+^death_questpoints = 1

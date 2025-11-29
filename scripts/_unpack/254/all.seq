@@ -805,7 +805,7 @@ frame6=anim_8709
 frame7=anim_8710
 frame8=anim_8711
 
-[seq_1142]
+[troll_rock_throw]
 stretches=yes
 replaceheldright=hide
 frame1=anim_8660
@@ -819,7 +819,7 @@ frame8=anim_8668
 frame9=anim_8669
 frame10=anim_8661
 
-[seq_1143]
+[troll_rock_launch]
 frame1=anim_8722
 frame2=anim_8724
 frame3=anim_8725
@@ -835,7 +835,7 @@ frame10=anim_8723
 frame1=anim_4894
 frame2=anim_4898
 
-[seq_1145]
+[sitting_eating]
 frame1=anim_4908
 frame2=anim_4912
 frame3=anim_4917
@@ -862,7 +862,7 @@ priority=6
 frame1=anim_8601
 frame2=anim_8009
 
-[seq_1148]
+[death_human_climbing_down]
 frame1=anim_2446
 frame2=anim_2149
 frame3=anim_1850
@@ -888,11 +888,11 @@ frame22=anim_879
 frame23=anim_586
 frame24=anim_2306
 
-[seq_1149]
+[dice_idle]
 loops=1
 frame1=anim_8604
 
-[seq_1150]
+[dice_roll_1]
 loops=1
 frame1=anim_8605
 frame2=anim_8614
@@ -928,7 +928,7 @@ frame31=anim_8611
 frame32=anim_8612
 frame33=anim_8604
 
-[seq_1151]
+[dice_roll_2]
 loops=1
 frame1=anim_8605
 frame2=anim_8614
@@ -964,7 +964,7 @@ frame31=anim_8611
 frame32=anim_8612
 frame33=anim_8624
 
-[seq_1152]
+[dice_roll_3]
 loops=1
 frame1=anim_8605
 frame2=anim_8614
@@ -1000,7 +1000,7 @@ frame31=anim_8611
 frame32=anim_8612
 frame33=anim_8623
 
-[seq_1153]
+[dice_roll_4]
 loops=1
 frame1=anim_8605
 frame2=anim_8614
@@ -1036,7 +1036,7 @@ frame31=anim_8611
 frame32=anim_8612
 frame33=anim_8603
 
-[seq_1154]
+[dice_roll_5]
 loops=1
 frame1=anim_8605
 frame2=anim_8614
@@ -1072,7 +1072,7 @@ frame31=anim_8611
 frame32=anim_8612
 frame33=anim_8602
 
-[seq_1155]
+[dice_roll_6]
 loops=1
 frame1=anim_8605
 frame2=anim_8614

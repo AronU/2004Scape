@@ -857,7 +857,7 @@ colour=0xFF0000
 overcolour=0xFFFFFF
 option=Nature Spirit
 
-[com_81]
+[death]
 layer=com_0
 type=text
 x=10
