@@ -316,7 +316,7 @@ cam_lookat(0_41_46_12_22, 25, 7, 7);
 cam_moveto(0_41_46_15_12, 900, 2, 2);
 hint_stop();
 hint_coord(^hint_center, 0_41_46_12_22, 0);
-queue(cr_queue, 0);
+queue(cr_queue, 0, 0);
 ~chatnpc("<p,neutral>Over 'dere creature, put da toadies over der!|@blu@~ The ogre points to a clearing to the south. ~");
 
 [label,show_toad]
@@ -337,7 +337,7 @@ if (inv_total(inv, cooked_s_chompy) < 1) {
 ~chatnpc("<p,happy>Tank's very much for da chompy...|Fycie an Bugs like very much da chompy yumms!|@blu@~ The family of ogres sit down together ~|@blu@~ and enjoy your well cooked chompy bird ~");
 ~chatplayer("<p,laugh>It's my pleasure!");
 inv_del(inv, cooked_s_chompy, 1);
-queue(quest_chompybird_complete, 0);
+queue(quest_chompybird_complete, 0, 0);
 
 [label,rantz_hatslike]
 ~chatplayer("<p,neutral>What are the hats like?");

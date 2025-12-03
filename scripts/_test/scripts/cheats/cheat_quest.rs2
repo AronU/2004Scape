@@ -65,101 +65,101 @@ if (p_finduid(uid) = true) {
             return;
         } else if ($choice3 = 0) {
             switch_int ($quest) {
-                case 0 : queue(black_knights_fortress_quest_complete, 0);
-                case 1 : queue(cooks_quest_complete, 0);
-                case 2 : queue(demon_slayer_complete, 0);
-                case 3 : queue(doric_quest_complete, 0);
-                case 4 : queue(dragon_complete, 0);
+                case 0 : queue(black_knights_fortress_quest_complete, 0, 0);
+                case 1 : queue(cooks_quest_complete, 0, 0);
+                case 2 : queue(demon_slayer_complete, 0, 0);
+                case 3 : queue(doric_quest_complete, 0, 0);
+                case 4 : queue(dragon_complete, 0, 0);
                 case 5 :
                     ~change_ernest;
                     %haunted = ^haunted_complete;
-                    queue(haunted_quest_complete, 0);
-                case 6 : queue(goblin_diplomacy_complete_quest, 0);
-                case 7 : queue(squire_complete, 0);
-                case 8 : queue(imp_quest_complete, 0);
-                case 9 : queue(hunt_quest_complete, 0);
-                case 10 : queue(prince_complete, 0);
-                case 11 : queue(priest_quest_complete, 0);
-                case 12 : queue(romeo_and_juliet_complete, 0);
-                case 13 : queue(rune_mysteries_complete, 0);
-                case 14 : queue(sheep_complete, 0);
+                    queue(haunted_quest_complete, 0, 0);
+                case 6 : queue(goblin_diplomacy_complete_quest, 0, 0);
+                case 7 : queue(squire_complete, 0, 0);
+                case 8 : queue(imp_quest_complete, 0, 0);
+                case 9 : queue(hunt_quest_complete, 0, 0);
+                case 10 : queue(prince_complete, 0, 0);
+                case 11 : queue(priest_quest_complete, 0, 0);
+                case 12 : queue(romeo_and_juliet_complete, 0, 0);
+                case 13 : queue(rune_mysteries_complete, 0, 0);
+                case 14 : queue(sheep_complete, 0, 0);
                 case 15 : 
                     switch_int(~p_choice2_header("Black Arm Gang.", 0, "Phoenix Gang.", 1, "Choose a gang for Shield of Arrav:")) {
                         case 0 : %phoenixgang = ^phoenixgang_not_started;
                         case 1 : %phoenixgang = ^phoenixgang_joined;
                     }
-                    queue(blackarmgang_quest_complete, 0);
-                case 16 : queue(quest_vampire_complete, 0);
-                case 17 : queue(hetty_quest_complete, 0);
-                case 18 : queue(quest_chompybird_complete, 0);
-                case 19 : queue(quest_biohazard_complete, 0);
-                case 20 : queue(cog_complete, 0);
-                case 21 : queue(itexam_complete, 0);
+                    queue(blackarmgang_quest_complete, 0, 0);
+                case 16 : queue(quest_vampire_complete, 0, 0);
+                case 17 : queue(hetty_quest_complete, 0, 0);
+                case 18 : queue(quest_chompybird_complete, 0, 0);
+                case 19 : queue(quest_biohazard_complete, 0, 0);
+                case 20 : queue(cog_complete, 0, 0);
+                case 21 : queue(itexam_complete, 0, 0);
                 case 22 :
                     if (npc_find(0_45_54_45_30, kaqemeex, 7, 0) = true) {
-                        queue(druid_quest_complete, 0, npc_uid);
+                        queue*(druid_quest_complete, 0)(npc_uid);
                     }
-                case 23 : queue(mcannon_complete, 0);
+                case 23 : queue(mcannon_complete, 0, 0);
                 case 24 : 
-                    queue(crest_complete, 0);
+                    queue(crest_complete, 0, 0);
                     // Complete all blast spells and levers, gauntlet choice unselected
                     %crest_spells_levers_gauntlets = calc(pow(2, ^crest_south_lever) - 1);
                 case 25 :
                     %arenaquest = ^arena_defeated_genkhazard;
-                    queue(arena_quest_complete, 0);
-                case 26 : queue(fishingcompo_quest_complete, 0);
+                    queue(arena_quest_complete, 0, 0);
+                case 26 : queue(fishingcompo_quest_complete, 0, 0);
                 case 27 : 
                     %fluffs = ^fluffs_complete;
-                    queue(fluffs_complete, 0);
-                case 28 : queue(grandtree_quest_complete, 0);
-                case 29 : queue(hazeelcult_quest_complete, 0);
-                case 30 : queue(hero_quest_complete, 0);
-                case 31 : queue(grail_quest_complete, 0);
-                case 32 : queue(junglepotion_quest_complete, 0);
+                    queue(fluffs_complete, 0, 0);
+                case 28 : queue(grandtree_quest_complete, 0, 0);
+                case 29 : queue(hazeelcult_quest_complete, 0, 0);
+                case 30 : queue(hero_quest_complete, 0, 0);
+                case 31 : queue(grail_quest_complete, 0, 0);
+                case 32 : queue(junglepotion_quest_complete, 0, 0);
                 case 33 :
                     %legendsquest = ^legends_radimus_training_4;
-                    queue(legends_quest_complete, 0);
-                case 34 : queue(zanaris_quest_complete, 0);
-                case 35 : queue(arthur_quest_complete, 0);
-                case 36 : queue(drunkmonk_complete, 0);
-                case 37 : queue(murder_quest_complete, 0);
+                    queue(legends_quest_complete, 0, 0);
+                case 34 : queue(zanaris_quest_complete, 0, 0);
+                case 35 : queue(arthur_quest_complete, 0, 0);
+                case 36 : queue(drunkmonk_complete, 0, 0);
+                case 37 : queue(murder_quest_complete, 0, 0);
                 case 38 :
                     stat_advance(crafting, 22500);
                     inv_add(inv, uncut_sapphire, 1);
                     %itgronigen = ^itgronigen_complete;
                     %qp = calc(%qp + ^itgronigen_questpoints);
-                    queue(itgronigen_quest_complete, 0);
-                case 39 : queue(quest_elena_complete, 0);
-                case 40 : queue(scorpcatcher_quest_complete, 0);
+                    queue(itgronigen_quest_complete, 0, 0);
+                case 39 : queue(quest_elena_complete, 0, 0);
+                case 40 : queue(scorpcatcher_quest_complete, 0, 0);
                 case 41 : 
                     %seaslugquest = ^seaslug_complete;
                     %qp = add(%qp, ^seaslug_questpoints);
                     inv_add(inv, bigoysterpearls, 1);
                     stat_advance(fishing, 71750);
-                    queue(seaslug_quest_complete, 0);
-                case 42 : queue(sheepherder_complete, 0);
-                case 43 : queue(zombiequeen_quest_complete, 0);
+                    queue(seaslug_quest_complete, 0, 0);
+                case 42 : queue(sheepherder_complete, 0, 0);
+                case 43 : queue(zombiequeen_quest_complete, 0, 0);
                 case 44 :
                     def_int $choice4 = ~p_choice2_header("Armadyl.", 0, "Lucien.", 1, "Choose a side for Temple of Ikov:");
                     if ($choice4 = 0) {
                         if (npc_find(0_40_51_13_57, ikov_lucien1, 7, 0) = true) {
-                            queue(ikov_armadyl_quest_complete, 0, npc_uid);
+                            queue*(ikov_armadyl_quest_complete, 0)(npc_uid);
                         }
                     } else if ($choice4 = 1) {
-                        queue(ikov_lucien_quest_complete, 0);
+                        queue(ikov_lucien_quest_complete, 0, 0);
                     }
-                case 45 : queue(desertrescue_complete, 0);
-                case 46 : queue(tree_quest_complete, 0);
-                case 47 : queue(totem_quest_complete, 0);
-                case 48 : queue(upass_quest_complete, 0);
+                case 45 : queue(desertrescue_complete, 0, 0);
+                case 46 : queue(tree_quest_complete, 0, 0);
+                case 47 : queue(totem_quest_complete, 0, 0);
+                case 48 : queue(upass_quest_complete, 0, 0);
                 case 49 : 
                     %itwatchtower = ^itwatchtower_complete;
                     inv_add(inv, watchtowerspell, 1);
-                    queue(itwatchtower_quest_complete, 0);
-                case 50 : queue(waterfall_quest_complete, 0);
-                case 51 : queue(ball_quest_complete, 0);
-                case 52 : queue(elemental_workshop_quest_complete, 0);
-                case 53 : queue(priestperil_complete, 0);
+                    queue(itwatchtower_quest_complete, 0, 0);
+                case 50 : queue(waterfall_quest_complete, 0, 0);
+                case 51 : queue(ball_quest_complete, 0, 0);
+                case 52 : queue(elemental_workshop_quest_complete, 0, 0);
+                case 53 : queue(priestperil_complete, 0, 0);
                 case default : mes("Quest not found.");
             }
         } else if ($choice3 = 1) {
@@ -281,88 +281,88 @@ if (p_finduid(uid) = true) {
 def_int $arrav_choice = ~p_choice2_header("Black Arm Gang.", 0, "Phoenix Gang.", 1, "Choose a gang for Shield of Arrav:");
 def_int $ikov_choice = ~p_choice2_header("Armadyl.", 0, "Lucien.", 1, "Choose a side for Temple of Ikov:");
 
-queue(black_knights_fortress_quest_complete, 0);
-queue(cooks_quest_complete, 0);
-queue(demon_slayer_complete, 0);
-queue(doric_quest_complete, 0);
-queue(dragon_complete, 0);
+queue(black_knights_fortress_quest_complete, 0, 0);
+queue(cooks_quest_complete, 0, 0);
+queue(demon_slayer_complete, 0, 0);
+queue(doric_quest_complete, 0, 0);
+queue(dragon_complete, 0, 0);
     ~change_ernest;
     %haunted = ^haunted_complete;
-queue(haunted_quest_complete, 0);
-queue(goblin_diplomacy_complete_quest, 0);
-queue(squire_complete, 0);
-queue(imp_quest_complete, 0);
-queue(hunt_quest_complete, 0);
-queue(prince_complete, 0);
-queue(priest_quest_complete, 0);
-queue(romeo_and_juliet_complete, 0);
-queue(rune_mysteries_complete, 0);
-queue(sheep_complete, 0);
-queue(blackarmgang_quest_complete, 0);
-queue(quest_vampire_complete, 0);
-queue(hetty_quest_complete, 0);
-queue(quest_chompybird_complete, 0);
-queue(quest_biohazard_complete, 0);
-queue(cog_complete, 0);
-queue(itexam_complete, 0);
+queue(haunted_quest_complete, 0, 0);
+queue(goblin_diplomacy_complete_quest, 0, 0);
+queue(squire_complete, 0, 0);
+queue(imp_quest_complete, 0, 0);
+queue(hunt_quest_complete, 0, 0);
+queue(prince_complete, 0, 0);
+queue(priest_quest_complete, 0, 0);
+queue(romeo_and_juliet_complete, 0, 0);
+queue(rune_mysteries_complete, 0, 0);
+queue(sheep_complete, 0, 0);
+queue(blackarmgang_quest_complete, 0, 0);
+queue(quest_vampire_complete, 0, 0);
+queue(hetty_quest_complete, 0, 0);
+queue(quest_chompybird_complete, 0, 0);
+queue(quest_biohazard_complete, 0, 0);
+queue(cog_complete, 0, 0);
+queue(itexam_complete, 0, 0);
     if (npc_find(0_45_54_45_30, kaqemeex, 7, 0) = true) {
-        queue(druid_quest_complete, 0, npc_uid);
+        queue*(druid_quest_complete, 0)(npc_uid);
     }
-queue(mcannon_complete, 0);
+queue(mcannon_complete, 0, 0);
     // Complete all blast spells and levers, gauntlet choice unselected
     %crest_spells_levers_gauntlets = calc(pow(2, ^crest_south_lever) - 1);
-queue(crest_complete, 0);
+queue(crest_complete, 0, 0);
     %arenaquest = ^arena_defeated_genkhazard;
-queue(arena_quest_complete, 0);
-queue(fishingcompo_quest_complete, 0);
+queue(arena_quest_complete, 0, 0);
+queue(fishingcompo_quest_complete, 0, 0);
     %fluffs = ^fluffs_complete;
-queue(fluffs_complete, 0);
-queue(grandtree_quest_complete, 0);
-queue(hazeelcult_quest_complete, 0);
-queue(hero_quest_complete, 0);
-queue(grail_quest_complete, 0);
-queue(junglepotion_quest_complete, 0);
+queue(fluffs_complete, 0, 0);
+queue(grandtree_quest_complete, 0, 0);
+queue(hazeelcult_quest_complete, 0, 0);
+queue(hero_quest_complete, 0, 0);
+queue(grail_quest_complete, 0, 0);
+queue(junglepotion_quest_complete, 0, 0);
     %legendsquest = ^legends_radimus_training_4;
-queue(legends_quest_complete, 0);
-queue(zanaris_quest_complete, 0);
-queue(arthur_quest_complete, 0);
-queue(drunkmonk_complete, 0);
-queue(murder_quest_complete, 0);
+queue(legends_quest_complete, 0, 0);
+queue(zanaris_quest_complete, 0, 0);
+queue(arthur_quest_complete, 0, 0);
+queue(drunkmonk_complete, 0, 0);
+queue(murder_quest_complete, 0, 0);
     stat_advance(crafting, 22500);
     inv_add(inv, uncut_sapphire, 1);
     %itgronigen = ^itgronigen_complete;
     %qp = calc(%qp + ^itgronigen_questpoints);
-queue(itgronigen_quest_complete, 0);
-queue(quest_elena_complete, 0);
-queue(scorpcatcher_quest_complete, 0);
+queue(itgronigen_quest_complete, 0, 0);
+queue(quest_elena_complete, 0, 0);
+queue(scorpcatcher_quest_complete, 0, 0);
     %seaslugquest = ^seaslug_complete;
     %qp = add(%qp, ^seaslug_questpoints);
     inv_add(inv, bigoysterpearls, 1);
     stat_advance(fishing, 71750);
-queue(seaslug_quest_complete, 0);
-queue(sheepherder_complete, 0);
-queue(zombiequeen_quest_complete, 0);
+queue(seaslug_quest_complete, 0, 0);
+queue(sheepherder_complete, 0, 0);
+queue(zombiequeen_quest_complete, 0, 0);
 if ($ikov_choice = 0) {
     // Armadyl side
     if (npc_find(0_40_51_13_57, ikov_lucien1, 7, 0) = true) {
-        queue(ikov_armadyl_quest_complete, 0, npc_uid);
+        queue*(ikov_armadyl_quest_complete, 0)(npc_uid);
     }
 } else {
     // Lucien side
-    queue(ikov_lucien_quest_complete, 0);
+    queue(ikov_lucien_quest_complete, 0, 0);
 }
-queue(desertrescue_complete, 0);
-queue(tree_quest_complete, 0);
-queue(totem_quest_complete, 0);
-queue(upass_quest_complete, 0);
+queue(desertrescue_complete, 0, 0);
+queue(tree_quest_complete, 0, 0);
+queue(totem_quest_complete, 0, 0);
+queue(upass_quest_complete, 0, 0);
     %itwatchtower = ^itwatchtower_complete;
     // Rewards are given before quest completion, so give here
     stat_advance(magic, 153000);
     inv_add(inv, coins, 5000);
     inv_add(inv, watchtowerspell, 1);
-queue(itwatchtower_quest_complete, 0);
-queue(waterfall_quest_complete, 0);
-queue(ball_quest_complete, 0);
+queue(itwatchtower_quest_complete, 0, 0);
+queue(waterfall_quest_complete, 0, 0);
+queue(ball_quest_complete, 0, 0);
 if ($arrav_choice = 0) {
     // Black Arm gang
     %blackarmgang = ^blackarmgang_joined;
@@ -372,8 +372,8 @@ if ($arrav_choice = 0) {
     %phoenixgang = ^phoenixgang_joined;
     %blackarmgang = 0;
 }
-queue(elemental_workshop_quest_complete, 0);
-queue(priestperil_complete, 0);
+queue(elemental_workshop_quest_complete, 0, 0);
+queue(priestperil_complete, 0, 0);
 
 ~update_questlist;
 mes("All quests have been completed.");

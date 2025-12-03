@@ -3,7 +3,7 @@ gosub(npc_death);
 // no heropoints check
 if (finduid(%npc_aggressive_player) = true & %heroquest = ^hero_phoenix_talked_charlie) {
     if(p_finduid(uid) = true) %heroquest = ^hero_phoenix_killed_grip;
-    else queue(grip_queue_progress, 0);
+    else queue(grip_queue_progress, 0, 0);
 }
 
 // Key appears for anyone

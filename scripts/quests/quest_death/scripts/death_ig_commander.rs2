@@ -156,7 +156,7 @@ if(testbit(%death_bits, ^denulth_given_combo) = ^true) {
     }
 }
 if(testbit(%death_bits, ^denulth_given_combo) = ^true & testbit(%death_bits, ^denulth_given_map) = ^true) {
-    queue(death_quest_complete, 0);
+    queue(death_quest_complete, 0, 0);
     ~chatnpc("<p,happy>Well done citizen! We will reward you by training you in attack!");
     ~chatnpc("<p,happy>I shall present you with some steel fighting claws. In addition I shall show you the knowledge of creating the fighting claws for yourself.");
     ~chatnpc("<p,happy>You are now an honorary member of the Imperial Guard!");

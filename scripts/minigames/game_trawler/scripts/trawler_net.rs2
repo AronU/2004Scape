@@ -25,19 +25,19 @@ if (loc_find(^trawler_flood_net2, game_trawler_fish_net2) = true) {
 }
 huntall(^trawler_start_center_under, 8, 0);
 while (huntnext = true) {
-    queue(trawler_player_rip_net, 0);
+    queue(trawler_player_rip_net, 0, 0);
 }
 huntall(^trawler_start_center, 8, 0);
 while (huntnext = true) {
-    queue(trawler_player_rip_net, 0);
+    queue(trawler_player_rip_net, 0, 0);
 }
 huntall(^trawler_flood_center_under, 8, 0);
 while (huntnext = true) {
-    queue(trawler_player_rip_net, 0);
+    queue(trawler_player_rip_net, 0, 0);
 }
 huntall(^trawler_flood_center, 8, 0);
 while (huntnext = true) {
-    queue(trawler_player_rip_net, 0);
+    queue(trawler_player_rip_net, 0, 0);
 }
 
 [queue,trawler_player_rip_net]

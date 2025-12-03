@@ -81,7 +81,7 @@ if(inv_total(inv, ball_of_wool) > 0 & %sheep ! ^sheep_last_wool) {
 if(%sheep = ^sheep_last_wool & inv_total(inv, ball_of_wool) > 0) {
     ~chatplayer("<p,happy>I have your last ball of wool.");
     ~chatnpc("<p,sad>I guess I'd better pay you then.");
-    queue(sheep_complete, 0);
+    queue(sheep_complete, 0, 0);
     return;
 }
 ~chatplayer("<p,happy>That's all I've got so far.");

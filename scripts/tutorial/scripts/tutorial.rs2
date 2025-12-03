@@ -134,7 +134,7 @@ if (%tutorial = ^newbie_combat_instructor_during_attacking_melee
 if_close;
 
 [if_close,player_kit]
-queue(tutorial_designed_character, 0);
+queue(tutorial_designed_character, 0, 0);
 
 [queue,tutorial_designed_character]
 %tutorial = ^newbie_basics_instructor_designed_character;

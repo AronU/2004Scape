@@ -11,7 +11,7 @@ if ($amount > 0) {
 }
 
 if (stat(hitpoints) = 0){
-    queue(player_death, 0);
+    queue(player_death, 0, 0);
     return;
 }
 

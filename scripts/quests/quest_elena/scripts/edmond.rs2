@@ -38,7 +38,7 @@ switch_int(%elenaquest) {
     case ^quest_elena_freed_elena :
         ~chatnpc("<p,happy>Thank you, thank you! <nc_name(elena2)> beat you back by minutes. Now I said I'd give you a reward. What can I give you as a reward I wonder? Here take this magic scroll, I have little use for it but it may help you.");
         ~chatnpc("<p,happy>Now I'd recommend you go and see Elena. She'll want to thank you herself. She lives in the house opposite ours.");
-        queue(quest_elena_complete, 0);
+        queue(quest_elena_complete, 0, 0);
     case ^elena_complete, ^elena_complete_read_scroll :
         ~chatplayer("<p,happy>Hello there.");
         ~chatnpc("<p,happy>Ah hello. Thank you again for rescuing my daughter.");

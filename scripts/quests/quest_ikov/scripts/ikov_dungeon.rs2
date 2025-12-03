@@ -41,7 +41,7 @@ cleartimer(move_ikovtrigger);
 // coming from west side is queued and will take 1t longer, coming from east side is not, meaning you can cancel coming from west side
 if(inzone(^ikovbridge_zone_lower, ^ikovbridge_zone_upper, coord) = true) {
     if(coordx(coord) = coordx(^ikovbridge_zone_lower)) {
-        queue(ikov_movequeue, 0);
+        queue(ikov_movequeue, 0, 0);
     } else {
         @ikov_movebridge;
     }

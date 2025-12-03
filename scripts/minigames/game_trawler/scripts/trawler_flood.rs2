@@ -12,12 +12,12 @@ if (.npc_find(^trawler_flood_center_under, murphy_halfsunk, 8, 0) = false) {
 huntall(^trawler_start_center_under, 8, 0);
 while (huntnext = true) {
     if_close;
-    queue(trawler_player_flood, 0);
+    queue(trawler_player_flood, 0, 0);
 }
 huntall(^trawler_start_center, 8, 0);
 while (huntnext = true) {
     if_close;
-    queue(trawler_player_flood, 0);
+    queue(trawler_player_flood, 0, 0);
 }
 
 [proc,trawler_unflood]
@@ -34,12 +34,12 @@ if (.npc_find(^trawler_start_center_under, murphy_normal, 8, 0) = false) {
 huntall(^trawler_flood_center_under, 8, 0);
 while (huntnext = true) {
     if_close;
-    queue(trawler_player_unflood, 0);
+    queue(trawler_player_unflood, 0, 0);
 }
 huntall(^trawler_flood_center, 8, 0);
 while (huntnext = true) {
     if_close;
-    queue(trawler_player_unflood, 0);
+    queue(trawler_player_unflood, 0, 0);
 }
 
 [proc,trawler_leak] // requires active loc

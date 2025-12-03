@@ -25,7 +25,7 @@ if_openmain_side(bank_main, bank_side);
 [label,closebank]
 inv_stoptransmit(bank_side:inv);
 inv_stoptransmit(bank_main:inv);
-queue(reorganize_bank, 0); // confirmed queued
+queue(reorganize_bank, 0, 0); // confirmed queued
 
 // reorganize the bank like when you open the bank.
 // this is because a player can move objs around in the bank

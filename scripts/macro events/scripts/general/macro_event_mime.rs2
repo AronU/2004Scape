@@ -61,7 +61,7 @@ if($count = 0) {
     huntall(0_31_74_24_28, 1, 0);
     while(huntnext = true) {
         if_close();
-        queue(mime_step_right_up, 0);
+        queue(mime_step_right_up, 0, 0);
     }
     huntall(0_31_74_24_26, 1, 0);
     while (huntnext = true) {

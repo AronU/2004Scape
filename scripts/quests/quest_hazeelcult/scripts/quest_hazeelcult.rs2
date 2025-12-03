@@ -118,7 +118,7 @@ if(%hazeelcultquest = ^hazeelcult_given_armour_or_scroll & %hazeelcult_side = ^h
     ~chatnpc("<p,neutral>the very least I can do is to reward you for your noble efforts, and to offer my sincerest apologies as a Lord and gentleman.");
     ~chatplayer("<p,happy>Thank you Lord Ceril.");
     ~chatnpc("<p,happy>No, no, thank YOU! Feel free to stop by anytime adventurer!");
-    queue(hazeelcult_quest_complete, 0);
+    queue(hazeelcult_quest_complete, 0, 0);
     return;
 }
 ~mesbox("You search the cupboard thoroughly but find nothing of interest.");

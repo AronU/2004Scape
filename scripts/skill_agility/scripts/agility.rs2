@@ -115,7 +115,7 @@ if (gender() = 0) {
 mes($message);
 p_delay(0);
 if (stat(hitpoints) = 0){
-    queue(player_death, 0);
+    queue(player_death, 0, 0);
     return;
 }
 ~ring_of_life_check;

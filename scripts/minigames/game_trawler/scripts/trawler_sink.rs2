@@ -3,25 +3,25 @@ huntall(^trawler_start_center_under, 8, 0);
 while (huntnext = true) {
     if_close;
     clearqueue(trawler_player_rip_net);
-    queue(trawler_player_sink_unflooded, 0);
+    queue(trawler_player_sink_unflooded, 0, 0);
 }
 huntall(^trawler_start_center, 8, 0);
 while (huntnext = true) {
     if_close;
     clearqueue(trawler_player_rip_net);
-    queue(trawler_player_sink_unflooded, 0);
+    queue(trawler_player_sink_unflooded, 0, 0);
 }
 huntall(^trawler_flood_center_under, 8, 0);
 while (huntnext = true) {
     if_close;
     clearqueue(trawler_player_rip_net);
-    queue(trawler_player_sink_flooded, 0);
+    queue(trawler_player_sink_flooded, 0, 0);
 }
 huntall(^trawler_flood_center, 8, 0);
 while (huntnext = true) {
     if_close;
     clearqueue(trawler_player_rip_net);
-    queue(trawler_player_sink_flooded, 0);
+    queue(trawler_player_sink_flooded, 0, 0);
 }
 if (npc_find(^trawler_wreck_murphy, murphy_sunk, 2, 0) = true) {
     npc_settimer(1);

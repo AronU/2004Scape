@@ -10,7 +10,7 @@ mes("You start to swing the bullroarer above your head.");
 anim(human_bullroarer, 0);
 sound_synth(bullroarer, 0, 0);
 spotanim_pl(bullroarer, 92, 0);
-queue(bullroarer_use, 1);
+queue(bullroarer_use, 1, 0);
 
 [queue,bullroarer_use]
 mes("You feel a bit silly at first, but soon it makes an interesting sound.");
@@ -47,7 +47,7 @@ if (~inzone_coord_pair_table(kharazi_jungle, coord) = true) {
 }
 // this is a 5t weakqueue in osrs, and from what I can tell, is also queued on release osrs/pre-eoc
 // could've been changed 2005-2007? (pre-eoc example weakqueued: https://youtu.be/oHcazhvs5-U?si=vlP-co5HhCgkS8GT&t=55)
-queue(bullroarer_out_jungle, 4);
+queue(bullroarer_out_jungle, 4, 0);
 
 [queue,bullroarer_out_jungle]
 mes("Nothing much seems to happen though.");

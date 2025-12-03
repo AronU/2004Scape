@@ -11,7 +11,7 @@ if (%npc_aggressive_player ! uid) { // if u didnt do the last hit
 // finish dragon slayer quest
 // https://youtu.be/zmYEl97Smxs?list=PLn23LiLYLb1aqrojPTi1_Np81LJku2Nd0&t=222
 if (%dragonquest < ^dragon_complete) {
-    queue(dragon_complete, 0);
+    queue(dragon_complete, 0, 0);
 }
 
 [ai_queue1,elvarg] ~npc_default_retaliate_ap;
@@ -79,7 +79,7 @@ def_int $damage = randominc($maxhit);
 stat_drain(prayer, 0, 10); // 10%
 
 queue(combat_damage_player, 0, $damage);
-queue(playerhit_n_retaliate, 0, npc_uid); // this should be a queue* command
+queue*(playerhit_n_retaliate, 0)(npc_uid);
 ~npc_set_attack_vars;
 
 
@@ -101,7 +101,7 @@ def_int $damage = randominc($maxhit);
 stat_drain(prayer, 0, 10); // 10%
 
 queue(combat_damage_player, calc($duration / 30), $damage);
-queue(playerhit_n_retaliate, calc($duration / 30), npc_uid); // this should be a queue* command
+queue*(playerhit_n_retaliate, calc($duration / 30))(npc_uid);
 ~npc_set_attack_vars;
 
 

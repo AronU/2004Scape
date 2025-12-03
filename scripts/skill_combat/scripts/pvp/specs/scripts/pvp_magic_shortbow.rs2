@@ -50,6 +50,6 @@ def_int $poison_severity = oc_param($ammo, poison_severity);
 if ($damage > 0 & $poison_severity > 0 & random(4) = 0) { // 1/4 chance to poison
     .queue(poison_player, 0, $poison_severity);
 }
-.queue(pvp_retaliate, divide($delay, 30), uid);
+.queue*(pvp_retaliate, divide($delay, 30))(uid);
 ~.pvp_damage(divide($delay, 30), $damage);
 .anim(.%com_defendanim, $delay);

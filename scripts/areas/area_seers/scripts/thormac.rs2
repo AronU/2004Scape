@@ -65,7 +65,7 @@ if(inv_total(inv, scorpioncageempty) = 0) {
 if(inv_total(inv,scorpioncagefull) > 0) {
     ~chatplayer("<p,happy>I have retrieved all your scorpions.");
     ~chatnpc("<p,happy>Aha, my little scorpions home at last!");
-    queue(scorpcatcher_quest_complete, 0);
+    queue(scorpcatcher_quest_complete, 0, 0);
     return;
 }
 if(inv_total(bank, scorpioncagefull) > 0) {

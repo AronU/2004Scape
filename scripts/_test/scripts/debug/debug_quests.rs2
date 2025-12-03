@@ -175,7 +175,7 @@ if (p_finduid(uid) = true) {
           inv_add(inv, ice_gloves, 1);
       }
     case 4 :
-      queue(hero_quest_complete, 0);
+      queue(hero_quest_complete, 0, 0);
   }
 } else {
   @please_finish;

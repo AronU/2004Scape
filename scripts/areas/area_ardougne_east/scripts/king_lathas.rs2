@@ -26,7 +26,7 @@ if(%biohazard = ^biohazard_reported_elena) {
             ~chatnpc("<p,happy>It's located just to the north west of Ardougne, there you can prepare for the challenge ahead.");
             ~chatplayer("<p,quiz>Ok. There's just one thing I don't understand, how do you know so much about King Tyras?");
             ~chatnpc("<p,sad>How could I not do? He was my brother.");
-            queue(quest_biohazard_complete, 0);
+            queue(quest_biohazard_complete, 0, 0);
         case 2 :
             ~chatplayer("<p,angry>I've wasted enough of my time here.");
             ~chatnpc("<p,neutral>No time is ever wasted, thanks for all you've done.");
@@ -45,7 +45,7 @@ if(%biohazard = ^biohazard_reported_elena) {
             ~chatnpc("<p,happy>Once our mages have re-summoned the well, I will send a band of troops led by yourself to head into west RuneScape and stop Tyras.");
             ~chatplayer("<p,neutral>I will be ready and waiting.");
             ~chatnpc("<p,happy>Your loyalty is appreciated, traveller.");
-            queue(upass_quest_complete, 0);
+            queue(upass_quest_complete, 0, 0);
         case ^upass_not_started :
             if(testbit(%ibanmulti, ^upass_started_bit) = ^true) {
                 @lathas_managing;

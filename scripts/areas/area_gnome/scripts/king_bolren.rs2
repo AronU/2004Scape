@@ -97,7 +97,7 @@ switch_int(%treequest) {
         // going to queue the quest finish instead here
         inv_del(inv, orbs_of_protection, 1);
         p_stopaction;
-        queue(tree_quest_complete, 0);
+        queue(tree_quest_complete, 0, 0);
         ~mesbox("The gnomes begin to chant. Meanwhile, King Bolren holds the orbs of protection out in front of him.");
         if_close;
         p_walk(0_39_49_46_34);

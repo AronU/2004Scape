@@ -149,7 +149,7 @@ switch_int(%murdersus) {
 ~murder_clear_evidence;
 ~chatnpc("<p,happy>Please accept this reward from the family!");
 // this is correct, doesnt queue reward until here, quest isnt marked as complete when clearing evidence (not like it matters since theres no obj checks)
-queue(murder_quest_complete, 0);
+queue(murder_quest_complete, 0, 0);
 
 [proc,murder_get_poisoned_loc_name]()(string)
 switch_int(%murdersus) {

@@ -99,7 +99,7 @@ if ($item = digtalisman) {
     ~chatnpc("<p,happy>Thanks for your help;|your sharp eyes have spotted what many have missed.|Here, take this gold as your reward.");
     ~objbox(gold_bar, "The expert gives you 2 gold bars as payment.", 250, 0, divide(^objbox_height, 2));
     inv_del(inv, zarosstonetablet, 1);
-    queue(itexam_complete, 0);
+    queue(itexam_complete, 0, 0);
 } else if ($item = unidentified_liquid) {
     ~chatplayer("<p,happy>Do you know what this is?");
     ~chatnpc("<p,shock>Where did you get this?");

@@ -5,7 +5,7 @@ if(npc_findhero = ^true) {
     if(p_finduid(uid) = true) { // get protected access, if not then queue
         @defeat_tree_spirit;
     }
-    queue(queue_defeat_tree_spirit, 0);
+    queue(queue_defeat_tree_spirit, 0, 0);
 }
 
 

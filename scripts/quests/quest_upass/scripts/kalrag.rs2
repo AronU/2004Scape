@@ -1,7 +1,7 @@
 [ai_queue3,kalrag]
 gosub(npc_death);
 if (npc_findhero = ^true) {
-    queue(defeat_kalrag, 0);
+    queue(defeat_kalrag, 0, 0);
     return;
 }
 

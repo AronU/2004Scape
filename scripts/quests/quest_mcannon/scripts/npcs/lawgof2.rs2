@@ -200,7 +200,7 @@ mes("You hand the Dwarf Commander the mould and the notes.");
 ~chatplayer("<p,neutral>You take care too.");
 inv_del(inv, ammo_mould, 1);
 inv_del(inv, nulodions_notes, 1);
-queue(mcannon_complete, 0);
+queue(mcannon_complete, 0, 0);
 
 [label,mcannon_missing_nulodion_items]
 ~chatplayer("<p,neutral>He gave me some items to give to you... but I seem to have lost something.");

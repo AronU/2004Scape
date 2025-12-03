@@ -50,7 +50,7 @@ switch_int(~p_choice2("Yes, I am very nimble and agile!", 1, "No, actually, I ha
         mes("The gates slowly begin to open...");
         p_delay(0); // 1t
         mes("Suddenly some Zombies grab you and start dragging you inside!");
-        queue(shilo_mist_queue, 16);
+        queue(shilo_mist_queue, 16, 0);
         ~shilo_metalgates_open;
         ~forcemove(0_44_46_54_9);
     case 2 :
@@ -206,7 +206,7 @@ if(loc_find(0_45_48_37_18, hillsideclosedl) = true) loc_change(loc_2238, ^max_32
 if(loc_find(0_45_48_36_18, hillsideclosedr) = true) loc_change(loc_2239, ^max_32bit_int);
 mes("A shimmering light dances over the doors, before you can blink, the doors");
 mes("creak open.");
-queue(rash_queue, 6); // 6t, it is a queue
+queue(rash_queue, 6, 0); // 6t, it is a queue
 
 [oploc1,hillsideexitclosedl] @zq_open_tombexit;
 [oploc1,hillsideexitclosedr] @zq_open_tombexit;
@@ -1063,8 +1063,8 @@ switch_int(~p_choice2_header("Yes, I'll follow the path.", 1, "No, I'll look for
         ~mesbox("You decide to have another look around. And see if you can find a better way to get out.");
 }
 
-[mapzoneexit,0_45_145] queue(exit_ah_za_rhoon, 0);
-[mapzoneexit,0_45_146] queue(exit_ah_za_rhoon, 0);
+[mapzoneexit,0_45_145] queue(exit_ah_za_rhoon, 0, 0);
+[mapzoneexit,0_45_146] queue(exit_ah_za_rhoon, 0, 0);
 
 [queue,exit_ah_za_rhoon]
 if(inzone(0_45_145_0_0, 0_45_146_63_63, coord) = true) {
@@ -1145,7 +1145,7 @@ if(last_useitem = zqcorpse) {
         spotanim_map(shilomist, npc_coord, 5, 0);
         npc_del;
         inv_del(inv, zqcorpse, 1);
-        queue(zombiequeen_quest_complete, 0);
+        queue(zombiequeen_quest_complete, 0, 0);
     } 
     return;
 }
@@ -1354,7 +1354,7 @@ while (npc_huntnext = true) {
 if(add(%lastcombat, 8) < map_clock) @rash_summon_minions(uid);
 
 [oploc1,_zqtombdoor]
-queue(rash_queue, 6); // this is the only interaction that queues it besides entering the area
+queue(rash_queue, 6, 0); // this is the only interaction that queues it besides entering the area
 if(%zombiequeen < ^zombiequeen_unlocked_tombdoor) {
     mes("This door is completely sealed, it is very ornately carved.");
     return;
@@ -1537,7 +1537,7 @@ while (npc_huntnext = true) {
         return;
     }
 }
-queue(cr_queue, 10);
+queue(cr_queue, 10, 0);
 cam_shake(0, 10, 0, 0);
 ~mesbox("You touch the dolmen, and the ground starts to shake. You hear an unearthly voice booming and you step away from the dolmen in anticipation.");
 if_close;

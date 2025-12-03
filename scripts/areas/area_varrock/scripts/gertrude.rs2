@@ -57,7 +57,7 @@ switch_int (%fluffs) {
         inv_add(inv, chocolate_cake, 1);
         inv_add(inv, stew, 1);
         p_delay(3);
-        queue(fluffs_complete, 0);
+        queue(fluffs_complete, 0, 0);
     case ^fluffs_complete :
         if (getbit_range(%cat_growth, 20, 26) = 100 & inv_total(inv, felinemedal) = 0) {
             ~chatplayer("<p,happy>Hello again Gertrude!");

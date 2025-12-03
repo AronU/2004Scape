@@ -11,7 +11,7 @@ if(inzone(0_42_52_34_45, 0_42_52_45_56, npc_coord) = true) {
         ~chatnpc("<p,neutral>Hello again... Would you like to continue with your training?");
         @multi2("Yes, I'll train now.", radimus_training, "No, I've got something else to do at the moment.", radimus_somethingelse);
     } else if(%legendsquest = ^legends_radimus_training_4) {
-        queue(legends_quest_complete, 0);
+        queue(legends_quest_complete, 0, 0);
     }
     @radimus_postquest;
     return;
@@ -73,7 +73,7 @@ switch_obj(last_useitem) {
 [label,radimus_training]
 if(%legendsquest >= ^legends_radimus_training_4) {
     ~chatnpc("<p,neutral>Right, that's all the training I can offer you. I hope you're happy with your new skills. Do feel free to explore the rest of the building.");
-    queue(legends_quest_complete, 0);
+    queue(legends_quest_complete, 0, 0);
     return;
 }
 def_int $remaining = calc((^legends_radimus_training_4 - %legendsquest) / 5);

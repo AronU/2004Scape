@@ -11,10 +11,10 @@ def_int $dir = ~coord_direction(coord, .coord);
 .if_close;
 if (.p_finduid(.uid) = false) {
     switch_int ($dir) {
-        case ^exact_west : .queue(pvp_dragon_spear_push_west, 0);
-        case ^exact_east : .queue(pvp_dragon_spear_push_east, 0);
-        case ^exact_north : .queue(pvp_dragon_spear_push_north, 0);
-        case ^exact_south : .queue(pvp_dragon_spear_push_south, 0);
+        case ^exact_west : .queue(pvp_dragon_spear_push_west, 0, 0);
+        case ^exact_east : .queue(pvp_dragon_spear_push_east, 0, 0);
+        case ^exact_north : .queue(pvp_dragon_spear_push_north, 0, 0);
+        case ^exact_south : .queue(pvp_dragon_spear_push_south, 0, 0);
     }
     return;
 }
@@ -26,7 +26,7 @@ if ($end_coord ! .coord) {
 
 .spotanim_pl(stunned_shove, 96, 0);
 .anim(%com_defendanim, 0);
-.queue(pvp_retaliate, 0, uid);
+.queue*(pvp_retaliate, 0)(uid);
 .p_delay(4);
 
 [queue,pvp_dragon_spear_push_west]
@@ -37,7 +37,7 @@ if ($end_coord ! coord) {
 }
 spotanim_pl(stunned_shove, 96, 0);
 anim(%com_defendanim, 0);
-queue(pvp_retaliate, 0, %pk_predator1);
+queue*(pvp_retaliate, 0)(%pk_predator1);
 p_delay(4);
 
 [queue,pvp_dragon_spear_push_east]
@@ -48,7 +48,7 @@ if ($end_coord ! coord) {
 }
 spotanim_pl(stunned_shove, 96, 0);
 anim(%com_defendanim, 0);
-queue(pvp_retaliate, 0, %pk_predator1);
+queue*(pvp_retaliate, 0)(%pk_predator1);
 p_delay(4);
 
 [queue,pvp_dragon_spear_push_north]
@@ -59,7 +59,7 @@ if ($end_coord ! coord) {
 }
 spotanim_pl(stunned_shove, 96, 0);
 anim(%com_defendanim, 0);
-queue(pvp_retaliate, 0, %pk_predator1);
+queue*(pvp_retaliate, 0)(%pk_predator1);
 p_delay(4);
 
 [queue,pvp_dragon_spear_push_south]
@@ -70,5 +70,5 @@ if ($end_coord ! coord) {
 }
 spotanim_pl(stunned_shove, 96, 0);
 anim(%com_defendanim, 0);
-queue(pvp_retaliate, 0, %pk_predator1);
+queue*(pvp_retaliate, 0)(%pk_predator1);
 p_delay(4);

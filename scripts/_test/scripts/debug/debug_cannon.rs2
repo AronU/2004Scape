@@ -12,7 +12,7 @@ inv_add(inv, twpart4, 1);
 inv_add(inv, mcannonball, 1000);
 
 [debugproc,completemc]
-queue(mcannon_complete, 0);
+queue(mcannon_complete, 0, 0);
 
 [debugproc,mctele]
 if (p_finduid(uid) = true) {

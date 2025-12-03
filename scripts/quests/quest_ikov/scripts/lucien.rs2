@@ -40,7 +40,7 @@ if(%ikov = ^ikov_paid_winelda & inv_total(inv, ikov_staffofarmardyl) > 0) {
         ~chatnpc("<p,angry>Muhahahhahahaha!");
         ~chatnpc("<p,angry>I can feel the power of the staff running through me! I will be more powerful and they shall bow down to me!");
         ~chatnpc("<p,happy>I suppose you want your reward? I shall grant you much power!");
-        queue(ikov_lucien_quest_complete, 0);
+        queue(ikov_lucien_quest_complete, 0, 0);
         return;
     }
 }
@@ -110,13 +110,13 @@ if(npc_findhero = ^true & %ikov = ^ikov_helping_armadyl) {
     if_close;
     npc_setmode(none);
     npc_walk(npc_coord);
-    queue(queue_defeat_lucien, 0, npc_uid);
+    queue*(queue_defeat_lucien, 0)(npc_uid);
     return;
 }
 gosub(npc_death);
 
 [queue,queue_defeat_lucien](npc_uid $npc)
 if (npc_finduid($npc) = true) {
-    queue(ikov_armadyl_quest_complete, 0, npc_uid);
+    queue*(ikov_armadyl_quest_complete, 0)(npc_uid);
     ~chatnpc("<p,angry>You have defeated me for now! I shall reappear in the North!");
 }

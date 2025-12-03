@@ -18,5 +18,5 @@ sound_synth(cleave, 0, 0);
 spotanim_pl(sp_attack_cleave_spotanim, 96, 0);
 .anim(.%com_defendanim, 20);
 .sound_synth(cleave, 0, 0);
-.queue(pvp_retaliate, 0, uid);
+.queue*(pvp_retaliate, 0)(uid);
 ~.pvp_damage(0, $damage);

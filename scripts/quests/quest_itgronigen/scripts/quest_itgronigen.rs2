@@ -262,7 +262,7 @@ stat_advance(crafting, 22500);
 inv_add(inv, uncut_sapphire, 1);
 %itgronigen = ^itgronigen_complete;
 %qp = calc(%qp + ^itgronigen_questpoints);
-queue(itgronigen_quest_complete, 0);
+queue(itgronigen_quest_complete, 0, 0);
 @professor_friend_of_gods;
 
 [queue,itgronigen_quest_complete]

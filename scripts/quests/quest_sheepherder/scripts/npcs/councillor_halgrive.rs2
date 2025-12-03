@@ -63,7 +63,7 @@ if (getbit_range(%sheepherdervar, 0, 12) = 7020) {
     ~chatplayer("<p,neutral>Yes, I have.");
     ~chatnpc("<p,neutral>Excellent work adventurer!|Please let me reimburse you the 100 gold|it cost you to purchase your protective clothing.");
     ~chatnpc("<p,neutral>And in recognition of your service to the|public health of Ardougne please accept this|further 3000 coins as a reward.");
-    queue(sheepherder_complete, 0);
+    queue(sheepherder_complete, 0, 0);
 // Player still needs to dispose of the sheep but have lost their poisoned feed :(
 } else if (inv_total(inv, poisoned_feed) < 1) {
     @halgrive_need_more_poisoned_feed;

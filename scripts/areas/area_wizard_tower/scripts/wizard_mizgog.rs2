@@ -13,7 +13,7 @@ switch_int(%imp) {
             inv_del(inv, white_bead, 1);
             inv_del(inv, yellow_bead, 1);
             inv_del(inv, red_bead, 1);
-            queue(imp_quest_complete, 0);
+            queue(imp_quest_complete, 0, 0);
             ~chatnpc("<p,happy>Here's your reward then,|an amulet of accuracy.");
             mes("The Wizard hands you an amulet.");
             return;

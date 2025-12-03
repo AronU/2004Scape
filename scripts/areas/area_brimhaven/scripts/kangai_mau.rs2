@@ -64,7 +64,7 @@ if(inv_total(inv, tribal_totem) > 0 & %totemquest = 4) { // shouldn't be able to
     ~chatnpc("<p,happy>You have??? Many thanks brave adventurer! Here, have some freshly cooked Karamjan fish, caught specially by my tribe.");
     ~mesbox("You hand over the Tribal Totem.");
     inv_del(inv, tribal_totem, 1);
-    queue(totem_quest_complete, 0);
+    queue(totem_quest_complete, 0, 0);
     return;
 }
 ~chatplayer("<p,sad>No, it's not that easy.");

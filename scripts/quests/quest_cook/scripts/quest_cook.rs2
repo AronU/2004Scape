@@ -82,7 +82,7 @@ if(inv_total(inv, egg) = 0) {
 inv_del(inv, egg, 1);
 inv_del(inv, bucket_milk, 1);
 inv_del(inv, pot_flour, 1);
-queue(cooks_quest_complete, 0);
+queue(cooks_quest_complete, 0, 0);
 
 [queue,cooks_quest_complete]
 %cookquest = ^cook_complete;

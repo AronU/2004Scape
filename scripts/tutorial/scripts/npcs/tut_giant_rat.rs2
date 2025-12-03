@@ -8,7 +8,7 @@ if (npc_findhero = ^true) {
     obj_add(npc_coord, raw_rat_meat, 1, ^lootdrop_duration);
     if (%tutorial =  ^newbie_combat_instructor_during_attacking_melee
         | %tutorial =  ^newbie_combat_instructor_before_attacking_ranged) {
-        queue(set_rat_kill, 0);
+        queue(set_rat_kill, 0, 0);
     }
 }
 
@@ -46,7 +46,7 @@ if (stat(hitpoints) = 1) {
     $damage = randominc($maxhit);
 }
 queue(combat_damage_player, 1, $damage);
-queue(playerhit_n_retaliate, 1, npc_uid); // this should be a queue* command
+queue*(playerhit_n_retaliate, 1)(npc_uid);
 ~npc_set_attack_vars;
 
 [opnpc2,newbiegiantrat]

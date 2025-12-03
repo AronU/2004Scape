@@ -29,7 +29,7 @@ if (randominc($attack_roll) > randominc($defence_roll)) {
     ~give_combat_experience_pvp(%damagestyle, $damage, ~pvp_xp_multiplier(~.player_combat_level));
     both_heropoints($damage);
 }
-.queue(pvp_retaliate, 0, uid);
+.queue*(pvp_retaliate, 0)(uid);
 ~.pvp_damage(0, $damage);
 def_int $poison_severity = oc_param(inv_getobj(worn, ^wearpos_rhand), poison_severity);
 if ($damage > 0 & $poison_severity > 0 & random(4) = 0) { // 1/4 chance to poison

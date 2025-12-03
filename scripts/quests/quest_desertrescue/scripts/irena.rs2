@@ -97,7 +97,7 @@ if(%desertrescue = ^desertrescue_picked_first_skill) {
     ~chatnpc("<p,happy>Okay, now choose your second skill.");
     @irena_xpreward;
 } else if(%desertrescue = ^desertrescue_picked_second_skill) {
-    queue(desertrescue_complete, 0);
+    queue(desertrescue_complete, 0, 0);
     ~chatnpc("<p,happy>Okay, that's all the skills I can teach you!");
 }
 

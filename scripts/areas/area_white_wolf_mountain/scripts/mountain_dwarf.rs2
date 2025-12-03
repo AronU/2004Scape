@@ -97,7 +97,7 @@ if(%fishingcompo = ^fishingcompo_won_comp) {
         ~chatplayer("<p,happy>I have it right here!");
         ~mesbox("You give the trophy to the dwarf.");
         inv_del(inv, hemenster_fishing_trophy, 1);
-        queue(fishingcompo_quest_complete, 0);
+        queue(fishingcompo_quest_complete, 0, 0);
         ~chatnpc("<p,happy>Okay, we will let you in now.");
         return;
     } 

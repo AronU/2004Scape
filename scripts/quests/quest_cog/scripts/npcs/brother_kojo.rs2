@@ -45,7 +45,7 @@ if($option = 1) {
 ~chatplayer("<p,neutral>I have replaced all the cogs!");
 ~chatnpc("<p,happy>Really..? Wait, listen!|Well done, well done!| Yes yes yes, you've done it!| You ARE clever!");
 ~chatnpc("<p,happy>The townsfolk will all be able to know|the correct time now!|Thank you so much for all of your help!|And as promised, here is your reward!");
-queue(cog_complete, 0);
+queue(cog_complete, 0, 0);
 
 [label,brother_kojo_post_clock_tower]
 ~chatplayer("<p,neutral>Hello again Brother Kojo.");

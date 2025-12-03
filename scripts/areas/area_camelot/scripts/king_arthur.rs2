@@ -28,7 +28,7 @@ if(%grail > ^grail_not_started) {
             if(inv_total(inv, holy_grail) > 0 & %grail = ^grail_given_whistle) {
                 ~chatplayer("<p,happy>I have retrieved the Grail!");
                 ~chatnpc("<p,happy>Wow! Incredible! You truly are a splendid knight!");
-                queue(grail_quest_complete, 0);
+                queue(grail_quest_complete, 0, 0);
                 return;
             }
             ~chatplayer("<p,neutral>I am making progress, but I have not recovered the Grail yet.");
@@ -48,7 +48,7 @@ if(%grail > ^grail_not_started) {
 [label,king_arthur_merlin_free]
 ~chatplayer("<p,happy>I have freed Merlin from his crystal!");
 ~chatnpc("<p,happy>Ah. A good job, well done.|I dub thee a Knight Of The Round Table.|You are now an honorary knight.");
-queue(arthur_quest_complete, 0);
+queue(arthur_quest_complete, 0, 0);
 
 [label,king_arthur_grailstart]
 ~chatplayer("<p,neutral>Now I am a knight of the round table, do you have any more quests for me?");

@@ -38,7 +38,7 @@ def_int $duration = ~npc_spell_cast($spell_data, 4);
 if (~npc_player_hit_roll(^magic_style) = true) {
     ~npc_spell_success($spell_data, null, $duration);
     if(~npc_debuff_allowed($effect_spell) = true) ~npc_stat_change_effect($effect_spell);
-    queue(chaosdruid_freeze_player, 0);
+    queue(chaosdruid_freeze_player, 0, 0);
 } else {
     ~npc_spell_fail($spell_data, $duration);
 }

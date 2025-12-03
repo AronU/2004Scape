@@ -15,7 +15,7 @@ if (~hero_in_progress = true) {
     ~chatplayer("<p,shock>W-what? What do you mean? There's MORE???");
     ~chatnpc("<p,neutral>I'm sorry, I was just having a little fun with you. Just|a little Hero's Guild humour there. What I really|meant was");
     ~chatnpc("<p,happy>Congratulations! You have completed the Hero's Guild|entry requirements! You will find the door now open|for you! Enter, Hero! And take this reward!");
-    queue(hero_quest_complete, 0);
+    queue(hero_quest_complete, 0, 0);
     inv_del(inv, hot_feather, 1);
     inv_del(inv, master_thief_armband, 1);
     inv_del(inv, lava_eel, 1);

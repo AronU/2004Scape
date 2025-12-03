@@ -85,7 +85,7 @@ if (npc_param(attack_sound) ! null) {
 
 [ai_queue3,ghast_vis]
 // only counts for last hit & most heropts, otherwise xp is lost
-if(npc_findhero = ^true & uid = %npc_aggressive_player & finduid(%npc_aggressive_player) = true) queue(ghast_vis_reward, 0);
+if(npc_findhero = ^true & uid = %npc_aggressive_player & finduid(%npc_aggressive_player) = true) queue(ghast_vis_reward, 0, 0);
 // npc_walk(npc_coord) is unnecessary due to npc_setmode(none).
 // But they do it in this screenshot so might be good to do it here just incase: https://i.imgur.com/AfQ1MfF.png
 npc_walk(npc_coord);

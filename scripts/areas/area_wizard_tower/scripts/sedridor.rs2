@@ -177,4 +177,4 @@ if(inv_total(inv, research_notes) = 0) {
 ~mesbox("You hand the head wizard the research notes.|He hands you back the Air Talisman.");
 inv_del(inv, research_notes, 1);
 inv_add(inv, air_talisman, 1);
-queue(rune_mysteries_complete, 0);
+queue(rune_mysteries_complete, 0, 0);

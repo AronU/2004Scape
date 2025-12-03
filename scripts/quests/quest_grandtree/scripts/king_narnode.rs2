@@ -29,7 +29,7 @@ switch_int(%grandtree) {
             ~chatnpc("<p,laugh>That's magic trees for you!");
             ~chatnpc("<p,happy>All the best Traveller and thanks again!");
             ~chatplayer("<p,happy>You too, your highness!");
-            queue(grandtree_quest_complete, 0);
+            queue(grandtree_quest_complete, 0, 0);
             return;
         }
         ~chatplayer("<p,sad>No sign of it so far.");

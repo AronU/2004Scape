@@ -122,7 +122,7 @@ gosub(npc_death);
 if(npc_findhero = ^true) {
     // queued, no if_close
     if((%grandtree = ^grandtree_released_prison | %grandtree = ^grandtree_obtained_lumber_order) & ~obj_gettotal(grandtree_order) = 0) {
-        queue(queue_defeat_grandtree_foreman, 0, npc_uid);
+        queue*(queue_defeat_grandtree_foreman, 0)(npc_uid);
     }
     obj_add(npc_coord, bones, 1, ^lootdrop_duration); // this isn't queued, the lumber order is
 }

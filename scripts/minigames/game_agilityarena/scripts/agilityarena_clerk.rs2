@@ -96,7 +96,7 @@ while(huntnext = true) {
         if(coord = loc_coord) $dest = movecoord(coord, multiply($dx, -1), 0, multiply($dz, -1));
         else $dest = movecoord(coord, $dx, 0, $dz);
         // TODO: change this to use a varp to set dest (or pack the dx/dz and pass that instead)
-        queue(agilityarena_timedblade_hit, 0, $dest);
+        queue*(agilityarena_timedblade_hit, 0)($dest);
     }
 }
 

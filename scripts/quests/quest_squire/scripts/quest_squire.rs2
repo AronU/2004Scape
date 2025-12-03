@@ -98,7 +98,7 @@ if(%squire = ^squire_given_pie) {
             ~chatnpc("<p,happy>Thank you, thank you, thank you! I was seriously worried I would have to own up to Sir Vyvin!");
             ~mesbox("You give the sword to the squire.");
             inv_del(inv, faladian_sword, 1);
-            queue(squire_complete, 0);
+            queue(squire_complete, 0, 0);
         } else {
             ~chatnpc("<p,confused>So can you un-equip it and hand it over to me now please?");
         }

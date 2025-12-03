@@ -95,7 +95,7 @@ if_setanim(death_dice:com_1, enum(int, seq, death_dice_anim, $harold_roll2));
 sound_synth(dice_shake, 0, 0);
 ~death_set_haroldroll(add($harold_roll1, $harold_roll2));
 p_delay(2);
-queue(haroldgamble_end, 0);
+queue(haroldgamble_end, 0, 0);
 if_sethide(death_dice:com_27, false);
 if_settext(death_dice:com_33, "Your roll...");
 

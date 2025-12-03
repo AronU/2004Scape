@@ -24,7 +24,7 @@ if(inv_total(inv, arravcertificate) > 0) {
     ~chatnpc("<p,happy>I never thought I'd see anyone claim this reward!");
     ~chatnpc("<p,happy>I see you are claiming half the reward,|so I will give you half of the bounty.|That comes to exactly 600 gold coins!");
     ~objbox(coins_250, "You hand over a certificate.|The king gives you 600 gold coins.", 250, 0, divide(^objbox_height, 2));
-    queue(blackarmgang_quest_complete, 0);
+    queue(blackarmgang_quest_complete, 0, 0);
     return;
 }
 if(inv_total(inv, arravshield1) > 0 & inv_total(inv, arravshield2) > 0) {

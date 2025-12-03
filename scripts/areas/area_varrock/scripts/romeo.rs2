@@ -95,4 +95,4 @@ if(inv_total(inv, cadava) > 0) {
 ~chatnpc("<p,neutral>Ah right.");
 ~chatnpc("<p,sad>So she is dead then. Aww that's a shame.");
 ~chatnpc("<p,sad>Thanks for your help anyway.");
-queue(romeo_and_juliet_complete, 0);
+queue(romeo_and_juliet_complete, 0, 0);

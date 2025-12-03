@@ -11,7 +11,7 @@ npc_setmode(none);
 npc_walk(npc_coord);
 
 if_close;
-queue(demon_slayer_start_incantation, 0);
+queue(demon_slayer_start_incantation, 0, 0);
 
 
 // https://www.youtube.com/watch?v=rjQprrDDUfE
@@ -52,4 +52,4 @@ if_close;
 if (npc_find(coord, delrith_weakened, 8, 0) = true) {
     gosub(npc_death);
 }
-queue(demon_slayer_complete, 1);
+queue(demon_slayer_complete, 1, 0);

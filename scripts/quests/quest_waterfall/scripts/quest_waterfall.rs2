@@ -459,7 +459,7 @@ if(last_useitem = glarials_urn_full_waterfall_quest) {
     p_delay(2);
     inv_del(inv, glarials_urn_full_waterfall_quest, 1);
     inv_add(inv, glarials_urn_empty_waterfall_quest, 1);
-    queue(waterfall_quest_complete, 0);
+    queue(waterfall_quest_complete, 0, 0);
     mes("The chalice remains standing.");
     mes("Inside you find a mithril case");
     mes("containing 40 seeds,");

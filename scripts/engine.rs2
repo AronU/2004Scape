@@ -100,10 +100,22 @@
 [command,p_finduid](player_uid $player)(boolean)
 // info: Get protected access to $player (secondary pointer) if they are in the world and accessible
 [command,.p_finduid](player_uid $player)(boolean)
-// info: Strong-queue a script on a player (do not use in early 2004)
-[command,strongqueue](queue $queue, int $delay)
-// info: Weak-queue a script on a player (do not use in early 2004)
-[command,weakqueue](queue $queue, int $delay)
+// info: Strong-queue a script on the player
+[command,strongqueue](queue $queue, int $delay, int $arg)
+// info: Strong-queue a script on the secondary player
+[command,.strongqueue](queue $queue, int $delay, int $arg)
+// info: Strong-queue a script on the player (var args)
+[command,strongqueue*](queue $queue, int $delay)
+// info: Strong-queue a script on the secondary player (var args)
+[command,.strongqueue*](queue $queue, int $delay)
+// info: Weak-queue a script on the player
+[command,weakqueue](queue $queue, int $delay, int $arg)
+// info: Weak-queue a script on the secondary player
+[command,.weakqueue](queue $queue, int $delay, int $arg)
+// info: Weak-queue a script on the player (var args)
+[command,weakqueue*](queue $queue, int $delay)
+// info: Weak-queue a script on the secondary player (var args)
+[command,.weakqueue*](queue $queue, int $delay)
 // info: Play an animation on a player
 [command,anim](seq $anim, int $delay)
 // info: Play an animation on a secondary player
@@ -358,14 +370,22 @@
 [command,.hint_stop]
 // info: Requires protected access - move the player from $startCoord to $endCoord with a finer ability to control speed
 [command,p_exactmove](coord $startCoord, coord $endCoord, int $startCycle, int $endCycle, int $direction)
-// info: Queue a script on a player
-[command,queue](queue $queue, int $delay) // + args
+// info: Queue a script on the player
+[command,queue](queue $queue, int $delay, int $arg)
 // info: Queue a script on the secondary player
-[command,.queue](queue $queue, int $delay) // + args
-// info: Long queue a script on a player with special behavior if it hasn't ran by the time the player logs out
-[command,longqueue](queue $queue, int $delay, int $logout_action) // + args
-// info: Long queue a script on a secondary player with special behavior if it hasn't ran by the time the player logs out
-[command,.longqueue](queue $queue, int $delay, int $logout_action) // + args
+[command,.queue](queue $queue, int $delay, int $arg)
+// info: Queue a script on the player (var args)
+[command,queue*](queue $queue, int $delay)
+// info: Queue a script on the secondary player (var args)
+[command,.queue*](queue $queue, int $delay)
+// info: Long queue a script on the player with special behavior if it hasn't ran by the time the player logs out
+[command,longqueue](queue $queue, int $delay, int $arg, int $logout_action)
+// info: Long queue a script on the secondary player with special behavior if it hasn't ran by the time the player logs out
+[command,.longqueue](queue $queue, int $delay, int $arg, int $logout_action)
+// info: Long queue a script on the player with special behavior if it hasn't ran by the time the player logs out (var args)
+[command,longqueue*](queue $queue, int $delay, int $logout_action)
+// info: Long queue a script on the secondary player with special behavior if it hasn't ran by the time the player logs out (var args)
+[command,.longqueue*](queue $queue, int $delay, int $logout_action)
 // info: Returns true if the player has an open modal or is delayed
 [command,busy]()(boolean)
 // info: Returns true if the secondary player has an open modal or is delayed

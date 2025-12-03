@@ -39,7 +39,7 @@ if(.npc_find(coord, monk_ardougne, 5, 1) = true) {
     ~.monk_dance("You go!", -1);
 }
 p_delay(2);
-queue(drunkmonk_complete, 0);
+queue(drunkmonk_complete, 0, 0);
 
 [proc,monk_dance](string $text, int $delay)
 npc_anim(emote_dance, 0);

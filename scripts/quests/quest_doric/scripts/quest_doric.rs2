@@ -93,7 +93,7 @@ if (inv_total(inv, clay) > 5 & inv_total(inv, copper_ore) > 3 & inv_total(inv, i
     mes("You hand the Clay, Copper and Iron to Doric.");
     // Doing this makes it so you can miss out on getting coins... but does trigger the quest complete
     // Talked With Tanner about being able to miss coins and it feels like a correct thing to do.
-    queue(doric_quest_complete, 0);
+    queue(doric_quest_complete, 0, 0);
     ~chatnpc("<p,happy>I can spare you some coins for your trouble.");
     mes("Doric hands you 180 coins.");
     inv_add(inv, coins, 180);

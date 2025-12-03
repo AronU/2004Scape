@@ -414,7 +414,7 @@ switch_namedobj($herb) {
 
 [label,trufitus_finish_quest]
 ~mesbox("<npc_name> shows you some techniques in Herblore.|You gain some experience in Herblore.");
-queue(junglepotion_quest_complete, 0);
+queue(junglepotion_quest_complete, 0, 0);
 
 [label,trufitus_greatest_respects]
 // this dialogue repeats until talking to Timfraku (sept 2004+), in RSC it will go to trifitus_post_quest

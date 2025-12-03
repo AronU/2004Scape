@@ -36,7 +36,7 @@ if(npc_findhero = ^true) { // this doesn't if_close or strongqueue, just regular
     if(p_finduid(uid) = true) { // get protected access, if not then queue
         @defeat_witches_experiment;
     }
-    queue(queue_defeat_witches_experiment, 0);
+    queue(queue_defeat_witches_experiment, 0, 0);
 }
 
 [queue,queue_defeat_witches_experiment] @defeat_witches_experiment;

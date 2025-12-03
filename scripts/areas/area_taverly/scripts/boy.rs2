@@ -29,7 +29,7 @@ switch_int(%ballquest) {
             ~chatplayer("<p,neutral>Hi, I have got your ball back. It was MUCH harder than I thought it would be.");
             ~mesbox("You give the ball back.");
             ~chatnpc("<p,happy>Thank you so much!");
-            queue(ball_quest_complete, 0);
+            queue(ball_quest_complete, 0, 0);
             return;
         }
         ~chatnpc("<p,quiz>Have you got my ball back yet?");

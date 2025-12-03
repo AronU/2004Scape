@@ -264,7 +264,7 @@ if(last_useitem = elemental_workshop_bar) {
     p_delay(3);
     inv_add(inv, elemental_shield, 1);
     stat_advance(smithing, 200);
-    if(testbit(%elemental_workshop_bits, ^elemental_workshop_complete) = ^false) queue(elemental_workshop_quest_complete, 0);
+    if(testbit(%elemental_workshop_bits, ^elemental_workshop_complete) = ^false) queue(elemental_workshop_quest_complete, 0, 0);
 }
 else if (oc_category(last_useitem) = category_151) ~objbox(last_useitem, "The workbench is not made to work this type of metal.", 250, 0, 0);
 else ~displaymessage(^dm_default);
@@ -278,4 +278,4 @@ session_log(^log_adventure, "Quest complete: Elemental Workshop");
 ~send_quest_complete(questlist:elemental_workshop, elemental_shield, 250, ^elemental_workshop_questpoints, "You have completed the\\nElemental Workshop Quest!");
 
 [debugproc,tew]
-queue(elemental_workshop_quest_complete, 0);
+queue(elemental_workshop_quest_complete, 0, 0);

@@ -317,7 +317,7 @@ if (.finduid(%duel2accept) = true) {
     .%duelstatus = ^duelstatus_reset;
     .%duel2accept = null;
     .if_close;
-    .queue(duel_arena_disconnect, 0);
+    .queue(duel_arena_disconnect, 0, 0);
 }
 %duelstatus = ^duelstatus_reset;
 %duel2accept = null;

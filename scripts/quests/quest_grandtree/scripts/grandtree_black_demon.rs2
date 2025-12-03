@@ -25,7 +25,7 @@ if(distance(coord, npc_coord) > 17) {
 if(npc_findhero = ^true) {
     // queued, no if_close
     if(%grandtree = ^grandtree_unlocked_trapdoor) {
-        queue(queue_defeat_blackdemon, 0);
+        queue(queue_defeat_blackdemon, 0, 0);
     }
 }
 gosub(npc_death);

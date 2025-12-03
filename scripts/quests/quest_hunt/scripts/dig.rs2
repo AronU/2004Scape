@@ -13,7 +13,7 @@ anim(human_dig, 0);
 mes("You dig a hole in the ground...");
 
 p_delay(4);
-queue(hunt_quest_complete, 0);
+queue(hunt_quest_complete, 0, 0);
 
 [queue,hunt_quest_complete]
 mes("and find a little bag of treasure.");

@@ -23,7 +23,7 @@ switch_int (%princequest) {
     case ^prince_spoken_osman : ~chatnpc("<p,happy>I understand the Spymaster has hired you. I will pay the reward only when the Prince is rescued.");
     case ^prince_saved :
         ~chatnpc("<p,happy>You have the eternal gratitude of the Emir for rescuing his son. I am authorised to pay you 700 coins.");
-        queue(prince_complete, 0);
+        queue(prince_complete, 0, 0);
     case ^prince_complete :
         //https://web.archive.org/web/20060428031722/http://www.runecrypt.com/index.php?pid=202
         ~chatnpc("<p,happy>You are a friend of the town of Al-Kharid.|If we have more tasks to complete, we will ask you.|Please, keep in contact.|Good employees are not easy to find.");
