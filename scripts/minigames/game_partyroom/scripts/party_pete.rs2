@@ -21,15 +21,15 @@ switch_int(~p_choice4("So what's this room for?", 1, "What's the big lever over 
         ~chatplayer("<p,confused>What's the big lever over there for?");
         ~chatnpc("<p,happy>Simple. With the lever you can do some fun stuff.");
         ~chatplayer("<p,confused>What kind of stuff?");
-        ~chatnpc("<p,happy>A balloon drop costs 5000 gold. For this you get 200 balloons dropped across the whole of the party room. You can then have fun popping the balloons! If there are items in the Party Drop Chest they will be inside");
-        ~chatnpc("<p,happy>the balloons! For 2000 gold you can summon the Party Room Knights who will dance for your delight.");
+        ~chatnpc("<p,happy>A balloon drop costs 1000 gold. For this you get 200 balloons dropped across the whole of the party room. You can then have fun popping the balloons! If there are items in the Party Drop Chest they will be inside");
+        ~chatnpc("<p,happy>the balloons! For 500 gold you can summon the Party Room Knights who will dance for your delight.");
         ~chatnpc("<p,laugh>Their singing isn't a delight though!");
     case 3 :
         ~chatplayer("<p,confused>What's the gold chest for?");
         ~chatnpc("<p,neutral>Any items that are in the chest will be dropped inside the balloons when you pull the lever!");
         ~chatplayer("<p,happy>Cool! Sounds like a fun way to do a drop party!");
         ~chatnpc("<p,laugh>Exactly!");
-        ~chatnpc("<p,neutral>A word of warning though. Any items that you put into the chest can't be taken out again and it costs 5000 gold pieces for each balloon drop.");
+        ~chatnpc("<p,neutral>A word of warning though. Any items that you put into the chest can't be taken out again and it costs 1000 gold pieces for each balloon drop.");
     case 4 :
         ~chatplayer("<p,happy>I wanna party!");
         ~chatnpc("<p,happy>I've won the Dance Trophy at the Kandarin Ball three years in a trot!");
