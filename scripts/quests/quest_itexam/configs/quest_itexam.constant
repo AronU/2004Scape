@@ -1,5 +1,6 @@
 ^itexam_questpoints = 2
 
+^itexam_not_started = 0
 ^itexam_stamping = 1
 ^itexam_first_exam = 2
 ^itexam_second_exam = 3
@@ -13,6 +14,9 @@
 ^itexam_errand_student1 = 0
 ^itexam_errand_student3 = 1
 ^itexam_errand_student2 = 2
+^itexam_errand_not_started = 0
+^itexam_errand_started = 1
+^itexam_errand_answered = 2
 
 ^itexam_bit_panning_guide_tea_given = 1
 ^itexam_bit_winch_rope_attached = 2
