@@ -125,7 +125,7 @@ desc=A member of the audience.
 readyanim=seq_1137
 minimap=no
 
-[npc_1113]
+[troll_eadgar]
 name=Eadgar
 model1=model_230_idk
 model2=model_250_idk
@@ -155,7 +155,7 @@ vislevel=hide
 head1=model_63_idk_head
 head2=model_82_idk_head
 
-[npc_1114]
+[troll_godric]
 name=Godric
 model1=model_215_idk
 model2=model_295_obj_wear
@@ -184,7 +184,7 @@ resizeh=118
 resizev=118
 head1=model_67_idk_head
 
-[npc_1115]
+[troll_general]
 name=Troll General
 model1=npc_1095
 model2=npc_1095i2
@@ -211,7 +211,7 @@ resizev=200
 op2=Attack
 vislevel=113
 
-[npc_1116]
+[troll_general2]
 name=Troll General
 model1=npc_1096
 model2=npc_1095i2
@@ -238,7 +238,7 @@ resizev=200
 op2=Attack
 vislevel=113
 
-[npc_1117]
+[troll_general3]
 name=Troll General
 model1=npc_1095
 model2=npc_1095i2
@@ -265,7 +265,7 @@ resizev=200
 op2=Attack
 vislevel=113
 
-[npc_1118]
+[troll_spectator1]
 name=Troll Spectator
 model1=npc_1095
 model2=npc_1096i2
@@ -285,7 +285,7 @@ resizev=134
 op2=Attack
 vislevel=71
 
-[npc_1119]
+[troll_spectator2]
 name=Troll Spectator
 model1=npc_1095
 model2=npc_1095i2
@@ -305,7 +305,7 @@ resizev=128
 op2=Attack
 vislevel=71
 
-[npc_1120]
+[troll_spectator3]
 name=Troll Spectator
 model1=npc_1095
 model2=npc_1096i2
@@ -326,7 +326,7 @@ resizev=139
 op2=Attack
 vislevel=71
 
-[npc_1121]
+[troll_spectator4]
 name=Troll Spectator
 model1=npc_1095
 model2=npc_1096i2
@@ -346,7 +346,7 @@ resizev=134
 op2=Attack
 vislevel=71
 
-[npc_1122]
+[troll_spectator5]
 name=Troll Spectator
 model1=npc_1095
 model2=npc_1095i2
@@ -367,7 +367,7 @@ resizev=138
 op2=Attack
 vislevel=71
 
-[npc_1123]
+[troll_spectator6]
 name=Troll Spectator
 model1=npc_1096
 model2=npc_1096i2
@@ -385,7 +385,7 @@ resizev=125
 op2=Attack
 vislevel=71
 
-[npc_1124]
+[troll_spectator7]
 name=Troll Spectator
 model1=npc_1095
 model2=npc_1095i2
@@ -405,7 +405,7 @@ resizev=134
 op2=Attack
 vislevel=71
 
-[npc_1125]
+[troll_champion]
 name=Dad
 model1=npc_1095
 model2=npc_1095i2
@@ -428,7 +428,7 @@ vislevel=101
 head1=npc_1125_head
 head2=npc_1125_headi2
 
-[npc_1126]
+[troll_prison_guard1_awake]
 name=Twig
 model1=npc_1096
 model2=npc_1096i2
@@ -454,7 +454,7 @@ resizev=142
 op2=Attack
 vislevel=71
 
-[npc_1127]
+[troll_prison_guard2_awake]
 name=Berry
 model1=npc_1096
 model2=npc_1096i2
@@ -480,7 +480,7 @@ resizev=148
 op2=Attack
 vislevel=71
 
-[npc_1128]
+[troll_prison_guard1]
 name=Twig
 model1=npc_1096
 model2=npc_1096i2
@@ -507,7 +507,7 @@ op2=Attack
 op3=Pickpocket
 vislevel=71
 
-[npc_1129]
+[troll_prison_guard2]
 name=Berry
 model1=npc_1096
 model2=npc_1096i2
@@ -534,7 +534,7 @@ op2=Attack
 op3=Pickpocket
 vislevel=71
 
-[npc_1130]
+[troll_thrower1]
 name=Thrower Troll
 model1=npc_1095
 model2=npc_1096i2
@@ -552,7 +552,7 @@ resizev=112
 op2=Attack
 vislevel=68
 
-[npc_1131]
+[troll_thrower2]
 name=Thrower Troll
 model1=npc_1095
 model2=npc_1095i2
@@ -570,7 +570,7 @@ resizev=128
 op2=Attack
 vislevel=68
 
-[npc_1132]
+[troll_thrower3]
 name=Thrower Troll
 model1=npc_1095
 model2=npc_1096i2
@@ -588,7 +588,7 @@ resizev=108
 op2=Attack
 vislevel=68
 
-[npc_1133]
+[troll_thrower4]
 name=Thrower Troll
 model1=npc_1096
 model2=npc_1096i2
@@ -606,7 +606,7 @@ resizev=122
 op2=Attack
 vislevel=68
 
-[npc_1134]
+[troll_thrower5]
 name=Thrower Troll
 model1=npc_1095
 model2=npc_1095i2
@@ -624,7 +624,7 @@ resizev=120
 op2=Attack
 vislevel=68
 
-[npc_1135]
+[troll_cook]
 name=Cook
 model1=npc_1096
 model2=npc_1096i2
@@ -645,7 +645,7 @@ resizeh=132
 resizev=132
 vislevel=hide
 
-[npc_1136]
+[troll_cook2]
 name=Cook
 model1=npc_1096
 model2=npc_1096i2
@@ -664,7 +664,7 @@ resizeh=132
 resizev=132
 vislevel=hide
 
-[npc_1137]
+[troll_cook3]
 name=Cook
 model1=npc_1096
 model2=npc_1095i2
@@ -685,7 +685,7 @@ resizeh=132
 resizev=132
 vislevel=hide
 
-[npc_1138]
+[troll_melee1]
 name=Mountain Troll
 model1=npc_1095
 model2=npc_1095i2
@@ -705,7 +705,7 @@ resizev=136
 op2=Attack
 vislevel=71
 
-[npc_1139]
+[troll_stronghold_camp_guard]
 name=Mushroom
 model1=npc_1096
 model2=npc_1096i2
@@ -725,7 +725,7 @@ resizeh=142
 resizev=142
 vislevel=hide
 
-[npc_1140]
+[troll_mountain_goat]
 name=Mountain Goat
 model1=npc_1093
 model2=npc_1093i2
@@ -741,7 +741,7 @@ resizev=138
 walkanim=sheep_walk
 readyanim=sheep_ready
 
-[npc_1141]
+[troll_mountain_goat_smaller]
 name=Mountain Goat
 model1=npc_1093
 model2=npc_1093i2
@@ -757,7 +757,7 @@ resizev=118
 walkanim=sheep_walk
 readyanim=sheep_ready
 
-[npc_1142]
+[troll_sguard1]
 name=Guard
 model1=npc_1095
 model2=npc_1096i2
@@ -776,7 +776,7 @@ resizeh=134
 resizev=134
 vislevel=hide
 
-[npc_1143]
+[troll_sguard2]
 name=Guard
 model1=npc_1095
 model2=npc_1095i2
@@ -795,7 +795,7 @@ resizeh=128
 resizev=128
 vislevel=hide
 
-[npc_1144]
+[troll_sguard3]
 name=Guard
 model1=npc_1095
 model2=npc_1096i2
@@ -815,7 +815,7 @@ resizeh=139
 resizev=139
 vislevel=hide
 
-[npc_1145]
+[troll_sguard4]
 name=Guard
 model1=npc_1095
 model2=npc_1096i2
@@ -834,7 +834,7 @@ resizeh=134
 resizev=134
 vislevel=hide
 
-[npc_1146]
+[troll_sguard5]
 name=Guard
 model1=npc_1095
 model2=npc_1096i2
@@ -853,7 +853,7 @@ resizeh=134
 resizev=134
 vislevel=hide
 
-[npc_1147]
+[troll_sguard6]
 name=Guard
 model1=npc_1096
 model2=npc_1096i2
@@ -870,7 +870,7 @@ resizeh=125
 resizev=125
 vislevel=hide
 
-[npc_1148]
+[troll_sguard7]
 name=Guard
 model1=npc_1095
 model2=npc_1096i2
@@ -889,7 +889,7 @@ resizeh=134
 resizev=134
 vislevel=hide
 
-[npc_1149]
+[troll_sguard8]
 name=Guard
 model1=npc_1095
 model2=npc_1096i2
@@ -908,7 +908,7 @@ resizeh=134
 resizev=134
 vislevel=hide
 
-[npc_1150]
+[eadgar_storeroom_guard]
 name=Guard
 model1=npc_1095
 model2=npc_1096i2
@@ -927,7 +927,7 @@ resizeh=134
 resizev=134
 vislevel=hide
 
-[npc_1151]
+[eadgar_troll_chief_cook]
 name=Burntmeat
 model1=npc_1096
 model2=npc_1096i2
@@ -951,7 +951,7 @@ op1=Talk-to
 head1=npc_1125_head
 head2=model_2930_npc
 
-[npc_1152]
+[kalphite_oldman]
 name=Weird Old Man
 model1=model_230_idk
 model2=model_250_idk
@@ -980,7 +980,7 @@ op1=Talk-to
 head1=model_63_idk_head
 head2=model_82_idk_head
 
-[npc_1153]
+[kalphite_worker]
 name=Kalphite Worker
 model1=npc_1153
 recol1s=12677
@@ -994,7 +994,7 @@ readyanim=seq_1183
 op2=Attack
 vislevel=28
 
-[npc_1154]
+[kalphite_soldier]
 name=Kalphite Soldier
 model1=npc_1154
 recol1s=12677
@@ -1010,7 +1010,7 @@ resizev=172
 op2=Attack
 vislevel=85
 
-[npc_1155]
+[kalphite_lord]
 name=Kalphite Guardian
 model1=npc_1155
 recol1s=12677
@@ -1024,7 +1024,7 @@ resizev=256
 op2=Attack
 vislevel=141
 
-[npc_1156]
+[kalphite_worker_chamber]
 name=Kalphite Worker
 model1=npc_1153
 recol1s=12677
@@ -1038,7 +1038,7 @@ readyanim=seq_1183
 op2=Attack
 vislevel=28
 
-[npc_1157]
+[kalphite_lord_chamber]
 name=Kalphite Guardian
 model1=npc_1155
 recol1s=12677
@@ -1052,7 +1052,7 @@ resizev=256
 op2=Attack
 vislevel=141
 
-[npc_1158]
+[kalphite_queen]
 name=Kalphite Queen
 model1=npc_1158
 desc=I don't think insect repellent will work...
@@ -1063,7 +1063,7 @@ op2=Attack
 headicon=8
 vislevel=333
 
-[npc_1159]
+[kalphite_queen_form_swap]
 name=Kalphite Queen
 model1=npc_1158
 vislevel=296
@@ -1072,7 +1072,7 @@ size=5
 walkanim=seq_1189
 readyanim=seq_1183
 
-[npc_1160]
+[kalphite_flyingqueen]
 name=Kalphite Queen
 model1=npc_1160
 desc=I don't think insect repellent will work...
@@ -1085,7 +1085,7 @@ op2=Attack
 headicon=3
 vislevel=333
 
-[npc_1161]
+[kalphite_larva]
 name=Kalphite Larva
 model1=npc_1153
 recol1s=12677
