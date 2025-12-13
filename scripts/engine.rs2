@@ -127,11 +127,11 @@
 // info: Refresh the secondary player's appearance
 [command,.buildappearance](inv $inv)
 // info: Move the camera
-[command,cam_moveto](coord $sourceCoord, int $sourceHeight, int $moveSpeed, int $moveMultiplier)
+[command,cam_moveto](coord $src, int $height, int $rate, int $rate2)
 // info: Make the camera look at a coord
-[command,cam_lookat](coord $destCoord, int $destHeight, int $rotationSpeed, int $rotationMultiplier)
+[command,cam_lookat](coord $dst, int $height, int $rate, int $rate2)
 // info: Shake the camera
-[command,cam_shake](int $type, int $jitter, int $amplitude, int $frequency)
+[command,cam_shake](int $axis, int $random, int $amplitude, int $rate)
 // info: Reset the camera back to the player
 [command,cam_reset]
 // info: Reset the camera back to the secondary player
