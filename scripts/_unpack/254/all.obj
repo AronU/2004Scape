@@ -13,6 +13,7 @@ cost=1
 members=yes
 stackable=yes
 weight=5g
+tradeable=no
 
 [piratehook]
 name=Pirate's hook
@@ -49,6 +50,7 @@ womanhead=model_3548
 wearpos=hat
 wearpos2=jaw
 weight=1g
+tradeable=no
 
 [macro_mime_top]
 name=Mime top
@@ -71,6 +73,7 @@ womanwear3=obj_3058_womanwear3
 wearpos=torso
 wearpos2=arms
 weight=1g
+tradeable=no
 
 [macro_mime_legs]
 name=Mime legs
@@ -89,6 +92,7 @@ iop2=Wear
 2dxan=620
 wearpos=legs
 weight=1g
+tradeable=no
 
 [macro_mime_gloves]
 name=Mime gloves
@@ -106,6 +110,7 @@ womanwear=model_356_obj_wear,0
 2dxan=420
 wearpos=hands
 weight=1g
+tradeable=no
 
 [macro_mime_boots]
 name=Mime boots
@@ -123,6 +128,7 @@ iop2=Wear
 2dxan=152
 wearpos=feet
 weight=12oz
+tradeable=no
 
 [macro_cube]
 name=Strange box
@@ -136,6 +142,7 @@ iop1=Open
 desc=It seems to be humming...
 stackable=yes
 weight=5kg
+tradeable=no
 
 [macro_cube_redtriangle]
 name=Cube part
