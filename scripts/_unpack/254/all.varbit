@@ -1,30 +1,30 @@
-[varbit_0]
-basevar=varp_318
+[troll_freed_eadgar]
+basevar=troll_varbit
 startbit=0
 endbit=0
 
-[varbit_1]
-basevar=varp_318
+[troll_opened_back_exit]
+basevar=troll_varbit
 startbit=1
 endbit=1
 
-[varbit_2]
-basevar=varp_318
+[troll_entered_stronghold]
+basevar=troll_varbit
 startbit=2
 endbit=2
 
-[varbit_3]
-basevar=varp_318
+[troll_accepted_challenge]
+basevar=troll_varbit
 startbit=3
 endbit=3
 
-[varbit_4]
-basevar=varp_318
+[troll_told]
+basevar=troll_varbit
 startbit=4
 endbit=4
 
-[varbit_5]
-basevar=varp_318
+[troll_to_the_death]
+basevar=troll_varbit
 startbit=5
 endbit=5
 
