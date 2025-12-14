@@ -169,7 +169,7 @@ model=model_3349_spotanim
 model=model_3350_spotanim
 anim=dwarf_stone_throw_launch
 
-[spotanim_34]
+[black_dart_travel]
 model=model_3131_spotanim
 recol1s=21140
 recol1d=0

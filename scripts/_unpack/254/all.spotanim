@@ -8,11 +8,11 @@ anim=rockfall
 recol1s=15855
 recol1d=30513
 
-[spotanim_272]
+[priestperil_coffin_spell]
 model=spot_spotanim_272
 anim=priestperil_coffin_neutralised
 
-[spotanim_273]
+[black_dart_launch]
 model=model_3146_spotanim
 anim=dart_launch
 recol1s=21140
@@ -37,15 +37,15 @@ anim=seq_1160
 ambient=50
 contrast=50
 
-[spotanim_278]
+[kalphite_glow]
 model=spot_spotanim_278
 anim=seq_1173
 
-[spotanim_279]
+[kalphite_queen_glow]
 model=spot_spotanim_279
 anim=seq_1171
 
-[spotanim_280]
+[kalphite_glow_travel]
 model=model_3093_spotanim
 anim=confuse_travel
 ambient=75
@@ -53,7 +53,7 @@ contrast=75
 recol1s=15375
 recol1d=19453
 
-[spotanim_281]
+[kalphite_glow_impact]
 model=model_3094_spotanim
 anim=confuse_impact
 ambient=75
