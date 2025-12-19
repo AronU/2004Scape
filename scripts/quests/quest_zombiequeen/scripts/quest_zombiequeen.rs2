@@ -142,24 +142,14 @@ mes("...and reveal an ancient doorway set into the side of the hill!");
 if(loc_find(0_45_48_37_18, zq_doorblock_jungle1) = true & .loc_find(0_45_48_36_18, zq_doorblock_jungle2) = true) {
     loc_change(hillsideclosedl, ^max_32bit_int);
     .loc_change(hillsideclosedr, ^max_32bit_int);
-    %zq_map_mechanisms = setbit(%zq_map_mechanisms, 15);
 }
-// for w/e reason it handles despawn with a player timer
-settimer(hide_rashiliyia_doors, 50);
+longqueue(hide_rashiliyia_doors, 50, ^accelerate);
 
-[timer,hide_rashiliyia_doors]
+[queue,hide_rashiliyia_doors]
 if((loc_find(0_45_48_37_18, hillsideclosedl) = true & .loc_find(0_45_48_36_18, hillsideclosedr) = true) | (loc_find(0_45_48_37_18, loc_2238) = true & .loc_find(0_45_48_36_18, loc_2239) = true)) {
     loc_change(zq_doorblock_jungle1, ^max_32bit_int);
     .loc_change(zq_doorblock_jungle2, ^max_32bit_int);
     if(distance(.loc_coord, coord) <= 2 | distance(loc_coord, coord) <= 2) mes("The trees spring back into place and hide the doors again.");
-}
-%zq_map_mechanisms = clearbit(%zq_map_mechanisms, 15);
-
-[proc,rashiliyia_door_logout]
-if(testbit(%zq_map_mechanisms, 15) = ^true) {
-    if(loc_find(0_45_48_37_18, hillsideclosedl) = true | loc_find(0_45_48_37_18, loc_2238) = true) loc_change(zq_doorblock_jungle1, ^max_32bit_int);
-    if(loc_find(0_45_48_36_18, hillsideclosedr) = true | loc_find(0_45_48_36_18, loc_2239) = true) loc_change(zq_doorblock_jungle2, ^max_32bit_int);
-    %zq_map_mechanisms = clearbit(%zq_map_mechanisms, 15);
 }
 
 [oploc1,_rashiliyia_tomb_door_closed]
@@ -296,6 +286,7 @@ if(coordz(coord) > coordz($loc_coord)) {
     ~rash_summon;
 }
 if(inv_total(worn, zqdeadbeads) > 0) {
+    %zombiequeen = ^zombiequeen_entered_with_beads;
     mes("The Beads of the Dead start to glow...");
 }
 
