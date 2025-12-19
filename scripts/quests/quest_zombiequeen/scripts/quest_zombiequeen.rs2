@@ -143,7 +143,7 @@ if(loc_find(0_45_48_37_18, zq_doorblock_jungle1) = true & .loc_find(0_45_48_36_1
     loc_change(hillsideclosedl, ^max_32bit_int);
     .loc_change(hillsideclosedr, ^max_32bit_int);
 }
-longqueue(hide_rashiliyia_doors, 50, ^accelerate);
+longqueue(hide_rashiliyia_doors, 50, 0, ^accelerate);
 
 [queue,hide_rashiliyia_doors]
 if((loc_find(0_45_48_37_18, hillsideclosedl) = true & .loc_find(0_45_48_36_18, hillsideclosedr) = true) | (loc_find(0_45_48_37_18, loc_2238) = true & .loc_find(0_45_48_36_18, loc_2239) = true)) {
