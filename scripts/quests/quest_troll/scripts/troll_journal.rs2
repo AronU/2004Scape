@@ -1,7 +1,7 @@
 [if_button,questlist:troll]
 def_string $text;
 if(%troll_quest = ^troll_not_started) {
-    $text = "@dbl@I can start this quest by speaking to @dre@Denulth@dbl@ in his tent at|@dbl@the @dre@Imperial Guard Camp@dbl@ in @dre@Burthrope@dbl@ after completing the|@dre@Death Plateau Quest";
+    $text = "@dbl@I can start this quest by speaking to @dre@Denulth@dbl@ in his tent at|@dbl@the @dre@Imperial Guard Camp@dbl@ in @dre@Burthorpe@dbl@ after completing the|@dre@Death Plateau Quest";
     $text = append($text, "||@dbl@To complete this quest I need:|@dre@Level 15 Agility|@dbl@I also need to be able to defeat a @dre@level 113 Troll|@dre@Level 30 Thieving@dbl@ might be useful.");
     ~quest_journal("Troll Stronghold", $text);
     return;

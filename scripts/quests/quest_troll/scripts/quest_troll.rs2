@@ -51,6 +51,7 @@ p_delay(0);
 if(stat_random(agility, 125, 250) = false) {
     sound_synth(stumble_loop, 10, 0);
     ~agility_exactmove(human_climbing_fall, 0, 1, coord, movecoord(coord, multiply(-2, $dx), 0, 0), 0, 50, $dir, false);
+    anim(null, 0);
     ~update_bas;
     mes("You fall and hurt yourself.");
     say("Ouch");
