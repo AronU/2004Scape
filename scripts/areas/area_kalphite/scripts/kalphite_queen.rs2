@@ -41,7 +41,7 @@ npc_setmode(none);
 npc_arrivedelay;
 .npc_add(npc_coord, kalphite_larva, 5); // kalphite queen corpse
 .npc_anim(kalphite_crackopen, 0);
-// ~sound_area(kalphite_crack_open, 0, movecoord(npc_coord, 2, 0, 2), 12);
+~sound_area(kalphite_crack_open, 0, movecoord(npc_coord, 2, 0, 2), 12);
 npc_changetype_keepall(kalphite_flyingqueen, 2000); // 20 min in osrs
 npc_statheal(hitpoints, 0, 100);
 // https://x.com/JagexAsh/status/861503532712722432 doesnt stat heal cmb stats
@@ -53,7 +53,7 @@ npc_sethuntmode(kalphite_queen);
 [proc,kalphite_queen_mage_attack]
 spotanim_npc(kalphite_glow, 0, 0);
 npc_anim(kalphite_lightning, 0);
-// sound_synth(kalthite_lightning, 0, 30);
+sound_synth(kalthite_lightning, 0, 30);
 if_close;
 %npc_action_delay = add(map_clock, npc_param(attackrate));
 
@@ -97,12 +97,12 @@ def_int $queue_delay = 0;
 if ($duration = 0) { // first target
     $duration = ~player_projectile($prev_coord, coord, uid, kalphite_glow_travel, 40, 36, $duration, 15, 0, 11, 5);
     spotanim_pl(kalphite_glow_impact, 124, $duration);
-    // sound_synth(kalthite_lightning_impact, 0, $duration);
+    sound_synth(kalthite_lightning_impact, 0, $duration);
     $total_distance = add(add($total_distance, distance(coord, $prev_coord)), 1);
     $queue_delay = divide($total_distance, 5);
 } else {
     spotanim_pl(kalphite_glow_impact, 124, $duration);
-    // sound_synth(kalthite_lightning_impact, 0, $duration);
+    sound_synth(kalthite_lightning_impact, 0, $duration);
     $duration = ~player_projectile($prev_coord, coord, uid, kalphite_glow_travel, 36, 36, $duration, 0, 0, 11, 5);
     $queue_delay = divide($total_distance, 5);
     $total_distance = add(add($total_distance, distance(coord, $prev_coord)), 1);
@@ -190,7 +190,7 @@ if (npc_param(attack_sound) ! null) {
 [proc,kalphite_flyingqueen_mage_attack]
 spotanim_npc(kalphite_queen_glow, 0, 0);
 npc_anim(kalphite_queen_lightning, 0);
-// sound_synth(kalthite_lightning, 0, 30);
+sound_synth(kalthite_lightning, 0, 30);
 
 if_close;
 %npc_action_delay = add(map_clock, npc_param(attackrate));
