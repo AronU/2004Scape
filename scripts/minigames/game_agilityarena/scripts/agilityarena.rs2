@@ -70,6 +70,7 @@ if(testbit(%agilityarena_varbit, ^agilityarena_eligible_tickets) = ^false) {
     // https://youtu.be/fu3V6gn4WWM?si=vir6X6qhZrFlUkBl&t=240
     mes("You get tickets by tagging more than one pillar in a row, tag the next");
     mes("pillar!");
+    sound_synth(pillartag, 0, 0);
     ~mesbox("You get tickets by tagging more than one pillar in a row. @red@Tag the @red@next pillar for a ticket!");
     return;
 }
