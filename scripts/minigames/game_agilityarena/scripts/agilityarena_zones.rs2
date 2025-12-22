@@ -35,6 +35,9 @@ settimer(agilityarena_pressurepad, 1);
 [zone,3_43_149_16_40] 
 settimer(agilityarena_pressurepad, 1);
 
+[zone,3_43_149_16_48] 
+settimer(agilityarena_pressurepad, 1);
+
 [zone,3_43_149_24_40] 
 settimer(agilityarena_sawblades, 1);
 
