@@ -90,7 +90,12 @@ while (huntnext = true) {
 [proc,kalphite_queen_mage_hunt](coord $prev_coord, int $duration, int $total_distance)(coord, int, int)
 def_int $damage = 0;
 def_int $maxhit = 31;
-if (randominc(~npc_magic_attack_roll) > randominc(~player_defence_roll_specific(^magic_style))) $damage = randominc($maxhit);
+if (
+    randominc(~npc_magic_attack_roll) > randominc(~player_defence_roll_specific(^magic_style)) &
+    ~check_protect_prayer(^magic_style) = false
+) {
+    $damage = randominc($maxhit);
+}
 ~npc_set_attack_vars;
 
 def_int $queue_delay = 0;
