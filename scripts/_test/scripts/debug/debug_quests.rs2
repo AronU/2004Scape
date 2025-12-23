@@ -678,3 +678,8 @@ switch_int($bit) {
             %zq_map_mechanisms = setbit(%zq_map_mechanisms, ^zq_defeated_nazastarool3);
         }
 }
+
+[debugproc,slqb](int $bit)
+if (p_finduid(uid) = false) { return; }
+%legends_bits = setbit(%legends_bits, $bit);
+mes("setbit <tostring($bit)> for legends quest");
