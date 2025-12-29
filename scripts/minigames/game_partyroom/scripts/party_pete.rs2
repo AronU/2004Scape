@@ -69,8 +69,8 @@ if(huntnext = true) { // this only checks 1 player, if it fails on them nothing 
         // iterate through the slots of the chest in order and drop on random 1x1 free tile
         while ($slot < inv_size(partyroom_dropinv)) {
             def_obj $slotobj = inv_getobj(partyroom_dropinv, $slot);
-            // notes are untouched regardless of value
-            if ($slotobj ! null & oc_cert($slotobj) ! $slotobj & oc_cost($slotobj) <= 3) {
+            // notes/stackables are untouched regardless of value
+            if ($slotobj ! null & oc_stackable($slotobj) = false & oc_param($slotobj, party_clean_exempt) = ^false & oc_cost($slotobj) < 100) {
                 inv_dropslot(partyroom_dropinv, map_findsquare(npc_coord, 0, 1, ^map_findsquare_none), $slot, 200);
                 $dropped = add($dropped, 1);
             }

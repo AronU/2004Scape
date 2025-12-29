@@ -246,6 +246,7 @@ model=model_2724_obj
 2dzan=260
 2dxan=460
 weight=1lb
+param=party_clean_exempt,^true
 
 [edgevilledungeonkey]
 name=Brass key
