@@ -101,7 +101,7 @@ switch_obj($item) {
             mes("You can't do that to a defenceless kitten!");
             return(false);
         }
-        if(oc_category($item) = cat) { // you can alch witches cat (RS3)
+        if(oc_category($item) = cat | oc_category($item) = overgrown) { // you can alch witches cat (RS3)
             mes("You can't do that to a defenceless cat!"); // https://youtu.be/jZUswQjpW4A?t=93
             return(false);
         }
