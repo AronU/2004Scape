@@ -45,7 +45,8 @@ if(%troll_quest >= ^troll_freed_godric) {
     $text = append($text, ".");
     if(%troll_quest < ^troll_complete) $text = append($text, "|@dbl@I should return and tell @dre@Dunstan@dbl@ his son is safe.");
 } else if(%troll_quest = ^troll_entered_prison) {
-    $text = append($text, "||@dbl@I have to rescue @dre@Godric");
+    if(%troll_freed_eadgar = ^true) $text = append($text, "||@str@I've rescued Mad Eadgar.|@dbl@I have to rescue @dre@Godric");
+    else $text = append($text, "||@dbl@I have to rescue @dre@Godric");
 }
 
 if(%troll_quest = ^troll_complete) {

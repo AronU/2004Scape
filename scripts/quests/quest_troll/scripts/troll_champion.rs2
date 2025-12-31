@@ -162,7 +162,7 @@ if(npc_finduid($npc_uid) = true) {
 
 [proc,trollchamp_in_combat_check]()(boolean)
 if(%troll_quest >= ^troll_defeated_dad) {
-    mes("You don't need to fight him again");
+    mes("You don't need to fight him again.");
     return (false);
 }
 if((npc_getmode = opplayer2 | npc_getmode = applayer2) & %npc_aggressive_player ! uid) {

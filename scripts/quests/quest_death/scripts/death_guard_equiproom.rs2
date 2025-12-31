@@ -38,7 +38,7 @@ switch_int(%death_equiproom) {
 }
 
 [opnpcu,death_guard_equiproom]
-if(last_useitem = beer | last_useitem = wizards_mind_bomb | last_useitem = asgarnian_ale | last_useitem = dwarven_stout | last_useitem = dragon_bitter | last_useitem = grog | last_useitem = blurberry_special) {
+if(last_useitem = beer | last_useitem = wizards_mind_bomb | last_useitem = asgarnian_ale | last_useitem = dwarven_stout | last_useitem = dragon_bitter | last_useitem = grog | last_useitem = blurberry_special | last_useitem = premade_blurberry_special) {
     @harold_drink;
 }
 ~displaymessage(^dm_default);

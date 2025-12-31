@@ -3,7 +3,7 @@ if(%troll_quest < ^troll_started) {
     mes("That looks dangerous. I'll need a good reason before I venture that way.");
     return;
 }
-// confirm order
+// these all check both ways on every rock
 if(stat(agility) < 15) {
     mes("You need an Agility level of at least 15 to attempt this.");
     return;
@@ -15,6 +15,10 @@ if(inv_total(worn, death_climbingboots) = 0 & coordz(coord) = 3611) {
 @rockslide_obstacle;
 
 [oploc1,troll_climbingrocks_top]
+if(stat(agility) < 15) {
+    mes("You need an Agility level of at least 15 to attempt this.");
+    return;
+}
 def_int $dx = 3;
 def_int $dir = ^exact_west;
 if(coordx(coord) > coordx(loc_coord)) {
@@ -39,6 +43,10 @@ stat_advance(agility, 10);
 anim(null, 0);
 
 [oploc1,troll_climbingrocks_bottom]
+if(stat(agility) < 15) {
+    mes("You need an Agility level of at least 15 to attempt this.");
+    return;
+}
 def_int $dx = -1;
 def_int $dir = ^exact_west;
 if(coordx(coord) < coordx(loc_coord)) {
@@ -129,6 +137,10 @@ p_teleport(0_45_57_13_23);
 [oploc1,troll_mountain_shortcut_climbingrocks2] @troll_mountain_shortcut;
 
 [label,troll_mountain_rockstop]
+if(stat(agility) < 15) {
+    mes("You need an Agility level of at least 15 to attempt this.");
+    return;
+}
 def_int $dx = -2;
 def_int $dir = ^exact_east;
 p_delay(0);
@@ -149,6 +161,10 @@ stat_advance(agility, 10);
 anim(null, 0);
 
 [label,troll_mountain_shortcut]
+if(stat(agility) < 15) {
+    mes("You need an Agility level of at least 15 to attempt this.");
+    return;
+}
 if(coordx(coord) > coordx(loc_coord)) {
     @troll_mountain_rockstop;
 }
@@ -226,22 +242,19 @@ if(inv_total(inv, troll_key_prison) = 0 & %troll_quest < ^troll_entered_prison) 
     mes("You need a key.");
     return;
 }
-@open_troll_stronghold_prison_door;
-
-[oplocu,troll_stronghold_prison_door_closed]
-// NO NIH
-if(last_useitem = troll_key_prison) {
-    @open_troll_stronghold_prison_door;
-}
-
-[label,open_troll_stronghold_prison_door]
 if(%troll_quest < ^troll_entered_prison) {
-    mes("You unlock the door.");
+    mes("You unlock the prison door.");
     inv_del(inv, troll_key_prison, 1);
     %troll_quest = ^troll_entered_prison;
 }
 sound_synth(lockeddoor, 0, 0);
 ~open_and_close_door2(troll_stronghold_prison_door_open, ~check_axis(coord, loc_coord, loc_angle), door_open);
+
+[oplocu,troll_stronghold_prison_door_closed]
+// NO NIH
+if(last_useitem = troll_key_prison) {
+    p_oploc(1);
+}
 
 [oploc1,troll_celldoor_godric] @troll_unlock_cell_1;
 
