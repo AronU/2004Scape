@@ -1,0 +1,5 @@
+[hellfire_damage]
+type=int
+
+[hellfire_timer]
+type=int

@@ -1,0 +1,17 @@
+[hellfire_start_coord]
+type=coord
+
+[hellfire_start_coord_quest]
+type=coord
+
+[y_count]
+type=int
+
+[wall_gap]
+type=int
+
+[wall_gap_quest]
+type=int
+
+[respawn_timer_quest]
+type=int

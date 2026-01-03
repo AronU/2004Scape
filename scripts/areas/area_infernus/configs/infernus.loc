@@ -1,0 +1,9 @@
+[firewall_infernus]
+model=model_loc_715
+anim=firewall
+hasalpha=yes
+ambient=100
+contrast=100
+shadow=no
+blockwalk=no
+blockrange=no

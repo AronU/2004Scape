@@ -1,0 +1,46 @@
+[ai_applayer2,infernal_imp]
+if (%npc_action_delay > map_clock) {
+    return;
+}
+if (~npc_check_notcombat = false) {
+    npc_setmode(null);
+    return;
+}
+if (~npc_check_notcombat_self = false) {
+    return;
+}
+~npc_rangeattack;
+
+[ai_opplayer2,infernal_imp]
+if (%npc_action_delay > map_clock) {
+    return;
+}
+if (~npc_check_notcombat = false) {
+    npc_setmode(null);;
+    return;
+}
+if (~npc_check_notcombat_self = false) {
+    return;
+}
+~npc_rangeattack;
+
+
+
+[ai_spawn,infernal_imp]
+%npc_action_delay = add(map_clock, 7);
+
+[proc,infernal_imp_spawn]
+npc_add(0_40_76_22_41, infernal_imp, 50);
+spotanim_map(smokepuff, 0_40_76_22_41, 0, 0);
+npc_add(0_40_76_23_38, infernal_imp, 50);
+spotanim_map(smokepuff, 0_40_76_23_38, 0, 0);
+npc_add(0_40_76_25_41, infernal_imp, 50);
+spotanim_map(smokepuff, 0_40_76_25_41, 0, 0);
+npc_add(0_40_76_27_38, infernal_imp, 50);
+spotanim_map(smokepuff, 0_40_76_27_38, 0, 0);
+npc_add(0_40_76_28_41, infernal_imp, 50);
+spotanim_map(smokepuff, 0_40_76_28_41, 0, 0);
+
+
+[debugproc,infernal_imp_debug]
+~infernal_imp_spawn;

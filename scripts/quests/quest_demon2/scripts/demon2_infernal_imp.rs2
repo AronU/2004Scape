@@ -1,0 +1,47 @@
+[ai_applayer2,demon2_infernal_imp]
+if (%npc_action_delay > map_clock) {
+    return;
+}
+if (~npc_check_notcombat = false) {
+    npc_setmode(null);
+    return;
+}
+if (~npc_check_notcombat_self = false) {
+    return;
+}
+~npc_rangeattack;
+
+[ai_opplayer2,demon2_infernal_imp]
+if (%npc_action_delay > map_clock) {
+    return;
+}
+if (~npc_check_notcombat = false) {
+    npc_setmode(null);
+    return;
+}
+if (~npc_check_notcombat_self = false) {
+    return;
+}
+~npc_rangeattack;
+
+
+
+[ai_spawn,demon2_infernal_imp]
+%npc_action_delay = add(map_clock, 5);
+
+[ai_queue3,demon2_infernal_imp]
+//On death
+gosub(npc_death);
+if (npc_findhero = ^false) {
+    return;
+} else {
+    if (p_finduid(uid) = true) {
+        %demon2imps_killed = add(%demon2imps_killed, 1);
+        mes("<tostring(%demon2imps_killed)> infernal imps have been defeated.");
+        if (%demon2imps_killed = 30) {
+            %demon2start = ^demon2_imp_wave_killed;
+            inv_add(inv, ritual_ashes, 1);
+            mes("You have defeated the infernal imps and collected the ritual ashes.");
+        }
+    }
+}

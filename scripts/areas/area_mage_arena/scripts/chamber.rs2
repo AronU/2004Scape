@@ -3,6 +3,26 @@
 [oploc1,magearena_statue_guthix] @pray_at_statue("Guthix", guthix_cape);
 
 [label,pray_at_statue](string $name, namedobj $cape)
+if (inzone(0_40_79_30_33, 0_40_79_33_35, coord) = true) {
+    anim(human_pray, 0);
+    sound_synth(prayer_boost, 0, 0);
+    if (%demon2start ! ^demon2_read_scroll_2) {
+        return;
+    }
+    npc_huntall(coord, 20, 0);
+    while (npc_huntnext = true) {
+        if (npc_type = firewall) {
+            %respawn_timer_quest = 5;
+        }
+        if (npc_type = demon2_monk_3) {
+            return;
+        }
+    }
+    mes("The walls of fire around you dissipate as you pray to the statue.");
+    npc_add(0_40_79_31_33, demon2_monk_3, 500);
+    spotanim_map(smokepuff, 0_40_79_31_33, 0, 0);
+    return;
+}
 ~forcewalk2(movecoord(loc_coord, 0, 0, -2));
 facesquare(loc_coord);
 if (~obj_gettotalcat(armour_godcape) > 0 | ~check_ground_godcapes = true) { // already have a cape

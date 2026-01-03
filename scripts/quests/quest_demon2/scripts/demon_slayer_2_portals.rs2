@@ -1,0 +1,37 @@
+[oploc1,demon2_portal_1_runescape]
+if (%demon2start = ^demon2_read_scroll) {
+    p_teleport(0_40_77_36_36);
+    mes("You step through the portal and find yourself in flaming hell.");
+    return;
+}
+~displaymessage(^dm_default);
+
+[oploc1,demon2_portal_2_runescape]
+if (%demon2start = ^demon2_read_scroll_2) {
+    p_teleport(0_40_79_32_18);
+    mes("You step through the portal and find yourself in some corridor.");
+    npc_add(0_40_79_28_27, firewall, 16);
+    p_delay(2);
+    return;
+}
+~displaymessage(^dm_default);
+
+[oploc1,demon2_portal_1_infernus]
+p_teleport(0_38_50_23_30);
+mes("You step through the portal and find yourself back in RuneScape.");
+
+[oploc1,demon2_portal_2_infernus]
+p_teleport(0_45_54_53_60);
+mes("You step through the portal and find yourself back in RuneScape.");
+
+[oploc1,demon2_portal_3_infernus]
+ if (%demon2start >= ^demon2_ashes_combined) {
+    def_int $choice = ~p_choice2_header("Yes.", 1, "No I'm scared.", 2, "You are about to face Agrith-Vhann, are you ready?");
+    if ($choice = 1) {
+        mes("You gather your courage and step through the portal.");
+        p_teleport(0_40_76_25_38);
+        p_delay(2);
+    }
+return;
+}
+~displaymessage(^dm_default);
