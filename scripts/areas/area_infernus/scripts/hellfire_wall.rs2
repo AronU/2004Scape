@@ -1,0 +1,96 @@
+[ai_applayer2,firewall]
+if (inzone(0_40_79_28_19, 0_40_79_35_35, coord) = true) {
+    if (%respawn_timer_quest = 4) {
+        .npc_add(0_40_79_29_33, firewall, 16);
+    }
+    ~hellfire_wall_quest;
+    %y_count = sub(%y_count, 1);
+    if (%y_count < -13) {
+        %y_count = 0;
+        %wall_gap_quest = randominc(8);
+    }
+    %respawn_timer_quest = add(%respawn_timer_quest, 1);
+    return;
+}
+~hellfire_wall;
+%y_count = sub(%y_count, 1);
+if (%y_count < -8) {
+    %y_count = 0;
+    %wall_gap = randominc(8);
+}
+
+[ai_opplayer2,firewall]
+mes("Here");
+if (inzone(0_40_79_28_19, 0_40_79_35_35, npc_coord) = true) {
+    if (%respawn_timer_quest = 4) {
+        .npc_add(0_40_79_29_33, firewall, 16);
+    }
+    ~hellfire_wall_quest;
+    %y_count = sub(%y_count, 1);
+    if (%y_count < -13) {
+        %y_count = 0;
+        %wall_gap_quest = randominc(8);
+    }
+    %respawn_timer_quest = add(%respawn_timer_quest, 1);
+    return;
+}
+~hellfire_wall;
+%y_count = sub(%y_count, 1);
+if (%y_count < -8) {
+    %y_count = 0;
+    %wall_gap = randominc(8);
+}
+
+[proc,hellfire_wall]
+def_int $count = 0;
+def_coord $wall_coord_start = movecoord(%hellfire_start_coord, 0, 0, %y_count);
+if (loc_find(coord, firewall_infernus) = true ) {
+        mes("You are engulfed by the hellfire!");
+        ~damage_self(10);
+    }
+
+while ($count < 9) {
+    if ($count ! %wall_gap) {
+        loc_add($wall_coord_start, firewall_infernus, 3, wall_straight, 2);
+    }
+    $count = add($count, 1);
+    $wall_coord_start = movecoord($wall_coord_start, 1, 0, 0);
+}
+sound_synth(spit_roast, 0, 0);
+
+[proc,hellfire_wall_quest]
+def_int $count = 0;
+def_coord $wall_coord_start = movecoord(%hellfire_start_coord_quest, 0, 0, %y_count);
+if (loc_find(coord, firewall_infernus) = true ) {
+        mes("You are engulfed by the hellfire!");
+        ~damage_self(4);
+    }
+
+while ($count < 6) {
+    if ($count ! %wall_gap_quest) {
+        loc_add($wall_coord_start, firewall_infernus, 3, wall_straight, 2);
+    }
+    $count = add($count, 1);
+    $wall_coord_start = movecoord($wall_coord_start, 1, 0, 0);
+}
+sound_synth(spit_roast, 0, 0);
+
+
+[ai_spawn,firewall]
+%hellfire_start_coord = 0_40_76_21_42;
+%hellfire_start_coord_quest = 0_40_79_29_33;
+%wall_gap = randominc(8);
+%wall_gap_quest = randominc(4);
+%respawn_timer_quest = 0;
+
+[debugproc,hellfire_test]
+npc_add(0_40_79_28_27, firewall, 16);
+
+[debugproc,hellfire_test_clear]
+mes("Clearing hellfire walls...");
+npc_huntall(coord, 20, 0);
+while (npc_huntnext = true) {
+    if (npc_type = firewall) {
+        %respawn_timer_quest = 5;
+    }
+}

@@ -42,20 +42,109 @@ if (%demonstart = ^demon_not_started) {
             ~chatplayer("<p,quiz>Where can I find the demon?");
             ~chatnpc("<p,neutral>Just head south and you should find the stone circle just outside the city gate.");
         }
+} else if (%demon2start > 0) {
+    @demon_slayer_2_started;
 } else if (%demonstart = ^demon_complete) {
     ~chatnpc("<p,neutral>Greetings young one.");
     ~chatnpc("<p,happy>You're a hero now. That was a good bit of demonslaying.");
-    def_int $option = ~p_choice3("How do you know I killed it?", 1, "Thanks.", 2, "Stop calling me that!", 3);
+    def_int $option = ~p_choice4("How do you know I killed it?", 1, "Thanks.", 2, "Stop calling me that!", 3, "Any news from the future?", 4);
 
     if ($option = 1) {
         ~chatplayer("<p,confused>How do you know I killed it?");
         ~chatnpc("<p,neutral>You forget. I'm good at knowing things.");
     } else if ($option = 2) {
         ~chatplayer("<p,neutral>Thanks.");
-    } else {
+} else if ($option = 3) {
         @demon_slayer_aris_stop_calling_me_that;
+    } else if ($option = 4) {
+        @demon_slayer_2_aris_any_news_from_the_future;
     }
 }
+
+[label,demon_slayer_2_started]
+if (%demon2start < ^demon2_imp_wave_killed) {
+    ~chatnpc("<p,neutral>Go speak to Sir Prysin about reforging Silverlight. RuneScape depends on you.");
+    ~chatplayer("<p,happy>I'm still working on it.");
+    return;
+}
+if (%demon2start = ^demon2_imp_wave_killed) {
+    ~chatnpc("<p,happy>Adventurer, I saw you defeated the horde of imps in my crystal ball. Well done!");
+    ~chatplayer("<p,happy>Thank you. Although I did not find a clue as to where the next flame might be.");
+    ~chatnpc("<p,quiz>The sky to the north of here has been darkened by smoke recently. Perhaps you should investigate there.");
+    def_int $option = ~p_choice2("The Wilderness? I'm too scared to go there.", 1, "I will, thank you Aris.", 2);
+    if ($option = 1) {
+        ~chatplayer("<p,scared>The Wilderness? I'm too scared to go there.");
+        ~chatnpc("<p,angry>Pull yourself together young one.");
+    } else if ($option = 2) {
+        ~chatplayer("<p,neutral>I will, thank you Aris.");
+    }
+    %demon2start = ^demon2_talked_to_aris_after_imps;
+}
+if (%demon2start > ^demon2_imp_wave_killed & %demon2start < ^demon2_ashes_combined) {
+    if ((inv_total(inv, ritual_ashes) > 0  | inv_total(bank, ritual_ashes) > 0 )) {
+        
+    } else {
+        ~chatnpc("<p,angry>Your recklessness has left you without the ashes from the first ritual. Thankfully I foresaw this blunder and my assistants picked it up for you. Don't let this happen again.");
+        inv_add(inv, ritual_ashes, 1);
+        sound_synth(pick2, 0, 0);
+        ~chatplayer("<p,sad>I'm sorry Aris, I will be more careful.");
+        return;
+    }
+}
+if (%demon2start > ^demon2_noble_wave_killed & %demon2start < ^demon2_ashes_combined) {
+    if ((inv_total(inv, infernal_ashes) > 0  | inv_total(bank, infernal_ashes) > 0 )) {
+        
+    } else {
+        ~chatnpc("<p,angry>Your recklessness has left you without the ashes from the second ritual. Thankfully I foresaw this blunder and my assistants picked it up for you. Don't let this happen again.");
+        inv_add(inv, infernal_ashes, 1);
+        sound_synth(pick2, 0, 0);
+        ~chatplayer("<p,sad>I'm sorry Aris, I will be more careful.");
+        return;
+    }
+}
+if (%demon2start = ^demon2_defeated_acolyte_3) {
+    if ((inv_total(inv, sovereign_ashes) > 0  | inv_total(bank, sovereign_ashes) > 0 )) {
+        
+    } else {
+        ~chatnpc("<p,angry>Your recklessness has left you without the ashes from the second ritual. Thankfully I foresaw this blunder and my assistants picked it up for you. Don't let this happen again.");
+        inv_add(inv, sovereign_ashes, 1);
+        sound_synth(pick2, 0, 0);
+        ~chatplayer("<p,sad>I'm sorry Aris, I will be more careful.");
+        return;
+    }
+}
+if (%demon2start = ^demon2_agrith_vhann_defeated) {
+    ~chatplayer("<p,happy>It's over. Agrith-Vhann has been defeated.");
+    ~chatnpc("<p,neutral>Yes. I can feel it. The flames have dimmed, and the veil has grown still once more.");
+    ~chatplayer("<p,happy>So Agrith-Vhann is gone for good?");
+    ~chatnpc("<p,sad>Gone? No. Banished, bound, denied his passage for now. Archdemons do not truly perish, but neither do they forget defeat.");
+    ~chatplayer("<p,sad>Then we've only delayed the inevitable.");
+    ~chatnpc("<p,neutral>Perhaps. But today, RuneScape still stands. And that is victory enough.");
+    %demon2start = ^demon2_talked_aris_after_defeat;
+    queue(demon_slayer_2_complete, 1, 0);
+}
+
+[label,demon_slayer_2_aris_any_news_from_the_future]
+~chatplayer("<p,quiz>Any news from the future?");
+~chatnpc("<p,neutral>Hmm let me see...");
+~chatnpc("<p,scared>The seal you forged with Silverlight... it trembles. Three flames burn across RuneScape. Dark flames. Demon flames. Each one calling to the spirit of Agrith-Vhann.");
+~chatplayer("<p,neutral>Never heard of him.");
+~chatnpc("<p,neutral>Count yourself fortunate. Agrith-Vhann is older and far more powerful than Delrith. Where Delrith was a soldier, Agrith-Vhann is a conqueror. And now a Zamorakian sect, the Order of the Infernal Gate, seeks to summon him fully into our realm");
+~chatplayer("<p,shock>Why would anyone want to summon a demon like that?");
+~chatnpc("<p,neutral>Power, foolishness, promises whispered by flame, take your pick. But if they succeed, Agrith-Vhann will not serve them. He will raze RuneScape until nothing but ash remains.");
+~chatplayer("<p,quiz>So what must I do?");
+~chatnpc("<p,neutral>Speak to Sir Prysin. Silverlight may once again be the key to stopping this, but it must be reforged with new strength. Go quickly, my crystal ball showed me a flame has already been lit near Ardougne.");
+def_int $option = ~p_choice2("I'll find Sir Prysin.", 1, "You really need a brighter crystal ball.", 2);
+if ($option = 1) {
+        ~chatplayer("<p,neutral>I'll find Sir Prysin.");
+        %demon2start = ^demon2_talked_aris;
+        ~send_quest_progress(questlist:demon2, %demon2start, ^demon2_complete);
+        ~chatnpc("<p,neutral>Many thanks young one. RuneScape depends on you.");
+    } else if ($option = 2) {
+        ~chatplayer("<p,laugh>You really need a brighter crystal ball.");
+        queue(damage_player, 0, 2);
+        mes("The gypsy throws her crystal ball at you. Ouch!");
+    }
 
 [label,demon_slayer_aris_press_on_with_it]
 ~chatplayer("<p,quiz>Well I'd better press on with it.");

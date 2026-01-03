@@ -11,8 +11,91 @@ if (%demonstart = ^demon_not_started | %demonstart = ^demon_talked_aris) {
 } else if (%demonstart = ^demon_silverlight){
     @demon_slayer_need_to_kill;
 } else if (%demonstart = ^demon_complete) {
+        if (%demon2start = ^demon2_talked_aris) {
+        @demon_slayer_2_ask_about_demon;
+    }  else if (%demon2start = ^demon2_defeated_acolyte_3) {
+        @demon_slayer_2_imbue_silverlight;
+        } else if (%demon2start = ^demon2_ashes_combined) {
+            @demon_slayer_2_where_agrith_vhann_is;
+    } else {
     @demon_slayer_completed;
+    }
 }
+
+[opnpcu,sir_prysin]
+if (last_useitem = zamorak_scroll) {
+    ~chatplayer("<p,neutral>I found this scroll hidden in the Zamorak church.");
+    ~chatnpc("<p,quiz>...That's Zamorakian scripture, no doubt about it. Charred edges, ritual phrasing... this wasn't meant for wandering eyes.");
+    ~chatplayer("<p,neutral>It talks about an altar near molten stone.");
+    ~chatnpc("<p,neutral>Hmm. Zamorakians favour places already touched by chaos, lava flows, demon-haunted ground... that sort of thing. They believe such locations 'remember' past rituals.");
+    ~chatplayer("<p,quiz>Does anything like that come to mind?");
+    ~chatnpc("<p,neutral>That doesn't sound like any place in Misthalin. You should explore west of here. If the scroll is truthful, the cult will have chosen a place steeped in flame and history.");
+    ~chatplayer("<p,neutral>Right. I'll start searching.");
+    ~chatnpc("<p,neutral>Best of luck to you adventurer.");
+    return;
+}
+~displaymessage(^dm_default);
+
+[label,demon_slayer_2_imbue_silverlight]
+~chatplayer("<p,neutral>I've gathered the ashes from the three infernal flames.");
+~chatnpc("<p,quiz>You actually did it...");
+~chatplayer("<p,quiz>Can Silverlight be strengthened with these?");
+if (~demon_slayer_2_check_if_has_ashes = true) {
+    ~chatnpc("<p,neutral>It can. Though I'll admit, I never thought I'd see the day. Silverlight was forged to banish demons, not bind their remains.");
+    ~chatplayer("<p,quiz>Will it be enough to face Agrith-Vhann?");
+    ~chatnpc("<p,neutral>If anything can be, this will. But understand this, once the ashes are bound, there is no undoing it. The blade will carry a trace of chaos forever.");
+    ~chatplayer("<p,neutral>I'm ready.");
+    @demon_slayer_2_combine_ashes_with_silverlight;
+} else {
+    ~chatnpc("<p,angry>Try bringing me all the ashes first and we'll talk.");
+}
+
+[label,demon_slayer_2_combine_ashes_with_silverlight]
+if (inv_total(inv, silverlight) < 1) {
+    ~chatnpc("<p,angry>You're lucky one of my servants found Silverlight and returned it to me. Oh well, let's get on with it.");
+
+}
+inv_del(inv, infernal_ashes, 1);
+inv_del(inv, ritual_ashes, 1);
+inv_del(inv, sovereign_ashes, 1);
+inv_del(inv, silverlight, 1);
+sound_synth(enchant_diamond_ring, 0, 0);
+npc_anim(human_cast_enchantring, 0);
+inv_add(inv, ashbound_silverlight, 1);
+%demon2start = ^demon2_ashes_combined;
+~chatnpc("<p,neutral>It is done.");
+~chatplayer("<p,neutral>Thank you, Sir Prysin. I feel more prepared to face Agrith-Vhann now.");
+@demon_slayer_2_where_agrith_vhann_is;
+
+[label,demon_slayer_2_where_agrith_vhann_is]
+~chatnpc("<p,neutral>The citizens of Varrock have been noticing Zamorakians heading to west towards ice mountain. Perhaps you should investigate the fortress that sits by its' side");
+~chatplayer("<p,neutral>Thank you, I will head there now.");
+
+[label,demon_slayer_2_ask_about_demon]
+~chatplayer("<p,shock>Sir Prysin, Gypsy Aris says there's trouble, and a demon called Agrith-Vhann?");
+~chatnpc("<p,sad>Agrith-Vhann? Saradomin save us... I was hoping she hadn't seen that.");
+~chatplayer("<p,angry>So you knew something was happening?");
+~chatnpc("<p,neutral>Only rumours. Whispers. Strange movements among Zamorakian fanatics. But if Aris saw Agrith-Vhann's flames... then it's already begun.");
+def_int $option = ~p_choice2("Who is Agrith-Vhann?", 1, "A world ending demon is sadly above my paygrade.", 2);
+if ($option = 1) {
+        ~chatplayer("<p,neutral>Who is Agrith-Vhann?");
+        @demon_slayer_2_who_is_agrith_vhann;
+    } else if ($option = 2) {
+        ~chatplayer("<p,neutral>A world ending demon is sadly above my paygrade.");
+        ~chatnpc("<p,neutral>Suit yourself.");
+    }
+
+[label,demon_slayer_2_who_is_agrith_vhann]
+~chatnpc("<p,neutral>One of Zamoraks' ancient archdemons. Far beyond stronger than Delrith. Far beyond anything Silverlight was ever meant to face. Legends say he commanded Zamoraks demonic forces during the God Wars.");
+~chatplayer("<p,neutral>So how is he returning now?");
+~chatnpc("<p,neutral>He isn't, yet. He can't enter Gielinor without his essence properly anchored, and that requires infernal flames. Zamorakian cultists have been grouping together, trying to summon him back.");
+~chatplayer("<p,quiz>What do you need me to do?");
+~chatnpc("<p,neutral>We must strengthen Silverlight. It's original blessing was imbued for lesser demons like Delrith, not archdemons like Agrith-Vhann. To reforge it, we'll need infernal energy, and thankfully, the cultists are providing plenty of that.");
+~chatplayer("<p,neutral>Where do I begin?");
+~chatnpc("<p,neutral>I've heard some rumours of Zamorakians gathering in the rundown Zamorakian temple in the city. Perhaps you will find some clues there.");
+~chatplayer("<p,neutral>I'll head there right away.");
+%demon2start = ^demon2_ask_prysin_about_demon;
+
 
 [label,demon_slayer_sir_prysin_pre_silverlight]
 ~chatnpc("<p,neutral>Hello, who are you?");
@@ -213,7 +296,12 @@ else{
     ~chatnpc("<p,neutral>Well get on with it. He'll be pretty powerful when he gets to full strength.");
 
 [label,demon_slayer_completed]
-~chatnpc("<p,happy>Hello. I've heard you stopped the demon, well done!");
+if (%demon2start > 0) {
+    ~chatnpc("<p,happy>Hello again, mighty adventurer!");
+    ~chatnpc("<p,happy>Please keep me updated on any news about Agrith-Vhann. The city depends on it.");
+} else {
+    ~chatnpc("<p,happy>Hello. I've heard you stopped the demon, well done!");
+}
 if (~demon_slayer_has_silverlight = true){
     @demon_slayer_boast;
 }
@@ -274,6 +362,14 @@ if ($demon_progress = ^demon_not_started) {
 [proc,demon_slayer_has_silverlight]()(boolean)
 // Turns out you can't put all of this in a return statement
 if (inv_total(inv, silverlight) > 0 | (inv_getobj(worn, 3) = silverlight) | inv_total(bank, silverlight) > 0 ) {
+    return(true);
+} else {
+    return(false);
+}
+
+[proc,demon_slayer_2_check_if_has_ashes]()(boolean)
+// Turns out you can't put all of this in a return statement
+if (inv_total(inv, infernal_ashes) > 0 & inv_total(inv, ritual_ashes) > 0 & inv_total(inv, sovereign_ashes) > 0 ) {
     return(true);
 } else {
     return(false);

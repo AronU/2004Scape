@@ -15,5 +15,23 @@ if (stat(prayer) >= stat_base(prayer)) {
     mes("You recharge your prayer points.");
     sound_synth(prayer_recharge, 0, 0);
 }
+//Ouriana altar demon2 quest
+if (inzone(0_38_50_21_30, 0_38_50_24_32, coord) = true & %demon2start = ^demon2_read_scroll) {
+    loc_add(0_38_50_23_30, demon2_portal_1_runescape, 0, centrepiece_straight, 100);
+    mes("As you pray at the altar, a swirling portal materializes nearby.");
+}
+
+//Wilderness altar demon2 quest
+if (inzone(0_50_56_38_23, 0_50_56_41_25, coord) = true & %demon2start = ^demon2_talked_to_aris_after_imps) {
+    npc_add(0_50_56_39_26, demon2_monk_2, 500);
+    spotanim_map(smokepuff, 0_50_56_39_26, 0, 0);
+    sound_synth(smokepuff, 0, 4);
+}
+
+//goblin village chapel demon2 quest
+if (inzone(0_45_54_52_58, 0_45_54_55_59, coord) = true & %demon2start = ^demon2_read_scroll_2) {
+    loc_add(0_45_54_53_59, demon2_portal_2_runescape, 0, centrepiece_straight, 100);
+    mes("As you pray at the altar, a swirling portal materializes nearby.");
+}
 anim(human_pray, 0);
 stat_add(prayer, calc($amount - stat(prayer)), 0);

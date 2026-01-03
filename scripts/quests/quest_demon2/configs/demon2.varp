@@ -1,0 +1,8 @@
+[demon2start]
+scope=perm
+
+[demon2imps_killed]
+scope=perm
+
+[demon2nobles_killed]
+scope=perm

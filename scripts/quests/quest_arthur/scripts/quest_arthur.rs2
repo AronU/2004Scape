@@ -140,6 +140,15 @@ switch_int(~p_choice4("Pizza Delivery!", 1, "Have you ever thought about letting
 ~mesbox("It looks like you'll have to find another way in...");
 
 [oploc2,thrantaxaltar]
+if (%demon2start >= ^demon2_noble_wave_killed) {
+    if (inv_total(inv, zamorak_scroll_2) > 0 | inv_total(bank, zamorak_scroll_2) > 0) {
+        
+    } else{
+        inv_add(inv, zamorak_scroll_2, 1);
+        ~mesbox("As you examine the altar, you find a scroll hidden behind it and take it.");
+        return;
+    }
+}
 if(%arthur ! ^arthur_spoken_morgan_lefaye) {
     mes("An altar to the evil god Zamorak.");
     return;

@@ -1,0 +1,61 @@
+[ai_applayer2,demon2_monk_3]
+if (%npc_action_delay > map_clock) {
+    return;
+}
+if(random(5) = 0 & %frozen < map_clock) {
+    ~infernal_acolyte_freeze;
+    npc_tele(movecoord(npc_coord, 0, 0, -1));
+} else {
+    ~npc_cast_spell_with_forced_max_hit(^fire_wave, 4, 12);
+}
+
+[ai_opplayer2,demon2_monk_3]
+if (%npc_action_delay > map_clock) {
+    return;
+}
+if(random(5) = 0 & %frozen < map_clock) {
+    ~infernal_acolyte_freeze;
+    npc_tele(movecoord(npc_coord, 0, 0, -1));
+} else {
+    ~npc_cast_spell_with_forced_max_hit(^fire_wave, 4, 12);
+}
+
+[ai_queue3,demon2_monk_3]
+gosub(npc_death);
+if(npc_findhero = ^true) {
+    if_close;
+    queue(queue_defeat_infernal_acolyte_3, 0, 0);
+}
+
+[proc,infernal_acolyte_freeze]
+def_dbrow $spell_data = ~get_spell_data(^bind);
+def_dbrow $effect_spell = ~get_spell_data(^confuse);
+def_int $duration = ~npc_spell_cast($spell_data, 4);
+
+~npc_spell_success($spell_data, null, $duration);
+if(~npc_debuff_allowed($effect_spell) = true) ~npc_stat_change_effect($effect_spell);
+queue(infernal_acolyte_freeze_player, 0, 0);
+~npc_set_attack_vars;
+
+[queue,infernal_acolyte_freeze_player]
+%frozen = calc(map_clock + 10);
+walktrigger(infernal_acolyte_frozen);
+
+[walktrigger,infernal_acolyte_frozen]
+if (map_clock < %frozen) {
+    p_walk(coord);
+    walktrigger(infernal_acolyte_frozen);
+}
+
+[ai_queue1,demon2_monk_3] gosub(npc_default_retaliate_ap);
+
+[queue,queue_defeat_infernal_acolyte_3]
+if(%demon2start = ^demon2_read_scroll_2) {
+    %demon2start = ^demon2_defeated_acolyte_3;
+}
+inv_add(inv, sovereign_ashes, 1);
+sound_synth(pick2, 0, 0);
+mes("You have defeated the Acolyte and collect the sovereign ashes.");
+
+[ai_spawn,demon2_monk_3]
+npc_say("I grow tired of your meddling, you die now!");

@@ -1,0 +1,14 @@
+^demon2_not_started = 0
+^demon2_talked_aris = 1
+^demon2_ask_prysin_about_demon = 2
+^demon2_got_scroll = 3
+^demon2_read_scroll = 4
+^demon2_imp_wave_killed = 5
+^demon2_talked_to_aris_after_imps = 6
+^demon2_noble_wave_killed = 7
+^demon2_read_scroll_2 = 8
+^demon2_defeated_acolyte_3 = 9
+^demon2_ashes_combined = 10
+^demon2_agrith_vhann_defeated = 11
+^demon2_talked_aris_after_defeat = 12
+^demon2_complete = 12

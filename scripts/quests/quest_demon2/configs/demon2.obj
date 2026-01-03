@@ -1,0 +1,110 @@
+[zamorak_scroll]
+name=Tattered scroll
+desc=Tattered scroll with Zamrakian writing.
+model=model_2600_obj
+members=yes
+2dxof=1
+2dyof=7
+2dzoom=1040
+2dyan=120
+2dxan=380
+weight=6g
+tradeable=no
+recol1s=29594
+recol1d=22197
+iop1=Read
+
+[zamorak_scroll_2]
+name=Tattered scroll
+desc=Tattered scroll with Zamrakian writing.
+model=model_2600_obj
+members=yes
+2dxof=1
+2dyof=7
+2dzoom=1040
+2dyan=120
+2dxan=380
+weight=6g
+tradeable=no
+recol1s=29594
+recol1d=13708
+iop1=Read
+
+[ritual_ashes]
+name=Ritual ashes
+desc=Ashes from the ritual to summon Agrith-Naar.
+cost=2
+members=yes
+tradeable=no
+model=model_2742_obj
+recol1s=21140
+recol1d=17441
+2dxof=-6
+2dzoom=2000
+2dyan=1892
+2dxan=264
+weight=2oz
+
+[infernal_ashes]
+name=Infernal ashes
+desc=Ashes from the ritual to summon Agrith-Naar.
+cost=2
+members=yes
+tradeable=no
+model=model_2742_obj
+recol1s=21140
+recol1d=0
+2dxof=-6
+2dzoom=2000
+2dyan=1892
+2dxan=264
+weight=2oz
+
+[sovereign_ashes]
+name=Sovereign ashes
+desc=Ashes from the ritual to summon Agrith-Naar.
+cost=2
+members=yes
+tradeable=no
+model=model_2742_obj
+recol1s=21140
+recol1d=11488
+2dxof=-6
+2dzoom=2000
+2dyan=1892
+2dxan=264
+weight=2oz
+
+[ashbound_silverlight]
+name=Ashbound Silverlight
+desc=The magical sword 'Silverlight', imbued with ash.
+cost=500
+model=model_2566_obj
+recol1s=15825
+recol1d=9348
+2dxof=-2
+2dyof=-4
+2dzoom=980
+2dyan=864
+2dzan=84
+2dxan=196
+iop2=Wield
+wearpos=righthand
+manwear=model_513_obj_wear,0
+womanwear=model_513_obj_wear,6
+category=weapon_slash
+weight=4lb
+param=stabattack,38
+param=slashattack,47
+param=crushattack,-2
+param=slashdefence,3
+param=crushdefence,2
+param=magicdefence,1
+param=strengthbonus,49
+param=attackrate,5
+param=slashattack_anim,human_sword_slash
+param=stabattack_anim,human_sword_stab
+param=defend_anim,human_sword_def
+param=slash_sound,hacksword_slash
+param=stab_sound,hacksword_stab
+tradeable=no

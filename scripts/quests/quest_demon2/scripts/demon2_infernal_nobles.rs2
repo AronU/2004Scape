@@ -1,0 +1,67 @@
+[ai_applayer2,infernal_noble_mage_quest]
+if (%npc_action_delay > map_clock) {
+    return;
+}
+if (~npc_check_notcombat = false) {
+    npc_setmode(null);
+    return;
+}
+if (~npc_check_notcombat_self = false) {
+    return;
+}
+def_dbrow $spell_data = ~get_spell_data(^fire_wave);
+def_int $duration = ~npc_spell_cast($spell_data, 10);
+if (~check_protect_prayer(^magic_style) = false) {
+    ~npc_spell_success($spell_data, 20, $duration);
+} else {
+    ~npc_spell_fail($spell_data, $duration);
+    npc_damage(^hitmark_damage, 20);
+    mes("The infernal noble's spell is reflected by your protection prayer.");
+    if (npc_stat(hitpoints) > 0) {
+        %npc_action_delay = add(map_clock, 6);
+        return;
+    }
+    if (p_finduid(uid) = true) {
+        %demon2nobles_killed = add(%demon2nobles_killed, 1);
+        mes("<tostring(%demon2nobles_killed)> infernal nobles have been defeated.");
+        if (%demon2nobles_killed = 2) {
+            %demon2start = ^demon2_noble_wave_killed;
+            inv_add(inv, infernal_ashes, 1);
+            sound_synth(pick2, 0, 0);
+            mes("You have defeated the infernal nobles and collected the infernal ashes.");
+        }
+    }
+    npc_queue(3, 0, 0);
+}
+%npc_action_delay = add(map_clock, 6);
+
+[ai_applayer2,infernal_noble_ranged_quest]
+if (%npc_action_delay > map_clock) {
+    return;
+}
+if (~npc_check_notcombat = false) {
+    npc_setmode(null);
+    return;
+}
+if (~npc_check_notcombat_self = false) {
+    return;
+}
+~npc_rangeattack;
+%npc_action_delay = add(map_clock, 6);
+
+[ai_spawn,infernal_noble_ranged_quest]
+%npc_action_delay = add(map_clock, 6);
+
+[ai_spawn,infernal_noble_mage_quest]
+%npc_action_delay = add(map_clock, 3);
+
+
+[ai_queue3,infernal_noble_mage_quest]
+//On death
+gosub(npc_death);
+
+[ai_queue3,infernal_noble_ranged_quest]
+//On death
+gosub(npc_death);
+
+

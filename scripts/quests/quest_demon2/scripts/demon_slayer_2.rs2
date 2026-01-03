@@ -1,0 +1,39 @@
+[queue,demon_slayer_2_complete]
+%demon2start = ^demon2_complete;
+session_log(^log_adventure, "Quest complete: Demon Slayer II");
+~send_quest_complete(questlist:demon2, ashbound_silverlight, 250, ^demon2_questpoints, "You have completed the\\nDemon Slayer II Quest!");
+
+
+[oploc1,altar_slab]
+if (%demon2start >= ^demon2_ask_prysin_about_demon) {
+    if (inv_total(inv, zamorak_scroll) > 0 | inv_total(bank, zamorak_scroll) > 0) {
+        ~mesbox("There's nothing else of interest on the altar slab.");
+        ~displaymessage(^dm_default);
+        return;
+    }
+    inv_add(inv, zamorak_scroll, 1);
+    %demon2start = ^demon2_got_scroll;
+    ~mesbox("You find a scroll on the altar slab and take it.");
+    return;
+}
+~displaymessage(^dm_default);
+
+[opheld1,zamorak_scroll] 
+if (%demon2start < ^demon2_read_scroll) {
+    %demon2start = ^demon2_read_scroll;
+}
+@scroll_zamorak_demon_slayer_2;
+
+[opheld1,zamorak_scroll_2] 
+if (%demon2start < ^demon2_read_scroll_2) {
+    %demon2start = ^demon2_read_scroll_2;
+}
+@scroll_zamorak_2_demon_slayer_2;
+
+[debugproc,demon2_set_before_nobles]
+if (p_finduid(uid) = true) {
+    %demon2start = 0;
+    ~update_questlist;
+    mes("Demon Slayer 2 quest state set to before nobles.");
+    return;
+}

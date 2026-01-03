@@ -37,6 +37,37 @@ spotanim_npc(npc_param(proj_launch), npc_param(proj_height), 0);
 def_int $duration = 64;
 $duration = ~player_projectile(npc_coord, coord, uid, npc_param(proj_travel), 40, 36, 32, 15, 0, 11, 5);
 
+//noble needs to skip all attack rolls
+if (npc_type = infernal_noble_ranged & ~check_protect_prayer(^ranged_style) = false) {
+    ~playerhit_n_ranged(false, 20, $duration, npc_param(attackrate));
+    return;
+}
+
+if (npc_type = infernal_noble_ranged_quest & ~check_protect_prayer(^ranged_style) = false) {
+    ~playerhit_n_ranged(false, 20, $duration, npc_param(attackrate));
+    return;
+} else if (npc_type = infernal_noble_ranged_quest & ~check_protect_prayer(^ranged_style) = true) {
+    npc_damage(^hitmark_damage, 20);
+    mes("The infernal noble's spell is reflected by your protection prayer.");
+    if (npc_stat(hitpoints) > 0) {
+        return;
+    }
+    if (p_finduid(uid) = true) {
+        %demon2nobles_killed = add(%demon2nobles_killed, 1);
+        mes("<tostring(%demon2nobles_killed)> infernal nobles have been defeated.");
+        if (%demon2nobles_killed = 2) {
+            %demon2start = ^demon2_noble_wave_killed;
+            inv_add(inv, infernal_ashes, 1);
+            mes("You have defeated the infernal nobles and collected the infernal ashes.");
+        }
+    }
+    npc_queue(3, 0, 0);
+}
+
+if (npc_type = infernal_imp | npc_type = demon2_infernal_imp) {
+    ~playerhit_n_ranged(false, 3, $duration, npc_param(attackrate));
+    return;
+}
 if (randominc($attack_roll) > randominc($defence_roll)) {
     ~playerhit_n_ranged(true, randominc($maxhit), $duration, npc_param(attackrate));
     ~npc_poison_player;
