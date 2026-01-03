@@ -1,0 +1,35 @@
+[ai_applayer2,demon2_imp_spawner]
+if (%npc_action_delay > map_clock) {
+    return;
+}
+if (~npc_check_notcombat = false) {
+    npc_setmode(null);
+    return;
+}
+if (~npc_check_notcombat_self = false) {
+    return;
+}
+~demon2_imp_spawner;
+
+[ai_opplayer2,demon2_imp_spawner]
+if (%npc_action_delay > map_clock) {
+    return;
+}
+if (~npc_check_notcombat = false) {
+    npc_setmode(null);
+    return;
+}
+if (~npc_check_notcombat_self = false) {
+    return;
+}
+~demon2_imp_spawner;
+
+[proc,demon2_imp_spawner]
+%npc_action_delay = add(map_clock, 3);
+def_int $x = sub(randominc(8), 4);
+def_int $z = sub(randominc(8), 4);
+def_coord $middle_coord = 0_40_77_25_38;
+def_coord $spawn_coord = movecoord($middle_coord, $x, 0, $z);
+spotanim_map(smokepuff, $spawn_coord, 0, 0);
+sound_synth(smokepuff, 0, 4);
+npc_add($spawn_coord, demon2_infernal_imp, 100);

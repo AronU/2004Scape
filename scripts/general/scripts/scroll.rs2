@@ -56,6 +56,60 @@ if_setcolour(scroll:com_12, ^yellow_rgb);
 if_setcolour(scroll:com_13, ^yellow_rgb);
 if_openmain(scroll);
 
+[label,scroll_zamorak_demon_slayer_2]
+if_settext(scroll:com_2, "Let the unworthy burn, and the faithful endure");
+if_settext(scroll:com_3, "We are the chosen hands of chaos, bound by flame and oath.");
+if_settext(scroll:com_4, "The world beyond the veil trembles.");
+if_settext(scroll:com_5, "The Gate shall not open until the flames are prepared.");
+if_settext(scroll:com_6, "Three fires must be kindled where Zamorak's will");
+if_settext(scroll:com_7, "has already scarred the land.");
+if_settext(scroll:com_8, ^string_empty);
+if_settext(scroll:com_9, "Where molten stone crawls like living blood,");
+if_settext(scroll:com_10, "Where the faithful kneel beside fire and ash,");
+if_settext(scroll:com_11, "And where the long road bends beneath ancient branches,");
+if_settext(scroll:com_12, "There the altar awaits your devotion.");
+if_settext(scroll:com_13, ^string_empty);
+if_setcolour(scroll:com_2, ^black_rgb);
+if_setcolour(scroll:com_3, ^black_rgb);
+if_setcolour(scroll:com_4, ^black_rgb);
+if_setcolour(scroll:com_5, ^black_rgb);
+if_setcolour(scroll:com_6, ^black_rgb);
+if_setcolour(scroll:com_7, ^black_rgb);
+if_setcolour(scroll:com_8, ^black_rgb);
+if_setcolour(scroll:com_9, ^yellow_rgb);
+if_setcolour(scroll:com_10, ^yellow_rgb);
+if_setcolour(scroll:com_11, ^yellow_rgb);
+if_setcolour(scroll:com_12, ^yellow_rgb);
+if_setcolour(scroll:com_13, ^yellow_rgb);
+if_openmain(scroll);
+
+[label,scroll_zamorak_2_demon_slayer_2]
+if_settext(scroll:com_2, "For the Third Flame, we move west.");
+if_settext(scroll:com_3, "Away from walls and kings.");
+if_settext(scroll:com_4, ^string_empty);
+if_settext(scroll:com_5, "The little green ones watch from the hills,");
+if_settext(scroll:com_6, "beating their drums and screaming at the sky.");
+if_settext(scroll:com_7, "They fear the fire, but they will not stop it.");
+if_settext(scroll:com_8, ^string_empty);
+if_settext(scroll:com_9, "The chapel stands where order ends,");
+if_settext(scroll:com_10, "and chaos begins.");
+if_settext(scroll:com_11, ^string_empty);
+if_settext(scroll:com_12, "We will light the flame there,");
+if_settext(scroll:com_13, "and even the goblins will kneel before the ash.");
+if_setcolour(scroll:com_2, ^black_rgb);
+if_setcolour(scroll:com_3, ^black_rgb);
+if_setcolour(scroll:com_4, ^black_rgb);
+if_setcolour(scroll:com_5, ^black_rgb);
+if_setcolour(scroll:com_6, ^black_rgb);
+if_setcolour(scroll:com_7, ^black_rgb);
+if_setcolour(scroll:com_8, ^black_rgb);
+if_setcolour(scroll:com_9, ^black_rgb);
+if_setcolour(scroll:com_10, ^black_rgb);
+if_setcolour(scroll:com_11, ^black_rgb);
+if_setcolour(scroll:com_12, ^black_rgb);
+if_setcolour(scroll:com_13, ^black_rgb);
+if_openmain(scroll);
+
 [label,scroll_barcrawl_card]
 if_settext(scroll:com_2, "@blu@The Official Alfred Grimhand Barcrawl!");
 if_settext(scroll:com_3, ^string_empty);

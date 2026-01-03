@@ -1,0 +1,29 @@
+[opnpc1,demon2_monk_2]
+if (%demon2start < ^demon2_talked_to_aris_after_imps) {
+    mes("The monk ignores you.");
+    return;
+}
+if (%demon2start = ^demon2_talked_to_aris_after_imps) {
+    ~chatplayer("<p,quiz>What are you doing here?");
+    ~chatnpc("<p,quiz>Guarding what must not yet burn. The First Flame was tested. The Second must endure.");
+    ~chatplayer("<p,scared>You're summoning Agrith-Vhann?");
+    ~chatnpc("<p,angry>We are the path. Agrith-Vhann is the destination.");
+    ~chatplayer("<p,angry>I've stopped one of your rituals already.");
+    ~chatnpc("<p,angry>Then chaos has marked you. Zamorak favours conflict... Let us see if you are worthy of it.");
+    npc_add(0_50_56_37_27, infernal_noble_mage_quest, 100);
+    npc_add(0_50_56_41_27, infernal_noble_ranged_quest, 100);
+    spotanim_map(smokepuff, 0_50_56_37_27, 0, 0);
+    spotanim_map(smokepuff, 0_50_56_41_27, 0, 0);
+    sound_synth(smokepuff, 0, 4);
+    %demon2nobles_killed = 0;
+    return;
+} if (%demon2start >= ^demon2_noble_wave_killed) {
+    ~chatnpc("<p,angry>NOOO!!");
+    mes("In a fit of rage, you see a scroll in the monks' pocket fall to the ground.");
+    mes("You pick up the scroll.");
+    inv_add(inv, zamorak_scroll_2, 1);
+    sound_synth(pick2, 0, 0);
+    spotanim_map(smokepuff, npc_coord, 0, 0);
+    npc_del;
+    return;
+}

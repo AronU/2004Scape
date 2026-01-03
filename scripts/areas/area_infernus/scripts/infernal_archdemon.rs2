@@ -1,0 +1,131 @@
+[ai_applayer2,infernal_archdemon]
+~hellfire_functionality;
+if (%npc_action_delay > map_clock) {
+    return;
+}
+if (~npc_check_notcombat = false) {
+    npc_setmode(null);
+    return;
+}
+if (~npc_check_notcombat_self = false) {
+    return;
+}
+/*def_int $wall_spawn_chance;
+$wall_spawn_chance = random(10);
+if ($wall_spawn_chance = 0) {
+    sound_synth(fire_teleport, 0, 0);
+    npc_queue(10, 0, 0);
+    return;
+}*/
+if (npc_range(coord) > 1) {
+    ~infernal_archdemon_rangeattack;
+} else {
+    def_int $random_range_attack = random(10);
+    if ($random_range_attack < 1) {
+        ~infernal_archdemon_rangeattack;
+    } else {
+        ~npc_default_attack;
+    }
+}
+
+[ai_opplayer2,infernal_archdemon]
+~hellfire_functionality;
+npc_setmode(applayer2);
+
+[ai_queue10,infernal_archdemon]
+npc_setmode(none);
+npc_walk(npc_coord);
+npc_tele(0_40_76_24_35);
+npc_delay(0);
+npc_tele(0_40_76_24_37);
+npc_delay(0);
+npc_tele(0_40_76_24_39);
+npc_delay(0);
+npc_tele(0_40_76_24_43);
+npc_delay(0);
+npc_say("Feel the flames of Infernus!");
+npc_anim(npc_param(attack_anim), 0);
+.npc_add(0_40_76_21_42, firewall, 10);
+npc_delay(10);
+npc_tele(0_40_76_24_35);
+npc_setmode(applayer2);
+
+[ai_queue11,infernal_archdemon]
+npc_setmode(none);
+npc_walk(npc_coord);
+npc_tele(0_40_76_24_35);
+npc_delay(0);
+npc_tele(0_40_76_24_34);
+npc_delay(0);
+npc_say("Take care of this nuisance puny imps!");
+npc_facesquare(0_40_76_25_41);
+npc_anim(npc_param(attack_anim), 0);
+~infernal_imp_spawn;
+npc_delay(5);
+
+[proc,wall_spawn]
+npc_add(0_40_76_21_42, firewall, 20);
+
+[proc,infernal_archdemon_rangeattack]
+~npc_rangeattack;
+
+[proc,hellfire_functionality]
+if (%hellfire_timer = 18) {
+    //sound_synth(entangle_all, 0, 0);
+    npc_queue(10, 0, 0);
+}
+if (%hellfire_timer = 30) {
+    npc_say("My noble demons will take care of you!");
+    %npc_action_delay = add(map_clock, 8);
+    ~infernal_nobles_spawn;
+    //npc_delay(4);
+}
+if (%hellfire_timer = 50) {
+    sound_synth(smokepuff, 0, 4);
+    npc_queue(11, 0, 0);
+}
+if (%hellfire_timer > 68) {
+    if (%hellfire_damage = 0) {
+        //This is the start of the hellfire attack
+        mes("Agrith-Vhann begins to summon hellfire beneath your feet!");
+        def_coord $player_tile = coord;
+        loc_add($player_tile, lavafire, 0, centrepiece_straight, 7);
+        sound_synth(spit_roast, 0, 0);
+    } else if (%hellfire_timer > 70) {
+        //This is after the fire has been spawned, check player coord==loc and deal damage
+        if (loc_find(coord, lavafire) = true ) {
+            mes("You are engulfed by the hellfire!");
+            ~damage_self(%hellfire_damage);
+        }
+    }
+    %hellfire_damage = add(%hellfire_damage, 2);
+    if (%hellfire_timer > 74) {
+        mes("The hellfire subsides.");
+        %hellfire_timer = 0;
+        %hellfire_damage = 0;
+    } 
+}
+%hellfire_timer = add(%hellfire_timer, 1);
+
+
+[ai_queue3,infernal_archdemon]
+gosub(npc_death);
+if (npc_findhero = ^false) {
+    return;
+}
+if (p_finduid(uid) = true & %demon2start = ^demon2_ashes_combined) {
+    mes("Here????");
+    %demon2start = ^demon2_agrith_vhann_defeated;
+    .npc_add(0_40_76_25_38, aris, 10);
+    .npc_say("Quick! I'll take you back to Varrock!");
+    if_close;
+    // this is lowercase
+    .spotanim_npc(curse_casting, 92, 0);
+    sound_synth(curse_all, 0, 0);
+    def_int $duration = ~player_projectile(.npc_coord, coord, uid, curse_travel, 31, 31, 61, 16, 0, 128, 5);
+    // osrs is 100 but 70 lines up better with our different sound synth
+    spotanim_pl(curse_impact, 124, 70);
+    // IncompleteProjectile(id = 109, startHeight = 31, endHeigsht = 31, delay = 61, angle = 16, distOffset = 128)	
+    p_delay(4);
+    p_telejump(0_50_53_4_32);
+}

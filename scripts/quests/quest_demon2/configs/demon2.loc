@@ -1,0 +1,71 @@
+[demon2_portal_1_runescape]
+name=Portal
+desc=A portal from beyond our plane.
+model=model_loc_740
+anim=glowingcircle
+op1=Use
+ambient=100
+contrast=100
+hasalpha=yes
+recol1s=31658
+recol1d=1057
+
+[demon2_portal_2_runescape]
+name=Portal
+desc=A portal from beyond our plane.
+model=model_loc_740
+anim=glowingcircle
+op1=Use
+ambient=100
+contrast=100
+hasalpha=yes
+recol1s=31658
+recol1d=1057
+
+[demon2_portal_1_infernus]
+name=Portal
+desc=A portal from beyond our plane.
+model=model_loc_740
+anim=glowingcircle
+op1=Use
+ambient=100
+contrast=100
+hasalpha=yes
+recol1s=31658
+recol1d=1057
+
+[demon2_portal_2_infernus]
+name=Portal
+desc=A portal from beyond our plane.
+model=model_loc_740
+anim=glowingcircle
+op1=Use
+ambient=100
+contrast=100
+hasalpha=yes
+recol1s=31658
+recol1d=1057
+
+[demon2_portal_3_infernus]
+name=Portal
+desc=A portal from beyond our plane.
+model=model_loc_740
+anim=glowingcircle
+op1=Use
+ambient=100
+contrast=100
+hasalpha=yes
+recol1s=31658
+recol1d=19456
+
+[demon2_portal_3_runescape]
+name=Portal
+desc=A portal from beyond our plane.
+model=model_loc_740
+anim=glowingcircle
+op1=Use
+ambient=100
+contrast=100
+hasalpha=yes
+recol1s=31658
+recol1d=1057

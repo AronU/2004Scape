@@ -1,0 +1,42 @@
+[ai_applayer2,infernal_noble_mage]
+if (%npc_action_delay > map_clock) {
+    return;
+}
+if (~npc_check_notcombat = false) {
+    npc_setmode(null);
+    return;
+}
+if (~npc_check_notcombat_self = false) {
+    return;
+}
+npc_delay(2);
+def_dbrow $spell_data = ~get_spell_data(^fire_wave);
+def_int $duration = ~npc_spell_cast($spell_data, 10);
+if (~check_protect_prayer(^magic_style) = false) {
+    ~npc_spell_success($spell_data, 20, $duration);
+} else {
+    ~npc_spell_fail($spell_data, $duration);
+}
+
+[ai_applayer2,infernal_noble_ranged]
+if (%npc_action_delay > map_clock) {
+    return;
+}
+if (~npc_check_notcombat = false) {
+    npc_setmode(null);
+    return;
+}
+if (~npc_check_notcombat_self = false) {
+    return;
+}
+npc_delay(4);
+~npc_rangeattack;
+
+/*[ai_queue10,infernal_noble_mage]
+~npc_cast_spell(^fire_wave, 10);
+
+[ai_queue10,infernal_noble_ranged]
+~npc_rangeattack;*/
+[proc,infernal_nobles_spawn]
+.npc_add(0_40_76_21_41, infernal_noble_mage, 8);
+.npc_add(0_40_76_28_41, infernal_noble_ranged, 6);

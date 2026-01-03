@@ -1,0 +1,18 @@
+[opnpc1,demon2_monk_1]
+if (%demon2start < ^demon2_read_scroll) {
+    mes("The monk ignores you.");
+    return;
+}
+if (%demon2start = ^demon2_read_scroll) {
+    ~chatplayer("<p,quiz>What is this place?");
+    ~chatnpc("<p,quiz>The First Flame.");
+    ~chatplayer("<p,scared>You're summoning something?");
+    ~chatnpc("<p,angry>Someone. Agrith-Vhann shall rise.");
+    ~chatplayer("<p,angry>Not if I have anything to say about it!");
+    ~chatnpc("<p,angry>Then speak with steel.");
+    %demon2imps_killed = 0;
+    npc_add(npc_coord, demon2_imp_spawner, 90);
+    return;
+}
+~chatplayer("<p,laugh>It's over! I've already defeated your imps.");
+~chatnpc("<p,angry>Foolish simpleton. Agrith-Vhann shall rise again! No matter your meddling.");

@@ -10476,6 +10476,7 @@ desc=I shudder to think what has taken place here.
 model=model_loc_1876
 width=2
 length=2
+op1=Search
 
 [cornersupportpole]
 model=model_loc_1877
