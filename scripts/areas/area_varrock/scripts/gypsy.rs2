@@ -43,6 +43,10 @@ if (%demonstart = ^demon_not_started) {
             ~chatnpc("<p,neutral>Just head south and you should find the stone circle just outside the city gate.");
         }
 } else if (%demon2start > 0) {
+    if (%demon2start = ^demon2_complete) {
+        ~chatnpc("<p,happy>Good job young one. You have saved RuneScape once again. However you should take a look at the portal in the Black Knights' Fortress. It seems to be continually unstable. Hold off Agrith-Vhann for as long as you can. Your efforts will weaken him.");
+        ~chatplayer("<p,happy>Will do. Thanks Aris.");
+    }
     @demon_slayer_2_started;
 } else if (%demonstart = ^demon_complete) {
     ~chatnpc("<p,neutral>Greetings young one.");
