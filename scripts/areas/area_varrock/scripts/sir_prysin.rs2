@@ -11,12 +11,14 @@ if (%demonstart = ^demon_not_started | %demonstart = ^demon_talked_aris) {
 } else if (%demonstart = ^demon_silverlight){
     @demon_slayer_need_to_kill;
 } else if (%demonstart = ^demon_complete) {
-        if (%demon2start = ^demon2_talked_aris) {
+    if (%demon2start = ^demon2_talked_aris) {
         @demon_slayer_2_ask_about_demon;
     }  else if (%demon2start = ^demon2_defeated_acolyte_3) {
         @demon_slayer_2_imbue_silverlight;
-        } else if (%demon2start = ^demon2_ashes_combined) {
-            @demon_slayer_2_where_agrith_vhann_is;
+    } else if (%demon2start = ^demon2_ashes_combined) {
+        @demon_slayer_2_where_agrith_vhann_is;
+    } else if (%demon2start = ^demon2_complete) {
+        @demon_slayer_2_completed;
     } else {
     @demon_slayer_completed;
     }
@@ -88,7 +90,7 @@ if ($option = 1) {
 [label,demon_slayer_2_who_is_agrith_vhann]
 ~chatnpc("<p,neutral>One of Zamoraks' ancient archdemons. Far beyond stronger than Delrith. Far beyond anything Silverlight was ever meant to face. Legends say he commanded Zamoraks demonic forces during the God Wars.");
 ~chatplayer("<p,neutral>So how is he returning now?");
-~chatnpc("<p,neutral>He isn't, yet. He can't enter Gielinor without his essence properly anchored, and that requires infernal flames. Zamorakian cultists have been grouping together, trying to summon him back.");
+~chatnpc("<p,neutral>He isn't, yet. He can't enter RuneScape without his essence properly anchored, and that requires infernal flames. Zamorakian cultists have been grouping together, trying to summon him back.");
 ~chatplayer("<p,quiz>What do you need me to do?");
 ~chatnpc("<p,neutral>We must strengthen Silverlight. It's original blessing was imbued for lesser demons like Delrith, not archdemons like Agrith-Vhann. To reforge it, we'll need infernal energy, and thankfully, the cultists are providing plenty of that.");
 ~chatplayer("<p,neutral>Where do I begin?");
@@ -295,6 +297,17 @@ else{
     ~chatplayer("<p,happy>No, not yet.");
     ~chatnpc("<p,neutral>Well get on with it. He'll be pretty powerful when he gets to full strength.");
 
+[label,demon_slayer_2_completed]
+~chatnpc("<p,happy>You've done well to stop Agrith-Vhann. The realm is in your debt once again.");
+~chatplayer("<p,happy>Thank you, Sir Prysin. It was a tough battle.");
+if (~demon_slayer_2_has_ashbound_silverlight = false) {
+    ~chatnpc("<p,neutral>By the way, I noticed you no longer have Silverlight. Did you lose it?");
+    ~chatplayer("<p,neutral>Yes, I'm afraid I did.");
+    inv_add(inv, ashbound_silverlight, 1);
+    ~chatnpc("<p,neutral>Hmm. Well fortunately one of my servants found Silverlight and returned it to me. |Take better care of it this time.");
+}
+
+
 [label,demon_slayer_completed]
 if (%demon2start > 0) {
     ~chatnpc("<p,happy>Hello again, mighty adventurer!");
@@ -305,6 +318,7 @@ if (%demon2start > 0) {
 if (~demon_slayer_has_silverlight = true){
     @demon_slayer_boast;
 }
+
 else{
     def_int $option = ~p_choice2("Yes, that's right.", 1, "Yes, although I'm afraid I've lost Silverlight.", 2);
     if ($option = 1){
@@ -362,6 +376,14 @@ if ($demon_progress = ^demon_not_started) {
 [proc,demon_slayer_has_silverlight]()(boolean)
 // Turns out you can't put all of this in a return statement
 if (inv_total(inv, silverlight) > 0 | (inv_getobj(worn, 3) = silverlight) | inv_total(bank, silverlight) > 0 ) {
+    return(true);
+} else {
+    return(false);
+}
+
+[proc,demon_slayer_2_has_ashbound_silverlight]()(boolean)
+// Turns out you can't put all of this in a return statement
+if (inv_total(inv, ashbound_silverlight) > 0 | (inv_getobj(worn, 3) = ashbound_silverlight) | inv_total(bank, ashbound_silverlight) > 0 ) {
     return(true);
 } else {
     return(false);

@@ -70,6 +70,7 @@ npc_add(0_40_76_21_42, firewall, 20);
 ~npc_rangeattack;
 
 [proc,hellfire_functionality]
+mes("<tostring(npc_stat(hitpoints))> HP remaining.");
 if (%hellfire_timer = 18) {
     //sound_synth(entangle_all, 0, 0);
     npc_queue(10, 0, 0);

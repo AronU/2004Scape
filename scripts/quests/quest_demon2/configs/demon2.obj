@@ -32,7 +32,7 @@ iop1=Read
 
 [ritual_ashes]
 name=Ritual ashes
-desc=Ashes from the ritual to summon Agrith-Naar.
+desc=Ashes from the ritual to summon Agrith-Vhann.
 cost=2
 members=yes
 tradeable=no
@@ -47,7 +47,7 @@ weight=2oz
 
 [infernal_ashes]
 name=Infernal ashes
-desc=Ashes from the ritual to summon Agrith-Naar.
+desc=Ashes from the ritual to summon Agrith-Vhann.
 cost=2
 members=yes
 tradeable=no
@@ -62,7 +62,7 @@ weight=2oz
 
 [sovereign_ashes]
 name=Sovereign ashes
-desc=Ashes from the ritual to summon Agrith-Naar.
+desc=Ashes from the ritual to summon Agrith-Vhann.
 cost=2
 members=yes
 tradeable=no
