@@ -129,7 +129,7 @@ hint_stop();
 npc_statheal(hitpoints, 0, 100);
 npc_setmode(none);
 p_stopaction;
-~chatnpc("<p,scared>Stop! You win. Not hurt Dad.");
+~chatnpcnoturn("<p,scared>Stop! You win. Not hurt Dad.");
 switch_int(~p_choice2("I'll be going now.", 1, "I'm not done yet! Prepare to die!", 2)) {
     case 1 :
         ~chatplayer("<p,happy>I'll be going now.");
