@@ -286,7 +286,7 @@ if(coordz(coord) > coordz($loc_coord)) {
     ~rash_summon;
 }
 if(inv_total(worn, zqdeadbeads) > 0) {
-    %zombiequeen = ^zombiequeen_entered_with_beads;
+    if (%zombiequeen < ^zombiequeen_entered_with_beads) %zombiequeen = ^zombiequeen_entered_with_beads;
     mes("The Beads of the Dead start to glow...");
 }
 
