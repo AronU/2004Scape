@@ -2,6 +2,9 @@
 [zone,3_43_149_8_32] 
 settimer(agilityarena_spikes, 1);
 
+[zone,3_43_149_8_40] 
+settimer(agilityarena_spikes, 1);
+
 [zone,3_43_149_16_8] 
 settimer(agilityarena_spikes, 1);
 
@@ -34,6 +37,7 @@ settimer(agilityarena_pressurepad, 1);
 
 [zone,3_43_149_16_40] 
 settimer(agilityarena_pressurepad, 1);
+settimer(agilityarena_sawblades, 1);
 
 [zone,3_43_149_16_48] 
 settimer(agilityarena_pressurepad, 1);
@@ -53,6 +57,9 @@ settimer(agilityarena_poisondarts, 1);
 
 // clear timers
 [zoneexit,3_43_149_8_32] 
+cleartimer(agilityarena_spikes);
+
+[zoneexit,3_43_149_8_40]
 cleartimer(agilityarena_spikes);
 
 [zoneexit,3_43_149_16_8] 
@@ -87,6 +94,7 @@ cleartimer(agilityarena_pressurepad);
 
 [zoneexit,3_43_149_16_40] 
 cleartimer(agilityarena_pressurepad);
+cleartimer(agilityarena_sawblades);
 
 [zoneexit,3_43_149_24_40] 
 cleartimer(agilityarena_sawblades);
