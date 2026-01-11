@@ -1,4 +1,4 @@
-[general_macro_events_members]
+[general_macro_events]
 inputtype=int
 outputtype=npc
 val=1,macro_swarm
@@ -6,14 +6,9 @@ val=2,macro_geni
 val=3,macro_dwarf
 val=4,macro_mysterious_old_man
 val=5,macro_triffidseed
-
-[general_macro_events_free]
-inputtype=int
-outputtype=npc
-val=1,macro_swarm
-val=2,macro_geni
-val=3,macro_dwarf
-val=4,macro_mysterious_old_man
+val=6,macro_mysterious_old_man
+val=7,macro_mysterious_old_man
+val=8,macro_mysterious_old_man
 
 [macro_event_zombie_levels]
 inputtype=int

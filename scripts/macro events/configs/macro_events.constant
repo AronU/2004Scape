@@ -5,14 +5,14 @@
 
 ^macro_triffidseed = 5
 
-^macro_bigfish = 6
+^macro_cube = 6
 
 ^macro_mime = 7
-^macro_mime_solve_1 = 8
-^macro_mime_solve_2 = 9
-^macro_mime_solve_3 = 10
+^macro_mime_solve_1 = 100
+^macro_mime_solve_2 = 101
+^macro_mime_solve_3 = 102
 
-^macro_maze = 11
+^macro_maze = 8
 
 ^no_macro_event = 0
 
@@ -49,3 +49,5 @@
 ^macro_mime_glass_box = 1
 ^macro_mime_climb_rope = 2
 ^macro_mime_lean = 3
+
+^members_macro_count = 1

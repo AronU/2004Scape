@@ -1,23 +1,22 @@
-[proc,macro_mysterious_old_man_spawn]
-def_int $random_old_man_event = random(4);
+[proc,macro_mysterious_old_man_spawn](int $random_old_man_event)
 spotanim_map(smokepuff, npc_coord, 124, 0);
 sound_synth(smokepuff, 0, 0);
 // to match genie in this video: https://www.youtube.com/watch?v=el-h9hbSH80&t=293s
 npc_setmode(playerfollow);
 
-if ($random_old_man_event = 1 & inv_freespace(inv) = 0) { // Cannot give strange box if no inventory space, so becomes Maze... Possibly also Mime?
-    $random_old_man_event = 2;
+if ($random_old_man_event = ^macro_cube & inv_freespace(inv) = 0) { // Cannot give strange box if no inventory space, so becomes Maze... Possibly also Mime?
+    $random_old_man_event = ^macro_maze;
 }
 
 switch_int ($random_old_man_event) {
-    case 0 : // Mime
+    case ^macro_mime : // Mime
         npc_say("Aha, you're required <displayname>!"); // https://www.youtube.com/watch?v=aqNlh2YPezM&t=49s No bow or greetings. Unsure if mime or maze
         p_delay(1);
         npc_del;
         %macro_event = ^macro_mime;
         ~mime_entry_point;
         return;
-    case 1 : // Strange box
+    case ^macro_cube : // Strange box
         npc_anim(emote_bow, 20);
         npc_say("Greetings <displayname>!");
         p_delay(1);
@@ -27,20 +26,18 @@ switch_int ($random_old_man_event) {
         ~macro_events_varps_reset;
         ~give_strange_box;
         return;
-    case 2 : // Maze
+    case ^macro_maze : // Maze
         npc_say("Aha, you'll do <displayname>!"); // No bowing for maze event, either according to https://youtu.be/A0V4NJn11ow?si=iVJ16Z7Yv4ueT4ao&t=11
         p_delay(1);
         npc_del;
         %macro_event = ^macro_maze;
         ~start_macro_maze;
         return;
-    case 3 : // Gift
+    case ^macro_mysterious_old_man : // Gift
         npc_anim(emote_bow, 20);
         npc_say("Greetings <displayname>!");
         p_delay(1);
         %npc_macro_event_target = uid;
-        return;
-    case default :
         return;
 }
 

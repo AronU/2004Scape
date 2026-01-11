@@ -11,6 +11,14 @@ if ($event < 1 | $event > ~macro_event_general_count) {
 }
 ~macro_event_general_spawn($event);
 
+[debugproc,random_event]
+if_close;
+if (p_finduid(uid) = false) {
+    @please_finish;
+    return;
+}
+~macro_event_general_spawn(~macro_event_set_random);
+
 [debugproc,random]
 if (p_finduid(uid) = true) {
     %macro_event = ^no_macro_event;

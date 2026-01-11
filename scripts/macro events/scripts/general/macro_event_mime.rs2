@@ -93,7 +93,7 @@ npc_settimer(2); // Called every 2 ticks
 
 
 [queue,mime_step_right_up]
-p_teleport(0_31_74_24_26);
+if(coord = 0_31_74_24_28) p_teleport(movecoord(coord, 0, 0, -2));
 
 
 // Trigger: All the button clicks
