@@ -675,7 +675,7 @@
 674=grandtree_foreman
 675=grandtree_shipyardguard
 676=grandtree_femi
-677=grandtree_black_demon
+677=grandtree_blackdemon
 678=ranging_guild_guard
 679=ranging_guild_doorman
 680=ranging_guild_leatherworker
@@ -746,7 +746,7 @@
 745=wormbrain
 746=oracle
 747=oziach
-748=dragonslayer_giant_rat
+748=dragonslayer_giantrat
 749=dragonslayer_ghost
 750=dragonslayer_skeleton
 751=dragonslayer_zombie
@@ -1054,10 +1054,10 @@
 1053=ghast_vis
 1054=mort_myre_gate_guard
 1055=agilityarena_tickettrader
-1056=npc_1056
-1057=npc_1057
-1058=npc_1058
-1059=npc_1059
+1056=macro_mime
+1057=macro_theatre_saradomin
+1058=macro_theatre_guthix
+1059=macro_theatre_zamorak
 1060=death_ig_commander
 1061=death_ig_sergeant_drilling
 1062=death_ig_sergeant_training
@@ -1084,12 +1084,12 @@
 1083=death_shopkeeper
 1084=death_man_outdoors1
 1085=death_man_outdoors2
-1086=man4
+1086=death_man_indoors1
 1087=death_man_indoors2
 1088=death_woman_outdoors1
 1089=death_woman_outdoors2
 1090=death_woman_indoors1
-1091=death_woman_indoors2
+1091=death_growncat_black
 1092=death_white_knight
 1093=death_mountain_goat
 1094=mountain_goat2

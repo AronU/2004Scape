@@ -649,3 +649,4 @@ minimap=no
 ambient=70
 contrast=70
 wanderrange=5
+moverestrict=blocked

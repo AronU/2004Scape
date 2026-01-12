@@ -261,9 +261,9 @@ param=defend_anim,giantspider_block
 param=death_anim,giantspider_death
 param=magicattack_anim,giantspider_casting
 param=spawn_anim,giantspider_teleport_reverse
-param=attack_sound,insect_attack
-param=defend_sound,insect_hit
-param=death_sound,insect_death
+param=attack_sound,kilrag_attack
+param=defend_sound,kilrag_hit
+param=death_sound,kilrag_death
 param=death_drop,null
 category=kolodion
 // osrs stats match 1:1

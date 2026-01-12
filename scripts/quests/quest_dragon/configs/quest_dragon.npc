@@ -69,7 +69,7 @@ head3=model_37_npc_head
 wanderrange=0
 moverestrict=nomove
 
-[dragonslayer_giant_rat]
+[dragonslayer_giantrat]
 size=2
 walkanim=giantrat_walk
 readyanim=giantrat_ready
@@ -146,10 +146,10 @@ model2=model_2946_npc
 wanderrange=9
 maxrange=11
 respawnrate=70
-hitpoints=17
-attack=24
-strength=24
-defence=24
+hitpoints=29
+attack=15
+strength=18
+defence=17
 param=attackbonus,15
 param=strengthbonus,14
 param=stabdefence,9

@@ -1906,9 +1906,9 @@ param=damagetype,^crush_style
 param=attack_anim,troll_attack
 param=defend_anim,troll_block
 param=death_anim,troll_death
-param=attack_sound,null
-param=defend_sound,null
-param=death_sound,null
+param=attack_sound,troll_attack
+param=defend_sound,troll_hit
+param=death_sound,troll_death
 param=death_drop,big_bones
 huntmode=cowardly
 huntrange=1
@@ -2387,10 +2387,10 @@ op2=Attack
 vislevel=25
 model1=model_2944_npc
 respawnrate=140
-hitpoints=24
-attack=17
-strength=17
-defence=17
+hitpoints=17
+attack=24
+strength=24
+defence=24
 param=stabdefence,5
 param=slashdefence,5
 param=crushdefence,-5
@@ -2421,9 +2421,9 @@ model1=model_2944_npc
 wanderrange=8
 maxrange=10
 respawnrate=70
-hitpoints=29
-attack=15
-strength=18
+hitpoints=24
+attack=17
+strength=17
 defence=17
 param=stabdefence,5
 param=slashdefence,5
@@ -2454,10 +2454,10 @@ model2=model_2946_npc
 wanderrange=9
 maxrange=11
 respawnrate=140
-hitpoints=17
-attack=24
-strength=24
-defence=24
+hitpoints=29
+attack=15
+strength=18
+defence=17
 param=attackbonus,15
 param=strengthbonus,14
 param=stabdefence,9
@@ -3374,7 +3374,7 @@ param=damagetype,^crush_style
 param=attack_anim,dwarf_attack
 param=defend_anim,dwarf_block
 param=death_anim,dwarf_death
-param=attack_sound,baxe_crush
+param=attack_sound,warhammer_crush
 // param=defend_sound, TODO
 // param=death_sound, TODO
 // TODO Try to find out what sounds dwarf used as defend and death sounds in 2004-2005.
@@ -4015,8 +4015,8 @@ param=damagetype,^stab_style
 param=attack_anim,bird_attack
 param=defend_anim,bird_block
 param=death_anim,bird_death
-param=death_sound,bird_attack
-param=death_sound,bird_hit
+param=attack_sound,bird_attack
+param=defend_sound,bird_hit
 param=death_sound,bird_death
 // https://raw.githubusercontent.com/Joshua-F/osrs-dumps/refs/heads/master/config/dump.npc npc_281
 
@@ -4041,8 +4041,8 @@ param=damagetype,^stab_style
 param=attack_anim,bird_attack
 param=defend_anim,bird_block
 param=death_anim,bird_death
-param=death_sound,bird_attack
-param=death_sound,bird_hit
+param=attack_sound,bird_attack
+param=defend_sound,bird_hit
 param=death_sound,bird_death
 // https://raw.githubusercontent.com/Joshua-F/osrs-dumps/refs/heads/master/config/dump.npc npc_282
 
@@ -4067,8 +4067,8 @@ param=damagetype,^stab_style
 param=attack_anim,bird_attack
 param=defend_anim,bird_block
 param=death_anim,bird_death
-param=death_sound,bird_attack
-param=death_sound,bird_hit
+param=attack_sound,bird_attack
+param=defend_sound,bird_hit
 param=death_sound,bird_death
 // https://raw.githubusercontent.com/Joshua-F/osrs-dumps/refs/heads/master/config/dump.npc npc_283
 
@@ -4097,8 +4097,8 @@ param=damagetype,^stab_style
 param=attack_anim,bird_attack
 param=defend_anim,bird_block
 param=death_anim,bird_death
-param=death_sound,bird_attack
-param=death_sound,bird_hit
+param=attack_sound,bird_attack
+param=defend_sound,bird_hit
 param=death_sound,bird_death
 // https://raw.githubusercontent.com/Joshua-F/osrs-dumps/refs/heads/master/config/dump.npc npc_284
 
@@ -4123,8 +4123,8 @@ param=damagetype,^stab_style
 param=attack_anim,bird_attack
 param=defend_anim,bird_block
 param=death_anim,bird_death
-param=death_sound,bird_attack
-param=death_sound,bird_hit
+param=attack_sound,bird_attack
+param=defend_sound,bird_hit
 param=death_sound,bird_death
 // https://raw.githubusercontent.com/Joshua-F/osrs-dumps/refs/heads/master/config/dump.npc npc_285
 
@@ -4145,6 +4145,7 @@ param=stabdefence,30
 param=slashdefence,8
 param=crushdefence,45
 param=damagetype,^stab_style
+param=attack_sound,null
 huntmode=aggressive_melee
 huntrange=1
 // attack anim is 1247, released sometime around sept 2004
@@ -4609,7 +4610,7 @@ param=crushdefence,2
 param=rangedefence,2
 param=damagetype,^stab_style
 param=attack_anim,human_sword_stab
-param=defend_anim,human_sword_def
+param=defend_anim,human_sword_block
 param=attack_sound,hacksword_slash
 // https://oldschool.runescape.wiki/w/Highwayman#Trivia
 // year ???? attack seq_390 defend seq_388 these seqs used some reason after update x
@@ -5464,8 +5465,7 @@ param=damagetype,^crush_style
 param=attack_anim,human_sword_slash
 param=defend_anim,human_sword_def
 param=attack_sound,hacksword_slash
-// param=defend_sound, TODO
-// osrs defend_sound blade3
+param=defend_sound,blade3
 // all are guess information taken from the paladin.
 // https://raw.githubusercontent.com/Joshua-F/osrs-dumps/refs/heads/master/config/dump.npc npc_1144
 

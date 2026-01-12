@@ -318,6 +318,8 @@ param=damagetype,^crush_style
 param=attack_anim,human_staff_pummel
 param=defend_anim,human_staff_block
 param=attack_sound,staff_hit
+param=defend_sound,otherworld_hit
+param=death_sound,otherworld_death
 // osrs attack_sound staff_double
 // defend animation https://discord.com/channels/953326730632904844/1126857544523063367/1300620868782788709
 
