@@ -253,3 +253,27 @@ param=crushdefence,8
 param=magicdefence,2
 param=rangedefence,8
 param=defend_anim,human_shield_defence
+
+[granite_shield]
+name=Granite shield
+desc=A solid stone shield.
+cost=56000
+iop2=Wear
+model=obj_3122
+manwear=model_2929_npc,0
+womanwear=model_2929_npc,6
+2dyof=4
+2dzoom=1630
+2dyan=236
+2dxan=564
+members=yes
+weight=15lb
+wearpos=lefthand
+category=armour_shield
+param=magicattack,-12
+param=rangeattack,-8
+param=stabdefence,40
+param=slashdefence,42
+param=crushdefence,38
+param=magicdefence,-2
+param=rangedefence,65

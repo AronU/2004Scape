@@ -177,3 +177,15 @@ model=model_2742_obj
 2dxan=264
 weight=100g
 members=yes
+
+[cactus_potato]
+name=Potato cactus
+desc=How am I supposed to eat that?!
+model=obj_3138
+2dyof=20
+2dzoom=1240
+2dyan=300
+2dxan=348
+members=yes
+weight=500g
+param=brew_potion_struct,3dose1magic
