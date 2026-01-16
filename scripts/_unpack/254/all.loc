@@ -74,7 +74,6 @@ model=model_3334
 recol1s=9513
 recol1d=15855
 op1=Open
-param=next_loc_stage,macro_maze_opened_wall
 param=approach_direction,0
 category=macro_maze_wall_door
 
@@ -85,7 +84,6 @@ model=model_3334
 recol1s=9513
 recol1d=15855
 op1=Open
-param=next_loc_stage,macro_maze_opened_wall
 param=approach_direction,1
 category=macro_maze_wall_door
 
@@ -96,7 +94,6 @@ model=model_3334
 recol1s=9513
 recol1d=15855
 op1=Open
-param=next_loc_stage,macro_maze_opened_wall
 param=approach_direction,2
 category=macro_maze_wall_door
 
@@ -107,7 +104,6 @@ model=model_3334
 recol1s=9513
 recol1d=15855
 op1=Open
-param=next_loc_stage,macro_maze_opened_wall
 param=approach_direction,2
 category=macro_maze_wall_door
 
@@ -118,7 +114,6 @@ model=model_3334
 recol1s=9513
 recol1d=15855
 op1=Open
-param=next_loc_stage,macro_maze_opened_wall
 param=approach_direction,1
 category=macro_maze_wall_door
 

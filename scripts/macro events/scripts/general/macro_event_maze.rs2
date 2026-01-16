@@ -64,7 +64,7 @@ if ($door_entry_side = 0) {
     $should_open = true;
 }
 if ($should_open = true) {
-    ~open_and_close_door(loc_param(next_loc_stage), $player_side, false);
+    ~open_and_close_door(macro_maze_opened_wall, $player_side, false);
 } else {
     ~mesbox("I don't think that's the right way.");
 }
