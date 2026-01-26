@@ -72,6 +72,11 @@ if (%tutorial < ^tutorial_complete & ~in_tutorial_island(coord) = true) {
     ~update_bas;
     @start_tutorial;
 }
+//Only turn run on if the tutorial is complete
+if (%tutorial = ^tutorial_complete) {
+    p_run(^player_run_on);
+    %option_run = %option_run; // resync varp
+}
 ~initalltabs;
 ~update_all(inv_getobj(worn, ^wearpos_rhand));
 cam_reset;
