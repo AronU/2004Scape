@@ -73,6 +73,11 @@ cam_reset;
 if (%tutorial < ^tutorial_complete & ~in_tutorial_island(coord) = true) {
     @start_tutorial;
 }
+//Only turn run on if the tutorial is complete
+if (%tutorial = ^tutorial_complete) {
+    p_run(^player_run_on);
+    %option_run = %option_run; // resync varp
+}
 ~initalltabs;
 queue(follower_login, 0, 0);
 if (map_live = true) {

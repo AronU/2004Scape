@@ -20,7 +20,6 @@ if (%y_count < -8) {
 }
 
 [ai_opplayer2,firewall]
-mes("Here");
 if (inzone(0_40_79_28_19, 0_40_79_35_35, npc_coord) = true) {
     if (%respawn_timer_quest = 4) {
         .npc_add(0_40_79_29_33, firewall, 16);
@@ -89,7 +88,7 @@ npc_add(0_40_79_28_27, firewall, 16);
 [debugproc,hellfire_test_clear]
 mes("Clearing hellfire walls...");
 npc_huntall(coord, 20, 0);
-while (npc_huntnext = true) {
+while (npc_findnext = true) {
     if (npc_type = firewall) {
         %respawn_timer_quest = 5;
     }
