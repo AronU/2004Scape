@@ -1,0 +1,82 @@
+[if_button,questlist:demon2]
+def_string $text;
+
+// Demon Slayer II – Quest Journal
+
+if(%demon2start = ^demon2_not_started) {
+    $text = "@dbl@I can start this quest by speaking to the @dre@Gypsy@dbl@ in the @dre@tent|@dbl@in @dre@Varrock's main square||@dbl@I must be a skilled warrior to face what lies ahead.|@dbl@To start this quest I need to complete the following:|@dre@Demon Slayer|";
+}
+
+/* SPOKE TO GYPSY ARIS */
+else if(%demon2start = ^demon2_talked_aris) {
+    $text = "@str@I spoke to Gypsy Aris once more.|@str@She sensed a disturbance far greater than before,|@str@something clawing its way into this world.||";
+    $text = append($text, "@dbl@She advised me to seek @dre@Sir Prysin@dbl@,|@dbl@who may know old stories of such evils.|");
+}
+
+/* ASKED PRYSIN */
+else if(%demon2start = ^demon2_ask_prysin_about_demon) {
+    $text = "@str@Gypsy Aris warned me of a new infernal threat.|@str@Sir Prysin spoke of old Zamorakian rites,|@str@whispered of but never seen.||";
+    $text = append($text, "@dbl@He suggested such knowledge may be recorded|@dbl@in forbidden texts kept by Zamorakians.|@dbl@I should search the @dre@Zamorakian church in Varrock@dbl@.|");
+}
+
+/* GOT SCROLL */
+else if(%demon2start = ^demon2_got_scroll) {
+    $text = "@str@I found a sealed Zamorakian scroll hidden within|@str@the church in Varrock.||";
+    $text = append($text, "@dbl@I should read the scroll carefully,|@dbl@though its contents may be dangerous.|");
+}
+
+/* READ FIRST SCROLL */
+else if(%demon2start = ^demon2_read_scroll) {
+    $text = "@str@The scroll speaks of infernal flames used to|@str@anchor a demon to this world.||";
+    $text = append($text, "@dbl@The first flame is said to burn near|@dbl@an altar surrounded by jungle and stone,|@dbl@where Zamorak's influence once bled into the land.|");
+}
+
+/* IMP WAVE KILLED */
+else if(%demon2start = ^demon2_imp_wave_killed) {
+    $text = "@str@I extinguished the first infernal flame,|@str@defeating the creatures guarding it.||";
+    $text = append($text, "@dbl@Perhaps Gypsy Aris can divine what this means.|");
+}
+
+/* SPOKE TO ARIS AFTER IMPS */
+else if(%demon2start = ^demon2_talked_to_aris_after_imps) {
+    $text = "@str@Gypsy Aris sensed one of the infernal anchors|@str@has been broken.||";
+    $text = append($text, "@dbl@She believes another flame still burns,|@dbl@its location hinted at in further writings.|");
+}
+
+/* NOBLE DEMON WAVE KILLED */
+else if(%demon2start = ^demon2_noble_wave_killed) {
+    $text = "@str@I destroyed the second infernal flame,|@str@overcoming a far stronger demonic presence.||";
+    $text = append($text, "@dbl@Among the remains I found another|@dre@Zamorakian note@dbl@.|");
+}
+
+/* READ SECOND SCROLL */
+else if(%demon2start = ^demon2_read_scroll_2) {
+    $text = "@str@The note speaks of a final flame,|@str@burning where goblins gather near the wild lands.||";
+    $text = append($text, "@dbl@This must be the last anchor binding|@dre@Agrith-Vhann@dbl@ to this world.|");
+}
+
+/* THIRD ACOLYTE DEFEATED */
+else if(%demon2start = ^demon2_defeated_acolyte_3) {
+    $text = "@str@I destroyed the final infernal flame.|@str@The ritual anchoring Agrith-Vhann is broken.||";
+    $text = append($text, "@dbl@The ashes from each flame resonate with|@dbl@the power of @dre@Silverlight@dbl@.|");
+}
+
+/* ASHES COMBINED */
+else if(%demon2start = ^demon2_ashes_combined) {
+    $text = "@str@I combined the infernal ashes into a|@str@single, powerful remnant.||";
+    $text = append($text, "@dbl@Sir Prysin may be able to use this|@dbl@to empower @dre@Silverlight@dbl@.|");
+}
+
+/* AGRITH-VHANN DEFEATED */
+else if(%demon2start = ^demon2_agrith_vhann_defeated) {
+    $text = "@str@With Ashbound Silverlight,|@str@I defeated the archdemon @dre@Agrith-Vhann@str@.||";
+    $text = append($text, "@dbl@I should return to @dre@Gypsy Aris@dbl@.|");
+}
+
+/* QUEST COMPLETE */
+else {
+    $text = "@str@I defeated Agrith-Vhann,|@str@banishing the demon beyond the veil once more.||";
+    $text = append($text, "@str@Gypsy Aris assured me the world is safe,|@str@for now.||@red@QUEST COMPLETE!");
+}
+
+~quest_journal("Demon Slayer II", $text);
