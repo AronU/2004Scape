@@ -46,6 +46,10 @@ if (%demonstart = ^demon_not_started) {
     if (%demon2start = ^demon2_complete) {
         ~chatnpc("<p,happy>Good job young one. You have saved RuneScape once again. However you should take a look at the portal in the Black Knights' Fortress. It seems to be continually unstable. Hold off Agrith-Vhann for as long as you can. Your efforts will weaken him.");
         ~chatplayer("<p,happy>Will do. Thanks Aris.");
+        if (inv_total(inv, infernal_sigil) = 0 & inv_total(bank, infernal_sigil) = 0 ) {
+            ~chatnpc("<p,neutral>You're welcome. Here, take this sigil. It might help you against Agrith-Vhann.");
+            inv_add(inv, infernal_sigil, 1);
+        }
     }
     @demon_slayer_2_started;
 } else if (%demonstart = ^demon_complete) {
@@ -123,7 +127,7 @@ if (%demon2start = ^demon2_agrith_vhann_defeated) {
     ~chatplayer("<p,happy>So Agrith-Vhann is gone for good?");
     ~chatnpc("<p,sad>Gone? No. Banished, bound, denied his passage for now. Archdemons do not truly perish, but neither do they forget defeat.");
     ~chatplayer("<p,sad>Then we've only delayed the inevitable.");
-    ~chatnpc("<p,neutral>Perhaps. But today, RuneScape still stands. And that is victory enough.");
+    ~chatnpc("<p,neutral>Perhaps. But today, RuneScape still stands. And that is victory enough. Take this sigil one of my scouts found on their travels. It might be useful against demonic threats.");
     %demon2start = ^demon2_talked_aris_after_defeat;
     queue(demon_slayer_2_complete, 1, 0);
 }

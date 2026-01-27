@@ -81,6 +81,9 @@ if (~player_npc_hit_roll(^magic_style) = true) {
     if (npc_type = count_draynor & inv_total(inv, garlic) > 0) {
         $maxhit = add($maxhit, 1);
     }
+    if (npc_param(demonbane_vulnerable) = true & inv_total(worn, infernal_sigil) > 0 ) {
+        $maxhit = scale(110, 100, $maxhit);
+    }
     ~pvm_spell_success($spell_data, $maxhit, $duration);
     ~pvm_stat_change_effect($spell_data);
     ~pvm_freeze_effect($spell_data);

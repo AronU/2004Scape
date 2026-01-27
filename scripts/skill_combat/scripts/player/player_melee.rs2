@@ -25,6 +25,9 @@ if (~player_npc_hit_roll(%damagetype) = true) {
     if (npc_param(demonbane_vulnerable) = true & inv_total(worn, silverlight) > 0 | inv_total(worn, ashbound_silverlight) > 0) {
         $maxhit = scale(160, 100, %com_maxhit);
     }
+    if (npc_param(demonbane_vulnerable) = true & inv_total(worn, infernal_sigil) > 0 ) {
+        $maxhit = scale(110, 100, $maxhit);
+    }
     $damage = randominc(min($maxhit, npc_param(max_dealt)));
     if (npc_type = infernal_imp | npc_type = demon2_infernal_imp) {
         $damage = 5; 
