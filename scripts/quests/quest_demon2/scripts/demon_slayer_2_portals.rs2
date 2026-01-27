@@ -35,3 +35,8 @@ mes("You step through the portal and find yourself back in RuneScape.");
 return;
 }
 ~displaymessage(^dm_default);
+
+[oploc1,demon2_portal_3_runescape]
+if_close;
+p_teleport(3_47_54_3_59);
+p_delay(2);
