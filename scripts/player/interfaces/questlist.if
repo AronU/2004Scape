@@ -6,7 +6,7 @@ x=5
 y=20
 width=168
 height=229
-scroll=959
+scroll=973
 
 [com_24]
 layer=com_0
@@ -891,7 +891,7 @@ option=Troll Stronghold
 layer=com_0
 type=text
 x=10
-y=934
+y=948
 buttontype=normal
 width=72
 height=14
@@ -899,6 +899,18 @@ font=p12
 shadowed=yes
 text=Demon Slayer II
 colour=0xFF0000
+
+[com_25]
+layer=com_0
+type=text
+x=5
+y=934
+width=84
+height=14
+font=b12
+shadowed=yes
+text=OTHER QUESTS:
+colour=0xF99B15
 
 [com_1]
 type=text

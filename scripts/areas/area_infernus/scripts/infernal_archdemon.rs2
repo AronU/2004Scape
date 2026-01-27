@@ -118,6 +118,8 @@ if (p_finduid(uid) = true & %demon2start = ^demon2_ashes_combined) {
 }
 
 
+
+
 [label,demon2_quest_death]
 %demon2start = ^demon2_agrith_vhann_defeated;
 .npc_add(0_40_76_25_38, aris, 10);
