@@ -899,6 +899,8 @@ font=p12
 shadowed=yes
 text=Demon Slayer II
 colour=0xFF0000
+overcolour=0xFFFFFF
+option=Demon Slayer II
 
 [com_25]
 layer=com_0
