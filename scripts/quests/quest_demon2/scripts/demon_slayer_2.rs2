@@ -2,6 +2,7 @@
 %demon2start = ^demon2_complete;
 session_log(^log_adventure, "Quest complete: Demon Slayer II");
 ~send_quest_complete(questlist:demon2, ashbound_silverlight, 250, ^demon2_questpoints, "You have completed the\\nDemon Slayer II Quest!");
+inv_add(inv, infernal_sigil, 1);
 
 
 [oploc1,altar_slab]
