@@ -1,5 +1,9 @@
 .DS_Store
-
+#git commands to update repo with live server changes
+#git remote -v
+#git fetch upstream
+#git checkout main
+#git rebase upstream/254
 # since these are generated for the server only, we don't have to share them
 pack/script.pack
 pack/param.pack
