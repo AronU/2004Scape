@@ -128,16 +128,12 @@ while ($i <= db_getfieldcount($data, magic_spell_table:convertobj)) {
 return(null, null, null, null);
 
 // for opheldt spells that have specific messages for specific items
-[proc,magic_spell_specificobj_reqmessage](dbrow $data, obj $obj)
-def_int $i = 0;
-while ($i <= db_getfieldcount($data, magic_spell_table:specificobj_reqmessage)) {
-    def_obj $db_obj;
-    def_string $string;
-    $db_obj, $string = db_getfield($data, magic_spell_table:specificobj_reqmessage, $i);
-    if ($db_obj = $obj) {
-        mes($string);
-        return;
-    }
-    $i = calc($i + 1);
+[proc,magic_spell_amulet_reqmessage](dbrow $data, obj $obj)(boolean)
+def_obj $db_obj;
+def_string $string;
+$db_obj, $string = db_getfield($data, magic_spell_table:amulet_reqmessage, 0);
+if ($db_obj = $obj) {
+    mes($string);
+    return (true);
 }
-return;
+return (false);
