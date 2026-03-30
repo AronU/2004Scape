@@ -1,12 +1,12 @@
 [if_button,prayer:prayer_improvedreflexes]
-if_close;
+//if_close;
 if (p_finduid(uid) = true) {
     @activate_prayer_improvedreflexes;
 }
 %prayer5 = %prayer5; // resync varp
 
 [label,activate_prayer_improvedreflexes]
-p_clearpendingaction;
+// p_clearpendingaction;
 def_dbrow $data = ~get_prayer_data(^prayer_improvedreflexes);
 if ($data = null) {
     return;

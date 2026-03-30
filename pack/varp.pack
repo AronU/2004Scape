@@ -318,6 +318,9 @@
 317=troll_quest
 318=troll_varbit
 319=varp_319
-35000=demon2start
-35001=demon2imps_killed
-35002=demon2nobles_killed
+320=demon2start
+321=demon2imps_killed
+322=demon2nobles_killed
+323=crypt_wave
+324=crypt_entry_paid
+325=crypt_chest_claimed

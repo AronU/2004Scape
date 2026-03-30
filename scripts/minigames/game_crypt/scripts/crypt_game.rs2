@@ -1,0 +1,259 @@
+[queue,crypt_start_wave]
+%crypt_chest_claimed = false;
+switch_int (%crypt_wave) {
+    case 1 : @crypt_spawn_wave1;
+    case 2 : @crypt_spawn_wave2;
+    case 3 : @crypt_spawn_wave3;
+    case 4 : @crypt_spawn_wave4;
+    case 5 : @crypt_spawn_wave5;
+    case 6 : @crypt_spawn_wave6;
+    case 7 : @crypt_spawn_wave7;
+    case 8 : @crypt_spawn_wave8;
+    case 9 : @crypt_spawn_wave9;
+    case 10 : @crypt_spawn_wave10;
+}
+
+[label,crypt_spawn_wave1]
+mes("Wave 1: The dead begin to rise...");
+sound_synth(zombie_attack, 0, 0);
+def_int $s1 = random(7);
+def_int $s2 = random(7);
+while ($s2 = $s1) { $s2 = random(7); }
+def_int $s3 = random(7);
+while ($s3 = $s1 | $s3 = $s2) { $s3 = random(7); }
+
+npc_add(~crypt_get_spawn($s1), crypt_zombie_weak, ^max_32bit_int);
+npc_add(~crypt_get_spawn($s2), crypt_zombie_weak, ^max_32bit_int);
+npc_add(~crypt_get_spawn($s3), crypt_zombie_weak, ^max_32bit_int);
+
+[label,crypt_spawn_wave2]
+mes("Wave 2: The dead begin to rise...");
+sound_synth(zombie_attack, 0, 0);
+def_int $s1 = random(7);
+def_int $s2 = random(7);
+while ($s2 = $s1) { $s2 = random(7); }
+def_int $s3 = random(7);
+while ($s3 = $s1 | $s3 = $s2) { $s3 = random(7); }
+def_int $s4 = random(7);
+while ($s4 = $s1 | $s4 = $s2 | $s4 = $s3) { $s4 = random(7); }
+
+npc_add(~crypt_get_spawn($s1), crypt_zombie_mid, ^max_32bit_int);
+npc_add(~crypt_get_spawn($s2), crypt_zombie_mid, ^max_32bit_int);
+npc_add(~crypt_get_spawn($s3), crypt_zombie_weak, ^max_32bit_int);
+npc_add(~crypt_get_spawn($s4), crypt_zombie_weak, ^max_32bit_int);
+
+
+[label,crypt_spawn_wave3]
+mes("Wave 3: The dead begin to rise...");
+sound_synth(zombie_attack, 0, 0);
+def_int $s1 = random(7);
+def_int $s2 = random(7);
+while ($s2 = $s1) { $s2 = random(7); }
+def_int $s3 = random(7);
+while ($s3 = $s1 | $s3 = $s2) { $s3 = random(7); }
+def_int $s4 = random(7);
+while ($s4 = $s1 | $s4 = $s2 | $s4 = $s3) { $s4 = random(7); }
+
+npc_add(~crypt_get_spawn($s1), crypt_skeleton_melee, ^max_32bit_int);
+npc_add(~crypt_get_spawn($s2), crypt_skeleton_melee, ^max_32bit_int);
+npc_add(~crypt_get_spawn($s3), crypt_skeleton_melee, ^max_32bit_int);
+npc_add(~crypt_get_spawn($s4), crypt_skeleton_ranger, ^max_32bit_int);
+
+[label,crypt_spawn_wave4]
+mes("Wave 4: The dead begin to rise...");
+sound_synth(zombie_attack, 0, 0);
+def_int $s1 = random(7);
+def_int $s2 = random(7);
+while ($s2 = $s1) { $s2 = random(7); }
+def_int $s3 = random(7);
+while ($s3 = $s1 | $s3 = $s2) { $s3 = random(7); }
+def_int $s4 = random(7);
+while ($s4 = $s1 | $s4 = $s2 | $s4 = $s3) { $s4 = random(7); }
+def_int $s5 = random(7);
+while ($s5 = $s1 | $s5 = $s2 | $s5 = $s3 | $s5 = $s4) { $s5 = random(7); }
+
+npc_add(~crypt_get_spawn($s1), crypt_skeleton_melee, ^max_32bit_int);
+npc_add(~crypt_get_spawn($s2), crypt_skeleton_melee, ^max_32bit_int);
+npc_add(~crypt_get_spawn($s3), crypt_skeleton_ranger, ^max_32bit_int);
+npc_add(~crypt_get_spawn($s4), crypt_skeleton_ranger, ^max_32bit_int);
+npc_add(~crypt_get_spawn($s5), crypt_skeleton_elite, ^max_32bit_int);
+
+[label,crypt_spawn_wave5]
+mes("Wave 5: The dead begin to rise...");
+sound_synth(zombie_attack, 0, 0);
+def_int $s1 = random(7);
+def_int $s2 = random(7);
+while ($s2 = $s1) { $s2 = random(7); }
+def_int $s3 = random(7);
+while ($s3 = $s1 | $s3 = $s2) { $s3 = random(7); }
+def_int $s4 = random(7);
+while ($s4 = $s1 | $s4 = $s2 | $s4 = $s3) { $s4 = random(7); }
+def_int $s5 = random(7);
+while ($s5 = $s1 | $s5 = $s2 | $s5 = $s3 | $s5 = $s4) { $s5 = random(7); }
+
+npc_add(~crypt_get_spawn($s1), crypt_ghost, ^max_32bit_int);
+npc_add(~crypt_get_spawn($s2), crypt_ghost, ^max_32bit_int);
+npc_add(~crypt_get_spawn($s3), crypt_ghost, ^max_32bit_int);
+npc_add(~crypt_get_spawn($s4), crypt_zombie_strong, ^max_32bit_int);
+npc_add(~crypt_get_spawn($s5), crypt_zombie_strong, ^max_32bit_int);
+
+[label,crypt_spawn_wave6]
+mes("Wave 6: The dead begin to rise...");
+sound_synth(zombie_attack, 0, 0);
+def_int $s1 = random(7);
+def_int $s2 = random(7);
+while ($s2 = $s1) { $s2 = random(7); }
+def_int $s3 = random(7);
+while ($s3 = $s1 | $s3 = $s2) { $s3 = random(7); }
+def_int $s4 = random(7);
+while ($s4 = $s1 | $s4 = $s2 | $s4 = $s3) { $s4 = random(7); }
+def_int $s5 = random(7);
+while ($s5 = $s1 | $s5 = $s2 | $s5 = $s3 | $s5 = $s4) { $s5 = random(7); }
+def_int $s6 = random(7);
+while ($s6 = $s1 | $s6 = $s2 | $s6 = $s3 | $s6 = $s4 | $s6 = $s5) { $s6 = random(7); }
+
+npc_add(~crypt_get_spawn($s1), crypt_ghost_strong, ^max_32bit_int);
+npc_add(~crypt_get_spawn($s2), crypt_ghost_strong, ^max_32bit_int);
+npc_add(~crypt_get_spawn($s3), crypt_zombie_strong, ^max_32bit_int);
+npc_add(~crypt_get_spawn($s4), crypt_zombie_strong, ^max_32bit_int);
+npc_add(~crypt_get_spawn($s5), crypt_zombie_strong, ^max_32bit_int);
+npc_add(~crypt_get_spawn($s6), crypt_ghost, ^max_32bit_int);
+
+[label,crypt_spawn_wave7]
+mes("Wave 7: The dead begin to rise...");
+sound_synth(zombie_attack, 0, 0);
+def_int $s1 = random(7);
+def_int $s2 = random(7);
+while ($s2 = $s1) { $s2 = random(7); }
+def_int $s3 = random(7);
+while ($s3 = $s1 | $s3 = $s2) { $s3 = random(7); }
+def_int $s4 = random(7);
+while ($s4 = $s1 | $s4 = $s2 | $s4 = $s3) { $s4 = random(7); }
+def_int $s5 = random(7);
+while ($s5 = $s1 | $s5 = $s2 | $s5 = $s3 | $s5 = $s4) { $s5 = random(7); }
+
+npc_add(~crypt_get_spawn($s1), crypt_shade, ^max_32bit_int);
+npc_add(~crypt_get_spawn($s2), crypt_shade, ^max_32bit_int);
+npc_add(~crypt_get_spawn($s3), crypt_shade, ^max_32bit_int);
+npc_add(~crypt_get_spawn($s4), crypt_shade, ^max_32bit_int);
+npc_add(~crypt_get_spawn($s5), crypt_zombie_strong, ^max_32bit_int);
+
+[label,crypt_spawn_wave8]
+mes("Wave 8: The dead begin to rise...");
+sound_synth(zombie_attack, 0, 0);
+def_int $s1 = random(7);
+def_int $s2 = random(7);
+while ($s2 = $s1) { $s2 = random(7); }
+def_int $s3 = random(7);
+while ($s3 = $s1 | $s3 = $s2) { $s3 = random(7); }
+def_int $s4 = random(7);
+while ($s4 = $s1 | $s4 = $s2 | $s4 = $s3) { $s4 = random(7); }
+def_int $s5 = random(7);
+while ($s5 = $s1 | $s5 = $s2 | $s5 = $s3 | $s5 = $s4) { $s5 = random(7); }
+
+npc_add(~crypt_get_spawn($s1), crypt_shade_strong, ^max_32bit_int);
+npc_add(~crypt_get_spawn($s2), crypt_shade_strong, ^max_32bit_int);
+npc_add(~crypt_get_spawn($s3), crypt_shade_strong, ^max_32bit_int);
+npc_add(~crypt_get_spawn($s4), crypt_shade, ^max_32bit_int);
+npc_add(~crypt_get_spawn($s5), crypt_shade, ^max_32bit_int);
+
+[label,crypt_spawn_wave9]
+mes("Wave 6: The dead begin to rise...");
+sound_synth(zombie_attack, 0, 0);
+def_int $s1 = random(7);
+def_int $s2 = random(7);
+while ($s2 = $s1) { $s2 = random(7); }
+def_int $s3 = random(7);
+while ($s3 = $s1 | $s3 = $s2) { $s3 = random(7); }
+def_int $s4 = random(7);
+while ($s4 = $s1 | $s4 = $s2 | $s4 = $s3) { $s4 = random(7); }
+def_int $s5 = random(7);
+while ($s5 = $s1 | $s5 = $s2 | $s5 = $s3 | $s5 = $s4) { $s5 = random(7); }
+def_int $s6 = random(7);
+while ($s6 = $s1 | $s6 = $s2 | $s6 = $s3 | $s6 = $s4 | $s6 = $s5) { $s6 = random(7); }
+
+npc_add(~crypt_get_spawn($s1), crypt_ghost_strong, ^max_32bit_int);
+npc_add(~crypt_get_spawn($s2), crypt_ghost_strong, ^max_32bit_int);
+npc_add(~crypt_get_spawn($s3), crypt_zombie_strong, ^max_32bit_int);
+npc_add(~crypt_get_spawn($s4), crypt_zombie_strong, ^max_32bit_int);
+npc_add(~crypt_get_spawn($s5), crypt_shade_strong, ^max_32bit_int);
+npc_add(~crypt_get_spawn($s6), crypt_shade_strong, ^max_32bit_int);
+
+[label,crypt_spawn_wave10]
+
+
+[proc,crypt_get_spawn](int $index)(coord)
+switch_int ($index) {
+    case 0 : return(^upper_left);
+    case 1 : return(^upper_mid);
+    case 2 : return(^upper_right);
+    case 3 : return(^bottom_left);
+    case 4 : return(^bottom_mid);
+    case 5 : return(^bottom_right);
+    case 6 : return(^mid_mid);
+}
+return(^upper_left);
+
+[proc,crypt_check_wave_complete]
+if (npc_findhero = ^false) { 
+    return; 
+}
+def_int $remaining = 0;
+npc_huntall(npc_coord, 15, 0);
+while (npc_findnext = true) {
+    $remaining = add($remaining, 1);
+}
+if ($remaining = 0) {
+    if (p_finduid(uid) = true) {
+        queue(crypt_wave_complete, 0, 0);
+        spotanim_map(smokepuff,0_49_151_30_34, 0, 0);
+        loc_add(0_49_151_30_34, crypt_chest_closed, 0, centrepiece_straight, 10000);
+    }
+}
+
+[queue,crypt_wave_complete]
+mes("Wave <tostring(%crypt_wave)> complete!");
+midi_jingle(^quest_complete_1_jingle, ^quest_complete_1_millis);
+
+
+[oploc1,crypt_chest_closed]
+~open_chest(loc_param(chest_other));
+
+[oploc2,crypt_chest_open]
+if (%crypt_chest_claimed = false) {
+    ~objbox(crypt_token, "You find some reward tokens laying in the chest.", 250, ^objbox_width, 0);
+    ~give_reward_tokens;
+}
+def_int $choice = ~p_choice2_header("Yes.", 1, "No not yet.", 2, "Are you ready for the next horde?");
+if ($choice = 1) {
+    %crypt_wave = add(%crypt_wave, 1);
+    queue(crypt_start_wave, 0, 0);
+    loc_del(1);
+}
+
+
+[oploc3,crypt_chest_open]
+~close_chest(loc_param(chest_other));
+
+[proc,give_reward_tokens]
+%crypt_chest_claimed = true;
+switch_int (%crypt_wave) {
+    case 1 : inv_add(inv, crypt_token, 50); return;
+    case 2 : inv_add(inv, crypt_token, 100); return;
+    case 3 : inv_add(inv, crypt_token, 150); return;
+    case 4 : inv_add(inv, crypt_token, 200); return;
+    case 5 : inv_add(inv, crypt_token, 250); return;
+    case 6 : inv_add(inv, crypt_token, 300); return;
+    case 7 : inv_add(inv, crypt_token, 350); return;
+    case 8 : inv_add(inv, crypt_token, 400); return;
+    case 9 : inv_add(inv, crypt_token, 450); return;
+    case 10 : inv_add(inv, crypt_token, 500); return;
+}
+inv_add(inv, crypt_token, 50);
+
+[debugproc,chest_test]
+loc_add(0_49_151_30_34, crypt_chest_open, 0, centrepiece_straight, 20);
+spotanim_map(smokepuff,0_49_151_30_34, 0, 0);
+
+[debugproc,anim_test]
+spotanim_map(whippingplant_attack,0_49_151_30_35, 50, 0);

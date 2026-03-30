@@ -1,0 +1,50 @@
+[proc,in_crypt](coord $coord) (boolean)
+if (inzone(0_49_151_01_01, 0_49_151_53_53, coord) = true) {
+    return(true);
+}
+return(false); 
+
+[oploc1,crypt_underground_door1]
+~open_and_close_metal_gate(loc_param(next_loc_stage), ~check_axis(coord, loc_coord, loc_angle), false);
+p_delay(0);
+anim(human_death, 0);
+spotanim_map(smokepuff, coord, 0, 0);
+p_delay(2);
+anim(null, 0);
+p_telejump(0_53_54_32_29);
+
+[oploc1,crypt_underground_door2]
+if (coord = 0_49_151_40_41) {
+    def_int $choice = ~p_choice2_header("Yes.", 0, "No.", 1, "Are you ready to take on the undead?");
+    if ($choice = 0) {
+        ~open_and_close_metal_gate(loc_param(next_loc_stage), ~check_axis(coord, loc_coord, loc_angle), false);
+        //%crypt_entry_paid = 0;
+        %crypt_wave = 1;
+        queue(crypt_start_wave, 10, 0);
+    }
+    return;
+}
+~open_and_close_metal_gate(loc_param(next_loc_stage), ~check_axis(coord, loc_coord, loc_angle), false);
+p_delay(0);
+anim(human_death, 0);
+spotanim_map(smokepuff, coord, 0, 0);
+p_delay(2);
+anim(null, 0);
+p_telejump(0_53_54_32_29);
+
+
+[debugproc,crypts_tele]
+if_close;
+if (p_finduid(uid) = false) { @please_finish; return; }
+~player_teleport_normal(0_53_54_32_29);
+
+
+[debugproc,poisonspawn]
+if_close;
+if (p_finduid(uid) = false) { @please_finish; return; }
+if (map_locaddunsafe(coord) = true) {
+    mes("Its not safe");
+} else {
+    mes("Its safe");
+}
+spotanim_map(fireblast_impact, coord, 200, 2);

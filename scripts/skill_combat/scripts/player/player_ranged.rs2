@@ -51,6 +51,9 @@ if (~player_npc_hit_roll(%damagetype) = true) {
     if (npc_param(demonbane_vulnerable) = true & inv_total(worn, infernal_sigil) > 0 ) {
         $maxhit = scale(110, 100, $maxhit);
     }
+        if (npc_category = crypt_shade) {
+        $maxhit = scale(75, 100, $maxhit);
+    }
     $damage = randominc(min($maxhit, npc_param(max_dealt)));
     def_int $damage_capped = min($damage, npc_stat(hitpoints));
     ~give_combat_experience(%damagestyle, $damage_capped, %npc_combat_xp_multiplier);
@@ -70,6 +73,10 @@ anim(%com_attackanim, 0);
 sound_synth(%com_attacksound, 0, 0);
 def_int $delay = add(~player_ranged_use_weapon($rhand, $ammo), 30); // osrs it seems to be delayed an extra tick
 ~npc_retaliate(calc($delay / 30));
+if (npc_type = crypt_shade_clone) {
+    mes("Your attack passes through the shadow!");
+    return;
+}
 npc_queue(2, $damage, calc($delay / 30));
 npc_anim(npc_param(defend_anim), sub($delay, 30)); // delay npc this tick
 if (npc_param(defend_sound) ! null) {

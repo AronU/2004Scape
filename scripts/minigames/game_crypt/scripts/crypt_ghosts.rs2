@@ -1,0 +1,47 @@
+[ai_spawn,crypt_ghost_strong]
+%soul_teather_active = false;
+%soul_teather_cooldown = 4;
+
+[ai_timer,crypt_ghost_strong]
+if (%soul_teather_cooldown > 0) {
+    %soul_teather_cooldown = sub(%soul_teather_cooldown, 1);
+    return;
+}
+if (%soul_teather_active = false) {
+    huntall(npc_coord, 4, 1);
+    if (huntnext = true) {
+        %soul_teather_active = true;
+        mes("A ghostly chain binds your soul!");
+    }
+}
+if (%soul_teather_active = true) {
+    huntall(npc_coord, 4, 0);
+    if (huntnext = true) {
+        return;
+    }
+    huntall(npc_coord, 30, 0);
+    if (huntnext = true) {
+        %soul_teather_active = false;
+        mes("The soul tether tears at you!");
+        queue(combat_damage_player, 0, 10);
+        %soul_teather_cooldown = 10;
+    }
+}
+
+[ai_timer,crypt_ghost]
+huntall(npc_coord, 20, 0);
+if (huntnext = true) {
+    if (distance(npc_coord, coord) > 1) {
+        npc_tele(coord);
+        npc_say("BOOO");
+        queue(combat_damage_player, 0, 5);
+    }
+}
+
+[ai_queue3,crypt_ghost]
+gosub(npc_death);
+~crypt_check_wave_complete;
+
+[ai_queue3,crypt_ghost_strong]
+gosub(npc_death);
+~crypt_check_wave_complete;

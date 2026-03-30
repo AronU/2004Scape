@@ -206,6 +206,10 @@ if(npc_type = salarin_the_twisted) {
         case ^fire_strike : $damage = 12;
     }
 }
+if (npc_type = crypt_shade_clone) {
+    $damage = 30;
+    mes("Your spell blasts away the phantom shadow!");
+}
 else if (npc_type = chronozon) {
     def_int $spell = db_getfield($spell_data, magic_spell_table:spell, 0);
     ~chronozon_spell($spell);

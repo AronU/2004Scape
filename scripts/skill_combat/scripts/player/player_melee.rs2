@@ -32,6 +32,10 @@ if (~player_npc_hit_roll(%damagetype) = true) {
     if (npc_type = infernal_imp | npc_type = demon2_infernal_imp) {
         $damage = 5; 
     }
+    if (npc_category = crypt_shade) {
+        $maxhit = scale(75, 100, $maxhit);
+    }
+    
     def_int $damage_capped = min($damage, npc_stat(hitpoints));
     ~give_combat_experience(%damagestyle, $damage_capped, %npc_combat_xp_multiplier);
     npc_heropoints($damage_capped);
@@ -49,6 +53,10 @@ if ($weapon ! null) {
 //mes("attackstyle: <tostring(%attackstyle)>, damagestyle: <tostring(%damagestyle)>, damage: <tostring($damage)>, damagetype: <tostring(%damagetype)>");
 anim(%com_attackanim, 0);
 sound_synth(%com_attacksound, 0, 0);
+if (npc_type = crypt_shade_clone) {
+    mes("Your attack passes through the shadow!");
+    return;
+}
 ~npc_retaliate(0);
 npc_queue(2, $damage, 0);
 npc_anim(npc_param(defend_anim), 20); 

@@ -14,6 +14,20 @@ sound_synth(door_open, 0, 0);
 loc_change(pipeastsidetrapdoor_open, 500);
 
 [oploc1,pipeastsidetrapdoor_open]
+if (%crypt_entry_paid = 1) {
+    def_int $choice = ~p_choice2_header("Yes.", 1, "No I want to see Drezel.", 2, "Do you want to enter the Mausoleum crypts?");
+    if ($choice = 1) {
+        npc_huntall(0_49_151_30_34, 25, 0);
+        while (npc_findnext = true) {
+            npc_del;
+        }
+        mes("You climb down through the trapdoor...");
+        anim(human_pickupfloor, 0);
+        p_delay(0);
+        p_telejump(0_49_151_48_31);
+        return;
+    }
+}
 mes("You climb down through the trapdoor...");
 anim(human_pickupfloor, 0);
 p_delay(0);

@@ -1524,3 +1524,8 @@ data=musicdata,music_Dunjun
 table=musicregion
 data=mapsquare,0_40_79_0_0
 data=musicdata,music_Royale
+
+[musicregion_49_151]
+table=musicregion
+data=mapsquare,0_49_151_0_0
+data=musicdata,music_Mausoleum

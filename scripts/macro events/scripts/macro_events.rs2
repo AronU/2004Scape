@@ -57,6 +57,9 @@ if (~inzone_coord_pair_table(trawler_game_zones, $coord) = true | ~inzone_coord_
 if (~in_tutorial_island($coord) = true) {
     return(false);
 }
+if (~in_crypt($coord) = true) {
+    return(false);
+}
 return(true);
 
 [proc,macro_event_allowed]()(boolean)

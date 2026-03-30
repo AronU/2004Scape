@@ -1,0 +1,119 @@
+[ai_opplayer2,crypt_skeleton_melee]
+if (%npc_action_delay > map_clock) {
+    return;
+}
+if (~npc_check_notcombat = false) {
+    npc_setmode(null);
+    return;
+}
+if (~npc_check_notcombat_self = false) {
+    return;
+}
+if (%hit_counter = 4) {
+    mes("The skeleton fights in a frenzy!");
+}
+~npc_default_attack;
+if (%hit_counter >= 4) {
+    %npc_action_delay = sub(%npc_action_delay, 2);
+}
+%hit_counter = add(%hit_counter, 1);
+
+[ai_applayer2,crypt_skeleton_ranger]
+if (%sights_mes_bool = true) {
+    //Hacky way of making the mes not happen in the middle of an attack
+    //and a tick later, extend action delay a bit for a longer "chargeup"
+    mes("The skeleton archer has you in its sights!");
+    %player_coord = coord;
+    loc_add(%player_coord, zodiac5, 0, grounddecor, 8);
+    %npc_action_delay = add(%npc_action_delay, 2);
+    %sights_mes_bool = false;
+}
+if (%hit_counter = 4) {
+    npc_facesquare(%player_coord);
+}
+if (%npc_action_delay > map_clock) {
+    return;
+}
+if (~npc_check_notcombat = false) {
+    npc_setmode(null);
+    return;
+}
+if (~npc_check_notcombat_self = false) {
+    return;
+}
+if (%hit_counter = 4) {
+    npc_anim(npc_param(attack_anim), 0);
+    sound_synth(npc_param(rangeattack_sound), 0, 0);
+    spotanim_npc(npc_param(proj_launch), npc_param(proj_height), 0);
+
+    %npc_action_delay = add(map_clock, npc_param(attackrate));
+    def_int $duration = 64;
+    $duration = ~coord_projectile(npc_coord, %player_coord, npc_param(proj_travel), 40, 36, 32, 15, 0, 11, 5);
+    spotanim_map(saradomin_lightning, %player_coord, 0, 2);
+    sound_synth(kalthite_lightning, 0, 2);
+    if (coord = %player_coord) {
+        mes("You took a devastating blow!");
+        ~playerhit_n_ranged(false, 20, $duration, npc_param(attackrate));
+    } else {
+        mes("You dodged the attack!");
+    }
+    %hit_counter = 0;
+    return;
+}
+~npc_rangeattack;
+%hit_counter = add(%hit_counter, 1);
+if (%hit_counter = 4) {
+    %sights_mes_bool = true;
+}
+
+[ai_opplayer2,crypt_skeleton_ranger]
+npc_setmode(applayer2);
+
+
+[ai_spawn,crypt_skeleton_elite]
+%elite_buff_active = false;
+
+[ai_timer,crypt_skeleton_elite]
+if (npc_findhero = ^false) {
+    return;
+}
+def_npc_uid $myuid = npc_uid;
+    npc_huntall(npc_coord, 3, 0);
+    def_int $allies = 0;
+    while (npc_findnext = true) {
+        if (npc_type = crypt_skeleton_melee | npc_type = crypt_skeleton_ranger) {
+            $allies = add($allies, 1);
+        }
+    }
+    // Restore self as active NPC
+    if (npc_finduid($myuid) = true) {
+        if ($allies > 0 & %elite_buff_active = false) {
+            npc_statadd(defence, 20, 0);
+            %elite_buff_active = true;
+            spotanim_npc(zamorak_flame, 50, 0);
+            mes("The Champion rallies the undead!");
+        } else if ($allies = 0 & %elite_buff_active = true) {
+            npc_statsub(defence, 20, 0);
+            %elite_buff_active = false;
+            spotanim_npc(weaken_impact, 50, 0);
+            mes("The Champion's shield shatters!");
+        }
+    }
+
+[ai_queue3,crypt_skeleton_melee]
+gosub(npc_death);
+~crypt_check_wave_complete;
+
+[ai_queue3,crypt_skeleton_ranger]
+gosub(npc_death);
+~crypt_check_wave_complete;
+
+[ai_queue3,crypt_skeleton_elite]
+gosub(npc_death);
+~crypt_check_wave_complete;
+
+[debugproc,skele_test]
+if_close;
+if (p_finduid(uid) = false) { @please_finish; return; }
+npc_add(coord, crypt_skeleton_elite, 100);
+npc_add(coord, crypt_skeleton_ranger, 100);

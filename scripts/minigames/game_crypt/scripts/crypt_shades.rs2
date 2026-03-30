@@ -1,0 +1,66 @@
+[ai_opplayer2,crypt_shade_strong]
+if (npc_stat(hitpoints) < 56) {
+    if (%shade_clone_spawned ! true) {
+        def_coord $coord1 = 0_49_151_30_34;
+        def_coord $coord2 = 0_49_151_26_34;
+        def_coord $coord3 = 0_49_151_34_34;
+
+        def_int $roll = random(3);
+        def_coord $real;
+        def_coord $fake1;
+        def_coord $fake2;
+
+        if ($roll = 0) {
+            $real = $coord1;
+            $fake1 = $coord2;
+            $fake2 = $coord3;
+        } else if ($roll = 1) {
+            $real = $coord2;
+            $fake1 = $coord1;
+            $fake2 = $coord3;
+        } else {
+            $real = $coord3;
+            $fake1 = $coord1;
+            $fake2 = $coord2;
+        }
+        if (p_finduid(%npc_aggressive_player) = true) {
+            p_clearpendingaction;
+            facesquare($coord1);
+        }
+        def_int $current_hp = npc_stat(hitpoints);
+        npc_del;
+        spotanim_map(smokepuff, $real, 0, 1);
+        spotanim_map(smokepuff, $fake1, 0, 1);
+        spotanim_map(smokepuff, $fake2, 0, 1);
+        npc_add($real, crypt_shade_strong, 1000);
+        npc_statsub(hitpoints, sub(npc_basestat(hitpoints), $current_hp), 0);
+        %shade_clone_spawned = true;
+        npc_add($fake1, crypt_shade_clone, 1000);
+        npc_add($fake2, crypt_shade_clone, 1000);
+        return;
+    }
+}
+~npc_default_attack;
+
+[ai_applayer2,crypt_shade_strong]
+npc_setmode(applayer2);
+
+[ai_queue3,crypt_shade_strong]
+def_coord $shade_coord = npc_coord;
+gosub(npc_death);
+if (npc_findhero = ^false) {
+    return;
+}
+npc_huntall($shade_coord, 20, 0);
+while (npc_findnext = true) {
+    npc_queue(3, 0, 0);
+}
+~crypt_check_wave_complete;
+
+[ai_queue3,crypt_shade]
+gosub(npc_death);
+~crypt_check_wave_complete;
+
+[ai_queue3,crypt_shade_clone]
+gosub(npc_death);
+~crypt_check_wave_complete;

@@ -1,0 +1,146 @@
+[ai_opplayer2,crypt_zombie_strong]
+~zombie_puke_checker;
+if (%npc_action_delay > map_clock) {
+    return;
+}
+if (~npc_check_notcombat = false) {
+    npc_setmode(null);
+    return;
+}
+if (~npc_check_notcombat_self = false) {
+    return;
+}
+~npc_default_attack;
+
+
+[ai_applayer2,crypt_zombie_strong]
+~zombie_puke_checker;
+npc_setmode(opplayer2);
+
+
+[proc,zombie_puke]
+loc_findallzone(coord);
+    while (loc_findnext = true) {
+        if (loc_type = crypt_poisonsplatter){
+            %puke_timer = sub(%puke_timer, 7);
+            return;
+        }
+    }
+def_int $extra_splatters = 2;
+npc_say("BARFF");
+loc_add(coord, crypt_poisonsplatter, 0, grounddecor, 11);
+
+while ($extra_splatters ! 0) {
+    def_int $x = sub(randominc(2), 1);
+    def_int $z = sub(randominc(2), 1);
+    
+    def_coord $new_splatter_coord = movecoord(coord, $x, 0, $z);
+    if (($x ! 0 | $z ! 0) & (lineofwalk(coord, $new_splatter_coord) = true))  {
+        if (loc_find($new_splatter_coord, crypt_poisonsplatter) = false) {
+            loc_add($new_splatter_coord, crypt_poisonsplatter, randominc(3), grounddecor, 11);
+            $extra_splatters = sub($extra_splatters, 1);  
+        }
+    }
+    
+}
+[ai_timer,crypt_zombie_weak]
+if (loc_find(npc_coord, crypt_poisonsplatter) = true) {
+    ~npc_direct_poison_hit;
+}
+[ai_timer,crypt_zombie_mid]
+if (loc_find(npc_coord, crypt_poisonsplatter) = true) {
+    ~npc_direct_poison_hit;
+}
+[ai_timer,crypt_zombie_strong]
+if (loc_find(npc_coord, crypt_poisonsplatter) = true) {
+    ~npc_direct_poison_hit;
+}
+
+[proc,zombie_puke_checker]
+if (%puke_timer = 10) {
+    ~zombie_puke;
+} else if (%puke_timer > 10 & %puke_timer < 21) {
+    if (modulo(%puke_timer, 2) = 0) {
+        if (loc_find(coord, crypt_poisonsplatter) = true) {
+            ~direct_poison_hit;
+        }
+        //even number, do damage
+        //mes("Even number: <tostring(%puke_timer)>");
+    }
+}
+if (%puke_timer = 20) {
+    %puke_timer = 0;
+    return;
+}
+%puke_timer = add(%puke_timer, 1);
+
+[ai_spawn,crypt_zombie_strong]
+%puke_timer = 0;
+
+[proc,direct_poison_hit]
+if (stat(hitpoints) < 1) {
+    return;
+}
+if_close;
+def_synth $sound;
+def_int $rand;
+// not sure if this damage is supposed to be queued or not
+damage(uid, ^hitmark_poison, 3);
+if (gender() = 0) {
+    $rand = random(3);
+    switch_int($rand) {
+        case 0 : $sound = human_hit2;
+        case 1 : $sound = human_hit3;
+        case 2 : $sound = human_hit4;
+        case default : $sound = human_hit2;
+    }
+} else {
+    $rand = random(2);
+    switch_int($rand) {
+        case 0 : $sound = female_hit;
+        case 1 : $sound = female_hit2;
+        case default : $sound = female_hit;
+    }
+}
+sound_synth($sound, 0, 20);
+
+if (stat(hitpoints) = 0) {
+    queue(player_death, 0, 0);
+}
+
+[proc,npc_direct_poison_hit]
+if (npc_stat(hitpoints) = 0) { // already dead
+    return;
+}
+npc_damage(^hitmark_poison, 2);
+// They died
+if (npc_stat(hitpoints) = 0){
+    npc_queue(3, 0, 0);
+}
+
+[ai_queue3,crypt_zombie_weak]
+gosub(npc_death);
+~crypt_check_wave_complete;
+
+//zombie explodes on death and deals 10 damage if player is < 2 tiles away
+[ai_queue3,crypt_zombie_mid]
+def_coord $zombie_coord = npc_coord;
+gosub(npc_death);
+if (npc_findhero = ^false) {
+    return;
+}
+~crypt_check_wave_complete;
+spotanim_map(earthblast_impact, $zombie_coord, 150, 2);
+sound_synth(fire_elemental_hit, 0, 0);
+if (distance($zombie_coord, coord) < 2) {
+    //mes("Distance: <tostring(distance($zombie_coord, coord))>");
+    queue(combat_damage_player, 0, 10);
+}
+npc_huntall($zombie_coord, 1, 0);
+while (npc_findnext = true) {
+    npc_queue(2, 10, 0);
+}
+
+[ai_queue3,crypt_zombie_strong]
+gosub(npc_death);
+~crypt_check_wave_complete;

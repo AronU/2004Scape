@@ -1,12 +1,12 @@
 [if_button,prayer:prayer_ultimatestrength]
-if_close;
+//if_close;
 if (p_finduid(uid) = true) {
     @activate_prayer_ultimatestrength;
 }
 %prayer10 = %prayer10;
 
 [label,activate_prayer_ultimatestrength]
-p_clearpendingaction;
+// p_clearpendingaction;
 def_dbrow $data = ~get_prayer_data(^prayer_ultimatestrength);
 if ($data = null) {
     return;

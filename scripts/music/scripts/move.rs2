@@ -458,6 +458,7 @@ settimer(move_ikovtrigger, 1);
 
 [mapzone,0_49_148] @music_playbyregion(coord);
 [mapzone,0_49_149] @music_playbyregion(coord);
+[mapzone,0_49_151] @music_playbyregion(coord);
 [mapzone,0_49_153] @music_playbyregion(coord);
 [mapzone,0_49_154] @music_playbyregion(coord);
 

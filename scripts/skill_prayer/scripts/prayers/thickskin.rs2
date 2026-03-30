@@ -1,12 +1,12 @@
 [if_button,prayer:prayer_thickskin]
-if_close;
+//if_close;
 if (p_finduid(uid) = true) {
     @activate_prayer_thickskin;
 }
 %prayer0 = %prayer0;
 
 [label,activate_prayer_thickskin]
-p_clearpendingaction;
+// p_clearpendingaction;
 def_dbrow $data = ~get_prayer_data(^prayer_thickskin);
 if ($data = null) {
     return;

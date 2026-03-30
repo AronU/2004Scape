@@ -1,0 +1,15 @@
+[crypt_token]
+name=Crypt token
+desc=A token earned by cleansing the Mausoleum Crypts. Can be exchanged for rewards.
+model=model_2560_obj
+2dxof=6
+2dyof=-2
+2dzoom=830
+2dyan=132
+2dxan=320
+recol1s=127
+recol1d=22218
+cost=1
+members=yes
+stackable=yes
+tradeable=no

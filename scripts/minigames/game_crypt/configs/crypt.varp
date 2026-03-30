@@ -1,0 +1,10 @@
+[crypt_wave]
+scope=temp
+transmit=yes
+
+[crypt_entry_paid]
+scope=perm
+
+[crypt_chest_claimed]
+scope=temp
+type=boolean

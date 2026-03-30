@@ -1,0 +1,113 @@
+[opnpc1,brother_cedwyn]
+if (%priestperil < ^priestperil_complete) {
+    ~chatnpc("<p,neutral>I'm sorry, but you cannot help me until the temple is secured. Speak with Drezel first.");
+    return;
+}
+@cedwyn_main_menu;
+
+[opnpc3,brother_cedwyn] if_openmain(crypt_rewards_shop);
+
+[label,cedwyn_main_menu]
+~chatnpc("<p,sad>Greetings, adventurer. The crypts beneath us grow more restless by the day.");
+~chatnpc("<p,sad>Since the Salve's power was disrupted, the dead have begun to stir. Ancient templars, once at peace, now rise as monsters.");
+def_int $choice = ~p_choice3("How can I help?", 0, "What's in it for me?", 1, "Sounds dangerous. No thanks.", 2);
+
+if ($choice = 0) {
+    @cedwyn_explain;
+} else if ($choice = 1) {
+    @cedwyn_rewards;
+} else {
+    ~chatplayer("<p,neutral>Sounds dangerous. No thanks.");
+    ~chatnpc("<p,sad>I understand. The crypts are not for the faint of heart. Return if you change your mind.");
+}
+
+[label,cedwyn_explain]
+~chatplayer("<p,neutral>How can I help?");
+~chatnpc("<p,neutral>I need someone to descend into the crypts and fight back the undead. They reform eventually, but each cleansing buys us time.");
+~chatnpc("<p,neutral>The work is dangerous. I'll need 5,000 coins to prepare blessed supplies and mark the safe passages for you.");
+~chatnpc("<p,neutral>For every wave of undead you defeat, I'll reward you with Crypt Tokens. You can exchange them with me for unique equipment and supplies.");
+def_int $choice2 = ~p_choice2("I'm ready. Let me in. (5,000 coins)", 0, "Let me prepare first.", 1);
+
+if ($choice2 = 0) {
+    @cedwyn_enter;
+} else {
+    ~chatplayer("<p,neutral>Let me prepare first.");
+    ~chatnpc("<p,neutral>Very well. Return when you're ready. Bring food, potions, and your best weapon. Crush weapons work well against the skeletons, and magic is effective against the spirits.");
+}
+
+[label,cedwyn_rewards]
+~chatplayer("<p,neutral>What's in it for me?");
+~chatnpc("<p,neutral>For each wave you survive, you'll earn Crypt Tokens. You can trade these tokens with me for blessed equipment and supplies.");
+~chatnpc("<p,neutral>I have a sanctified mace that strikes with holy fury, an enchanted shroud, and more. Would you like to see my wares?");
+def_int $choice3 = ~p_choice2("Show me the shop.", 0, "Maybe later.", 1);
+
+if ($choice3 = 0) {
+    @cedwyn_open_shop;
+} else {
+    ~chatplayer("<p,neutral>Maybe later.");
+}
+
+[label,cedwyn_enter]
+if (%crypt_entry_paid = 1) {
+    ~chatnpc("<p,neutral>You have already paid your fee. Head over to the trapdoor to enter the crypts.");
+    return;
+}
+if (inv_total(inv, coins) < 5000) {
+    ~chatnpc("<p,sad>You don't have enough coins. I need 5,000 to prepare the passages.");
+    return;
+}
+inv_del(inv, coins, 5000);
+%crypt_entry_paid = 1;
+~chatnpc("<p,neutral>May Saradomin protect you down there. Fight well, and return alive.");
+
+//%crypt_wave = 1;
+//%crypt_coffins_looted = 0;
+// Begin wave 1 after 5 tick delay
+//queue(crypt_start_wave, 5);
+
+[label,cedwyn_open_shop]
+if_openmain(crypt_rewards_shop);
+
+// ==========================================
+// Reward shop button handlers
+// ==========================================
+
+// Item 1: Blessed Bone Shards (placeholder: big_bones) — 50 tokens
+[if_button,crypt_rewards_shop:com_76] @crypt_shop_buy(big_bones, 1, "50", 50);
+[if_button,crypt_rewards_shop:com_79] @crypt_shop_buy(big_bones, 1, "50", 50);
+
+// Item 2: Crypt Teleport Tab (placeholder: rune_med_helm) — 25 tokens
+[if_button,crypt_rewards_shop:com_77] @crypt_shop_buy(rune_med_helm, 1, "25", 25);
+[if_button,crypt_rewards_shop:com_80] @crypt_shop_buy(rune_med_helm, 1, "25", 25);
+
+// Item 3: Ghostspeak Scroll (placeholder: rune_full_helm) — 150 tokens
+[if_button,crypt_rewards_shop:com_78] @crypt_shop_buy(rune_full_helm, 1, "150", 150);
+[if_button,crypt_rewards_shop:com_81] @crypt_shop_buy(rune_full_helm, 1, "150", 150);
+
+// Item 4: Crypt Archer's Coif (placeholder: rune_scimitar) — 350 tokens
+[if_button,crypt_rewards_shop:com_82] @crypt_shop_buy(rune_scimitar, 1, "350", 350);
+[if_button,crypt_rewards_shop:com_85] @crypt_shop_buy(rune_scimitar, 1, "350", 350);
+
+// Item 5: Sanctified Mace (placeholder: rune_mace) — 900 tokens
+[if_button,crypt_rewards_shop:com_83] @crypt_shop_buy(rune_mace, 1, "900", 900);
+[if_button,crypt_rewards_shop:com_86] @crypt_shop_buy(rune_mace, 1, "900", 900);
+
+// Item 6: Shroud of the Crypt (placeholder: rune_platebody) — 1,500 tokens
+[if_button,crypt_rewards_shop:com_84] @crypt_shop_buy(rune_platebody, 1, "1,500", 1500);
+[if_button,crypt_rewards_shop:com_87] @crypt_shop_buy(rune_platebody, 1, "1,500", 1500);
+
+// Close button
+[if_button,crypt_rewards_shop:com_75] if_close;
+
+[label,crypt_shop_buy](namedobj $obj, int $count, string $price_str, int $price)
+if (inv_total(inv, crypt_token) < $price) {
+    mes("You'd need <$price_str> Crypt Tokens to buy that.");
+    return;
+}
+if (inv_itemspace(inv, $obj, $count, inv_size(inv)) = false & $price ! inv_total(inv, crypt_token)) {
+    mes("You don't have enough inventory space to buy that.");
+    return;
+}
+inv_del(inv, crypt_token, $price);
+inv_add(inv, $obj, $count);
+mes("You exchange <$price_str> Crypt Tokens.");

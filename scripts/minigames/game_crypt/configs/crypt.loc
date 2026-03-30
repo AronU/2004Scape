@@ -1,0 +1,45 @@
+[crypt_underground_door1]
+name=Gate
+desc=A sturdy metal gate.
+model=model_loc_37
+op1=Forfeit
+param=next_loc_stage,inacpip_underground_door
+
+[crypt_underground_door2]
+//Starting gate, from Mory side
+name=Gate
+desc=A sturdy metal gate.
+model=model_loc_37
+op1=Open
+param=next_loc_stage,inacpip_underground_door
+
+[crypt_coffin_noanim]
+name=Coffin
+desc=An ornately decorated coffin.
+model=loc_3480
+length=2
+op1=Open
+
+[crypt_poisonsplatter]
+model=model_loc_654
+recol1s=10240
+recol1d=544
+
+[crypt_chest_closed]
+name=Closed reward chest
+desc=I wonder what's inside.
+model=wooden_chest
+op1=Open
+forceapproach=north
+//category=chest_closed
+param=chest_other,crypt_chest_open
+
+[crypt_chest_open]
+name=Open chest
+desc=Perhaps I should search it.
+model=model_loc_76
+op2=Search
+op3=Shut
+forceapproach=north
+//category=chest_open
+param=chest_other,crypt_chest_closed
